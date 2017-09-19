@@ -9,7 +9,7 @@ public class TarPit : DefenseTrap {
 	// Use this for initialization
 	void Start ()
     {
-        Collider collision = GetComponent<Collider>();
+        
 	}
 	
 	// Update is called once per frame
@@ -17,15 +17,17 @@ public class TarPit : DefenseTrap {
     {		
 	}
 
-    void OnCollisionEnter(Collision a_col)
+    //requires a_col to have a rigidbody (check Is Kinematic)
+    //also requires this to have collider with Is Trigger checked
+    void OnTriggerEnter(Collider a_col)
     {
-        a_col.collider.GetComponent<PlayerController>().speed -= speedReduction;
-        Debug.Log("Enter: " + a_col.collider.name);
+        a_col.GetComponent<PlayerController>().speed -= speedReduction;
+        Debug.Log("Trigger Enter");
     }
 
-    void OnCollisionExit(Collision a_col)
+    void OnTriggerExit(Collider a_col)
     {
-        a_col.collider.GetComponent<PlayerController>().speed += speedReduction;
-        Debug.Log("Exit: " + a_col.collider.name);
+        a_col.GetComponent<PlayerController>().speed += speedReduction;
+        Debug.Log("Trigger Exit");
     }
 }

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4732649000716026}
   - component: {fileID: 33187263768302780}
   - component: {fileID: 23801338660757086}
+  - component: {fileID: 65435706117138906}
   m_Layer: 0
   m_Name: Resource_001_Lab_001_Metal
   m_TagString: Untagged
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1384477231408220}
   m_Mesh: {fileID: 4300000, guid: 7636cbbbd1b1bb541b8ffb3a5fc40b18, type: 3}
+--- !u!65 &65435706117138906
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1384477231408220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.84, y: 0.22, z: 0.37}
+  m_Center: {x: 0.42, y: 0.11, z: -0.185}

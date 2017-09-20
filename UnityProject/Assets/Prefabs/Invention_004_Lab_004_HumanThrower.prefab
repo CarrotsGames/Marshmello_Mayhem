@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4001409908549226}
   - component: {fileID: 33339783119543368}
   - component: {fileID: 23692008704956114}
+  - component: {fileID: 65219033515918404}
   m_Layer: 0
   m_Name: Invention_004_Lab_004_HumanThrower
   m_TagString: Untagged
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1437187440471002}
   m_Mesh: {fileID: 4300000, guid: 0e5b3ddea5a654f47a3bec5cd1c36f58, type: 3}
+--- !u!65 &65219033515918404
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1437187440471002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.099999994, z: 1}
+  m_Center: {x: 1, y: 0.049999997, z: -0.5}

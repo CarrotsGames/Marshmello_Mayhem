@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4143880748198212}
   - component: {fileID: 33794022695921538}
   - component: {fileID: 23493339672878330}
+  - component: {fileID: 65330658769348892}
   m_Layer: 0
   m_Name: Objective_001_Lab_001_ChemCanister
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1766466619891944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.658327, y: -6.92, z: 7.98}
+  m_LocalPosition: {x: 24.277554, y: -7.92, z: 10.90015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1766466619891944}
   m_Mesh: {fileID: 4300000, guid: 7c1ce1d4d00548544b46e987c4d81e99, type: 3}
+--- !u!65 &65330658769348892
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1766466619891944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.61, y: 1, z: 0.61}
+  m_Center: {x: 0, y: 0, z: 0}

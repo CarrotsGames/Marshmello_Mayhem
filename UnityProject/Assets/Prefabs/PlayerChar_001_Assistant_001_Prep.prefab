@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4025043310902566}
   - component: {fileID: 33510763939164700}
   - component: {fileID: 23931688746097648}
-  - component: {fileID: 95390995342628450}
+  - component: {fileID: 65985587827210636}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep
   m_TagString: Untagged
@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 4314493843099078}
   - component: {fileID: 33493669601875740}
   - component: {fileID: 23297600831420114}
+  - component: {fileID: 65141633417947742}
   m_Layer: 0
   m_Name: Weapon_001_Lab_001_RayGun
   m_TagString: Untagged
@@ -56,6 +57,7 @@ GameObject:
   - component: {fileID: 4138338359636400}
   - component: {fileID: 33782537458083744}
   - component: {fileID: 23980501819322334}
+  - component: {fileID: 65422652460600276}
   m_Layer: 0
   m_Name: Weapon_002_Lab__002_HandSaw
   m_TagString: Untagged
@@ -70,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730761065670996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0366783, y: -11.5661125, z: 5.6799126}
+  m_LocalPosition: {x: -25.15049, y: -11.5661125, z: 5.6799126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4138338359636400}
@@ -221,20 +223,39 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955590663756058}
   m_Mesh: {fileID: 4300000, guid: 1724e27ed0f10be4ab3ed2fff6b2b671, type: 3}
---- !u!95 &95390995342628450
-Animator:
-  serializedVersion: 3
+--- !u!65 &65141633417947742
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1900497302414830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.35, z: 0.29999998}
+  m_Center: {x: 0.39999998, y: 0.175, z: -0.14999999}
+--- !u!65 &65422652460600276
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955590663756058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35, y: 0.79999995, z: 0.29999998}
+  m_Center: {x: 0.175, y: 0.39999998, z: -0.14999999}
+--- !u!65 &65985587827210636
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730761065670996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a5aee5cd4b542bc46ad5b172756fbe4a, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8, z: 1}
+  m_Center: {x: -0.5, y: 0.9, z: -0.5}

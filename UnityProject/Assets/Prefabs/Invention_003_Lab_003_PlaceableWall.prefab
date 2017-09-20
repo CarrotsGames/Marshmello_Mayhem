@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4259473676879060}
   - component: {fileID: 33461629248240358}
   - component: {fileID: 23049833234424176}
+  - component: {fileID: 65305929424637744}
   m_Layer: 0
   m_Name: Invention_003_Lab_003_PlaceableWall
   m_TagString: Untagged
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487519719050722}
   m_Mesh: {fileID: 4300000, guid: 1445432f5ad52764a809e772f5358473, type: 3}
+--- !u!65 &65305929424637744
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1487519719050722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 3, z: 1}
+  m_Center: {x: 1.9999962, y: 1.5, z: -0.5}

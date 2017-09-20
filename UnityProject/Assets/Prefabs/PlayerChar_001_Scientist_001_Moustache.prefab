@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4060773525924738}
   - component: {fileID: 33229340032044710}
   - component: {fileID: 23288538180399510}
-  - component: {fileID: 95889292948965572}
   m_Layer: 0
   m_Name: Weapon_002_Lab__002_HandSaw
   m_TagString: Untagged
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4414304000140972}
   - component: {fileID: 33988074165059902}
   - component: {fileID: 23677217616449210}
-  - component: {fileID: 95755864340428992}
   m_Layer: 0
   m_Name: Weapon_001_Lab_001_RayGun
   m_TagString: Untagged
@@ -71,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204626612582360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: 0.849, z: -0.90999985}
+  m_LocalPosition: {x: -1.139, y: 0.849, z: -0.90999985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4942985370098466}
@@ -84,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502556409085502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.482, y: 0.8199997, z: 0.14800072}
+  m_LocalPosition: {x: -1.457, y: 0.8199997, z: 0.14800072}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4942985370098466}
@@ -118,7 +116,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7335b72e2f223ce458e2c2b0cd27c47b, type: 2}
+  - {fileID: 2100000, guid: 2eaec462c547e9a4a8b9408a913daebf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,7 +148,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e5a2087717dfd3e49a25f47878108563, type: 2}
+  - {fileID: 2100000, guid: cbf81f3d313e50148a8981fe982a19ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -182,7 +180,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e5a2087717dfd3e49a25f47878108563, type: 2}
+  - {fileID: 2100000, guid: cbf81f3d313e50148a8981fe982a19ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -222,37 +220,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502556409085502}
   m_Mesh: {fileID: 4300000, guid: ba7f57b5e757cbf4ba275c039cbb0bac, type: 3}
---- !u!95 &95755864340428992
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1502556409085502}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ba7f57b5e757cbf4ba275c039cbb0bac, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95889292948965572
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204626612582360}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 1724e27ed0f10be4ab3ed2fff6b2b671, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1

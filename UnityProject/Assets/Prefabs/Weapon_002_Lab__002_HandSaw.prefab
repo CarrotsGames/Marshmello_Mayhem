@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4854125111202204}
   - component: {fileID: 33367464881838280}
   - component: {fileID: 23115559889435464}
-  - component: {fileID: 95046626435355898}
   m_Layer: 0
   m_Name: Weapon_002_Lab__002_HandSaw
   m_TagString: Untagged
@@ -55,7 +54,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e5a2087717dfd3e49a25f47878108563, type: 2}
+  - {fileID: 2100000, guid: 7335b72e2f223ce458e2c2b0cd27c47b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,20 +80,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1105539549790220}
   m_Mesh: {fileID: 4300000, guid: 1724e27ed0f10be4ab3ed2fff6b2b671, type: 3}
---- !u!95 &95046626435355898
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105539549790220}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 1724e27ed0f10be4ab3ed2fff6b2b671, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1

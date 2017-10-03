@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TarPit : DefenseTrap {
 
-    public int speedReduction;
+    public int slowedSpeed;
 
 	// Use this for initialization
 	void Start ()
@@ -21,13 +21,13 @@ public class TarPit : DefenseTrap {
     //also requires this to have collider with Is Trigger checked
     void OnTriggerEnter(Collider a_col)
     {
-        a_col.GetComponent<PlayerController>().speed -= speedReduction;
+        a_col.GetComponent<PlayerController>().speed = slowedSpeed;
         Debug.Log("Trigger Enter");
     }
 
     void OnTriggerExit(Collider a_col)
     {
-        a_col.GetComponent<PlayerController>().speed += speedReduction;
+        a_col.GetComponent<PlayerController>().speed = a_col.GetComponent<PlayerController>().maxSpeed;
         Debug.Log("Trigger Exit");
     }
 }

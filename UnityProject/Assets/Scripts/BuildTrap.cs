@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XboxCtrlrInput;
 
 public class BuildTrap : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class BuildTrap : MonoBehaviour {
     Quaternion rotation;
     private int rows = 11;
     private int columns = 24;
+    List<GameObject> createdObjects;
 
 	// Use this for initialization
 	void Start ()
@@ -31,6 +33,7 @@ public class BuildTrap : MonoBehaviour {
         grid = new Vector3[15, 26];
 
         potentialTiles = new List<Vector3>();
+        createdObjects = new List<GameObject>();
 
         //creates grid
         for (int r = 0; r < rows; r++)
@@ -46,52 +49,107 @@ public class BuildTrap : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update ()
-    {        
-        //checks if player has pressed ______ button, and if a trap is currently being built
-        if (Input.GetButtonDown("Fire1") && isActive == false)
-        {            
-            //loop over all tiles
-            for (int r = 0; r < rows; r++)
+    {
+        //checks if a trap is currently being built
+        if (isActive == false)
+        {
+            if (XCI.GetDPad(XboxDPad.Up) || Input.GetKey(KeyCode.Alpha1))
             {
-                for (int c = 0; c < columns; c++)
-                {                    
-                    //check for closest tile
-                    Vector3 vecBetween = transform.position - grid[r, c];
-                    vecBetween.y = 0;
-
-                    if (vecBetween.magnitude < 2)
-                    {
-                        targetPosition = grid[r, c];
-                        targetPosition.y += 4.1f;
-                        potentialTiles.Add(targetPosition);
-                    }
-                }
+                selectedTrap = Resources.Load("Prefabs/Invention_001_Lab_001_TarPit") as GameObject;
+            }
+            if (XCI.GetDPad(XboxDPad.Down) || Input.GetKey(KeyCode.Alpha2))
+            {
+                selectedTrap = Resources.Load("Prefabs/Invention_002_Lab_002_Pit") as GameObject;
+            }
+            if (XCI.GetDPad(XboxDPad.Right) || Input.GetKey(KeyCode.Alpha3))
+            {
+                selectedTrap = Resources.Load("Prefabs/Invention_003_Lab_003_PlaceableWall") as GameObject;
+            }
+            if (XCI.GetDPad(XboxDPad.Left) || Input.GetKey(KeyCode.Alpha4))
+            {
+                selectedTrap = Resources.Load("Prefabs/Invention_004_Lab_004_HumanThrower") as GameObject;
             }
 
-            //checks if player is within range of any tiles
-            if (potentialTiles.Count > 0)
+
+            //checks if player has pressed ______ button 
+            if (Input.GetButtonDown("Fire1") || XCI.GetButton(XboxButton.A))
             {
-                //set isActive to true, disables this until false
-                isActive = true;
-                Debug.Log("Building disabled");
-
-                //loop over all tiles and sort so lowest magnitude is at index zero
-                for (int e = 0; e < potentialTiles.Count; e++)
+                //loop over all tiles
+                for (int r = 0; r < rows; r++)
                 {
-                    for (int i = 1; i < potentialTiles.Count; i++)
+                    for (int c = 0; c < columns; c++)
                     {
-                        if (potentialTiles[i - 1].magnitude > potentialTiles[i].magnitude)
-                        {
-                            Vector3 temp = potentialTiles[i - 1];
-                            potentialTiles[i - 1] = potentialTiles[i];
+                        //check for closest tile
+                        Vector3 vecBetween = transform.position - grid[r, c];
+                        vecBetween.y = 0;
 
-                            potentialTiles[i] = temp;
+                        if (vecBetween.magnitude < 2)
+                        {
+                            targetPosition = grid[r, c];
+                            targetPosition.y += 4.1f;
+                            potentialTiles.Add(targetPosition);
                         }
                     }
                 }
-                                
-                //calls Build function after delay (seconds)
-                Invoke("Build", delay);
+
+                //checks if player is within range of any tiles
+                if (potentialTiles.Count > 0)
+                {
+                    //loop over all tiles and sort so lowest magnitude is at index zero
+                    for (int e = 0; e < potentialTiles.Count; e++)
+                    {
+                        for (int i = 1; i < potentialTiles.Count; i++)
+                        {
+                            if (potentialTiles[i - 1].magnitude > potentialTiles[i].magnitude)
+                            {
+                                Vector3 temp = potentialTiles[i - 1];
+                                potentialTiles[i - 1] = potentialTiles[i];
+
+                                potentialTiles[i] = temp;
+                            }
+                        }
+                    }
+
+                    bool trapInRange = false;
+
+                    //checks if at least one trap exists
+                    if (createdObjects.Count > 0)
+                    {
+                        //check if trap exists on selected tile
+                        for (int i = 0; i < createdObjects.Count; i++)
+                        {
+                            //gets distance between the selected area and an existing trap
+                            Vector3 vecBetween = potentialTiles[0] - createdObjects[i].transform.position;
+
+                            //if selected area is occupied
+                            if (vecBetween.magnitude < 2)
+                            {
+                                trapInRange = true;
+                            }
+                        }
+
+                        //if selected area is not occupied
+                        if (trapInRange == false)
+                        {
+                            //set isActive to true, disables this until false
+                            isActive = true;
+
+                            Debug.Log("Building disabled");
+
+                            //calls Build function after delay (seconds)
+                            Invoke("Build", delay);
+                        }
+                    }
+                    else
+                    {
+                        //set isActive to true, disables this until false
+                        isActive = true;
+                        Debug.Log("Building disabled");
+
+                        //calls Build function after delay (seconds)
+                        Invoke("Build", delay);
+                    }
+                }
             }
         }
 	}
@@ -105,8 +163,9 @@ public class BuildTrap : MonoBehaviour {
         //re-enables player movement
         GetComponent<PlayerController>().playerMovement = true;
 
-        //create trap at position closest to selected area
-        Instantiate(selectedTrap, potentialTiles[0], rotation);
+        //create trap at position closest to selected area and add it to list of traps
+        createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
+        
         potentialTiles.Clear();
     }
 }

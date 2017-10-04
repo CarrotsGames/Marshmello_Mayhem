@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4568347880317654}
   - component: {fileID: 33900466398268808}
   - component: {fileID: 23114420251540884}
-  - component: {fileID: 65389339366762050}
   m_Layer: 0
   m_Name: Invention_002_Lab_002_Pit
   m_TagString: Untagged
@@ -36,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1312556171722640}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.46, y: 22.766434, z: -31.746021}
+  m_LocalPosition: {x: -11.47, y: 21.935, z: -33.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,16 +79,4 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1312556171722640}
-  m_Mesh: {fileID: 4300000, guid: 08c2674fcd3bca84296304127da08be3, type: 3}
---- !u!65 &65389339366762050
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1312556171722640}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0000007, y: 1, z: 2.0000005}
-  m_Center: {x: 1.4999985, y: 0.5, z: -0.9999964}
+  m_Mesh: {fileID: 4300002, guid: 08c2674fcd3bca84296304127da08be3, type: 3}

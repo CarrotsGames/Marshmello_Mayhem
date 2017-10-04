@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4942985370098466}
   - component: {fileID: 33312429737798950}
   - component: {fileID: 23274216737344622}
-  - component: {fileID: 65925853120985892}
+  - component: {fileID: 65083905608683540}
   m_Layer: 0
   m_Name: PlayerChar_001_Scientist_001_Moustache
   m_TagString: Untagged
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204626612582360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.139, y: 0.849, z: -0.90999985}
+  m_LocalPosition: {x: -0.512, y: -0.08, z: -0.322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4942985370098466}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502556409085502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.457, y: 0.8199997, z: 0.14800072}
+  m_LocalPosition: {x: -0.971, y: 0.114, z: 0.596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4942985370098466}
@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964502997967394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.067657, y: -11.5661125, z: 13.979912}
+  m_LocalPosition: {x: -22.59, y: -10.678, z: 13.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060773525924738}
@@ -221,7 +221,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502556409085502}
   m_Mesh: {fileID: 4300000, guid: ba7f57b5e757cbf4ba275c039cbb0bac, type: 3}
---- !u!65 &65925853120985892
+--- !u!65 &65083905608683540
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -232,4 +232,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8, z: 1}
-  m_Center: {x: -0.5, y: 0.9, z: -0.5}
+  m_Center: {x: 0, y: 0, z: 0}

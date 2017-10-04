@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4025043310902566}
   - component: {fileID: 33510763939164700}
   - component: {fileID: 23931688746097648}
-  - component: {fileID: 65985587827210636}
+  - component: {fileID: 65194918555667140}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep
   m_TagString: Untagged
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730761065670996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.15049, y: -11.5661125, z: 5.6799126}
+  m_LocalPosition: {x: 5.0366783, y: -9.75, z: 5.6799126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4138338359636400}
@@ -87,7 +87,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955590663756058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1781693, y: 0.7300005, z: -0.85339737}
+  m_LocalPosition: {x: -0.6, y: -0.21, z: -0.334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4025043310902566}
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1900497302414830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4491692, y: 0.90999985, z: 0.13899994}
+  m_LocalPosition: {x: -1.137, y: 0.05, z: 0.685}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4025043310902566}
@@ -235,6 +235,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.79999995, y: 0.35, z: 0.29999998}
   m_Center: {x: 0.39999998, y: 0.175, z: -0.14999999}
+--- !u!65 &65194918555667140
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730761065670996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65422652460600276
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -247,15 +259,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.79999995, z: 0.29999998}
   m_Center: {x: 0.175, y: 0.39999998, z: -0.14999999}
---- !u!65 &65985587827210636
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730761065670996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.8, z: 1}
-  m_Center: {x: -0.5, y: 0.9, z: -0.5}

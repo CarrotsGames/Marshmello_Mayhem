@@ -16,6 +16,7 @@ public class BuildTrap : MonoBehaviour {
     private int rows = 11;
     private int columns = 24;
     List<GameObject> createdObjects;
+    public bool isEnabled = false;
 
 	// Use this for initialization
 	void Start ()
@@ -30,7 +31,7 @@ public class BuildTrap : MonoBehaviour {
         originTile.y = 7.7595f;
         originTile.z = -7.788241f;
 
-        grid = new Vector3[15, 26];
+        grid = new Vector3[rows, columns];
 
         potentialTiles = new List<Vector3>();
         createdObjects = new List<GameObject>();
@@ -51,11 +52,11 @@ public class BuildTrap : MonoBehaviour {
 	void Update ()
     {
         //checks if a trap is currently being built
-        if (isActive == false)
+        if (isActive == false && isEnabled == true)
         {
             if (XCI.GetDPad(XboxDPad.Up) || Input.GetKey(KeyCode.Alpha1))
             {
-                selectedTrap = Resources.Load("Prefabs/Invention_001_Lab_001_TarPit") as GameObject;
+                selectedTrap = Resources.Load("Prefabs/Invention_001_Lab_001_TarPit") as GameObject;                
             }
             if (XCI.GetDPad(XboxDPad.Down) || Input.GetKey(KeyCode.Alpha2))
             {
@@ -71,8 +72,8 @@ public class BuildTrap : MonoBehaviour {
             }
 
 
-            //checks if player has pressed ______ button 
-            if (Input.GetButtonDown("Fire1") || XCI.GetButton(XboxButton.A))
+            //checks if player has pressed Xbox:A or the space bar
+            if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A))
             {
                 //loop over all tiles
                 for (int r = 0; r < rows; r++)
@@ -124,7 +125,7 @@ public class BuildTrap : MonoBehaviour {
                             //if selected area is occupied
                             if (vecBetween.magnitude < 2)
                             {
-                                trapInRange = true;
+                                trapInRange = true;                                                                
                             }
                         }
 
@@ -138,6 +139,12 @@ public class BuildTrap : MonoBehaviour {
 
                             //calls Build function after delay (seconds)
                             Invoke("Build", delay);
+                        }
+                        else
+                        {
+                            Debug.Log("An invention already exists there!");
+
+                            potentialTiles.Clear();
                         }
                     }
                     else
@@ -153,6 +160,8 @@ public class BuildTrap : MonoBehaviour {
             }
         }
 	}
+
+    //after 15 debug messages, stuck with trap "always in range"
 
     void Build ()
     {

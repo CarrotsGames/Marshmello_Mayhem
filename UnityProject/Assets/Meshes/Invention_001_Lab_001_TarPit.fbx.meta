@@ -11,6 +11,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: Invention_001_Lab_001_TarPit
     4300002: pCube2
+    4300004: Invention_001_Lab_001_TarPit1
     9500000: //RootNode
   materials:
     importMaterials: 1

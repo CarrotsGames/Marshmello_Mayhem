@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour
+{
 
     public int startingHealth = 10;
     public int currentHealth;
@@ -12,21 +13,21 @@ public class PlayerHealth : MonoBehaviour {
     bool damaged;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         currentHealth = startingHealth;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-		if(damaged)
+        if (damaged)
         {
 
         }
 
         damaged = false;
-	}
+    }
 
     public void TakeDamage(int amount)
     {
@@ -34,7 +35,7 @@ public class PlayerHealth : MonoBehaviour {
         if (!isDead)
         {
             currentHealth -= amount;
-            HealthSlider.value = currentHealth - attackDamage;
+            //HealthSlider.value = currentHealth - attackDamage;
         }
         if (currentHealth <= 0)
         {
@@ -45,7 +46,7 @@ public class PlayerHealth : MonoBehaviour {
     void Death()
     {
         isDead = true;
-        playerMovement.enabled = false;
+        //playerMovement.enabled = false;
 
     }
 }

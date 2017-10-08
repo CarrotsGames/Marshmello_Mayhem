@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using XboxCtrlrInput;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
-    public Rigidbody rigidBody;
+    public CharacterController charController;
     public XboxController controller;
 
     public float speed;
@@ -16,10 +17,10 @@ public class PlayerController : MonoBehaviour {
     public float timeBetweenAttack = 0.02f;
     public bool playerMovement = true;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
+        charController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class PlayerController : MonoBehaviour {
         RotatePlayer();
     }
 
-        private void RotatePlayer()
+    private void RotatePlayer()
     {
         float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
         float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
 
-        transform.Translate(movement);
+        //transform.Translate(movement);
         MovePlayer();
     }
 
@@ -61,12 +62,8 @@ public class PlayerController : MonoBehaviour {
         float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
         Vector3 movement = new Vector3(axisX, 0, axisZ);
+        Debug.Log(movement);
 
-        rigidBody.AddForce(movement * speed);
-
-        if (rigidBody.velocity.magnitude > maxSpeed)
-        {
-            rigidBody.velocity = rigidBody.velocity.normalized * maxSpeed;
-        }
+        charController.Move(movement * speed * Time.deltaTime + Vector3.up * -9.8f * Time.deltaTime);
     }
 }

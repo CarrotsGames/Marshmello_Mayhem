@@ -13,39 +13,27 @@ public class BuildTrap : MonoBehaviour {
     Vector3 originTile;
     List<Vector3> potentialTiles;
     Quaternion rotation;
-    private int rows = 11;
-    private int columns = 24;
     List<GameObject> createdObjects;
     public bool isEnabled = false;
+    GameObject[] floorGrid;
+    private PrefabList prefabList;
+    public float rise;
+    GameObject ghost;
+    
 
 	// Use this for initialization
 	void Start ()
     {
+        prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
+        floorGrid = GameObject.FindGameObjectsWithTag("Floor");
+  
         //gets player's original position, return to this at end
         Vector3 originalPlayerPos = GetComponent<PlayerController>().transform.position;
-        //disable player's movement
-        GetComponent<PlayerController>().playerMovement = false;
-
-        //manually adjust for world position offset
-        originTile.x = 19.33f;
-        originTile.y = 7.7595f;
-        originTile.z = -7.788241f;
-
-        grid = new Vector3[rows, columns];
 
         potentialTiles = new List<Vector3>();
         createdObjects = new List<GameObject>();
 
-        //creates grid
-        for (int r = 0; r < rows; r++)
-        {
-            for (int c = 0; c < columns; c++)
-            {
-                grid[r, c].z = originTile.z + (r * 3) - 12;
-                grid[r, c].y = originTile.y;
-                grid[r, c].x = originTile.x + (c * 2);
-            }
-        }
+        selectedTrap = prefabList.TarPit;
     }
 	
 	// Update is called once per frame
@@ -56,61 +44,73 @@ public class BuildTrap : MonoBehaviour {
         {
             if (XCI.GetDPad(XboxDPad.Up) || Input.GetKey(KeyCode.Alpha1))
             {
-                selectedTrap = Resources.Load("Prefabs/Invention_001_Lab_001_TarPit") as GameObject;                
+                selectedTrap = prefabList.TarPit;
+                rise = 1.2f;
             }
             if (XCI.GetDPad(XboxDPad.Down) || Input.GetKey(KeyCode.Alpha2))
             {
-                selectedTrap = Resources.Load("Prefabs/Invention_002_Lab_002_Pit") as GameObject;
+                selectedTrap = prefabList.Pit;
+                rise = 0.2f;
             }
             if (XCI.GetDPad(XboxDPad.Right) || Input.GetKey(KeyCode.Alpha3))
             {
-                selectedTrap = Resources.Load("Prefabs/Invention_003_Lab_003_PlaceableWall") as GameObject;
+                selectedTrap = prefabList.PlaceableWall;
+                rise = 1.0f;
             }
             if (XCI.GetDPad(XboxDPad.Left) || Input.GetKey(KeyCode.Alpha4))
             {
-                selectedTrap = Resources.Load("Prefabs/Invention_004_Lab_004_HumanThrower") as GameObject;
+                selectedTrap = prefabList.HumanThrower;
+                rise = 1.0f;
             }
 
+            //loop over all tiles (tiles)
+            for (int i = 0; i < floorGrid.Length; i++)
+            {
+                Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
+                vecBetween.y = 0;
+
+                if (vecBetween.magnitude < 2)
+                {
+                    targetPosition = floorGrid[i].transform.position;
+                    targetPosition.y += rise;
+                    potentialTiles.Add(targetPosition);
+                }
+            }
+
+            //loop over all tiles and sort so lowest magnitude is at index zero
+            for (int e = 0; e < potentialTiles.Count; e++)
+            {
+                for (int i = 1; i < potentialTiles.Count; i++)
+                {
+                    if (potentialTiles[i - 1].magnitude > potentialTiles[i].magnitude)
+                    {
+                        Vector3 temp = potentialTiles[i - 1];
+                        potentialTiles[i - 1] = potentialTiles[i];
+
+                        potentialTiles[i] = temp;
+                    }
+                }
+            }
+            
+            //display where trap will be placed            
+            //for (int i = 0; i < floorGrid.Length; i++)
+            //{
+            //    if (potentialTiles[0] == floorGrid[i].transform.position)
+            //    {
+            //        ghost = Instantiate<GameObject>(selectedTrap, potentialTiles[0], rotation);
+            //    }
+            //    else
+            //    {
+            //        Destroy(ghost);
+            //    }
+            //}
 
             //checks if player has pressed Xbox:A or the space bar
             if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A))
-            {
-                //loop over all tiles
-                for (int r = 0; r < rows; r++)
-                {
-                    for (int c = 0; c < columns; c++)
-                    {
-                        //check for closest tile
-                        Vector3 vecBetween = transform.position - grid[r, c];
-                        vecBetween.y = 0;
-
-                        if (vecBetween.magnitude < 2)
-                        {
-                            targetPosition = grid[r, c];
-                            targetPosition.y += 4.1f;
-                            potentialTiles.Add(targetPosition);
-                        }
-                    }
-                }
-
+            {                
                 //checks if player is within range of any tiles
                 if (potentialTiles.Count > 0)
-                {
-                    //loop over all tiles and sort so lowest magnitude is at index zero
-                    for (int e = 0; e < potentialTiles.Count; e++)
-                    {
-                        for (int i = 1; i < potentialTiles.Count; i++)
-                        {
-                            if (potentialTiles[i - 1].magnitude > potentialTiles[i].magnitude)
-                            {
-                                Vector3 temp = potentialTiles[i - 1];
-                                potentialTiles[i - 1] = potentialTiles[i];
-
-                                potentialTiles[i] = temp;
-                            }
-                        }
-                    }
-
+                {   
                     bool trapInRange = false;
 
                     //checks if at least one trap exists
@@ -151,26 +151,25 @@ public class BuildTrap : MonoBehaviour {
                     {
                         //set isActive to true, disables this until false
                         isActive = true;
-                        Debug.Log("Building disabled");
+                        Debug.Log("Building started");
 
                         //calls Build function after delay (seconds)
                         Invoke("Build", delay);
                     }
                 }
             }
+            else
+            {
+                potentialTiles.Clear();
+            }
         }
 	}
 
-    //after 15 debug messages, stuck with trap "always in range"
-
     void Build ()
     {
-        Debug.Log("Trap Successfully built");
         //re-enables ability to build a trap
         isActive = false;
-        Debug.Log("Building Enabled");
-        //re-enables player movement
-        GetComponent<PlayerController>().playerMovement = true;
+        Debug.Log("Building finished");
 
         //create trap at position closest to selected area and add it to list of traps
         createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23931688746097648}
   - component: {fileID: 65194918555667140}
   - component: {fileID: 54973219651656246}
+  - component: {fileID: 143984096147455196}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep
   m_TagString: Untagged
@@ -73,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730761065670996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.71, y: -10.67, z: 4.55}
+  m_LocalPosition: {x: -22.71, y: -11.12, z: 4.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4138338359636400}
@@ -275,3 +276,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.79999995, z: 0.29999998}
   m_Center: {x: 0.175, y: 0.39999998, z: -0.14999999}
+--- !u!143 &143984096147455196
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730761065670996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.8
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}

@@ -10,6 +10,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Level_001_Lab_001_Wall
+    4300002: Level_001_Lab_001_Wall2
     9500000: //RootNode
   materials:
     importMaterials: 1

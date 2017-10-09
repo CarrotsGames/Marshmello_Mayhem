@@ -6,19 +6,18 @@ using XboxCtrlrInput;
 public class BuildTrap : MonoBehaviour {
 
     private Vector3 targetPosition;
-    private Vector3[,] grid;
     private bool isActive = false;
     public int delay;
     public GameObject selectedTrap;
-    Vector3 originTile;
     List<Vector3> potentialTiles;
     Quaternion rotation;
     List<GameObject> createdObjects;
     public bool isEnabled = false;
     GameObject[] floorGrid;
     private PrefabList prefabList;
-    public float rise;
+    private float rise;
     GameObject ghost;
+    int cost;
     
 
 	// Use this for initialization
@@ -34,6 +33,8 @@ public class BuildTrap : MonoBehaviour {
         createdObjects = new List<GameObject>();
 
         selectedTrap = prefabList.TarPit;
+        rise = 0.8f;
+        cost = selectedTrap.GetComponent<TarPit>().cost;
     }
 	
 	// Update is called once per frame
@@ -45,25 +46,29 @@ public class BuildTrap : MonoBehaviour {
             if (XCI.GetDPad(XboxDPad.Up) || Input.GetKey(KeyCode.Alpha1))
             {
                 selectedTrap = prefabList.TarPit;
-                rise = 1.2f;
+                cost = selectedTrap.GetComponent<TarPit>().cost;
+                rise = 0.8f;
             }
             if (XCI.GetDPad(XboxDPad.Down) || Input.GetKey(KeyCode.Alpha2))
             {
                 selectedTrap = prefabList.Pit;
+                cost = selectedTrap.GetComponent<Pit>().cost;
                 rise = 0.2f;
             }
             if (XCI.GetDPad(XboxDPad.Right) || Input.GetKey(KeyCode.Alpha3))
             {
                 selectedTrap = prefabList.PlaceableWall;
+                cost = selectedTrap.GetComponent<PlaceableWall>().cost;
                 rise = 1.0f;
             }
             if (XCI.GetDPad(XboxDPad.Left) || Input.GetKey(KeyCode.Alpha4))
             {
                 selectedTrap = prefabList.HumanThrower;
+                cost = selectedTrap.GetComponent<HumanThrower>().cost;
                 rise = 1.0f;
             }
 
-            //loop over all tiles (tiles)
+            //loop over all tiles
             for (int i = 0; i < floorGrid.Length; i++)
             {
                 Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
@@ -95,13 +100,16 @@ public class BuildTrap : MonoBehaviour {
             //display where trap will be placed            
             //for (int i = 0; i < floorGrid.Length; i++)
             //{
-            //    if (potentialTiles[0] == floorGrid[i].transform.position)
+            //    Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+            //    if (vecbetween.magnitude < 2)
             //    {
-            //        ghost = Instantiate<GameObject>(selectedTrap, potentialTiles[0], rotation);
+            //        potentialTiles[0].Set(potentialTiles[0].x, potentialTiles[0].y + rise, potentialTiles[0].z);
+            //        //ghost = Instantiate(selectedTrap, potentialTiles[0], rotation);
+            //        
             //    }
             //    else
             //    {
-            //        Destroy(ghost);
+            //        //Destroy(ghost);
             //    }
             //}
 
@@ -149,12 +157,19 @@ public class BuildTrap : MonoBehaviour {
                     }
                     else
                     {
-                        //set isActive to true, disables this until false
-                        isActive = true;
-                        Debug.Log("Building started");
+                        if (GetComponent<ResourceController>().currentResource - cost >= 0)
+                        {
+                            //set isActive to true, disables this until false
+                            isActive = true;
+                            Debug.Log("Building started");
 
-                        //calls Build function after delay (seconds)
-                        Invoke("Build", delay);
+                            //calls Build function after delay (seconds)
+                            Invoke("Build", delay);
+                        }       
+                        else
+                        {
+                            Debug.Log("Not enough resources");
+                        }
                     }
                 }
             }
@@ -173,7 +188,8 @@ public class BuildTrap : MonoBehaviour {
 
         //create trap at position closest to selected area and add it to list of traps
         createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-        
+        GetComponent<ResourceController>().currentResource -= cost;
+
         potentialTiles.Clear();
     }
 }

@@ -31,7 +31,7 @@ public class GunController : MonoBehaviour {
                 projectileCount = timeBetweenShots;
                 GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
                 //newProjectile.speed = projectileSpeed;
-                newProjectile.GetComponent<Rigidbody>().AddForce (transform.forward * projectileSpeed, ForceMode.Impulse);
+                newProjectile.GetComponent<Rigidbody>().AddForce (newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
             }
         }
         else

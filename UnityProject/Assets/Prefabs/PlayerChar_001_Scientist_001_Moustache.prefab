@@ -29,6 +29,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1485315064908630
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4125833563927294}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1502556409085502
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,6 +55,7 @@ GameObject:
   - component: {fileID: 33988074165059902}
   - component: {fileID: 23677217616449210}
   - component: {fileID: 65810029669833346}
+  - component: {fileID: 114533496677573132}
   m_Layer: 0
   m_Name: Weapon_001_Lab_001_RayGun
   m_TagString: Untagged
@@ -80,19 +96,33 @@ Transform:
   m_Father: {fileID: 4942985370098466}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4125833563927294
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485315064908630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.14, y: 0.05, z: -0.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4414304000140972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4414304000140972
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502556409085502}
-  m_LocalRotation: {x: -0, y: -0.6789798, z: -0, w: 0.734157}
-  m_LocalPosition: {x: -0.578, y: 0.114, z: 0.37}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.452, y: 0.114, z: 0.969}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4125833563927294}
   m_Father: {fileID: 4942985370098466}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -85.52801, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4942985370098466
 Transform:
   m_ObjectHideFlags: 1
@@ -273,13 +303,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 0}
-  controller: 0
-  rayGun: {fileID: 0}
+  controller: 1
+  rayGun: {fileID: 114533496677573132}
   speed: 5
   maxSpeed: 5
   previousRotation: {x: 0, y: 0, z: 1}
   attackDamage: 0
   playerMovement: 1
+--- !u!114 &114533496677573132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1502556409085502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2986834fcd29ce40b8c14fb9fa5ae40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFiring: 0
+  projectile: {fileID: 1566494796663200, guid: 02bc8a011a82003478cf2e51df8a8ee9, type: 2}
+  projectileSpeed: 50
+  timeBetweenShots: 2
+  firePoint: {fileID: 4125833563927294}
 --- !u!143 &143636252250958548
 CharacterController:
   m_ObjectHideFlags: 1

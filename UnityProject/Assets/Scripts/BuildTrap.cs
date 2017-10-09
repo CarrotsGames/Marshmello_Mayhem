@@ -8,7 +8,7 @@ public class BuildTrap : MonoBehaviour {
     private Vector3 targetPosition;
     private bool isActive = false;
     public int delay;
-    public GameObject selectedTrap;
+    GameObject selectedTrap;
     List<Vector3> potentialTiles;
     Quaternion rotation;
     List<GameObject> createdObjects;
@@ -18,14 +18,15 @@ public class BuildTrap : MonoBehaviour {
     private float rise;
     GameObject ghost;
     int cost;
+    public float rotationX;
+    public float rotationZ;
     
-
 	// Use this for initialization
 	void Start ()
     {
         prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");
-  
+        
         //gets player's original position, return to this at end
         Vector3 originalPlayerPos = GetComponent<PlayerController>().transform.position;
 
@@ -35,6 +36,12 @@ public class BuildTrap : MonoBehaviour {
         selectedTrap = prefabList.TarPit;
         rise = 0.8f;
         cost = selectedTrap.GetComponent<TarPit>().cost;
+
+
+        //sets the rotation (call in update for modular rotation using player's rotation)
+        Vector3 forward = new Vector3(rotationX, 0, rotationZ);
+        Vector3 upwards = new Vector3(0, 1, 0);
+        rotation = Quaternion.LookRotation(forward, upwards);
     }
 	
 	// Update is called once per frame
@@ -54,6 +61,7 @@ public class BuildTrap : MonoBehaviour {
                 selectedTrap = prefabList.Pit;
                 cost = selectedTrap.GetComponent<Pit>().cost;
                 rise = 0.2f;
+                //rotation = selectedTrap.GetComponent<Pit>().rotation;
             }
             if (XCI.GetDPad(XboxDPad.Right) || Input.GetKey(KeyCode.Alpha3))
             {
@@ -101,15 +109,16 @@ public class BuildTrap : MonoBehaviour {
             //for (int i = 0; i < floorGrid.Length; i++)
             //{
             //    Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+            //    
             //    if (vecbetween.magnitude < 2)
             //    {
-            //        potentialTiles[0].Set(potentialTiles[0].x, potentialTiles[0].y + rise, potentialTiles[0].z);
-            //        //ghost = Instantiate(selectedTrap, potentialTiles[0], rotation);
+            //        potentialTiles[0].Set(potentialTiles[0].x, potentialTiles[0].y + rise + 5, potentialTiles[0].z);
+            //        ghost = Instantiate(selectedTrap, potentialTiles[0], rotation);
             //        
             //    }
             //    else
             //    {
-            //        //Destroy(ghost);
+            //        Destroy(ghost);
             //    }
             //}
 
@@ -140,13 +149,19 @@ public class BuildTrap : MonoBehaviour {
                         //if selected area is not occupied
                         if (trapInRange == false)
                         {
-                            //set isActive to true, disables this until false
-                            isActive = true;
+                            if (GetComponent<ResourceController>().currentResource - cost >= 0)
+                            {
+                                //set isActive to true, disables this until false
+                                isActive = true;
+                                Debug.Log("Building started");
 
-                            Debug.Log("Building disabled");
-
-                            //calls Build function after delay (seconds)
-                            Invoke("Build", delay);
+                                //calls Build function after delay (seconds)
+                                Invoke("Build", delay);
+                            }
+                            else
+                            {
+                                Debug.Log("Not enough resources");
+                            }
                         }
                         else
                         {

@@ -8,13 +8,12 @@ public class PlayerController : MonoBehaviour
 
     public CharacterController charController;
     public XboxController controller;
-
+    public GunController rayGun;
     public float speed;
     public float maxSpeed = 5;
     public Vector3 previousRotation = Vector3.forward;
     private float attackDelay;
     public float attackDamage;
-    public float timeBetweenAttack = 0.02f;
     public bool playerMovement = true;
 
     // Use this for initialization
@@ -27,6 +26,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RotatePlayer();
+        if(Input.GetKeyDown(KeyCode.Joystick1Button4))
+        {
+            rayGun.isFiring = true;
+        }
+        if(Input.GetKeyUp(KeyCode.Joystick1Button4))
+        {
+            rayGun.isFiring = false;
+        }
     }
 
     private void RotatePlayer()
@@ -62,7 +69,6 @@ public class PlayerController : MonoBehaviour
         float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
         Vector3 movement = new Vector3(axisX, 0, axisZ);
-        Debug.Log(movement);
 
         charController.Move(movement * speed * Time.deltaTime + Vector3.up * -9.8f * Time.deltaTime);
     }

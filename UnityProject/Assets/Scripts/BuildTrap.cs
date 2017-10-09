@@ -21,6 +21,7 @@ public class BuildTrap : MonoBehaviour {
     public float rotationX;
     public float rotationZ;
     
+    
 	// Use this for initialization
 	void Start ()
     {
@@ -50,26 +51,26 @@ public class BuildTrap : MonoBehaviour {
         //checks if a trap is currently being built
         if (isActive == false && isEnabled == true)
         {
-            if (XCI.GetDPad(XboxDPad.Up) || Input.GetKey(KeyCode.Alpha1))
+            if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
             {
                 selectedTrap = prefabList.TarPit;
                 cost = selectedTrap.GetComponent<TarPit>().cost;
                 rise = 0.8f;
             }
-            if (XCI.GetDPad(XboxDPad.Down) || Input.GetKey(KeyCode.Alpha2))
+            if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
             {
                 selectedTrap = prefabList.Pit;
                 cost = selectedTrap.GetComponent<Pit>().cost;
                 rise = 0.2f;
                 //rotation = selectedTrap.GetComponent<Pit>().rotation;
             }
-            if (XCI.GetDPad(XboxDPad.Right) || Input.GetKey(KeyCode.Alpha3))
+            if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
             {
                 selectedTrap = prefabList.PlaceableWall;
                 cost = selectedTrap.GetComponent<PlaceableWall>().cost;
                 rise = 1.0f;
             }
-            if (XCI.GetDPad(XboxDPad.Left) || Input.GetKey(KeyCode.Alpha4))
+            if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
             {
                 selectedTrap = prefabList.HumanThrower;
                 cost = selectedTrap.GetComponent<HumanThrower>().cost;
@@ -123,7 +124,7 @@ public class BuildTrap : MonoBehaviour {
             //}
 
             //checks if player has pressed Xbox:A or the space bar
-            if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A))
+            if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller))
             {                
                 //checks if player is within range of any tiles
                 if (potentialTiles.Count > 0)

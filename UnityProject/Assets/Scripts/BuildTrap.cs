@@ -16,14 +16,15 @@ public class BuildTrap : MonoBehaviour {
     GameObject[] floorGrid;
     private PrefabList prefabList;
     private float rise;
-    GameObject ghost;
     int cost;
     public float rotationX;
     public float rotationZ;
-    
-    
-	// Use this for initialization
-	void Start ()
+
+    bool previewExist;
+    GameObject preview;
+
+    // Use this for initialization
+    void Start ()
     {
         prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");
@@ -38,7 +39,6 @@ public class BuildTrap : MonoBehaviour {
         rise = 0.8f;
         cost = selectedTrap.GetComponent<TarPit>().cost;
 
-
         //sets the rotation (call in update for modular rotation using player's rotation)
         Vector3 forward = new Vector3(rotationX, 0, rotationZ);
         Vector3 upwards = new Vector3(0, 1, 0);
@@ -50,12 +50,14 @@ public class BuildTrap : MonoBehaviour {
     {
         //checks if a trap is currently being built
         if (isActive == false && isEnabled == true)
-        {
+        {            
             if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
             {
                 selectedTrap = prefabList.TarPit;
                 cost = selectedTrap.GetComponent<TarPit>().cost;
                 rise = 0.8f;
+                Destroy(preview);
+                previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
             {
@@ -63,20 +65,26 @@ public class BuildTrap : MonoBehaviour {
                 cost = selectedTrap.GetComponent<Pit>().cost;
                 rise = 0.2f;
                 //rotation = selectedTrap.GetComponent<Pit>().rotation;
+                Destroy(preview);
+                previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
             {
                 selectedTrap = prefabList.PlaceableWall;
                 cost = selectedTrap.GetComponent<PlaceableWall>().cost;
                 rise = 1.0f;
+                Destroy(preview);
+                previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
             {
                 selectedTrap = prefabList.HumanThrower;
                 cost = selectedTrap.GetComponent<HumanThrower>().cost;
                 rise = 1.0f;
+                Destroy(preview);
+                previewExist = false;
             }
-
+            
             //loop over all tiles
             for (int i = 0; i < floorGrid.Length; i++)
             {
@@ -105,23 +113,9 @@ public class BuildTrap : MonoBehaviour {
                     }
                 }
             }
-            
-            //display where trap will be placed            
-            //for (int i = 0; i < floorGrid.Length; i++)
-            //{
-            //    Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
-            //    
-            //    if (vecbetween.magnitude < 2)
-            //    {
-            //        potentialTiles[0].Set(potentialTiles[0].x, potentialTiles[0].y + rise + 5, potentialTiles[0].z);
-            //        ghost = Instantiate(selectedTrap, potentialTiles[0], rotation);
-            //        
-            //    }
-            //    else
-            //    {
-            //        Destroy(ghost);
-            //    }
-            //}
+
+            //call preview
+            Preview();
 
             //checks if player has pressed Xbox:A or the space bar
             if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller))
@@ -193,6 +187,20 @@ public class BuildTrap : MonoBehaviour {
             {
                 potentialTiles.Clear();
             }
+
+            if (XCI.GetButtonDown(XboxButton.B, GetComponent<PlayerController>().controller))
+            {
+                Destroy(preview);
+                previewExist = false;
+                isEnabled = false;
+            }
+        }
+        else if (isEnabled == false)
+        {
+            if (XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller))
+            {
+                isEnabled = true;
+            }
         }
 	}
 
@@ -207,5 +215,50 @@ public class BuildTrap : MonoBehaviour {
         GetComponent<ResourceController>().currentResource -= cost;
 
         potentialTiles.Clear();
+    }
+
+    void Preview()
+    {
+        if (previewExist == false)
+        {
+            //create ghost object                   
+            preview  = Instantiate(selectedTrap, potentialTiles[0], rotation);
+            previewExist = true;
+        }
+
+        //display where trap will be placed
+        for (int i = 0; i < floorGrid.Length; i++)
+        {
+            Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+
+            if (vecbetween.magnitude < 2)
+            {                
+                //set preview position to closest potential tile
+                preview.transform.position = potentialTiles[0];
+            }
+        }
+
+        //disables preview object's scripts
+        if (preview.GetComponent<TarPit>() != null)
+        {
+            preview.GetComponent<TarPit>().enabled = false;
+        }
+        if (preview.GetComponent<Pit>() != null)
+        {
+            preview.GetComponent<Pit>().enabled = false;
+        }
+        if (preview.GetComponent<PlaceableWall>() != null)
+        {
+            preview.GetComponent<PlaceableWall>().enabled = false;
+        }
+        if (preview.GetComponent<HumanThrower>() != null)
+        {
+            preview.GetComponent<HumanThrower>().enabled = false;
+        }
+
+        if (preview.GetComponent<Collider>() != null)
+        {
+            Physics.IgnoreCollision(preview.GetComponent<Collider>(), GetComponent<CharacterController>());
+        }
     }
 }

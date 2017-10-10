@@ -41,7 +41,7 @@ public class BuildTrap : MonoBehaviour {
         cost = selectedTrap.GetComponent<TarPit>().cost;
 
         //sets the rotation (call in update for modular rotation using player's rotation)
-        Vector3 forward = new Vector3(rotationX, 0, rotationZ);
+        Vector3 forward = new Vector3(0, 0, 0);
         Vector3 upwards = new Vector3(0, 1, 0);
         rotation = Quaternion.LookRotation(forward, upwards);
     }
@@ -85,7 +85,18 @@ public class BuildTrap : MonoBehaviour {
                 Destroy(preview);
                 previewExist = false;
             }
-            
+
+            //sets the rotation (call in update for modular rotation using player's rotation)
+            Vector3 forward = GetComponent<PlayerController>().previousRotation;
+            Vector3 upwards = new Vector3(0, 1, 0);
+
+            if (selectedTrap.GetComponent<Pit>() != null)
+            {
+                forward = new Vector3(1, 0, 0);
+            }
+
+            rotation = Quaternion.LookRotation(forward, upwards);
+
             //loop over all tiles
             for (int i = 0; i < floorGrid.Length; i++)
             {
@@ -151,6 +162,8 @@ public class BuildTrap : MonoBehaviour {
                                 isActive = true;
                                 Debug.Log("Building started");
 
+                                GetComponent<PlayerController>().playerMovement = false;
+
                                 //calls Build function after delay (seconds)
                                 Invoke("Build", delay);
                             }
@@ -173,6 +186,8 @@ public class BuildTrap : MonoBehaviour {
                             //set isActive to true, disables this until false
                             isActive = true;
                             Debug.Log("Building started");
+
+                            GetComponent<PlayerController>().playerMovement = false;
 
                             //calls Build function after delay (seconds)
                             Invoke("Build", delay);
@@ -216,6 +231,8 @@ public class BuildTrap : MonoBehaviour {
         GetComponent<ResourceController>().currentResource -= cost;
         objectCreated = true;
         potentialTiles.Clear();
+
+        GetComponent<PlayerController>().playerMovement = true;
     }
 
     void Preview()
@@ -238,6 +255,8 @@ public class BuildTrap : MonoBehaviour {
                 preview.transform.position = potentialTiles[0];
             }
         }
+
+        preview.transform.rotation = rotation;
 
         //disables preview object's scripts
         if (preview.GetComponent<TarPit>() != null)

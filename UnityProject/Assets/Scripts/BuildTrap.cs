@@ -24,34 +24,100 @@ public class BuildTrap : MonoBehaviour {
     bool previewExist;
     GameObject preview;
 
+    bool error;
+
     // Use this for initialization
     void Start ()
     {
-        prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
-        floorGrid = GameObject.FindGameObjectsWithTag("Floor");
-        
-        //gets player's original position, return to this at end
-        Vector3 originalPlayerPos = GetComponent<PlayerController>().transform.position;
+        if (GameObject.Find("PrefabList").GetComponent<PrefabList>() == null)
+        {
+            Debug.Log("PrefabList game object doesn't exist");
+        }
+        else
+        {
+            prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
+        }
+        if (GameObject.FindGameObjectsWithTag("Floor") == null)
+        {
+            Debug.Log("Floor tiles have no 'Floor' tag");
+        }
+        else
+        {
+            floorGrid = GameObject.FindGameObjectsWithTag("Floor");
+        }
 
         potentialTiles = new List<Vector3>();
         createdObjects = new List<GameObject>();
 
-        selectedTrap = prefabList.TarPit;
-        rise = 0.8f;
-        cost = selectedTrap.GetComponent<TarPit>().cost;
-
-        //sets the rotation (call in update for modular rotation using player's rotation)
-        Vector3 forward = new Vector3(0, 0, 0);
-        Vector3 upwards = new Vector3(0, 1, 0);
-        rotation = Quaternion.LookRotation(forward, upwards);
+        //checks for missing components
+        if (prefabList.TarPit == null)
+        {
+            Debug.Log("Tar Pit not assigned to PrefabList game object");
+            error = true;
+        }
+        if (prefabList.TarPit.GetComponent<TarPit>() == null)
+        {
+            Debug.Log("TarPit script not assigned to Tar Pit object");
+            error = true;
+        }
+        if (prefabList.Pit == null)
+        {
+            Debug.Log("Pit not assigned to PrefabList game object");
+            error = true;
+        }
+        if (prefabList.Pit.GetComponent<Pit>() == null)
+        {
+            Debug.Log("Pit script not assigned to Pit object");
+            error = true;
+        }
+        if (prefabList.PlaceableWall == null)
+        {
+            Debug.Log("Placeable Wall not assigned to PrefabList game object");
+            error = true;
+        }
+        if (prefabList.PlaceableWall.GetComponent<PlaceableWall>() == null)
+        {
+            Debug.Log("PlaceableWall script not assigned to Placeable Wall object");
+            error = true;
+        }
+        if (prefabList.HumanThrower == null)
+        {
+            Debug.Log("Human Thrower not assigned to PrefabList game object");
+            error = true;
+        }
+        if (prefabList.HumanThrower.GetComponent<HumanThrower>() == null)
+        {
+            Debug.Log("HumanThrower script not assigned to Human Thrower object");
+            error = true;
+        }
+        if (GetComponent<PlayerController>() == null)
+        {
+            Debug.Log("PlayerController not attached to player");
+            error = true;
+        }
+        if (GetComponent<ResourceController>() == null)
+        {
+            Debug.Log("ResourceController not attached to player");
+            error = true;
+        }
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update ()
     {
+        if (error == true)
+        {
+            isEnabled = false;
+        }
         //checks if a trap is currently being built
         if (isActive == false && isEnabled == true)
         {            
+            if(selectedTrap == null)
+            {
+                selectedTrap = prefabList.TarPit;
+                rise = 0.8f;
+                cost = selectedTrap.GetComponent<TarPit>().cost;
+            }
             if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
             {
                 selectedTrap = prefabList.TarPit;
@@ -213,7 +279,7 @@ public class BuildTrap : MonoBehaviour {
         }
         else if (isEnabled == false)
         {
-            if (XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller))
+            if (XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller) || Input.GetKeyDown(KeyCode.Space))
             {
                 isEnabled = true;
             }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlaceableWall : DefenseTrap {
 
-    public int maxHealth;
+    public int maxHealth = 1;
     private int health;
 
 	// Use this for initialization

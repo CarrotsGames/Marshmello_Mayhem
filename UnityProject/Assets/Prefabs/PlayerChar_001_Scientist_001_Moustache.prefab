@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33229340032044710}
   - component: {fileID: 23288538180399510}
   - component: {fileID: 65164545810596496}
+  - component: {fileID: 95045210634440860}
   m_Layer: 0
   m_Name: Weapon_002_Lab__002_HandSaw
   m_TagString: Untagged
@@ -76,6 +77,8 @@ GameObject:
   - component: {fileID: 65083905608683540}
   - component: {fileID: 114094513256229906}
   - component: {fileID: 143636252250958548}
+  - component: {fileID: 114686456294709706}
+  - component: {fileID: 114491821165630368}
   m_Layer: 0
   m_Name: PlayerChar_001_Scientist_001_Moustache
   m_TagString: Untagged
@@ -89,13 +92,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204626612582360}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.245, y: -0.245, z: 0.627}
+  m_LocalRotation: {x: 0.018304398, y: -0, z: -0, w: 0.9998325}
+  m_LocalPosition: {x: 0.32, y: -0.21, z: 0.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4942985370098466}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.098, y: 0, z: 0}
 --- !u!4 &4125833563927294
 Transform:
   m_ObjectHideFlags: 1
@@ -129,8 +132,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964502997967394}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.3, y: -11.172, z: 12.67}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.59, y: -11.13, z: 13.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060773525924738}
@@ -151,7 +154,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2eaec462c547e9a4a8b9408a913daebf, type: 2}
+  - {fileID: 2100000, guid: ca160d39ef2cebc45bfe448f81dc1cb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -291,6 +294,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.79999995, y: 0.35, z: 0.29999998}
   m_Center: {x: 0.39999998, y: 0.175, z: -0.14999999}
+--- !u!95 &95045210634440860
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204626612582360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df75fa7e5f66aa8458f265dd389e6369, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114094513256229906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,13 +323,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 0}
-  controller: 1
+  controller: 2
   rayGun: {fileID: 114533496677573132}
   speed: 5
   maxSpeed: 5
   previousRotation: {x: 0, y: 0, z: 1}
   attackDamage: 0
   playerMovement: 1
+--- !u!114 &114491821165630368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964502997967394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3880ac58f897880489bdc89c9abdd2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  isEnabled: 1
+  rotationX: 0
+  rotationZ: 0
 --- !u!114 &114533496677573132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,6 +361,21 @@ MonoBehaviour:
   projectileSpeed: 50
   timeBetweenShots: 2
   firePoint: {fileID: 4125833563927294}
+--- !u!114 &114686456294709706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964502997967394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab07abc91cf46ec4488cab650e1d1bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxResource: 0
+  currentResource: 0
+  resourceIncrease: 0
+  timeBetween: 0
 --- !u!143 &143636252250958548
 CharacterController:
   m_ObjectHideFlags: 1

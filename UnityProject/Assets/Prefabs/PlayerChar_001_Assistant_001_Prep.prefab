@@ -23,6 +23,9 @@ GameObject:
   - component: {fileID: 23931688746097648}
   - component: {fileID: 65194918555667140}
   - component: {fileID: 143984096147455196}
+  - component: {fileID: 114514177567631394}
+  - component: {fileID: 114424689733912730}
+  - component: {fileID: 114172425575319106}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep
   m_TagString: Untagged
@@ -152,7 +155,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2eaec462c547e9a4a8b9408a913daebf, type: 2}
+  - {fileID: 2100000, guid: ca160d39ef2cebc45bfe448f81dc1cb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,6 +263,55 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.79999995, z: 0.29999998}
   m_Center: {x: 0.175, y: 0.39999998, z: -0.14999999}
+--- !u!114 &114172425575319106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730761065670996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab07abc91cf46ec4488cab650e1d1bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxResource: 0
+  currentResource: 0
+  resourceIncrease: 0
+  timeBetween: 0
+--- !u!114 &114424689733912730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730761065670996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3880ac58f897880489bdc89c9abdd2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  isEnabled: 1
+  rotationX: 0
+  rotationZ: 0
+--- !u!114 &114514177567631394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730761065670996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef367ed0b85b514096a0dff26139229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charController: {fileID: 0}
+  controller: 3
+  rayGun: {fileID: 0}
+  speed: 5
+  maxSpeed: 5
+  previousRotation: {x: 0, y: 0, z: 1}
+  attackDamage: 0
+  playerMovement: 1
 --- !u!143 &143984096147455196
 CharacterController:
   m_ObjectHideFlags: 1

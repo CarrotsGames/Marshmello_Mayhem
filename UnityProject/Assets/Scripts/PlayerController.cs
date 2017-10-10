@@ -14,12 +14,13 @@ public class PlayerController : MonoBehaviour
     public Vector3 previousRotation = Vector3.forward;
     private float attackDelay;
     public float attackDamage;
-    public bool playerMovement = true;
+    public bool playerMovement;
 
     // Use this for initialization
     void Start()
     {
         charController = GetComponent<CharacterController>();
+        playerMovement = true;
     }
 
     // Update is called once per frame
@@ -65,11 +66,14 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer()
     {
-        float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
-        float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
+        if (playerMovement == true)
+        {
+            float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
+            float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
-        Vector3 movement = new Vector3(axisX, 0, axisZ);
+            Vector3 movement = new Vector3(axisX, 0, axisZ);
 
-        charController.Move(movement * speed * Time.deltaTime + Vector3.up * -9.8f * Time.deltaTime);
+            charController.Move(movement * speed * Time.deltaTime + Vector3.up * -9.8f * Time.deltaTime);
+        }
     }
 }

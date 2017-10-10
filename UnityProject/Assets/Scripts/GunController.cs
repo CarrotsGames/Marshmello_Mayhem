@@ -9,7 +9,7 @@ public class GunController : MonoBehaviour {
     public GameObject projectile;
     public float projectileSpeed;
     public float timeBetweenShots;
-
+    public float projectileTimer;
     private float projectileCount;
 
     public Transform firePoint;
@@ -30,8 +30,13 @@ public class GunController : MonoBehaviour {
             {
                 projectileCount = timeBetweenShots;
                 GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
-                //newProjectile.speed = projectileSpeed;
                 newProjectile.GetComponent<Rigidbody>().AddForce (newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
+                projectileTimer += 1.0f * Time.deltaTime;
+                
+                if (projectileTimer >= 4)
+                {
+                    DestroyObject(projectile.gameObject);
+                }
             }
         }
         else
@@ -39,4 +44,12 @@ public class GunController : MonoBehaviour {
             projectileCount = 0;
         }
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (projectile.gameObject.tag == "Wall")
+        {
+            DestroyObject(projectile.gameObject);
+        }
+    }
 }

@@ -19,6 +19,7 @@ public class BuildTrap : MonoBehaviour {
     int cost;
     public float rotationX;
     public float rotationZ;
+    bool objectCreated;
 
     bool previewExist;
     GameObject preview;
@@ -126,7 +127,7 @@ public class BuildTrap : MonoBehaviour {
                     bool trapInRange = false;
 
                     //checks if at least one trap exists
-                    if (createdObjects.Count > 0)
+                    if (objectCreated == true)
                     {
                         //check if trap exists on selected tile
                         for (int i = 0; i < createdObjects.Count; i++)
@@ -213,7 +214,7 @@ public class BuildTrap : MonoBehaviour {
         //create trap at position closest to selected area and add it to list of traps
         createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
         GetComponent<ResourceController>().currentResource -= cost;
-
+        objectCreated = true;
         potentialTiles.Clear();
     }
 

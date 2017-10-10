@@ -3538,9 +3538,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  selectedTrap: {fileID: 0}
   isEnabled: 1
-  rise: 0
+  rotationX: 0
+  rotationZ: 0
 --- !u!1001 &380062635
 Prefab:
   m_ObjectHideFlags: 0
@@ -9976,10 +9976,6 @@ Prefab:
       propertyPath: m_Name
       value: Invention_003_Lab_003_PlaceableWall (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4259473676879060, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -221.543
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
   m_IsPrefabParent: 0
@@ -12765,9 +12761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  selectedTrap: {fileID: 0}
   isEnabled: 1
-  rise: 0
+  rotationX: 0
+  rotationZ: 0
 --- !u!1001 &1352144564
 Prefab:
   m_ObjectHideFlags: 0
@@ -13280,9 +13276,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  selectedTrap: {fileID: 0}
   isEnabled: 1
-  rise: 0
+  rotationX: 0
+  rotationZ: 0
 --- !u!1001 &1399579568
 Prefab:
   m_ObjectHideFlags: 0
@@ -16762,9 +16758,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  selectedTrap: {fileID: 0}
   isEnabled: 1
-  rise: 0
+  rotationX: 0
+  rotationZ: 0
 --- !u!1001 &1838840111
 Prefab:
   m_ObjectHideFlags: 0

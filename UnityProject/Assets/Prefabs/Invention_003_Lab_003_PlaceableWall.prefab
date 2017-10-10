@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33461629248240358}
   - component: {fileID: 23049833234424176}
   - component: {fileID: 65305929424637744}
+  - component: {fileID: 114269915795932370}
   m_Layer: 0
   m_Name: Invention_003_Lab_003_PlaceableWall
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487519719050722}
-  m_LocalRotation: {x: -0, y: -0.3514143, z: -0, w: 0.9362201}
-  m_LocalPosition: {x: -2.16, y: -6.399, z: 12.73}
+  m_LocalRotation: {x: -0, y: -0.9350035, z: -0, w: -0.35463855}
+  m_LocalPosition: {x: -21.85, y: -6.42, z: 2.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -41.148003, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -221.543, z: 0}
 --- !u!23 &23049833234424176
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -93,3 +94,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 3, z: 0.67415386}
   m_Center: {x: 2, y: 1.5, z: -0.33707076}
+--- !u!114 &114269915795932370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1487519719050722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179133f70be20664a8f086145ee7ec10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0
+  maxHealth: 0

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33340038263434392}
   - component: {fileID: 23970388874307556}
   - component: {fileID: 65310118199981018}
+  - component: {fileID: 114657929752177232}
   m_Layer: 0
   m_Name: Invention_001_Lab_001_TarPit
   m_TagString: Untagged
@@ -93,3 +94,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7556262, y: 0.3945378, z: 1.735317}
   m_Center: {x: 0, y: -0.0056017637, z: 0.000000029802322}
+--- !u!114 &114657929752177232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574381133098318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864c3d397513212428db93887fefebad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0
+  slowedSpeed: 0

@@ -3,25 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Pit : DefenseTrap {
-    
+
+    GameObject[] floorGrid;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+        floorGrid = GameObject.FindGameObjectsWithTag("Floor");
+
+        for (int i = 0; i < floorGrid.Length; i++)
+        {
+            Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
+            vecBetween.y = 0;
+
+            if (vecBetween.magnitude < 1.2)
+            {
+                floorGrid[i].GetComponent<Tile>().isPit = true;
+            }
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
-    private void OnTriggerStay(Collider a_col)
+    private void OnTriggerEnter(Collider a_col)
     {
-        a_col.GetComponent<PlayerController>().playerMovement = false;
-        a_col.transform.Translate(0.0f, -0.2f, 0.0f);
-        
-        if (a_col.transform.position.y <= 0)
-        {
-            a_col.GetComponent<PlayerHealth>().currentHealth = 0;
-        }
+        a_col.GetComponent<PlayerHealth>().Death();
     }
 }

@@ -13,18 +13,20 @@ public class BuildTrap : MonoBehaviour {
     Quaternion rotation;
     List<GameObject> createdObjects;
     public bool isEnabled = false;
+
     GameObject[] floorGrid;
+
     private PrefabList prefabList;
     private float rise;
     int cost;
-    public float rotationX;
-    public float rotationZ;
-    bool objectCreated;
 
     bool previewExist;
     GameObject preview;
 
     bool error;
+
+    //used for leniency for detecting what tile the player is on
+    public float playerToTileDistance = 1.5f;
 
     // Use this for initialization
     void Start ()
@@ -39,11 +41,17 @@ public class BuildTrap : MonoBehaviour {
         }
         if (GameObject.FindGameObjectsWithTag("Floor") == null)
         {
-            Debug.Log("Floor tiles have no 'Floor' tag");
+            Debug.Log("No floor tiles with 'Floor' tag");
         }
         else
         {
             floorGrid = GameObject.FindGameObjectsWithTag("Floor");
+
+            //transfers contents of array into floorGrid list
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    floorGrid.Add(array[i]);
+            //}
         }
 
         potentialTiles = new List<Vector3>();
@@ -112,7 +120,7 @@ public class BuildTrap : MonoBehaviour {
         //checks if a trap is currently being built
         if (isActive == false && isEnabled == true)
         {            
-            if(selectedTrap == null)
+            if (selectedTrap == null)
             {
                 selectedTrap = prefabList.TarPit;
                 rise = 0.8f;
@@ -152,7 +160,7 @@ public class BuildTrap : MonoBehaviour {
                 previewExist = false;
             }
 
-            //sets the rotation (call in update for modular rotation using player's rotation)
+            //sets the rotation to player's previous rotation
             Vector3 forward = GetComponent<PlayerController>().previousRotation;
             Vector3 upwards = new Vector3(0, 1, 0);
 
@@ -169,7 +177,7 @@ public class BuildTrap : MonoBehaviour {
                 Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
                 vecBetween.y = 0;
 
-                if (vecBetween.magnitude < 2)
+                if (vecBetween.magnitude < playerToTileDistance)
                 {
                     targetPosition = floorGrid[i].transform.position;
                     targetPosition.y += rise;
@@ -192,8 +200,11 @@ public class BuildTrap : MonoBehaviour {
                 }
             }
 
-            //call preview
-            Preview();
+            if (potentialTiles.Count > 0)
+            {
+                //call preview
+                Preview();
+            }
 
             //checks if player has pressed Xbox:A or the space bar
             if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller))
@@ -204,7 +215,7 @@ public class BuildTrap : MonoBehaviour {
                     bool trapInRange = false;
 
                     //checks if at least one trap exists
-                    if (objectCreated == true)
+                    if (createdObjects.Count > 0)
                     {
                         //check if trap exists on selected tile
                         for (int i = 0; i < createdObjects.Count; i++)
@@ -213,7 +224,7 @@ public class BuildTrap : MonoBehaviour {
                             Vector3 vecBetween = potentialTiles[0] - createdObjects[i].transform.position;
 
                             //if selected area is occupied
-                            if (vecBetween.magnitude < 2)
+                            if (vecBetween.magnitude < playerToTileDistance)
                             {
                                 trapInRange = true;                                                                
                             }
@@ -279,7 +290,7 @@ public class BuildTrap : MonoBehaviour {
         }
         else if (isEnabled == false)
         {
-            if (XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller) || Input.GetKeyDown(KeyCode.Space))
+            if (XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller) || Input.GetKeyDown(KeyCode.Tab))
             {
                 isEnabled = true;
             }
@@ -292,10 +303,25 @@ public class BuildTrap : MonoBehaviour {
         isActive = false;
         Debug.Log("Building finished");
 
+        //deactivate tile where pit will be placed
+        if (selectedTrap.GetComponent<Pit>() != null)
+        {
+            //loop over all tiles
+            for (int i = 0; i < floorGrid.Length; i++)
+            {
+                Vector3 vecBetween = floorGrid[i].transform.position - potentialTiles[0];
+                vecBetween.y = 0;
+
+                if (vecBetween.magnitude < playerToTileDistance)
+                {
+                    floorGrid[i].GetComponent<Tile>().isPit = true;
+                }
+            }
+        }
+
         //create trap at position closest to selected area and add it to list of traps
         createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
         GetComponent<ResourceController>().currentResource -= cost;
-        objectCreated = true;
         potentialTiles.Clear();
 
         GetComponent<PlayerController>().playerMovement = true;
@@ -313,12 +339,15 @@ public class BuildTrap : MonoBehaviour {
         //display where trap will be placed
         for (int i = 0; i < floorGrid.Length; i++)
         {
-            Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+            if (potentialTiles.Count > 0)
+            {
+                Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
 
-            if (vecbetween.magnitude < 2)
-            {                
-                //set preview position to closest potential tile
-                preview.transform.position = potentialTiles[0];
+                if (vecbetween.magnitude < playerToTileDistance)
+                {
+                    //set preview position to closest potential tile
+                    preview.transform.position = potentialTiles[0];
+                }
             }
         }
 

@@ -29,6 +29,7 @@ public class Pit : DefenseTrap {
 
     private void OnTriggerEnter(Collider a_col)
     {
-        a_col.GetComponent<PlayerHealth>().Death();
+        //currently cannot access Death() due to it being defaulted to private
+        //a_col.GetComponent<PlayerHealth>().Death();
     }
 }

@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 114514177567631394}
   - component: {fileID: 114424689733912730}
   - component: {fileID: 114172425575319106}
-  - component: {fileID: 114808641656465248}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep
   m_TagString: Untagged
@@ -306,25 +305,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charController: {fileID: 0}
   controller: 4
-  rayGun: {fileID: 0}
-  speed: 5
-  maxSpeed: 5
-  previousRotation: {x: 0, y: 0, z: 1}
-  attackDamage: 0
-  playerMovement: 1
---- !u!114 &114808641656465248
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730761065670996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bef367ed0b85b514096a0dff26139229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charController: {fileID: 0}
-  controller: 3
   rayGun: {fileID: 0}
   speed: 5
   maxSpeed: 5

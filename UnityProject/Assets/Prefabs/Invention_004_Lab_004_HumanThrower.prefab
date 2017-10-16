@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33339783119543368}
   - component: {fileID: 23692008704956114}
   - component: {fileID: 65219033515918404}
-  - component: {fileID: 114723340443171694}
+  - component: {fileID: 114993097125473904}
   m_Layer: 0
   m_Name: Invention_004_Lab_004_HumanThrower
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.099999994, z: 1}
   m_Center: {x: 1, y: 0.049999997, z: -0.5}
---- !u!114 &114723340443171694
+--- !u!114 &114993097125473904
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1437187440471002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 927a2a93230da3342a913ae25e12aef4, type: 3}
+  m_Script: {fileID: 11500000, guid: 446f23a8b2677ec48bbd63777236ae09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 0

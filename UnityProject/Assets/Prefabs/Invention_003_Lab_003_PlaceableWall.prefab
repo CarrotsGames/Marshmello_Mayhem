@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33461629248240358}
   - component: {fileID: 23049833234424176}
   - component: {fileID: 65305929424637744}
-  - component: {fileID: 114269915795932370}
+  - component: {fileID: 114042037088697066}
   m_Layer: 0
   m_Name: Invention_003_Lab_003_PlaceableWall
   m_TagString: Untagged
@@ -36,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487519719050722}
-  m_LocalRotation: {x: -0, y: 0.3073091, z: -0, w: 0.9516098}
-  m_LocalPosition: {x: -25.513304, y: -6.4, z: 14.914823}
+  m_LocalRotation: {x: -0, y: -0.9496138, z: -0, w: 0.31342247}
+  m_LocalPosition: {x: 1.77, y: -6.397, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -221.543, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -143.46901, z: 0}
 --- !u!23 &23049833234424176
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.103995, y: 3, z: 0.67415386}
   m_Center: {x: 2.002036, y: 1.5, z: -0.33707207}
---- !u!114 &114269915795932370
+--- !u!114 &114042037088697066
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1487519719050722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179133f70be20664a8f086145ee7ec10, type: 3}
+  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 0
-  maxHealth: 100
+  maxHealth: 1

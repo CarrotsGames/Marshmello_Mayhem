@@ -8,9 +8,6 @@ public class PlayerHealth : MonoBehaviour
 
     public int startingHealth = 10;
     public int currentHealth;
-    public Slider HealthSlider;
-    bool isDead;
-    bool damaged;
 
     // Use this for initialization
     void Start()
@@ -21,31 +18,23 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (damaged)
-        {
-
-        }
-
-        damaged = false;
-    }
-
-    public void TakeDamage(int amount)
-    {
-        damaged = true;
-        if (!isDead)
-        {
-            currentHealth -= amount;
-            //HealthSlider.value = currentHealth - attackDamage;
-        }
         if (currentHealth <= 0)
         {
             Death();
         }
     }
 
+    public void TakeDamage(int damageAmount)
+    {
+        if (currentHealth <= 0)
+        {
+            currentHealth -= damageAmount;
+        }
+    }
+
     void Death()
     {
-        isDead = true;
+        gameObject.SetActive(false);
         //playerMovement.enabled = false;
 
     }

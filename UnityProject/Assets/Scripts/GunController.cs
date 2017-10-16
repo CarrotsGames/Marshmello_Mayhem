@@ -47,7 +47,7 @@ public class GunController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (projectile.gameObject.tag == "Wall")
+        if (projectile.gameObject.tag == "Wall" || projectile.gameObject.tag == "Player")
         {
             DestroyObject(projectile.gameObject);
         }

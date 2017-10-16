@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public CharacterController charController;
     public XboxController controller;
     public GunController rayGun;
+    public MeleeAttack meleeHitbox;
     public float speed;
     public float maxSpeed = 5;
     public Vector3 previousRotation = Vector3.forward;
@@ -34,6 +35,14 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Joystick1Button4))
         {
             rayGun.isFiring = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Joystick1Button5))
+        {
+            meleeHitbox.isSwinging = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Joystick1Button5))
+        {
+            meleeHitbox.isSwinging = false;
         }
     }
 

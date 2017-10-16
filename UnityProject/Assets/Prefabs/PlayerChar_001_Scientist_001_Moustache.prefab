@@ -132,8 +132,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964502997967394}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.59, y: -11.13, z: 13.23}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.84, y: -11.172, z: 14.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060773525924738}
@@ -154,7 +154,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ca160d39ef2cebc45bfe448f81dc1cb1, type: 2}
+  - {fileID: 2100000, guid: 7665381aba7b2334d99004c217c3b00c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -303,7 +303,7 @@ Animator:
   m_GameObject: {fileID: 1204626612582360}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df75fa7e5f66aa8458f265dd389e6369, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -343,8 +343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   isEnabled: 1
-  rotationX: 0
-  rotationZ: 0
+  playerToTileDistance: 1.5
 --- !u!114 &114533496677573132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,6 +359,7 @@ MonoBehaviour:
   projectile: {fileID: 1566494796663200, guid: 02bc8a011a82003478cf2e51df8a8ee9, type: 2}
   projectileSpeed: 50
   timeBetweenShots: 2
+  projectileTimer: 0
   firePoint: {fileID: 4125833563927294}
 --- !u!114 &114686456294709706
 MonoBehaviour:

@@ -28,11 +28,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RotatePlayer();
-        if(Input.GetKeyDown(KeyCode.Joystick1Button4))
+		if(XCI.GetButtonDown(XboxButton.LeftBumper,controller))
         {
             rayGun.isFiring = true;
         }
-        if(Input.GetKeyUp(KeyCode.Joystick1Button4))
+		if(XCI.GetButtonUp(XboxButton.LeftBumper,controller))
         {
             rayGun.isFiring = false;
         }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c36e4d7fbd3e4f64a84c87fbbfb35cdc
+timeCreated: 1508108730
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Astron Boy
+  fontNames:
+  - Astron Boy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2b78f400a9892ad4897b3816d561bb47, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

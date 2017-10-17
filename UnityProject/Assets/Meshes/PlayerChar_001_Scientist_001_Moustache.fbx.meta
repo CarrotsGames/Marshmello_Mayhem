@@ -6,10 +6,43 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: body_retop
+    100004: goggles_retop
+    100006: moustash_retopo
+    100008: PlayerChar_001_Scientist_001_Moustache
+    100010: polySurface1
+    100012: transform1
+    100014: transform2
+    100016: transform3
+    100018: transform4
+    100020: polySurface5
+    100022: polySurface6
+    100024: polySurface7
+    100026: polySurface8
+    100028: polySurface9
+    100030: transform5
     400000: //RootNode
+    400002: body_retop
+    400004: goggles_retop
+    400006: moustash_retopo
+    400008: PlayerChar_001_Scientist_001_Moustache
+    400010: polySurface1
+    400012: transform1
+    400014: transform2
+    400016: transform3
+    400018: transform4
+    400020: polySurface5
+    400022: polySurface6
+    400024: polySurface7
+    400026: polySurface8
+    400028: polySurface9
+    400030: transform5
     2300000: //RootNode
+    2300002: PlayerChar_001_Scientist_001_Moustache
     3300000: //RootNode
+    3300002: PlayerChar_001_Scientist_001_Moustache
     4300000: PlayerChar_001_Scientist_001_Moustache
+    4300002: polySurface5
     9500000: //RootNode
   materials:
     importMaterials: 1

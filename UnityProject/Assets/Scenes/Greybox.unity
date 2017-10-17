@@ -149,7 +149,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (5)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -205,7 +205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (294)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -256,7 +256,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (142)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -307,7 +307,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (256)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -358,7 +358,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (156)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -409,7 +409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (44)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -558,7 +558,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (159)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -637,7 +637,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (181)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -688,7 +688,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (3)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -739,7 +739,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (212)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -790,7 +790,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (183)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -841,7 +841,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (292)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -892,7 +892,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (172)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -977,7 +977,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (109)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1028,7 +1028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (267)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1079,7 +1079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (143)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1130,7 +1130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (34)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1181,7 +1181,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (148)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1237,7 +1237,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (10)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1296,7 +1296,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (12)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1393,7 +1393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (205)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1444,7 +1444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (243)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1495,7 +1495,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (232)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1546,40 +1546,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &129288953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 129288954}
-  m_Layer: 5
-  m_Name: Fill Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &129288954
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 129288953}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1303394750}
-  m_Father: {fileID: 176483462}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &133376501
 Prefab:
   m_ObjectHideFlags: 0
@@ -1621,7 +1587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (104)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1672,7 +1638,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (39)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1691,11 +1657,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.8
+      value: 23.8
       objectReference: {fileID: 0}
     - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.262
+      value: -8.95
       objectReference: {fileID: 0}
     - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1721,10 +1687,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e3a3a973fe3ccc64bb879005a072032d, type: 2}
     - target: {fileID: 65330658769348892, guid: b61d5c840d6dcb745955268312d2dbf0,
         type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
+      propertyPath: m_Size.y
+      value: 1.3074827
+      objectReference: {fileID: 0}
+    - target: {fileID: 65330658769348892, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.07844782
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
@@ -1805,7 +1781,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (60)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1856,7 +1832,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (151)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1907,7 +1883,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (73)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -1917,91 +1893,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 175029765}
---- !u!1 &176483461
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 176483462}
-  - component: {fileID: 176483463}
-  m_Layer: 5
-  m_Name: Health Bar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &176483462
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 176483461}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000114, y: 1.0000114, z: 1.0000114}
-  m_Children:
-  - {fileID: 462919316}
-  - {fileID: 129288954}
-  - {fileID: 1696502672}
-  m_Father: {fileID: 2028465117}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -298, y: 3}
-  m_SizeDelta: {x: 346.34, y: 42.76}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &176483463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 176483461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
-  m_FillRect: {fileID: 1303394750}
-  m_HandleRect: {fileID: 0}
-  m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &180789221
 Prefab:
   m_ObjectHideFlags: 0
@@ -2043,7 +1934,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (120)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2094,7 +1985,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (80)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2145,7 +2036,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (118)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2337,7 +2228,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9de6da842074a294089fe3269c05a69d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec43ada145f8b8c428f877518618c41f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2392,7 +2283,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (124)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     - target: {fileID: 23924026323514154, guid: 430bbd1a5da74e34ca55debed6f81944,
         type: 2}
@@ -2448,7 +2339,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (116)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2499,7 +2390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (190)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2550,7 +2441,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (188)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2601,7 +2492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (202)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2652,7 +2543,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (237)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2703,7 +2594,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (255)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2754,7 +2645,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (210)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2827,6 +2718,15 @@ Prefab:
       propertyPath: distanceFromChemFlagToPickUp
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114514177567631394, guid: 1c2b569689dee64489dff9e0c99347a0,
+        type: 2}
+      propertyPath: charController
+      value: 
+      objectReference: {fileID: 663105918}
+    - target: {fileID: 4433678474112536, guid: 1c2b569689dee64489dff9e0c99347a0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.828
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c2b569689dee64489dff9e0c99347a0, type: 2}
   m_IsPrefabParent: 0
@@ -2871,7 +2771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (222)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2922,7 +2822,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (20)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -2973,7 +2873,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (138)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3024,7 +2924,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (12)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3080,7 +2980,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (252)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3131,7 +3031,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (247)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3141,6 +3041,40 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 289087848}
+--- !u!1 &295170541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 295170542}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &295170542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295170541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 348323591}
+  m_Father: {fileID: 2103257759}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &297514345
 Prefab:
   m_ObjectHideFlags: 0
@@ -3182,7 +3116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (168)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3233,7 +3167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (55)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3382,7 +3316,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (251)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3433,7 +3367,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (278)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3484,7 +3418,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (229)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3506,7 +3440,7 @@ GameObject:
   - component: {fileID: 318204550}
   - component: {fileID: 318204549}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3626,7 +3560,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (259)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3750,11 +3684,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23513405492358220, guid: 01a1546c17597be4dbac5105ec3d972c,
+    - target: {fileID: 114158102707825162, guid: 01a1546c17597be4dbac5105ec3d972c,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5fdedb277b3d208469d3e5e60b61b9ce, type: 2}
+      propertyPath: slowedSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65310118199981018, guid: 01a1546c17597be4dbac5105ec3d972c,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65310118199981018, guid: 01a1546c17597be4dbac5105ec3d972c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.22845203
+      objectReference: {fileID: 0}
+    - target: {fileID: 65310118199981018, guid: 01a1546c17597be4dbac5105ec3d972c,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.08864465
+      objectReference: {fileID: 0}
+    - target: {fileID: 65310118199981018, guid: 01a1546c17597be4dbac5105ec3d972c,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01a1546c17597be4dbac5105ec3d972c, type: 2}
   m_IsPrefabParent: 0
@@ -3804,7 +3758,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (287)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3814,6 +3768,74 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 335147965}
+--- !u!1 &348323590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 348323591}
+  - component: {fileID: 348323593}
+  - component: {fileID: 348323592}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &348323591
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348323590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 295170542}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &348323592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348323590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3882353, g: 0.91764706, b: 0.25490198, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &348323593
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348323590}
 --- !u!1 &354285568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3924,7 +3946,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (91)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -3975,7 +3997,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (175)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4026,7 +4048,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (81)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4077,7 +4099,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (36)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4128,7 +4150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (200)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4179,7 +4201,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (25)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4260,7 +4282,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (67)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4311,7 +4333,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (280)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4362,7 +4384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (167)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4413,7 +4435,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (208)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4464,7 +4486,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (86)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4515,7 +4537,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (33)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4566,7 +4588,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (90)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4617,7 +4639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (223)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4668,7 +4690,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (103)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4719,7 +4741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (45)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4770,7 +4792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (137)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4821,7 +4843,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (75)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4872,7 +4894,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (113)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4923,7 +4945,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (8)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -4974,7 +4996,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (270)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5030,7 +5052,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (111)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5089,7 +5111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (16)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5144,7 +5166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (14)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5195,7 +5217,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (68)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5246,7 +5268,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (134)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5297,7 +5319,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (53)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5348,7 +5370,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (295)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5399,7 +5421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (128)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5450,7 +5472,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (2)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5501,7 +5523,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (46)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5552,7 +5574,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (65)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5562,104 +5584,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 461935322}
---- !u!1 &462919315
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 462919316}
-  - component: {fileID: 462919320}
-  - component: {fileID: 462919319}
-  - component: {fileID: 462919318}
-  - component: {fileID: 462919317}
-  m_Layer: 5
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &462919316
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462919315}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 176483462}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.000002, y: 0}
-  m_SizeDelta: {x: -10, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &462919317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462919315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
---- !u!114 &462919318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462919315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 2, y: 1.87}
-  m_UseGraphicAlpha: 1
---- !u!114 &462919319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462919315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &462919320
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462919315}
 --- !u!1001 &471885336
 Prefab:
   m_ObjectHideFlags: 0
@@ -5701,7 +5625,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (187)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5752,7 +5676,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (84)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5803,7 +5727,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (184)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5854,7 +5778,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (242)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5864,6 +5788,104 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 473796312}
+--- !u!1 &473946974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 473946975}
+  - component: {fileID: 473946979}
+  - component: {fileID: 473946978}
+  - component: {fileID: 473946977}
+  - component: {fileID: 473946976}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &473946975
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473946974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2103257759}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5.000002, y: 0}
+  m_SizeDelta: {x: -10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &473946976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473946974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &473946977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473946974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: 1.87}
+  m_UseGraphicAlpha: 1
+--- !u!114 &473946978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473946974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &473946979
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473946974}
 --- !u!1001 &476930033
 Prefab:
   m_ObjectHideFlags: 0
@@ -5905,7 +5927,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (92)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5961,7 +5983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (180)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6067,7 +6089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &498666154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6192,7 +6214,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (89)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6288,7 +6310,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9de6da842074a294089fe3269c05a69d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec43ada145f8b8c428f877518618c41f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6343,7 +6365,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (9)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6394,7 +6416,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (153)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6416,7 +6438,7 @@ GameObject:
   - component: {fileID: 529527347}
   - component: {fileID: 529527346}
   m_Layer: 5
-  m_Name: Resource Red
+  m_Name: Resource Counter Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6571,7 +6593,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (97)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6622,7 +6644,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (1)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -6668,7 +6690,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (283)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6769,7 +6791,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (57)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6820,7 +6842,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (286)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -6879,7 +6901,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (8)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6942,7 +6964,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (5)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7332,7 +7354,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (176)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7388,7 +7410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (279)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7439,7 +7461,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (198)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7490,7 +7512,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (100)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7541,7 +7563,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (78)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7592,7 +7614,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (196)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7648,7 +7670,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (69)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7699,7 +7721,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (21)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7750,7 +7772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (170)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7801,7 +7823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (102)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7885,7 +7907,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (64)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7936,7 +7958,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (203)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -7987,7 +8009,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (254)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8043,7 +8065,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (43)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8053,6 +8075,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 659090138}
+--- !u!143 &663105918 stripped
+CharacterController:
+  m_PrefabParentObject: {fileID: 143984096147455196, guid: 1c2b569689dee64489dff9e0c99347a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 253524202}
 --- !u!1001 &663422153
 Prefab:
   m_ObjectHideFlags: 0
@@ -8099,11 +8126,16 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 395941b32991c9341b5821423ebee841, type: 2}
     - target: {fileID: 1384477231408220, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
       propertyPath: m_Name
-      value: Resource_001_Lab_001_Metal (1)
+      value: Resource_001_Lab_001_Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
   m_IsPrefabParent: 0
+--- !u!143 &673949443 stripped
+CharacterController:
+  m_PrefabParentObject: {fileID: 143984096147455196, guid: 1c2b569689dee64489dff9e0c99347a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1583279893}
 --- !u!1001 &681161263
 Prefab:
   m_ObjectHideFlags: 0
@@ -8145,7 +8177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (209)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8196,7 +8228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (178)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8247,7 +8279,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (161)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8298,7 +8330,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (204)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8349,7 +8381,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384477231408220, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
       propertyPath: m_Name
-      value: Resource_001_Lab_001_Metal (2)
+      value: Resource_001_Lab_001_Metal
       objectReference: {fileID: 0}
     - target: {fileID: 4732649000716026, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8399,7 +8431,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (135)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8539,7 +8571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (105)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8590,7 +8622,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (261)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8631,7 +8663,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8709,7 +8741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (271)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -8772,7 +8804,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (4)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -8811,7 +8843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 167.09, y: -42.92}
+  m_AnchoredPosition: {x: 167.09, y: -54.619987}
   m_SizeDelta: {x: 88.58, y: 45.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737472330
@@ -8924,7 +8956,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (3)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8979,7 +9011,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (276)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9030,7 +9062,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (275)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9081,7 +9113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (201)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9132,7 +9164,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (213)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9191,7 +9223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (14)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9246,7 +9278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (221)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9297,7 +9329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (193)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9348,7 +9380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (236)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9421,6 +9453,11 @@ Prefab:
       propertyPath: distanceFromChemFlagToPickUp
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114094513256229906, guid: c7e31cea6d9136d469e489f46d7be762,
+        type: 2}
+      propertyPath: rayGun
+      value: 
+      objectReference: {fileID: 1825868255}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
   m_IsPrefabParent: 0
@@ -9465,7 +9502,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (95)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9524,7 +9561,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (13)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9587,7 +9624,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (4)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9642,7 +9679,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (165)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9693,7 +9730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (37)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9744,7 +9781,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (93)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9795,7 +9832,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (126)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9846,7 +9883,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (174)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9856,6 +9893,39 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 848139151}
+--- !u!1 &856314150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 856314151}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &856314151
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856314150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2103257759}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &859936477
 Prefab:
   m_ObjectHideFlags: 0
@@ -9897,7 +9967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (72)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9948,7 +10018,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (263)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -9958,24 +10028,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 866376724}
---- !u!1 &867679199 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1766466619891944, guid: b61d5c840d6dcb745955268312d2dbf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1437087317}
---- !u!114 &867679201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 867679199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 498b194a156b70044ad1a3391c6e549f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isBeingCarried: 0
-  teamNumber: 1
 --- !u!1 &868060088
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,7 +10097,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (164)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10096,7 +10148,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (115)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10147,7 +10199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (28)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10198,7 +10250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (61)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10249,7 +10301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (217)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10300,7 +10352,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (58)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10351,7 +10403,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (246)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10402,7 +10454,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (266)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10453,7 +10505,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (291)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10504,7 +10556,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (169)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10555,7 +10607,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (226)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10606,7 +10658,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (11)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10657,7 +10709,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (121)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10760,7 +10812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (16)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10836,6 +10888,16 @@ Prefab:
       propertyPath: distanceFromChemFlagToPickUp
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114883917475273954, guid: b693b27f6ce7f134da73676be8ce5fcc,
+        type: 2}
+      propertyPath: rayGun
+      value: 
+      objectReference: {fileID: 1787491736}
+    - target: {fileID: 33485172444055386, guid: b693b27f6ce7f134da73676be8ce5fcc,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 9eac6ff5cd544fa408cb3a6616ee133e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b693b27f6ce7f134da73676be8ce5fcc, type: 2}
   m_IsPrefabParent: 0
@@ -10880,7 +10942,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384477231408220, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
       propertyPath: m_Name
-      value: Resource_001_Lab_001_Metal (3)
+      value: Resource_001_Lab_001_Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
@@ -10926,7 +10988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (51)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -10977,7 +11039,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (131)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11028,7 +11090,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (79)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11079,7 +11141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (54)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11130,7 +11192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (154)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11181,7 +11243,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (277)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11232,7 +11294,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (101)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11283,7 +11345,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (19)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11334,7 +11396,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (265)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11385,7 +11447,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (6)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11436,7 +11498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (233)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11487,7 +11549,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (281)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11538,7 +11600,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (50)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11622,10 +11684,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1487519719050722, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
-      propertyPath: m_Name
-      value: Invention_003_Lab_003_PlaceableWall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
   m_IsPrefabParent: 0
@@ -11683,7 +11741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (19)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -11750,7 +11808,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (2)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -11875,7 +11933,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (282)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11926,7 +11984,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (32)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -11977,7 +12035,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (136)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12028,7 +12086,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (127)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12079,7 +12137,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (117)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12196,7 +12254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (18)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -12251,7 +12309,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (260)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12302,7 +12360,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (112)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12353,7 +12411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (160)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12404,7 +12462,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (262)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12455,7 +12513,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (56)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12575,7 +12633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (253)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12616,7 +12674,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12680,7 +12738,7 @@ RectTransform:
   m_GameObject: {fileID: 1088377681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000113, y: 1.0000113, z: 1.0000113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 218738939}
   m_RootOrder: 1
@@ -12792,7 +12850,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (235)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12843,7 +12901,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (42)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -12891,14 +12949,6 @@ Prefab:
     - target: {fileID: 4259473676879060, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1487519719050722, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
-      propertyPath: m_Name
-      value: Invention_003_Lab_003_PlaceableWall
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: maxHealth
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
@@ -12949,7 +12999,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (250)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13000,7 +13050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (129)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13051,7 +13101,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (285)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13102,7 +13152,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (150)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13143,7 +13193,7 @@ MonoBehaviour:
   Pit: {fileID: 1312556171722640, guid: 8895e523dd97ece48918f0e1e37f1820, type: 2}
   PlaceableWall: {fileID: 1487519719050722, guid: bc7cf425b8bbb274f83584c762fee872,
     type: 2}
-  HumanThrower: {fileID: 1437187440471002, guid: d0ee5cc6b0fffc7499c7cb7bb5c76af3,
+  HumanThrower: {fileID: 1441657394340240, guid: 0b13fb2205e2d5c41aaec93d7f6089fd,
     type: 2}
 --- !u!4 &1118103980
 Transform:
@@ -13185,7 +13235,7 @@ RectTransform:
   m_GameObject: {fileID: 1118111164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000113, y: 1.0000113, z: 1.0000113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 505387632}
   m_RootOrder: 1
@@ -13297,7 +13347,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (29)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13348,7 +13398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (108)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13399,7 +13449,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (149)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13450,7 +13500,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (41)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13506,7 +13556,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (74)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13557,7 +13607,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (225)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13608,7 +13658,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (76)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13667,7 +13717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (20)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -13693,7 +13743,7 @@ GameObject:
   - component: {fileID: 1204739220}
   - component: {fileID: 1204739219}
   m_Layer: 5
-  m_Name: Resource Blue
+  m_Name: Resource Counter Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13815,7 +13865,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (258)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13866,7 +13916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (195)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13922,7 +13972,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (141)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -13973,7 +14023,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (52)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14024,7 +14074,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (114)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14075,7 +14125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (245)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14116,7 +14166,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14241,7 +14291,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (249)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14292,7 +14342,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (99)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14343,7 +14393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (272)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14394,7 +14444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (244)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14404,74 +14454,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1303128471}
---- !u!1 &1303394749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1303394750}
-  - component: {fileID: 1303394752}
-  - component: {fileID: 1303394751}
-  m_Layer: 5
-  m_Name: Fill
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1303394750
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1303394749}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 129288954}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1303394751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1303394749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.3882353, g: 0.91764706, b: 0.25490198, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1303394752
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1303394749}
 --- !u!1001 &1318987972
 Prefab:
   m_ObjectHideFlags: 0
@@ -14514,6 +14496,16 @@ Prefab:
     - target: {fileID: 1441657394340240, guid: 0b13fb2205e2d5c41aaec93d7f6089fd, type: 2}
       propertyPath: m_Name
       value: Invention_004_Lab_004_HumanThrower
+      objectReference: {fileID: 0}
+    - target: {fileID: 65421599943618894, guid: 0b13fb2205e2d5c41aaec93d7f6089fd,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.0835037
+      objectReference: {fileID: 0}
+    - target: {fileID: 65421599943618894, guid: 0b13fb2205e2d5c41aaec93d7f6089fd,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.010158539
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b13fb2205e2d5c41aaec93d7f6089fd, type: 2}
@@ -14559,7 +14551,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (110)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14695,7 +14687,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (166)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14799,7 +14791,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (230)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14850,7 +14842,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (123)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14901,7 +14893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (199)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -14952,7 +14944,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (82)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15003,7 +14995,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (273)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15047,7 +15039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 295.97, y: 1.38}
+  m_AnchoredPosition: {x: 295.97, y: -10.32}
   m_SizeDelta: {x: 346.34, y: 42.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349398969
@@ -15139,7 +15131,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (173)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15166,7 +15158,7 @@ GameObject:
   - component: {fileID: 1356886313}
   - component: {fileID: 1356886312}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15286,7 +15278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (189)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15337,7 +15329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (122)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15393,7 +15385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (66)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15444,7 +15436,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (211)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15495,7 +15487,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (23)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15554,7 +15546,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (15)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -15609,7 +15601,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (257)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15660,7 +15652,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (130)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15719,7 +15711,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (6)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -15774,7 +15766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (27)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15870,32 +15862,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7564997483f7bb4469a395628a41045b, type: 2}
-    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7564997483f7bb4469a395628a41045b, type: 2}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65330658769348892, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
   m_IsPrefabParent: 0
@@ -15945,7 +15911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (98)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -15996,7 +15962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (83)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16047,7 +16013,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (125)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16098,7 +16064,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (220)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16149,7 +16115,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (234)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16186,14 +16152,14 @@ RectTransform:
   m_GameObject: {fileID: 1503429745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000113, y: 1.0000113, z: 1.0000113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2028465117}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -169.12, y: -41.300003}
+  m_AnchoredPosition: {x: -167.08997, y: -60.299995}
   m_SizeDelta: {x: 88.58, y: 45.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1503429747
@@ -16306,7 +16272,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (11)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -16361,7 +16327,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (96)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16412,7 +16378,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (177)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16463,7 +16429,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (85)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16514,7 +16480,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (133)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16565,7 +16531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (216)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16616,7 +16582,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (70)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16752,7 +16718,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (15)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16853,7 +16819,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (224)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -16970,7 +16936,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (3)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -17016,7 +16982,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (119)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17067,7 +17033,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (31)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17118,7 +17084,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (7)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
@@ -17174,7 +17140,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (268)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17233,7 +17199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (1)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -17288,7 +17254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (24)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17339,7 +17305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (107)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17390,7 +17356,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (145)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17441,7 +17407,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (228)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17492,7 +17458,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (18)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17584,6 +17550,16 @@ Prefab:
       propertyPath: distanceFromChemFlagToPickUp
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114514177567631394, guid: 1c2b569689dee64489dff9e0c99347a0,
+        type: 2}
+      propertyPath: controller
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514177567631394, guid: 1c2b569689dee64489dff9e0c99347a0,
+        type: 2}
+      propertyPath: charController
+      value: 
+      objectReference: {fileID: 673949443}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
@@ -17631,7 +17607,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (239)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17682,7 +17658,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (26)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17843,7 +17819,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (6)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -17889,7 +17865,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (88)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17940,7 +17916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (290)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -17991,7 +17967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (179)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18042,7 +18018,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (63)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18093,7 +18069,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (206)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18144,7 +18120,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (94)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18195,7 +18171,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (87)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18246,7 +18222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (1)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18297,7 +18273,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (274)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18348,7 +18324,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (152)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18399,7 +18375,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (207)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18450,7 +18426,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (227)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18501,7 +18477,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (49)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18552,7 +18528,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (7)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18611,7 +18587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (2)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -18666,7 +18642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (269)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18676,39 +18652,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1694882538}
---- !u!1 &1696502671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1696502672}
-  m_Layer: 5
-  m_Name: Handle Slide Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1696502672
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1696502671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 176483462}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1710952594
 Prefab:
   m_ObjectHideFlags: 0
@@ -18750,7 +18693,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (288)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18806,7 +18749,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (197)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18857,7 +18800,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (30)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18908,7 +18851,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (192)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -18959,7 +18902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (147)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19043,7 +18986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (106)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19094,7 +19037,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (38)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19145,7 +19088,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (47)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19241,7 +19184,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9de6da842074a294089fe3269c05a69d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec43ada145f8b8c428f877518618c41f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19255,6 +19198,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1758467483}
+--- !u!114 &1787491736 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114323119818473704, guid: b693b27f6ce7f134da73676be8ce5fcc,
+    type: 2}
+  m_PrefabInternal: {fileID: 922765146}
+  m_Script: {fileID: 11500000, guid: a2986834fcd29ce40b8c14fb9fa5ae40, type: 3}
 --- !u!1001 &1791887722
 Prefab:
   m_ObjectHideFlags: 0
@@ -19296,7 +19245,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (13)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19347,7 +19296,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (62)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19469,24 +19418,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1809282139 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1766466619891944, guid: b61d5c840d6dcb745955268312d2dbf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 156102380}
---- !u!114 &1809282141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1809282139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 498b194a156b70044ad1a3391c6e549f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isBeingCarried: 0
-  teamNumber: 2
 --- !u!1001 &1812447964
 Prefab:
   m_ObjectHideFlags: 0
@@ -19528,7 +19459,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (215)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19579,7 +19510,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (157)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19630,7 +19561,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (4)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19640,6 +19571,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1821614431}
+--- !u!114 &1825868255 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114687911478304326, guid: c7e31cea6d9136d469e489f46d7be762,
+    type: 2}
+  m_PrefabInternal: {fileID: 795571067}
+  m_Script: {fileID: 11500000, guid: a2986834fcd29ce40b8c14fb9fa5ae40, type: 3}
 --- !u!1001 &1838840111
 Prefab:
   m_ObjectHideFlags: 0
@@ -19681,7 +19618,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (231)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19766,7 +19703,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (219)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19817,7 +19754,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (214)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19868,7 +19805,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (71)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19919,7 +19856,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (264)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -19978,7 +19915,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (17)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -20033,7 +19970,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (77)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20089,7 +20026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (162)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20140,7 +20077,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (240)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20191,7 +20128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (146)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20242,7 +20179,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (218)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20305,7 +20242,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (5)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -20351,7 +20288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (35)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20402,7 +20339,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (158)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20453,7 +20390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (40)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20504,7 +20441,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (248)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20555,7 +20492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (59)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20611,7 +20548,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (186)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20741,7 +20678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (155)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20800,7 +20737,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (10)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -20855,7 +20792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (48)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20938,7 +20875,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (238)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -20989,7 +20926,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (182)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21056,8 +20993,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 176483462}
   - {fileID: 1503429746}
+  - {fileID: 2103257759}
   m_Father: {fileID: 498666157}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21113,7 +21050,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9de6da842074a294089fe3269c05a69d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec43ada145f8b8c428f877518618c41f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21168,7 +21105,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (144)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21219,7 +21156,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (194)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21270,7 +21207,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (132)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21338,7 +21275,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall (7)
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
@@ -21384,7 +21321,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (293)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21435,7 +21372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (171)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21491,7 +21428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (139)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21574,7 +21511,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (284)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21682,7 +21619,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (191)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21692,6 +21629,91 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 2101189168}
+--- !u!1 &2103257758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2103257759}
+  - component: {fileID: 2103257760}
+  m_Layer: 5
+  m_Name: Health Bar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2103257759
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103257758}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000114, y: 1.0000114, z: 1.0000114}
+  m_Children:
+  - {fileID: 473946975}
+  - {fileID: 295170542}
+  - {fileID: 856314151}
+  m_Father: {fileID: 2028465117}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -295.97, y: -16}
+  m_SizeDelta: {x: 346.34, y: 42.76}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2103257760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103257758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 348323591}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &2104585947
 Prefab:
   m_ObjectHideFlags: 0
@@ -21733,7 +21755,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (241)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21784,7 +21806,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (185)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21840,7 +21862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (140)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21896,7 +21918,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (163)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -21947,7 +21969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_Name
-      value: Level_002_Lab_002_Floor (289)
+      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}

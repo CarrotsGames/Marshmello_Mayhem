@@ -17,6 +17,16 @@ public class PlayerController : MonoBehaviour
     public float attackDamage;
     public bool playerMovement;
 
+	public Transform chemFlagHoldPoint;
+	private Chem_Flag holdingChemFlag;
+	public int teamNumber = 1;
+	public float distanceFromChemFlagToPickUp = 2;
+
+
+	public Transform ememyChemFlag;
+
+	//(blue = 1, red = 2);
+
     // Use this for initialization
     void Start()
     {
@@ -44,7 +54,33 @@ public class PlayerController : MonoBehaviour
         {
             meleeHitbox.isSwinging = false;
         }
+		if(XCI.GetButtonDown(XboxButton.A,controller))
+		{
+			if (holdingChemFlag == null) {
+				//Debug.Log (Vector3.Distance (ememyChemFlag.position, transform.position));
+				if (Vector3.Distance (ememyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp) {
+					//Debug.Log ("Here");
+					ememyChemFlag.SetParent (chemFlagHoldPoint);
+					ememyChemFlag.position = chemFlagHoldPoint.position;
+					ememyChemFlag.GetComponent<Chem_Flag> ().PickUpChemFlag ();
+					holdingChemFlag = ememyChemFlag.GetComponent<Chem_Flag> ();
+				}
+			} else {
+				//Debug.Log ("There");
+				holdingChemFlag.DropChemFlag ();
+				holdingChemFlag = null;
+				ememyChemFlag.GetComponent<Chem_Flag> ().DropChemFlag ();
+			}
+		}
+
+
     }
+		
+//
+//	public void PickUpChemFlag(Chem_Flag chemFlag){
+//		chemFlag.transform.SetParent (chemFlagHoldPoint);
+//		holdingChemFlag = chemFlag;
+//	}
 
     private void RotatePlayer()
     {

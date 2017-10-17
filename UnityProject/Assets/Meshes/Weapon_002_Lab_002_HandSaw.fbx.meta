@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 1724e27ed0f10be4ab3ed2fff6b2b671
-timeCreated: 1505861551
+guid: 290c9c9f6db1c434d9bf7478671e9525
+timeCreated: 1508195178
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Weapon_002_Lab__002_HandSaw
+    4300000: Weapon_002_Lab_002_HandSaw
     9500000: //RootNode
   materials:
     importMaterials: 1

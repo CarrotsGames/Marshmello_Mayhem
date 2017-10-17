@@ -2727,6 +2727,17 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.828
       objectReference: {fileID: 0}
+    - target: {fileID: 114853690836765656, guid: 1c2b569689dee64489dff9e0c99347a0,
+        type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1566494796663200, guid: 02bc8a011a82003478cf2e51df8a8ee9,
+        type: 2}
+    - target: {fileID: 114424689733912730, guid: 1c2b569689dee64489dff9e0c99347a0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c2b569689dee64489dff9e0c99347a0, type: 2}
   m_IsPrefabParent: 0
@@ -3461,8 +3472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00015386358, y: 0.00018310547}
-  m_SizeDelta: {x: 173.6, y: 116.7}
+  m_AnchoredPosition: {x: -1.5, y: -11.1}
+  m_SizeDelta: {x: 205.6, y: 139}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318204549
 MonoBehaviour:
@@ -9457,8 +9468,9 @@ Prefab:
         type: 2}
       propertyPath: rayGun
       value: 
-      objectReference: {fileID: 1825868255}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114687911478304326, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &801481018
@@ -10758,11 +10770,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23006146324137382, guid: 8895e523dd97ece48918f0e1e37f1820,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bef27fd8aff699b4e88f1561f8601421, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8895e523dd97ece48918f0e1e37f1820, type: 2}
   m_IsPrefabParent: 0
@@ -10898,7 +10905,8 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 9eac6ff5cd544fa408cb3a6616ee133e, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114116106883142954, guid: b693b27f6ce7f134da73676be8ce5fcc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b693b27f6ce7f134da73676be8ce5fcc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &941132962
@@ -19571,12 +19579,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1821614431}
---- !u!114 &1825868255 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114687911478304326, guid: c7e31cea6d9136d469e489f46d7be762,
-    type: 2}
-  m_PrefabInternal: {fileID: 795571067}
-  m_Script: {fileID: 11500000, guid: a2986834fcd29ce40b8c14fb9fa5ae40, type: 3}
 --- !u!1001 &1838840111
 Prefab:
   m_ObjectHideFlags: 0

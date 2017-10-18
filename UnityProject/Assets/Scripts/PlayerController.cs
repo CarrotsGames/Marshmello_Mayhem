@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             meleeHitbox.isSwinging = false;
         }
-		if(XCI.GetButtonDown(XboxButton.A,controller))
+		if(XCI.GetButtonDown(XboxButton.Y,controller))
 		{
 			if (holdingChemFlag == null) {
 				//Debug.Log (Vector3.Distance (ememyChemFlag.position, transform.position));

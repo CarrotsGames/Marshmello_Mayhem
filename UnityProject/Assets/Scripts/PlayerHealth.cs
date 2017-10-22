@@ -1,18 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-
+    public bool isAlive;
     public int startingHealth = 10;
     public int currentHealth;
+    private Vector3 respawnPoint;
+
+    public Vector3 team1Respawn;
+    public Vector3 team2Respawn;
+
+    public float respawnDelay;
 
     // Use this for initialization
     void Start()
     {
         currentHealth = startingHealth;
+
+        if (GetComponent<PlayerController>().teamNumber == 1)
+        {
+            respawnPoint = team1Respawn;
+
+        }
+        if (GetComponent<PlayerController>().teamNumber == 2)
+        {
+            respawnPoint = team2Respawn;
+        }
     }
 
     // Update is called once per frame
@@ -22,20 +38,28 @@ public class PlayerHealth : MonoBehaviour
         {
             Death();
         }
+        else
+        {
+            isAlive = true;
+        }
     }
 
     public void TakeDamage(int damageAmount)
     {
-        if (currentHealth <= 0)
+        if (currentHealth > 0)
         {
             currentHealth -= damageAmount;
         }
     }
 
-    void Death()
+    public void Death()
     {
-        gameObject.SetActive(false);
-        //playerMovement.enabled = false;
+        isAlive = false;
+        Invoke("Respawn", respawnDelay);
+    }
 
+    private void Respawn()
+    {
+        GetComponent<PlayerController>().transform.position = respawnPoint;
     }
 }

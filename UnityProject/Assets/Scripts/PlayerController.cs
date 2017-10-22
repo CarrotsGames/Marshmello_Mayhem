@@ -37,6 +37,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GetComponent<PlayerHealth>() != null)
+        {
+            if (GetComponent<PlayerHealth>().isAlive == false)
+            {
+                playerMovement = false;
+            }
+            if (GetComponent<PlayerHealth>().isAlive == true)
+            {
+                playerMovement = true;
+            }
+        }
+        else
+        {
+            Debug.Log("Missing PlayerHealth script on player");
+        }
+
         RotatePlayer();
 		if(XCI.GetButtonDown(XboxButton.LeftBumper,controller))
         {

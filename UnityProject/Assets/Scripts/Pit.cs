@@ -8,8 +8,10 @@ public class Pit : DefenseTrap {
 
 	// Use this for initialization
 	void Start () {
+
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");
 
+        //loop over all tiles
         for (int i = 0; i < floorGrid.Length; i++)
         {
             Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
@@ -17,7 +19,14 @@ public class Pit : DefenseTrap {
 
             if (vecBetween.magnitude < 1.2)
             {
-                floorGrid[i].GetComponent<Tile>().isPit = true;
+                if (floorGrid[i].GetComponent<Tile>() != null)
+                {
+                    floorGrid[i].GetComponent<Tile>().isPit = true;
+                }
+                else
+                {
+                    Debug.Log("Missing Tile script on floor prefab");
+                }
             }
         }
     }
@@ -29,7 +38,27 @@ public class Pit : DefenseTrap {
 
     private void OnTriggerEnter(Collider a_col)
     {
-        //currently cannot access Death() due to it being defaulted to private
-        //a_col.GetComponent<PlayerHealth>().Death();
+        if (a_col.GetComponent<PlayerController>() != null)
+        {
+            if (a_col.GetComponent<PlayerHealth>() != null)
+            {
+                Debug.Log("Pit triggered");
+                PlayerController player = a_col.GetComponent<PlayerController>();
+                                
+                player.transform.SetPositionAndRotation(transform.position, Quaternion.identity);
+                player.transform.Translate(0.0f, -1.0f, 0.0f);
+
+                a_col.GetComponent<PlayerHealth>().Death();
+            }
+            else
+            {
+                Debug.Log("Missing PlayerHealth script on player");
+            }
+        }
+        else
+        {
+            Debug.Log("Missing PlayerController script on player");
+        }
+        
     }
 }

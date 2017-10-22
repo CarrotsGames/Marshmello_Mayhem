@@ -46,67 +46,64 @@ public class BuildTrap : MonoBehaviour {
         else
         {
             floorGrid = GameObject.FindGameObjectsWithTag("Floor");
-
-            //transfers contents of array into floorGrid list
-            //for (int i = 0; i < array.Length; i++)
-            //{
-            //    floorGrid.Add(array[i]);
-            //}
         }
 
         potentialTiles = new List<Vector3>();
         createdObjects = new List<GameObject>();
 
         //checks for missing components
-        if (prefabList.TarPit == null)
+        if (floorGrid.Length > 0)
         {
-            Debug.Log("Tar Pit not assigned to PrefabList game object");
-            error = true;
-        }
-        if (prefabList.TarPit.GetComponent<TarPit>() == null)
-        {
-            Debug.Log("TarPit script not assigned to Tar Pit object");
-            error = true;
-        }
-        if (prefabList.Pit == null)
-        {
-            Debug.Log("Pit not assigned to PrefabList game object");
-            error = true;
-        }
-        if (prefabList.Pit.GetComponent<Pit>() == null)
-        {
-            Debug.Log("Pit script not assigned to Pit object");
-            error = true;
-        }
-        if (prefabList.PlaceableWall == null)
-        {
-            Debug.Log("Placeable Wall not assigned to PrefabList game object");
-            error = true;
-        }
-        if (prefabList.PlaceableWall.GetComponent<PlaceableWall>() == null)
-        {
-            Debug.Log("PlaceableWall script not assigned to Placeable Wall object");
-            error = true;
-        }
-        if (prefabList.HumanThrower == null)
-        {
-            Debug.Log("Human Thrower not assigned to PrefabList game object");
-            error = true;
-        }
-        if (prefabList.HumanThrower.GetComponent<HumanThrower>() == null)
-        {
-            Debug.Log("HumanThrower script not assigned to Human Thrower object");
-            error = true;
-        }
-        if (GetComponent<PlayerController>() == null)
-        {
-            Debug.Log("PlayerController not attached to player");
-            error = true;
-        }
-        if (GetComponent<ResourceController>() == null)
-        {
-            Debug.Log("ResourceController not attached to player");
-            error = true;
+            if (prefabList.TarPit == null)
+            {
+                Debug.Log("Tar Pit not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.TarPit.GetComponent<TarPit>() == null)
+            {
+                Debug.Log("TarPit script not assigned to Tar Pit object");
+                error = true;
+            }
+            if (prefabList.Pit == null)
+            {
+                Debug.Log("Pit not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.Pit.GetComponent<Pit>() == null)
+            {
+                Debug.Log("Pit script not assigned to Pit object");
+                error = true;
+            }
+            if (prefabList.PlaceableWall == null)
+            {
+                Debug.Log("Placeable Wall not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.PlaceableWall.GetComponent<PlaceableWall>() == null)
+            {
+                Debug.Log("PlaceableWall script not assigned to Placeable Wall object");
+                error = true;
+            }
+            if (prefabList.HumanThrower == null)
+            {
+                Debug.Log("Human Thrower not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.HumanThrower.GetComponent<HumanThrower>() == null)
+            {
+                Debug.Log("HumanThrower script not assigned to Human Thrower object");
+                error = true;
+            }
+            if (GetComponent<PlayerController>() == null)
+            {
+                Debug.Log("PlayerController not attached to player");
+                error = true;
+            }
+            if (GetComponent<ResourceController>() == null)
+            {
+                Debug.Log("ResourceController not attached to player");
+                error = true;
+            }
         }
     }
 
@@ -303,22 +300,6 @@ public class BuildTrap : MonoBehaviour {
         isActive = false;
         Debug.Log("Building finished");
 
-        //deactivate tile where pit will be placed
-        if (selectedTrap.GetComponent<Pit>() != null)
-        {
-            //loop over all tiles
-            for (int i = 0; i < floorGrid.Length; i++)
-            {
-                Vector3 vecBetween = floorGrid[i].transform.position - potentialTiles[0];
-                vecBetween.y = 0;
-
-                if (vecBetween.magnitude < playerToTileDistance)
-                {
-                    floorGrid[i].GetComponent<Tile>().isPit = true;
-                }
-            }
-        }
-
         //create trap at position closest to selected area and add it to list of traps
         createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
         GetComponent<ResourceController>().currentResource -= cost;
@@ -361,6 +342,7 @@ public class BuildTrap : MonoBehaviour {
         if (preview.GetComponent<Pit>() != null)
         {
             preview.GetComponent<Pit>().enabled = false;
+            preview.GetComponent<BoxCollider>().isTrigger = false;
         }
         if (preview.GetComponent<PlaceableWall>() != null)
         {

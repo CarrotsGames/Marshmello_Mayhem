@@ -29,6 +29,16 @@ public class Pit : DefenseTrap {
                 }
             }
         }
+
+        if (GetComponent<BoxCollider>() == null)
+        {
+            Debug.Log("Missing BoxCollider on pit object");
+
+            if (GetComponent<BoxCollider>().isTrigger == false)
+            {
+                Debug.Log("Pit BoxCollider is not a trigger");
+            }
+        }
     }
 	
 	// Update is called once per frame

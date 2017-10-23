@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
 	public int teamNumber = 1;
 	public float distanceFromChemFlagToPickUp = 2;
 
-
 	public Transform ememyChemFlag;
 
 	//(blue = 1, red = 2);
@@ -54,11 +53,12 @@ public class PlayerController : MonoBehaviour
         }
 
         RotatePlayer();
-		if(XCI.GetButtonDown(XboxButton.LeftBumper,controller))
+
+		if (XCI.GetButtonDown(XboxButton.LeftBumper,controller))
         {
             rayGun.isFiring = true;
         }
-		if(XCI.GetButtonUp(XboxButton.LeftBumper,controller))
+		if (XCI.GetButtonUp(XboxButton.LeftBumper,controller))
         {
             rayGun.isFiring = false;
         }
@@ -70,30 +70,30 @@ public class PlayerController : MonoBehaviour
         {
             meleeHitbox.isSwinging = false;
         }
-		if(XCI.GetButtonDown(XboxButton.Y,controller))
+		if (XCI.GetButtonDown(XboxButton.Y,controller))
 		{
-			if (holdingChemFlag == null) {
-				//Debug.Log (Vector3.Distance (ememyChemFlag.position, transform.position));
-				if (Vector3.Distance (ememyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp) {
-					//Debug.Log ("Here");
-					ememyChemFlag.SetParent (chemFlagHoldPoint);
+			if (holdingChemFlag == null)
+            {
+				if (Vector3.Distance(ememyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
+                {
+					ememyChemFlag.SetParent(chemFlagHoldPoint);
 					ememyChemFlag.position = chemFlagHoldPoint.position;
-					ememyChemFlag.GetComponent<Chem_Flag> ().PickUpChemFlag ();
-					holdingChemFlag = ememyChemFlag.GetComponent<Chem_Flag> ();
+					ememyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
+					holdingChemFlag = ememyChemFlag.GetComponent<Chem_Flag>();
 				}
-			} else {
-				//Debug.Log ("There");
-				holdingChemFlag.DropChemFlag ();
+			}
+            else
+            {
+				holdingChemFlag.DropChemFlag();
 				holdingChemFlag = null;
-				ememyChemFlag.GetComponent<Chem_Flag> ().DropChemFlag ();
+				ememyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
 			}
 		}
-
-
     }
 		
 //
-//	public void PickUpChemFlag(Chem_Flag chemFlag){
+//	public void PickUpChemFlag(Chem_Flag chemFlag)
+//  {
 //		chemFlag.transform.SetParent (chemFlagHoldPoint);
 //		holdingChemFlag = chemFlag;
 //	}
@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
 
             Vector3 movement = new Vector3(axisX, 0, axisZ);
 
-            charController.Move(movement * speed * Time.deltaTime + Vector3.up * -9.8f * Time.deltaTime);
+            charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
         }
     }
 }

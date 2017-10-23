@@ -19,13 +19,13 @@ public class TarPit : DefenseTrap {
 
     //requires a_col to have a rigidbody (check Is Kinematic)
     //also requires this to have collider with Is Trigger checked
-    void OnTriggerEnter(Collider a_col)
+    private void OnTriggerEnter(Collider a_col)
     {
         a_col.GetComponent<PlayerController>().speed = slowedSpeed;
         Debug.Log("Trigger Enter");
     }
 
-    void OnTriggerExit(Collider a_col)
+    private void OnTriggerExit(Collider a_col)
     {
         a_col.GetComponent<PlayerController>().speed = a_col.GetComponent<PlayerController>().maxSpeed;
         Debug.Log("Trigger Exit");

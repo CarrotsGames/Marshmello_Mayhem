@@ -4,36 +4,63 @@ using UnityEngine;
 
 public class Chem_Flag : MonoBehaviour {
 
+    public GameObject team1Base;
+    public GameObject team2Base;
+
+    TeamScore teamScore = FindObjectOfType<TeamScore>();
+
 	public bool isBeingCarried = false;
 	public int teamNumber = 1;
-	//(blue = 1, red = 2);
 
-//	void OnTriggerStay(Collider Other){
-//
-//		if (isBeingCarried) {
-//			return;
-//		}
-//
-//		if (Other.tag != "Player") {
-//			return;
-//		}
-//			
-//		PlayerController playerController = Other.GetComponent<PlayerController> ();
-//
-//		if (playerController.teamNumber != teamNumber) {
-//			playerController.CanPickUpChemFlag ();
-//		}
-//	}
+    //(blue = 1, red = 2);
 
-	public void PickUpChemFlag(){
+    //	void OnTriggerStay(Collider Other){
+    //
+    //		if (isBeingCarried) {
+    //			return;
+    //		}
+    //
+    //		if (Other.tag != "Player") {
+    //			return;
+    //		}
+    //			
+    //		PlayerController playerController = Other.GetComponent<PlayerController> ();
+    //
+    //		if (playerController.teamNumber != teamNumber) {
+    //			playerController.CanPickUpChemFlag ();
+    //		}
+    //	}
+
+    void Update()
+    {
+        //if team 2 is capturing the chem_flag
+        if (teamNumber == 1)
+        {
+            Vector3 vecBetween = transform.position - team2Base.transform.position;
+
+            if (vecBetween.magnitude <= 2)
+            {
+                teamScore.team2Score++;
+            }
+        }
+        //if team 1 is capturing the chem_flag
+        if (teamNumber == 2)
+        {
+            Vector3 vecBetween = transform.position - team1Base.transform.position;
+        }
+    }
+
+    public void PickUpChemFlag()
+    {
 		//playerController.PickUpChemFlag (this);
-		GetComponent<BoxCollider> ().enabled = false;
+		GetComponent<BoxCollider>().enabled = false;
 		isBeingCarried = true;
 	}
 
-	public void DropChemFlag(){
+	public void DropChemFlag()
+    {
 		isBeingCarried = false;
-		GetComponent<BoxCollider> ().enabled = true;
-		transform.SetParent (null);
+		GetComponent<BoxCollider>().enabled = true;
+		transform.SetParent(null);
 	}
 }

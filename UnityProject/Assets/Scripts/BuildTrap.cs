@@ -302,10 +302,19 @@ public class BuildTrap : MonoBehaviour {
 
         //create trap at position closest to selected area and add it to list of traps
         createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
+
+        if (selectedTrap == prefabList.HumanThrower)
+        {
+            //passes current rotation in to human thrower object to determine direction
+            createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().SetTargetDirection(rotation);
+        }
+
         GetComponent<ResourceController>().currentResource -= cost;
         potentialTiles.Clear();
 
         GetComponent<PlayerController>().playerMovement = true;
+
+        isEnabled = false;
     }
 
     void Preview()

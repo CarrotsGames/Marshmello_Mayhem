@@ -54,8 +54,10 @@ public class Pit : DefenseTrap {
             {
                 Debug.Log("Pit triggered");
                 PlayerController player = a_col.GetComponent<PlayerController>();
-                                
+                
+                //sets player's position to middle of pit
                 player.transform.SetPositionAndRotation(transform.position, Quaternion.identity);
+                //decreases player's y position
                 player.transform.Translate(0.0f, -1.0f, 0.0f);
 
                 a_col.GetComponent<PlayerHealth>().Death();

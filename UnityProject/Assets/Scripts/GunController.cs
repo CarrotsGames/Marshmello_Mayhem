@@ -31,12 +31,14 @@ public class GunController : MonoBehaviour {
                 projectileCount = timeBetweenShots;
                 GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
                 newProjectile.GetComponent<Rigidbody>().AddForce (newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
-                projectileTimer += 1.0f * Time.deltaTime;
+                //projectileTimer += 1.0f * Time.deltaTime;
                 
-                if (projectileTimer >= 4)
-                {
-                    DestroyObject(projectile.gameObject);
-                }
+                //if (projectileTimer >= 4)
+                //{
+                //    DestroyObject(projectile.gameObject);
+                //}
+
+                Invoke("Delete", projectileTimer);
             }
         }
         else
@@ -51,5 +53,10 @@ public class GunController : MonoBehaviour {
         {
             DestroyObject(projectile.gameObject);
         }
+    }
+
+    public void Delete()
+    {
+        Destroy(gameObject);
     }
 }

@@ -41,8 +41,6 @@ public class PlayerHealth : MonoBehaviour
         {
             isAlive = true;
         }
-
-
     }
 
     public void TakeDamage(int damageAmount)

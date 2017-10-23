@@ -44,24 +44,26 @@ public class Chem_Flag : MonoBehaviour {
     }
     void Update()
     {
-        if (team1Base != null || team2Base != null)
+        //if team 2 is capturing the chem_flag
+        if (teamNumber == 1 && team2Base != null)
         {
-            //if team 2 is capturing the chem_flag
-            if (teamNumber == 1)
-            {
-                Vector3 vecBetween = transform.position - team2Base.transform.position;
+            Vector3 vecBetween = transform.position - team2Base.transform.position;
 
-                if (vecBetween.magnitude <= 2)
-                {
-                    teamScore.team2Score++;
-                }
-            }
-            //if team 1 is capturing the chem_flag
-            if (teamNumber == 2)
+            if (vecBetween.magnitude <= 2)
             {
-                Vector3 vecBetween = transform.position - team1Base.transform.position;
+                teamScore.team2Score++;
             }
         }
+        //if team 1 is capturing the chem_flag
+        if (teamNumber == 2 && team1Base != null)
+        {
+            Vector3 vecBetween = transform.position - team1Base.transform.position;
+
+            if (vecBetween.magnitude <= 2)
+            {
+                teamScore.team1Score++;
+            }
+        }        
     }
 
     public void PickUpChemFlag()

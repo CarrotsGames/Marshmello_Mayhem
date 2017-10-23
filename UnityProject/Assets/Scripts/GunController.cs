@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour {
 
-    public bool isFiring;
+    public bool isEnabled;
 
     public GameObject projectile;
     public float projectileSpeed;
-    public float timeBetweenShots;
+    public float timeBetweenShots = 2.0f;
     public float projectileTimer;
     private float projectileCount;
 
@@ -23,28 +23,7 @@ public class GunController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(isFiring)
-        {
-            projectileCount -= Time.deltaTime;
-            if (projectileCount <= 0)
-            {
-                projectileCount = timeBetweenShots;
-                GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
-                newProjectile.GetComponent<Rigidbody>().AddForce (newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
-                //projectileTimer += 1.0f * Time.deltaTime;
-                
-                //if (projectileTimer >= 4)
-                //{
-                //    DestroyObject(projectile.gameObject);
-                //}
-
-                Invoke("Delete", projectileTimer);
-            }
-        }
-        else
-        {
-            projectileCount = 0;
-        }
+        
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -55,8 +34,28 @@ public class GunController : MonoBehaviour {
         }
     }
 
-    public void Delete()
+    void Delay()
     {
-        Destroy(gameObject);
+        isEnabled = true;
     }
+
+    public void Shoot()
+    {
+        if (isEnabled == true)
+        {
+            isEnabled = false;
+
+            //create new projectile with force in direction
+            GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
+            newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);            
+        }
+
+        //call delay after timeBetweenShots
+        Invoke("Delay", timeBetweenShots);
+    }
+
+    //public void Expire()
+    //{
+    //    Destroy(projectile.gameObject);
+    //}
 }

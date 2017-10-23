@@ -1,33 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class TeamScore : MonoBehaviour {
 
     public int team1Score;
     public int team2Score;
+    Text score;
 
 	// Use this for initialization
 	void Start () {
-		
+        score = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    
+        score.text = "Flags Captured \n" + team1Score + " | " + team2Score;
 	}
-
-    private void OnTriggerEnter(Collider a_col)
-    {
-        int team = a_col.GetComponent<PlayerController>().teamNumber;
-
-        if (team == 1)
-        {
-            team1Score++;
-        }
-        if (team == 2)
-        {
-            team2Score++;
-        }
-    }
 }

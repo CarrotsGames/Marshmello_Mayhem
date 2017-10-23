@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public CharacterController charController;
     public XboxController controller;
     public GunController rayGun;
-    public MeleeAttack meleeHitbox;
+    //public MeleeAttack meleeHitbox;
     public float speed;
     public float maxSpeed = 5;
     public Vector3 previousRotation = Vector3.forward;
@@ -61,22 +61,15 @@ public class PlayerController : MonoBehaviour
 
         RotatePlayer();
 
-		if (XCI.GetButtonDown(XboxButton.LeftBumper,controller))
+		if (XCI.GetButtonDown(XboxButton.LeftBumper, controller))
         {
-            rayGun.isFiring = true;
+            rayGun.Shoot();
         }
-		if (XCI.GetButtonUp(XboxButton.LeftBumper,controller))
-        {
-            rayGun.isFiring = false;
-        }
-        if (Input.GetKeyDown(KeyCode.Joystick1Button5))
-        {
-            meleeHitbox.isSwinging = true;
-        }
-        if (Input.GetKeyUp(KeyCode.Joystick1Button5))
-        {
-            meleeHitbox.isSwinging = false;
-        }
+        //if (XCI.GetButtonDown(XboxButton.RightBumper, controller))
+        //{
+        //    meleeHitbox.isSwinging = true;
+        //}
+
 		if (XCI.GetButtonDown(XboxButton.Y,controller))
 		{
 			if (holdingChemFlag == null)
@@ -96,6 +89,14 @@ public class PlayerController : MonoBehaviour
 				ememyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
 			}
 		}
+
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+        Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
+
+        //transform.Translate(movement);
+        MovePlayer();
     }
 		
 //
@@ -119,17 +120,6 @@ public class PlayerController : MonoBehaviour
         directionVector = directionVector.normalized;
         previousRotation = directionVector;
         transform.rotation = Quaternion.LookRotation(directionVector);
-    }
-
-    void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
-
-        //transform.Translate(movement);
-        MovePlayer();
     }
 
     private void MovePlayer()

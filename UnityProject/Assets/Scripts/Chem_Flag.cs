@@ -39,7 +39,7 @@ public class Chem_Flag : MonoBehaviour {
         }
         else
         {
-            Debug.Log("No object with TeamScore");
+            Debug.Log("TeamScore script not attached to anything");
         }
     }
     void Update()

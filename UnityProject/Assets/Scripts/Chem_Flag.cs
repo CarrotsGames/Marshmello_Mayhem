@@ -9,6 +9,7 @@ public class Chem_Flag : MonoBehaviour {
 
     TeamScore teamScore;
 
+    bool isRespawning;
 	public bool isBeingCarried = false;
 	public int teamNumber = 1;
 
@@ -51,7 +52,16 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= 2)
             {
-                teamScore.team2Score++;
+                if (isRespawning == false)
+                {
+                    //increment team 1 score
+                    teamScore.team1Score += 1;
+
+                    gameObject.SetActive(false);
+                    Invoke("Respawn", 2.0f);
+
+                    isRespawning = true;
+                }
             }
         }
         //if team 1 is capturing the chem_flag
@@ -61,7 +71,16 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= 2)
             {
-                teamScore.team1Score++;
+                if (isRespawning == false)
+                {
+                    //increment team 2 score
+                    teamScore.team2Score += 1;
+
+                    gameObject.SetActive(false);
+                    Invoke("Respawn", 2.0f);
+
+                    isRespawning = true;
+                }
             }
         }        
     }
@@ -79,4 +98,21 @@ public class Chem_Flag : MonoBehaviour {
 		GetComponent<BoxCollider>().enabled = true;
 		transform.SetParent(null);
 	}
+
+    public void Respawn()
+    {
+        gameObject.SetActive(true);
+        
+        if (teamNumber == 1)
+        {
+            //reset position
+            transform.SetPositionAndRotation(new Vector3(team1Base.transform.position.x, transform.position.y, team1Base.transform.position.z), Quaternion.identity);
+        }
+        if (teamNumber == 2)
+        {
+            //reset position
+            transform.SetPositionAndRotation(new Vector3(team2Base.transform.position.x, transform.position.y, team2Base.transform.position.z), Quaternion.identity);
+        }
+        isRespawning = false;
+    }
 }

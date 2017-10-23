@@ -19,4 +19,9 @@ public class PlaceableWall : DefenseTrap {
             Destroy(gameObject);
         }
 	}
+
+    public void TakeDamage(int a_damageValue)
+    {
+        health -= a_damageValue;
+    }
 }

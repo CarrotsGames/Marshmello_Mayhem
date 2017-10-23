@@ -12,6 +12,8 @@ public class GunController : MonoBehaviour {
     public float projectileTimer;
     private float projectileCount;
 
+    public int damage;
+
     public Transform firePoint;
 
 	// Use this for initialization
@@ -28,15 +30,16 @@ public class GunController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (projectile.gameObject.tag == "Wall" || projectile.gameObject.tag == "Player")
-        {
-            DestroyObject(projectile.gameObject);
-        }
-    }
+         if (other.GetComponent<PlaceableWall>() != null)
+         {
+             other.GetComponent<PlaceableWall>().TakeDamage(damage);
+             Destroy(gameObject);
+         }        
 
-    void Delay()
-    {
-        isEnabled = true;
+         if (other.GetComponent<PlayerHealth>() != null)
+         {
+             other.GetComponent<PlayerHealth>().TakeDamage(damage);
+         }        
     }
 
     public void Shoot()
@@ -54,8 +57,13 @@ public class GunController : MonoBehaviour {
         Invoke("Delay", timeBetweenShots);
     }
 
-    //public void Expire()
-    //{
-    //    Destroy(projectile.gameObject);
-    //}
+    void Delay()
+    {
+        isEnabled = true;
+    }
+
+    public void Expire()
+    {
+        Destroy(projectile.gameObject);
+    }
 }

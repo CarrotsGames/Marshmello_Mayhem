@@ -36,7 +36,7 @@ public class ResourceController : MonoBehaviour
 
     void IncrementResources()
     {
-        Invoke("TimeBetween", timeBetween);
+        TimeBetween();
         currentResource += resourceIncrease;
     }
 }

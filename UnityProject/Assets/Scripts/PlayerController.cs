@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
 	public Transform ememyChemFlag;
 
-    public PlayerHealth playerHealth;
+    PlayerHealth playerHealth;
 
 	//(blue = 1, red = 2);
 
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
         RotatePlayer();
 
-		if (XCI.GetButtonDown(XboxButton.LeftBumper, controller))
+		if (XCI.GetButtonDown(XboxButton.LeftBumper, controller) || Input.GetKeyDown(KeyCode.Alpha0))
         {
             rayGun.Shoot();
         }

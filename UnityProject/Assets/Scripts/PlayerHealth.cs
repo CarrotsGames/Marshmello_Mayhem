@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -42,6 +41,8 @@ public class PlayerHealth : MonoBehaviour
         {
             isAlive = true;
         }
+
+
     }
 
     public void TakeDamage(int damageAmount)

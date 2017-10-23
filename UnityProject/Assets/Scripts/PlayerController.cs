@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
 
 	public Transform ememyChemFlag;
 
+    public PlayerHealth playerHealth;
+
 	//(blue = 1, red = 2);
 
     // Use this for initialization
@@ -31,25 +33,30 @@ public class PlayerController : MonoBehaviour
     {
         charController = GetComponent<CharacterController>();
         playerMovement = true;
+
+        if (GetComponent<PlayerHealth>() != null)
+        {
+            playerHealth = GetComponent<PlayerHealth>();
+        }
+        else
+        {
+            Debug.Log("Missing PlayerHealth script on player");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GetComponent<PlayerHealth>() != null)
+        if (playerHealth != null)
         {
-            if (GetComponent<PlayerHealth>().isAlive == false)
+            if (playerHealth.isAlive == false)
             {
                 playerMovement = false;
             }
-            if (GetComponent<PlayerHealth>().isAlive == true)
+            if (playerHealth.isAlive == true)
             {
                 playerMovement = true;
             }
-        }
-        else
-        {
-            Debug.Log("Missing PlayerHealth script on player");
         }
 
         RotatePlayer();

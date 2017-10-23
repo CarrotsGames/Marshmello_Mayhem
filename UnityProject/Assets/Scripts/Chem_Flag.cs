@@ -7,7 +7,7 @@ public class Chem_Flag : MonoBehaviour {
     public GameObject team1Base;
     public GameObject team2Base;
 
-    TeamScore teamScore = FindObjectOfType<TeamScore>();
+    TeamScore teamScore;
 
 	public bool isBeingCarried = false;
 	public int teamNumber = 1;
@@ -31,22 +31,36 @@ public class Chem_Flag : MonoBehaviour {
     //		}
     //	}
 
+    void Start()
+    {
+        if (FindObjectOfType<TeamScore>() != null)
+        {
+            teamScore = FindObjectOfType<TeamScore>();
+        }
+        else
+        {
+            Debug.Log("No object with TeamScore");
+        }
+    }
     void Update()
     {
-        //if team 2 is capturing the chem_flag
-        if (teamNumber == 1)
+        if (team1Base != null || team2Base != null)
         {
-            Vector3 vecBetween = transform.position - team2Base.transform.position;
-
-            if (vecBetween.magnitude <= 2)
+            //if team 2 is capturing the chem_flag
+            if (teamNumber == 1)
             {
-                teamScore.team2Score++;
+                Vector3 vecBetween = transform.position - team2Base.transform.position;
+
+                if (vecBetween.magnitude <= 2)
+                {
+                    teamScore.team2Score++;
+                }
             }
-        }
-        //if team 1 is capturing the chem_flag
-        if (teamNumber == 2)
-        {
-            Vector3 vecBetween = transform.position - team1Base.transform.position;
+            //if team 1 is capturing the chem_flag
+            if (teamNumber == 2)
+            {
+                Vector3 vecBetween = transform.position - team1Base.transform.position;
+            }
         }
     }
 

@@ -17,7 +17,7 @@ public class TeamScore : MonoBehaviour {
 	    
 	}
 
-    private void OnCollisionEnter(Collider a_col)
+    private void OnTriggerEnter(Collider a_col)
     {
         int team = a_col.GetComponent<PlayerController>().teamNumber;
 

@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 65005953300523014}
   m_Layer: 0
   m_Name: PlayerChar_001_Scientist_001_Moustache 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,7 +140,6 @@ GameObject:
   - component: {fileID: 4900893482810882}
   - component: {fileID: 65429295366285502}
   - component: {fileID: 114323119818473704}
-  - component: {fileID: 114116106883142954}
   m_Layer: 0
   m_Name: Weapon_001_Lab_001_RayGun
   m_TagString: Untagged
@@ -169,7 +168,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1548840848506668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.385, y: 0, z: 0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4106494444744930}
@@ -182,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1225531647840742}
   m_LocalRotation: {x: -0, y: -0.7071064, z: -0, w: 0.70710725}
-  m_LocalPosition: {x: -0.14, y: 0.05, z: -0.08}
+  m_LocalPosition: {x: -0.026, y: -0.093, z: -0.404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4900893482810882}
@@ -195,7 +194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780866144201300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4683018609984782}
@@ -208,7 +207,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1630196708191162}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.59, y: -11.13, z: 13.23}
+  m_LocalPosition: {x: -22.59, y: -11.121, z: 11.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4973286963325376}
@@ -240,7 +239,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1086566456746110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.582, y: -0.199, z: -0.406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4900893482810882}
@@ -253,8 +252,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653326590878224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.27, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 4683018609984782}
   m_RootOrder: 0
@@ -272,7 +271,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cbf81f3d313e50148a8981fe982a19ca, type: 2}
+  - {fileID: 2100000, guid: c82741d93c73962418a51b925f86c915, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -439,25 +438,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.79999995, y: 0.35, z: 0.29999998}
-  m_Center: {x: 0.39999998, y: 0.175, z: -0.14999999}
---- !u!114 &114116106883142954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1992229290637822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2986834fcd29ce40b8c14fb9fa5ae40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFiring: 0
-  projectile: {fileID: 1566494796663200, guid: 02bc8a011a82003478cf2e51df8a8ee9, type: 2}
-  projectileSpeed: 50
-  timeBetweenShots: 2
-  projectileTimer: 0
-  firePoint: {fileID: 4463105120036366}
+  m_Size: {x: 1.0487108, y: 0.35, z: 0.3}
+  m_Center: {x: 0.5756445, y: 0.049999997, z: -0.59}
 --- !u!114 &114243669130088616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -516,16 +498,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 143006388852838278}
-  controller: 4
-  rayGun: {fileID: 0}
+  controller: 3
+  rayGun: {fileID: 114323119818473704}
   meleeHitbox: {fileID: 0}
   speed: 5
   maxSpeed: 5
   previousRotation: {x: 0, y: 0, z: 1}
   attackDamage: 0
   playerMovement: 1
-  chemFlagHoldPoint: {fileID: 0}
+  chemFlagHoldPoint: {fileID: 4654925327528430}
   teamNumber: 1
+  distanceFromChemFlagToPickUp: 2
+  ememyChemFlag: {fileID: 0}
 --- !u!143 &143006388852838278
 CharacterController:
   m_ObjectHideFlags: 1

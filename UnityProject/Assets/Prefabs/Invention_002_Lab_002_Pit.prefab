@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4568347880317654}
   - component: {fileID: 114726891219550300}
+  - component: {fileID: 65215654871450194}
   m_Layer: 0
   m_Name: Invention_002_Lab_002_Pit
   m_TagString: Untagged
@@ -110,6 +111,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1155791160392512}
   m_Mesh: {fileID: 4300000, guid: 08c2674fcd3bca84296304127da08be3, type: 3}
+--- !u!65 &65215654871450194
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312556171722640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.104694374, y: 1, z: 1}
+  m_Center: {x: 1.35, y: 0, z: 7.4389483e-16}
 --- !u!114 &114726891219550300
 MonoBehaviour:
   m_ObjectHideFlags: 1

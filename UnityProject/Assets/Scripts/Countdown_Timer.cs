@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Countdown_Timer : MonoBehaviour {
@@ -8,9 +9,12 @@ public class Countdown_Timer : MonoBehaviour {
     float seconds = 0;
     public bool gameOver;
 
+    Text time;
+
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        time = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
@@ -27,27 +31,23 @@ public class Countdown_Timer : MonoBehaviour {
             }
             
         }
-	}
 
-    //uses simple GUI rectangle to display time
-    //(only need if/else statements from here)
-    private void OnGUI()
-    {
         if (minutes > 0 || seconds > 0)
         {
             if (seconds < 10)
             {
-                GUI.Label(new Rect(100, 100, 200, 100), "Time Remaining : " + (int)minutes + ":0" + (int)seconds);
+                time.text = "Time" + "\n" + (int)minutes + ":0" + (int)seconds;
             }
             else
             {
-                GUI.Label(new Rect(100, 100, 200, 100), "Time Remaining : " + (int)minutes + ":" + (int)seconds);
+                time.text = "Time" + "\n" + (int)minutes + ":" + (int)seconds;
             }
         }
         else
         {
-            GUI.Label(new Rect(100, 100, 200, 100), "Game Over");
+            time.text = "Game Over";
             gameOver = true;
         }
     }
+
 }

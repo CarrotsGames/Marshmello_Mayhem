@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Countdown_Timer : MonoBehaviour {
 
-    public float minutes = 1;
+    public float minutes = 10;
     float seconds = 0;
     public bool gameOver;
 

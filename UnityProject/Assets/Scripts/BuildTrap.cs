@@ -314,6 +314,8 @@ public class BuildTrap : MonoBehaviour {
 
         GetComponent<PlayerController>().playerMovement = true;
 
+        Destroy(preview);
+        previewExist = false;
         isEnabled = false;
     }
 

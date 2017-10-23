@@ -7,7 +7,7 @@ public class Chem_Flag : MonoBehaviour {
     public GameObject team1Base;
     public GameObject team2Base;
 
-    TeamScore teamScore;
+    TeamScore_UI teamScore;
 
     bool isRespawning;
 	public bool isBeingCarried = false;
@@ -34,9 +34,9 @@ public class Chem_Flag : MonoBehaviour {
 
     void Start()
     {
-        if (FindObjectOfType<TeamScore>() != null)
+        if (FindObjectOfType<TeamScore_UI>() != null)
         {
-            teamScore = FindObjectOfType<TeamScore>();
+            teamScore = FindObjectOfType<TeamScore_UI>();
         }
         else
         {
@@ -45,10 +45,10 @@ public class Chem_Flag : MonoBehaviour {
     }
     void Update()
     {
-        //if team 2 is capturing the chem_flag
-        if (teamNumber == 1 && team2Base != null)
+        //if team 1 is capturing the chem_flag
+        if (teamNumber == 2 && team1Base != null)
         {
-            Vector3 vecBetween = transform.position - team2Base.transform.position;
+            Vector3 vecBetween = transform.position - team1Base.transform.position;
 
             if (vecBetween.magnitude <= 2)
             {
@@ -64,10 +64,10 @@ public class Chem_Flag : MonoBehaviour {
                 }
             }
         }
-        //if team 1 is capturing the chem_flag
-        if (teamNumber == 2 && team1Base != null)
+        //if team 2 is capturing the chem_flag
+        if (teamNumber == 1 && team2Base != null)
         {
-            Vector3 vecBetween = transform.position - team1Base.transform.position;
+            Vector3 vecBetween = transform.position - team2Base.transform.position;
 
             if (vecBetween.magnitude <= 2)
             {
@@ -82,7 +82,7 @@ public class Chem_Flag : MonoBehaviour {
                     isRespawning = true;
                 }
             }
-        }        
+        }      
     }
 
     public void PickUpChemFlag()
@@ -101,6 +101,8 @@ public class Chem_Flag : MonoBehaviour {
 
     public void Respawn()
     {
+        DropChemFlag();
+
         gameObject.SetActive(true);
         
         if (teamNumber == 1)

@@ -5,9 +5,18 @@ using UnityEngine;
 public class Pit : DefenseTrap {
 
     GameObject[] floorGrid;
+    public int timeBeforeActivation = 5;
 
 	// Use this for initialization
 	void Start () {
+        if (GetComponent<BoxCollider>() != null)
+        {
+            GetComponent<BoxCollider>().isTrigger = false;
+        }
+        else
+        {
+            Debug.Log("Missing BoxCollider on Pit");
+        }
 
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");
 
@@ -39,6 +48,8 @@ public class Pit : DefenseTrap {
                 Debug.Log("Pit BoxCollider is not a trigger");
             }
         }
+
+        Invoke("Activate", timeBeforeActivation);
     }
 	
 	// Update is called once per frame
@@ -72,5 +83,10 @@ public class Pit : DefenseTrap {
             Debug.Log("Missing PlayerController script on player");
         }
         
+    }
+
+    void Activate()
+    {
+        GetComponent<BoxCollider>().isTrigger = true;
     }
 }

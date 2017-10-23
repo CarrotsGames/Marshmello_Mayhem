@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public TeamScore teamScore;
+    public TeamScore_UI teamScore;
     public int winScore = 3;
     private Countdown_Timer timer;
 

@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour {
     bool gameOverState;
     public float projectileCooldown;
     public float projectilePushback;
+    public float projectileSpeed = 50.0f;
+    private float speedCap = 120.0f;
     public List<GameObject> placedTraps;
 
 	// Use this for initialization
@@ -23,6 +25,11 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (projectileSpeed > speedCap)
+        {
+            projectileSpeed = speedCap;
+        }
+
         gameOverState = FindObjectOfType<Countdown_Timer>().gameOver;
 
         //if a team reaches winScore

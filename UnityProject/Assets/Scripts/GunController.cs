@@ -7,10 +7,8 @@ public class GunController : MonoBehaviour {
     public bool isEnabled;
 
     public GameObject projectile;
-    public float projectileSpeed;
+    private float projectileSpeed;
     private float timeBetweenShots;
-    
-    public int damage;
 
     public Transform firePoint;
 
@@ -31,6 +29,7 @@ public class GunController : MonoBehaviour {
         if (FindObjectOfType<GameController>() != null)
         {
             timeBetweenShots = FindObjectOfType<GameController>().projectileCooldown;
+            projectileSpeed = FindObjectOfType<GameController>().projectileSpeed;
         }
     }
 

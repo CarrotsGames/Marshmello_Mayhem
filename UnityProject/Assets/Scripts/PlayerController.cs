@@ -47,20 +47,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (playerHealth.isAlive == false)
-         {
-             playerMovement = false;
-         }
-         if (playerHealth.isAlive == true)
-         {
-             playerMovement = true;
-         }
-        
+        if (playerHealth != null)
+        {
+            if (playerHealth.isAlive == false)
+            {
+                playerMovement = false;
+            }
+            if (playerHealth.isAlive == true)
+            {
+                playerMovement = true;
+            }
+        }
 
         RotatePlayer();
 
 
-        if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKeyDown(KeyCode.Alpha0))
+        if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
             
              rayGun.Shoot();

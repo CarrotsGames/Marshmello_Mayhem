@@ -7,7 +7,7 @@ public class Chem_Flag : MonoBehaviour {
     public GameObject team1Base;
     public GameObject team2Base;
 
-    public int respawnTimer;
+    public float respawnTimer;
 
     TeamScore_UI teamScore;
 
@@ -79,7 +79,7 @@ public class Chem_Flag : MonoBehaviour {
                     teamScore.team2Score += 1;
 
                     gameObject.SetActive(false);
-                    Invoke("Respawn", 2.0f);
+                    Invoke("Respawn", respawnTimer);
 
                     isRespawning = true;
                 }

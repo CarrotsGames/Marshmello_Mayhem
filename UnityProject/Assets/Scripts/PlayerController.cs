@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         RotatePlayer();
 
 
-        if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
+        if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKeyDown(KeyCode.Alpha0))
         {
             
              rayGun.Shoot();
@@ -102,14 +102,7 @@ public class PlayerController : MonoBehaviour
             //transform.Translate(movement);
             MovePlayer();
         }
-    }
-		
-//
-//	public void PickUpChemFlag(Chem_Flag chemFlag)
-//  {
-//		chemFlag.transform.SetParent (chemFlagHoldPoint);
-//		holdingChemFlag = chemFlag;
-//	}
+    }		
 
     private void RotatePlayer()
     {

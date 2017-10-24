@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
     public int gunDamage;
     bool gameOverState;
     public float projectileCooldown;
+    public float projectilePushback;
+    public List<GameObject> placedTraps;
 
 	// Use this for initialization
 	void Start ()

@@ -30,7 +30,7 @@ public class BuildTrap : MonoBehaviour {
 
     // Use this for initialization
     void Start ()
-    {
+    { 
         //if (GameObject.Find("PrefabList").GetComponent<PrefabList>() == null)
         //{
         //    Debug.Log("PrefabList game object doesn't exist");
@@ -59,7 +59,7 @@ public class BuildTrap : MonoBehaviour {
         }
 
         potentialTiles = new List<Vector3>();
-        createdObjects = new List<GameObject>();
+        createdObjects = FindObjectOfType<GameController>().placedTraps;
 
         //checks for missing components
         if (floorGrid.Length > 0)

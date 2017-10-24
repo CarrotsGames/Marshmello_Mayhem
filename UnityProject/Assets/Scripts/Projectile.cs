@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour {
     int damage;
     float timer;
     float cooldown;
-    bool onCooldown;
+    float pushback;
 
     GameController gameController;
 
@@ -20,7 +20,9 @@ public class Projectile : MonoBehaviour {
 
             damage = gameController.gunDamage;
             timer = gameController.projectileTimer;
-            cooldown = gameController.projectileCooldown;            
+            cooldown = gameController.projectileCooldown;
+
+            pushback = gameController.projectilePushback;
         }
         else
         {
@@ -41,15 +43,16 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlaceableWall>() != null)
-        {
-            other.GetComponent<PlaceableWall>().TakeDamage(damage);
+        if (other.gameObject.GetComponent<PlaceableWall>() != null)
+        {            
+            other.gameObject.GetComponent<PlaceableWall>().TakeDamage(damage);
             Destroy(gameObject);
         }
-
-        if (other.GetComponent<PlayerHealth>() != null)
+        if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<PlayerHealth>().TakeDamage(damage);
-        }
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+            Destroy(gameObject);
+        }        
     }
+
 }

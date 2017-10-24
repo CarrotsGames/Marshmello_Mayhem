@@ -16,6 +16,7 @@ public class PlaceableWall : DefenseTrap {
 	void Update () {
 		if (health <= 0)
         {
+            FindObjectOfType<GameController>().placedTraps.Remove(gameObject);
             Destroy(gameObject);
         }
 	}

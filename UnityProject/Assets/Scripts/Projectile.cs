@@ -50,9 +50,14 @@ public class Projectile : MonoBehaviour {
         }
         if (other.gameObject.tag == "Player")
         {
+            GetComponent<Collider>().enabled = false;
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             Destroy(gameObject);
-        }        
+        }
+        if (other.gameObject.tag == "LevelWall")
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

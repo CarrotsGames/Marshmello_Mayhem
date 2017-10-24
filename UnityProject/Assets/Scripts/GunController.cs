@@ -8,10 +8,8 @@ public class GunController : MonoBehaviour {
 
     public GameObject projectile;
     public float projectileSpeed;
-    public float timeBetweenShots = 2.0f;
-    public float projectileTimer;
-    private float projectileCount;
-
+    private float timeBetweenShots;
+    
     public int damage;
 
     public Transform firePoint;
@@ -19,7 +17,15 @@ public class GunController : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-		
+		if (FindObjectOfType<GameController>() != null)
+        {
+            timeBetweenShots = FindObjectOfType<GameController>().projectileCooldown;
+        }
+        else
+        {
+            Debug.Log("No object with GameController script");
+        }
+        isEnabled = true;
 	}
 	
 	// Update is called once per frame
@@ -27,20 +33,6 @@ public class GunController : MonoBehaviour {
     {
         
 	}
-
-    private void OnTriggerEnter(Collider other)
-    {
-         if (other.GetComponent<PlaceableWall>() != null)
-         {
-             other.GetComponent<PlaceableWall>().TakeDamage(damage);
-             Destroy(gameObject);
-         }        
-
-         if (other.GetComponent<PlayerHealth>() != null)
-         {
-             other.GetComponent<PlayerHealth>().TakeDamage(damage);
-         }        
-    }
 
     public void Shoot()
     {
@@ -50,20 +42,14 @@ public class GunController : MonoBehaviour {
 
             //create new projectile with force in direction
             GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
-            newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);            
-        }
-
-        //call delay after timeBetweenShots
-        Invoke("Delay", timeBetweenShots);
+            newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
+            //call delay after timeBetweenShots
+            Invoke("Delay", timeBetweenShots);
+        }        
     }
 
     void Delay()
     {
         isEnabled = true;
-    }
-
-    public void Expire()
-    {
-        Destroy(projectile.gameObject);
     }
 }

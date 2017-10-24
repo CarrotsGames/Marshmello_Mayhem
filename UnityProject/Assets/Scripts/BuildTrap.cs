@@ -17,7 +17,7 @@ public class BuildTrap : MonoBehaviour {
     GameObject[] floorGrid;
 
     private PrefabList prefabList;
-    private float rise;
+    float rise;
     int cost;
 
     bool previewExist;
@@ -31,14 +31,24 @@ public class BuildTrap : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        if (GameObject.Find("PrefabList").GetComponent<PrefabList>() == null)
+        //if (GameObject.Find("PrefabList").GetComponent<PrefabList>() == null)
+        //{
+        //    Debug.Log("PrefabList game object doesn't exist");
+        //}
+        //else
+        //{
+        //    prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
+        //}
+
+        if (FindObjectOfType<PrefabList>() == null)
         {
             Debug.Log("PrefabList game object doesn't exist");
         }
         else
         {
-            prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
+            prefabList = FindObjectOfType<PrefabList>();
         }
+
         if (GameObject.FindGameObjectsWithTag("Floor") == null)
         {
             Debug.Log("No floor tiles with 'Floor' tag");
@@ -135,8 +145,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 selectedTrap = prefabList.Pit;
                 cost = selectedTrap.GetComponent<Pit>().cost;
-                rise = 0.2f;
-                //rotation = selectedTrap.GetComponent<Pit>().rotation;
+                rise = 0;
                 Destroy(preview);
                 previewExist = false;
             }
@@ -149,7 +158,7 @@ public class BuildTrap : MonoBehaviour {
                 previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
-            {
+            {                
                 selectedTrap = prefabList.HumanThrower;
                 cost = selectedTrap.GetComponent<HumanThrower>().cost;
                 rise = 1.0f;
@@ -165,7 +174,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 forward = new Vector3(1, 0, 0);
             }
-
+            
             rotation = Quaternion.LookRotation(forward, upwards);
 
             //loop over all tiles

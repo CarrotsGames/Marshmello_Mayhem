@@ -5,41 +5,29 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public bool isAlive;
-    public int startingHealth = 10;
+    public int maxHealth = 10;
     public int currentHealth;
-    private Vector3 respawnPoint;
+    public GameObject respawnPoint;
 
-    public Vector3 team1Respawn;
-    public Vector3 team2Respawn;
-
-    public float respawnDelay;
+    public float respawnTimer;
 
     // Use this for initialization
     void Start()
     {
-        currentHealth = startingHealth;
-
-        if (GetComponent<PlayerController>().teamNumber == 1)
-        {
-            respawnPoint = team1Respawn;
-
-        }
-        if (GetComponent<PlayerController>().teamNumber == 2)
-        {
-            respawnPoint = team2Respawn;
-        }
+        currentHealth = maxHealth;
+        isAlive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentHealth <= 0)
+        if (isAlive == false)
+        {
+            currentHealth = 0;
+        }
+        if (currentHealth <= 0 && isAlive == true)
         {
             Death();
-        }
-        else
-        {
-            isAlive = true;
         }
     }
 
@@ -52,13 +40,17 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void Death()
-    {
+    {        
+        currentHealth = 0;
         isAlive = false;
-        Invoke("Respawn", respawnDelay);
+        Invoke("Respawn", respawnTimer);
     }
 
     private void Respawn()
     {
-        GetComponent<PlayerController>().transform.position = respawnPoint;
+        isAlive = true;
+        GetComponent<PlayerController>().transform.position = respawnPoint.transform.position;
+        currentHealth = maxHealth;
+        GetComponent<PlayerController>().playerMovement = true;
     }
 }

@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float maxSpeed = 5;
     public Vector3 previousRotation = Vector3.forward;
-    private float attackDelay;
-    public float attackDamage;
+    //private float attackDelay;
+    //public float attackDamage;
     public bool playerMovement;
 
 	public Transform chemFlagHoldPoint;
@@ -47,24 +47,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerHealth != null)
-        {
-            if (playerHealth.isAlive == false)
-            {
-                playerMovement = false;
-            }
-            if (playerHealth.isAlive == true)
-            {
-                playerMovement = true;
-            }
-        }
+         if (playerHealth.isAlive == false)
+         {
+             playerMovement = false;
+         }
+         if (playerHealth.isAlive == true)
+         {
+             playerMovement = true;
+         }
+        
 
         RotatePlayer();
 
-		if (XCI.GetButtonDown(XboxButton.LeftBumper, controller) || Input.GetKeyDown(KeyCode.Alpha0))
+
+        if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
-            rayGun.Shoot();
+            
+             rayGun.Shoot();
+            
         }
+
         //if (XCI.GetButtonDown(XboxButton.RightBumper, controller))
         //{
         //    meleeHitbox.isSwinging = true;
@@ -90,13 +92,16 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        if (playerMovement == true)
+        {
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
+            Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
 
-        //transform.Translate(movement);
-        MovePlayer();
+            //transform.Translate(movement);
+            MovePlayer();
+        }
     }
 		
 //
@@ -123,15 +128,12 @@ public class PlayerController : MonoBehaviour
     }
 
     private void MovePlayer()
-    {
-        if (playerMovement == true)
-        {
-            float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
-            float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
+    {       
+        float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
+        float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
-            Vector3 movement = new Vector3(axisX, 0, axisZ);
+        Vector3 movement = new Vector3(axisX, 0, axisZ);
 
-            charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
-        }
+        charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
     }
 }

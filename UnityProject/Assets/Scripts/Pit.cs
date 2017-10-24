@@ -6,9 +6,16 @@ public class Pit : DefenseTrap {
 
     GameObject[] floorGrid;
     public int timeBeforeActivation = 5;
+    public float timeBeforeDeath = 2;
+    private float timeRemaining;
+    bool isTriggered;
+    GameObject player;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
+        timeRemaining = timeBeforeDeath;
+
         if (GetComponent<BoxCollider>() != null)
         {
             GetComponent<BoxCollider>().isTrigger = false;
@@ -53,9 +60,24 @@ public class Pit : DefenseTrap {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        if (isTriggered == true)
+        {
+            //kill player after delay
+            timeRemaining -= Time.deltaTime;
 
-	}
+            player.GetComponent<PlayerHealth>().isAlive = false;
+
+            if (timeRemaining <= 0)
+            {
+                timeRemaining = timeBeforeDeath;
+                player.GetComponent<PlayerHealth>().Death();
+                Debug.Log("Death");
+                isTriggered = false;
+            }
+        }
+    }
 
     private void OnTriggerEnter(Collider a_col)
     {
@@ -64,14 +86,15 @@ public class Pit : DefenseTrap {
             if (a_col.GetComponent<PlayerHealth>() != null)
             {
                 Debug.Log("Pit triggered");
-                PlayerController player = a_col.GetComponent<PlayerController>();
+                player = a_col.gameObject;
                 
                 //sets player's position to middle of pit
-                player.transform.SetPositionAndRotation(transform.position, Quaternion.identity);
-                //decreases player's y position
-                player.transform.Translate(0.0f, -1.0f, 0.0f);
+                player.GetComponent<PlayerController>().transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y - 5, transform.position.z), Quaternion.identity);
+                //decreases player's y position                
+                //player.transform.Translate(0.0f, -1.0f, 0.0f);
 
-                a_col.GetComponent<PlayerHealth>().Death();
+                isTriggered = true;
+
             }
             else
             {

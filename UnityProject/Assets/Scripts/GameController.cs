@@ -5,19 +5,24 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public TeamScore_UI teamScore;
+    private TeamScore_UI teamScore;
     public int winScore = 3;
-    private Countdown_Timer timer;
+    public float projectileTimer;
+    public int gunDamage;
+    bool gameOverState;
+    public float projectileCooldown;
 
 	// Use this for initialization
 	void Start ()
-    { 
-
+    {
+        teamScore = FindObjectOfType<TeamScore_UI>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        gameOverState = FindObjectOfType<Countdown_Timer>().gameOver;
+
         //if a team reaches winScore
 		if (teamScore.team1Score == winScore)
         {
@@ -29,7 +34,7 @@ public class GameController : MonoBehaviour {
         }
 
         //if timer hits zero
-        if (timer.gameOver == true)
+        if (gameOverState == true)
         {
             if (teamScore.team1Score > teamScore.team2Score)
             {

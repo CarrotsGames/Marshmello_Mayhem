@@ -9,6 +9,11 @@ public class PrefabList : MonoBehaviour {
     public GameObject PlaceableWall;
     public GameObject HumanThrower;
 
+    public GameObject PillarOfSaws;
+    public GameObject Anti_StickMatter;
+    public GameObject LastPrayer;
+    public GameObject MatterMover;
+
     // Use this for initialization
     void Start () {
 		

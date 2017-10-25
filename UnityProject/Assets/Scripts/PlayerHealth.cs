@@ -40,7 +40,8 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void Death()
-    {        
+    {
+        GetComponent<PlayerController>().DropChemFlag();
         currentHealth = 0;
         isAlive = false;
         Invoke("Respawn", respawnTimer);

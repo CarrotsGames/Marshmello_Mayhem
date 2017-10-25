@@ -87,12 +87,18 @@ public class Pit : DefenseTrap {
             {
                 Debug.Log("Pit triggered");
                 player = a_col.gameObject;
-                
+
+                if (a_col.GetComponent<PlayerController>().holdingChemFlag != null)
+                {
+                    if (a_col.GetComponent<PlayerController>().holdingChemFlag.isBeingCarried == true)
+                    {
+                        a_col.GetComponent<PlayerController>().DropChemFlag();
+                    }
+                }
                 //sets player's position to middle of pit
                 player.GetComponent<PlayerController>().transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y - 5, transform.position.z), Quaternion.identity);
-                //decreases player's y position                
-                //player.transform.Translate(0.0f, -1.0f, 0.0f);
 
+                
                 isTriggered = true;
 
             }

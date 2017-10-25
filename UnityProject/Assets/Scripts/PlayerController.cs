@@ -12,19 +12,23 @@ public class PlayerController : MonoBehaviour
     //public MeleeAttack meleeHitbox;
     public float speed;
     public float maxSpeed = 5;
-    public Vector3 previousRotation = Vector3.forward;
+
     //private float attackDelay;
     //public float attackDamage;
     public bool playerMovement;
 
 	public Transform chemFlagHoldPoint;
-	private Chem_Flag holdingChemFlag;
+
 	public int teamNumber = 1;
 	public float distanceFromChemFlagToPickUp = 2;
 
-	public Transform ememyChemFlag;
+	public Transform enemyChemFlag;
 
     PlayerHealth playerHealth;
+
+    [HideInInspector] public Chem_Flag holdingChemFlag;
+    [HideInInspector] public bool isBeingLaunched;
+    [HideInInspector] public Vector3 previousRotation = Vector3.forward;
 
 	//(blue = 1, red = 2);
 
@@ -76,22 +80,7 @@ public class PlayerController : MonoBehaviour
 
 		if (XCI.GetButtonDown(XboxButton.Y,controller))
 		{
-			if (holdingChemFlag == null)
-            {
-				if (Vector3.Distance(ememyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
-                {
-					ememyChemFlag.SetParent(chemFlagHoldPoint);
-					ememyChemFlag.position = chemFlagHoldPoint.position;
-					ememyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
-					holdingChemFlag = ememyChemFlag.GetComponent<Chem_Flag>();
-				}
-			}
-            else
-            {
-				holdingChemFlag.DropChemFlag();
-				holdingChemFlag = null;
-				ememyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
-			}
+            DropChemFlag();
 		}
 
         if (playerMovement == true)
@@ -130,5 +119,39 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(axisX, 0, axisZ);
 
         charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
+    }
+
+    //move the player in an arc to the target position (used for humanthrower)
+    public void Launch(Vector3 a_target)
+    {
+        while (isBeingLaunched == true)
+        {
+            //use slerp or lerp to move position
+
+            //check if player position == a_target position (excluding y)
+
+            isBeingLaunched = false;
+        }
+
+    }
+
+    public void DropChemFlag()
+    {
+        if (holdingChemFlag == null)
+        {
+            if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
+            {
+                enemyChemFlag.SetParent(chemFlagHoldPoint);
+                enemyChemFlag.position = chemFlagHoldPoint.position;
+                enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
+                holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
+            }
+        }
+        else
+        {
+            holdingChemFlag.DropChemFlag();
+            holdingChemFlag = null;
+            enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
+        }
     }
 }

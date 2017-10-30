@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 136177001680094838}
   - component: {fileID: 23537735240355958}
   - component: {fileID: 54407187310608996}
+  - component: {fileID: 114980524413516010}
   m_Layer: 0
   m_Name: BlueLazer
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1197865316393722}
   m_LocalRotation: {x: 0.6927048, y: -0, z: -0, w: 0.72122127}
-  m_LocalPosition: {x: 57.414, y: 12.581, z: -1.772}
+  m_LocalPosition: {x: 56.949436, y: 11.931221, z: -5.9652457}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,6 +98,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &114980524413516010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1197865316393722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1165649aa06634a86a16560bef271f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136177001680094838
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -104,7 +116,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1197865316393722}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2

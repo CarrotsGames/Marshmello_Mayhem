@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 29577083}
   - component: {fileID: 29577082}
   - component: {fileID: 29577081}
+  - component: {fileID: 29577085}
   m_Layer: 0
   m_Name: Normal Inventions
   m_TagString: Untagged
@@ -461,6 +462,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 29577079}
+--- !u!114 &29577085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29577079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1fbc69330fa4540b35afd3ecce933c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 784893820}
 --- !u!1001 &30378144
 Prefab:
   m_ObjectHideFlags: 0
@@ -7302,6 +7315,7 @@ GameObject:
   - component: {fileID: 587619063}
   - component: {fileID: 587619062}
   - component: {fileID: 587619061}
+  - component: {fileID: 587619065}
   m_Layer: 5
   m_Name: Normal Inventions
   m_TagString: Untagged
@@ -7388,6 +7402,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 587619059}
+--- !u!114 &587619065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 587619059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1fbc69330fa4540b35afd3ecce933c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 778572902}
 --- !u!1 &588110691
 GameObject:
   m_ObjectHideFlags: 0
@@ -11978,6 +12004,11 @@ Prefab:
       propertyPath: resourceIncrease
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114396449601580346, guid: b693b27f6ce7f134da73676be8ce5fcc,
+        type: 2}
+      propertyPath: extraTraps
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b693b27f6ce7f134da73676be8ce5fcc, type: 2}
   m_IsPrefabParent: 0
@@ -13734,6 +13765,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23733472090165428, guid: cbad30bdc5f98fe4fbb1c30192dcd9b9,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7fcffc869fdad8f408041f9def2757bf, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbad30bdc5f98fe4fbb1c30192dcd9b9, type: 2}
   m_IsPrefabParent: 0
@@ -14874,15 +14910,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winScore: 3
   projectileTimer: 0.25
-  gunDamage: 3
+  gunDamage: 2
   projectileCooldown: 1
   projectilePushback: 1
   projectileSpeed: 50
   placedTraps: []
-  timeBetweenPlayerHeals: 5
-  healthGain: 10
-  FirstInventionSet: {fileID: 0}
-  SecondInventionSet: {fileID: 0}
+  timeBetweenPlayerHeals: 0
+  healthGain: 0
+  FirstInventionSetImage: {fileID: 21300000, guid: ec43ada145f8b8c428f877518618c41f,
+    type: 3}
+  SecondInventionSetImage: {fileID: 21300000, guid: da978e3b214709447a7795c3b19bc137,
+    type: 3}
 --- !u!1 &1118111164
 GameObject:
   m_ObjectHideFlags: 0
@@ -16141,6 +16179,7 @@ GameObject:
   - component: {fileID: 1286269833}
   - component: {fileID: 1286269832}
   - component: {fileID: 1286269831}
+  - component: {fileID: 1286269835}
   m_Layer: 5
   m_Name: Normal Inventions
   m_TagString: Untagged
@@ -16227,6 +16266,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1286269829}
+--- !u!114 &1286269835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1286269829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1fbc69330fa4540b35afd3ecce933c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1555625384}
 --- !u!1001 &1291271435
 Prefab:
   m_ObjectHideFlags: 0
@@ -22650,6 +22701,7 @@ GameObject:
   - component: {fileID: 1908637311}
   - component: {fileID: 1908637310}
   - component: {fileID: 1908637309}
+  - component: {fileID: 1908637313}
   m_Layer: 5
   m_Name: Normal Inventions
   m_TagString: Untagged
@@ -22736,6 +22788,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1908637307}
+--- !u!114 &1908637313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1908637307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1fbc69330fa4540b35afd3ecce933c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 952709116}
 --- !u!4 &1909675481 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641,

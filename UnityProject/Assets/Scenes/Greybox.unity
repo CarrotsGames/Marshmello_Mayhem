@@ -2904,7 +2904,7 @@ Prefab:
         type: 2}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 40837348}
+      objectReference: {fileID: 1918036485}
     - target: {fileID: 23075537918135112, guid: 1c2b569689dee64489dff9e0c99347a0,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -10852,6 +10852,11 @@ Prefab:
       propertyPath: m_Name
       value: Environment_002_Lab_002_WorkDesk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23488238645668300, guid: 7217a94c4c684d9448c68993d5022dd1,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a8689e4ff795e04987788efb09fca6c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7217a94c4c684d9448c68993d5022dd1, type: 2}
   m_IsPrefabParent: 0
@@ -13703,7 +13708,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4223776759257304, guid: cbad30bdc5f98fe4fbb1c30192dcd9b9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -11.650415
+      value: -11.672
       objectReference: {fileID: 0}
     - target: {fileID: 4223776759257304, guid: cbad30bdc5f98fe4fbb1c30192dcd9b9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14583,7 +14588,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4595979813331448, guid: 52a7c839b3cb7494886aabe1fe784c71, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -24.651245
+      value: -24.642
       objectReference: {fileID: 0}
     - target: {fileID: 4595979813331448, guid: 52a7c839b3cb7494886aabe1fe784c71, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14605,6 +14610,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23501668568233636, guid: 52a7c839b3cb7494886aabe1fe784c71,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be157521b4e7de04299143288fba620c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52a7c839b3cb7494886aabe1fe784c71, type: 2}
   m_IsPrefabParent: 0
@@ -14866,9 +14876,13 @@ MonoBehaviour:
   projectileTimer: 0.25
   gunDamage: 3
   projectileCooldown: 1
-  projectilePushback: 0
+  projectilePushback: 1
   projectileSpeed: 50
   placedTraps: []
+  timeBetweenPlayerHeals: 5
+  healthGain: 10
+  FirstInventionSet: {fileID: 0}
+  SecondInventionSet: {fileID: 0}
 --- !u!1 &1118111164
 GameObject:
   m_ObjectHideFlags: 0
@@ -21639,6 +21653,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23488238645668300, guid: 7217a94c4c684d9448c68993d5022dd1,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1070efb58703cb848bf5db5e46ada714, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7217a94c4c684d9448c68993d5022dd1, type: 2}
   m_IsPrefabParent: 0

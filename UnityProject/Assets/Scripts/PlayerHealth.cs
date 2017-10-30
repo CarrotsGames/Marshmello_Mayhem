@@ -53,6 +53,11 @@ public class PlayerHealth : MonoBehaviour
 
             timer = 0;
         }
+
+        if (currentHealth >= maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
 
     public void TakeDamage(int damageAmount)

@@ -19,8 +19,8 @@ public class GameController : MonoBehaviour {
     public float timeBetweenPlayerHeals;
     public int healthGain;
 
-    public Sprite FirstInventionSet;
-    public Sprite SecondInventionSet;
+    public Sprite FirstInventionSetImage;
+    public Sprite SecondInventionSetImage;
 
     public enum Direction
     {

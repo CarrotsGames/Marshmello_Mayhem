@@ -6,7 +6,6 @@ public class HumanThrower : TrapBehaviour {
 
     public GameObject startTile;
     public GameObject endTile;
-    public float speed;
     private float startTime;
     GameObject[] grid;
     public GameController.Direction direction;
@@ -15,12 +14,13 @@ public class HumanThrower : TrapBehaviour {
     GameObject player;
 
     //slerping
-    ///////////
     private bool isLerping = false;
     private Vector3 startPosition;
     private Vector3 targetPosition;
     private float lerpTimer = 0.0f;
-    private float lerpDuration = 1.5f;
+    public float lerpDuration = 1.5f;
+    private float timer = 0.0f;
+    public float timeBeforeActivation = 5.0f;
 
     [SerializeField] private AnimationCurve arcCurve;
 
@@ -70,11 +70,18 @@ public class HumanThrower : TrapBehaviour {
                 endTile = grid[i];
             }
         }
+
+        gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        timer += Time.deltaTime;
 
+        if (timer >= timeBeforeActivation)
+        {
+            gameObject.GetComponent<BoxCollider>().enabled = true;
+        }
     }
 
     private void OnTriggerEnter(Collider a_col)

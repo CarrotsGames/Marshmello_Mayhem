@@ -75,24 +75,6 @@ public class HumanThrower : TrapBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
-        //if(isLerping)
-        //{
-        //    lerpTimer += Time.deltaTime;
-
-        //    //calculate value from 0 - 1 which is percentage of movement completed.
-        //    float lerpValue = lerpTimer / lerpDuration;
-
-        //    //lerp complete
-        //    if (lerpValue >= 1.0f)
-        //    {
-        //        lerpValue = 1.0f;
-        //        isLerping = false;
-        //    }
-
-        //    player.transform.position = Vector3.Lerp(startPosition, targetPosition, lerpValue) + Vector3.up * arcCurve.Evaluate(lerpValue);
-
-        //}
     }
 
     private void OnTriggerEnter(Collider a_col)
@@ -107,11 +89,5 @@ public class HumanThrower : TrapBehaviour {
         //call lerp function in player
         player.GetComponent<PlayerController>().StartLerp(targetPosition, lerpDuration, arcCurve);
 
-    }
-
-    private void OnDrawGizmos()
-    {
-
-      //  Gizmos.DrawSphere(targetPosition, 1.0f);
     }
 }

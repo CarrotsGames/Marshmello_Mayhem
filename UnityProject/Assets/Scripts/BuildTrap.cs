@@ -128,23 +128,22 @@ public class BuildTrap : MonoBehaviour {
         }
         //checks if a trap is currently being built
         if (isActive == false && isEnabled == true)
-        {            
+        {
             if (selectedTrap == null)
             {
-                selectedTrap = prefabList.TarPit;
-                rise = 0.8f;
-                cost = selectedTrap.GetComponent<TarPit>().cost;
+                Default();
             }
             if (XCI.GetButtonDown(XboxButton.RightBumper))
             {
                 if (extraTraps == true)
                 {
                     extraTraps = false;
-                    
+                    Default();
                 }
                 else
                 {
                     extraTraps = true;
+                    Default();
                 }
             }
 
@@ -214,7 +213,7 @@ public class BuildTrap : MonoBehaviour {
                 {
                     selectedTrap = prefabList.MatterMover;
                     cost = selectedTrap.GetComponent<Invention_008_MatterMover>().cost;
-                    rise = 1.0f;
+                    rise = 2.4f;
                     Destroy(preview);
                     previewExist = false;
                 }
@@ -429,6 +428,32 @@ public class BuildTrap : MonoBehaviour {
         if (preview.GetComponent<Collider>() != null)
         {
             preview.GetComponent<Collider>().enabled = false;
+        }
+    }
+
+    void Default()
+    {
+        if (extraTraps == true)
+        {
+            selectedTrap = prefabList.LastPrayer;
+            cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
+            rise = 1.2f;
+            if (preview != null)
+            {
+                Destroy(preview);
+                previewExist = false;
+            }
+        }
+        else
+        {
+            selectedTrap = prefabList.TarPit;
+            rise = 0.8f;
+            cost = selectedTrap.GetComponent<TarPit>().cost;
+            if (preview != null)
+            {
+                Destroy(preview);
+                previewExist = false;
+            }
         }
     }
 }

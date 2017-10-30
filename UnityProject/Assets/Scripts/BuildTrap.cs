@@ -33,15 +33,6 @@ public class BuildTrap : MonoBehaviour {
     // Use this for initialization
     void Start ()
     { 
-        //if (GameObject.Find("PrefabList").GetComponent<PrefabList>() == null)
-        //{
-        //    Debug.Log("PrefabList game object doesn't exist");
-        //}
-        //else
-        //{
-        //    prefabList = GameObject.Find("PrefabList").GetComponent<PrefabList>();
-        //}
-
         if (FindObjectOfType<PrefabList>() == null)
         {
             Debug.Log("PrefabList game object doesn't exist");
@@ -104,6 +95,46 @@ public class BuildTrap : MonoBehaviour {
             if (prefabList.HumanThrower.GetComponent<HumanThrower>() == null)
             {
                 Debug.Log("HumanThrower script not assigned to Human Thrower object");
+                error = true;
+            }
+            if (prefabList.PillarOfSaws == null)
+            {
+                Debug.Log("PillarOfSaws not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.PillarOfSaws.GetComponent<Invention_005_PillarOfSaws>() == null)
+            {
+                Debug.Log("PillarOfSaws script not assigned to Pillar Of Saws object");
+                error = true;
+            }
+            if (prefabList.Anti_StickMatter == null)
+            {
+                Debug.Log("Anti stick matter not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.Anti_StickMatter.GetComponent<Invention_006_AntiStickMatter>() == null)
+            {
+                Debug.Log("Anti_stickMatter script not assigned to Anti stick matter object");
+                error = true;
+            }
+            if (prefabList.LastPrayer == null)
+            {
+                Debug.Log("Last Prayer not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.LastPrayer.GetComponent<Invention_007_LastPrayer>() == null)
+            {
+                Debug.Log("LastPrayer script not assigned to Last Prayer object");
+                error = true;
+            }
+            if (prefabList.MatterMover == null)
+            {
+                Debug.Log("Matter Mover not assigned to PrefabList game object");
+                error = true;
+            }
+            if (prefabList.MatterMover.GetComponent<Invention_008_MatterMover>() == null)
+            {
+                Debug.Log("MatterMover script not assigned to Matter Mover object");
                 error = true;
             }
             if (GetComponent<PlayerController>() == null)
@@ -205,7 +236,7 @@ public class BuildTrap : MonoBehaviour {
                 {
                     selectedTrap = prefabList.PillarOfSaws;
                     cost = selectedTrap.GetComponent<Invention_005_PillarOfSaws>().cost;
-                    rise = 0.8f;
+                    rise = 2.0f;
                     Destroy(preview);
                     previewExist = false;
                 }
@@ -395,6 +426,7 @@ public class BuildTrap : MonoBehaviour {
             if (potentialTiles.Count > 0)
             {
                 Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+                vecbetween.y = 0;
 
                 if (vecbetween.magnitude < playerToTileDistance)
                 {
@@ -423,6 +455,22 @@ public class BuildTrap : MonoBehaviour {
         if (preview.GetComponent<HumanThrower>() != null)
         {
             preview.GetComponent<HumanThrower>().enabled = false;
+        }
+        if (preview.GetComponent<Invention_007_LastPrayer>() != null)
+        {
+            preview.GetComponent<Invention_007_LastPrayer>().enabled = false;
+        }
+        if (preview.GetComponent<Invention_005_PillarOfSaws>() != null)
+        {
+            preview.GetComponent<Invention_005_PillarOfSaws>().enabled = false;
+        }
+        if (preview.GetComponent<Invention_006_AntiStickMatter>() != null)
+        {
+            preview.GetComponent<Invention_006_AntiStickMatter>().enabled = false;
+        }
+        if (preview.GetComponent<Invention_008_MatterMover>() != null)
+        {
+            preview.GetComponent<Invention_008_MatterMover>().enabled = false;
         }
 
         if (preview.GetComponent<Collider>() != null)

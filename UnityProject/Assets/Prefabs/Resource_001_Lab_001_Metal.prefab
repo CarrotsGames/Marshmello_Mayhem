@@ -37,8 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4732649000716026}
   - component: {fileID: 65435706117138906}
-  - component: {fileID: 95933233911771622}
   - component: {fileID: 114743734470258338}
+  - component: {fileID: 114513943387798606}
   m_Layer: 0
   m_Name: Resource_001_Lab_001_Metal
   m_TagString: Untagged
@@ -124,23 +124,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3003649, y: 0.22, z: 0.37}
   m_Center: {x: -0.038267437, y: -0.019999996, z: -0.07000072}
---- !u!95 &95933233911771622
-Animator:
-  serializedVersion: 3
+--- !u!114 &114513943387798606
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1384477231408220}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e639173e642b034ebbc6a4a3ceab1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!114 &114743734470258338
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1524,6 +1524,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114513943387798606, guid: 95bb06972d9cfc940a57e97d34d9bdfd,
+        type: 2}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
   m_IsPrefabParent: 0
@@ -1929,21 +1934,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e3a3a973fe3ccc64bb879005a072032d, type: 2}
-    - target: {fileID: 65330658769348892, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 1.3074827
-      objectReference: {fileID: 0}
-    - target: {fileID: 65330658769348892, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_Center.y
-      value: -0.07844782
-      objectReference: {fileID: 0}
     - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
         type: 2}
       propertyPath: team1Base
@@ -1958,8 +1948,12 @@ Prefab:
       propertyPath: m_Name
       value: Objective_001_Lab_001_ChemCanister_Red
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114439087411749426, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+    - target: {fileID: 114589141793071064, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &156102381 stripped
@@ -8682,14 +8676,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 95933233911771622, guid: 95bb06972d9cfc940a57e97d34d9bdfd,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 395941b32991c9341b5821423ebee841, type: 2}
     - target: {fileID: 1384477231408220, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
       propertyPath: m_Name
       value: Resource_001_Lab_001_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 114513943387798606, guid: 95bb06972d9cfc940a57e97d34d9bdfd,
+        type: 2}
+      propertyPath: speed
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
@@ -9022,6 +9020,11 @@ Prefab:
     - target: {fileID: 4732649000716026, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -555.732
+      objectReference: {fileID: 0}
+    - target: {fileID: 114513943387798606, guid: 95bb06972d9cfc940a57e97d34d9bdfd,
+        type: 2}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
@@ -10331,7 +10334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxResource: 100
   currentResource: 0
-  resourceIncrease: 10
+  resourceIncrease: 1
   timeBetween: 2
 --- !u!1001 &782134956
 Prefab:
@@ -10469,7 +10472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxResource: 100
   currentResource: 0
-  resourceIncrease: 10
+  resourceIncrease: 1
   timeBetween: 2
 --- !u!1 &792808619
 GameObject:
@@ -12202,6 +12205,11 @@ Prefab:
       propertyPath: m_Name
       value: Resource_001_Lab_001_Metal
       objectReference: {fileID: 0}
+    - target: {fileID: 114513943387798606, guid: 95bb06972d9cfc940a57e97d34d9bdfd,
+        type: 2}
+      propertyPath: speed
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95bb06972d9cfc940a57e97d34d9bdfd, type: 2}
   m_IsPrefabParent: 0
@@ -12425,7 +12433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxResource: 100
   currentResource: 0
-  resourceIncrease: 10
+  resourceIncrease: 1
   timeBetween: 2
 --- !u!1001 &953641763
 Prefab:
@@ -18226,8 +18234,18 @@ Prefab:
       propertyPath: m_Name
       value: Objective_001_Lab_001_ChemCanister_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7564997483f7bb4469a395628a41045b, type: 2}
+    - target: {fileID: 114589141793071064, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: speed
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114439087411749426, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1437087318 stripped
@@ -19567,7 +19585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxResource: 100
   currentResource: 0
-  resourceIncrease: 10
+  resourceIncrease: 1
   timeBetween: 2
 --- !u!1 &1561362948 stripped
 GameObject:

@@ -25,6 +25,8 @@ public class BuildTrap : MonoBehaviour {
 
     bool error;
 
+    public bool extraTraps;
+
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.5f;
 
@@ -133,39 +135,90 @@ public class BuildTrap : MonoBehaviour {
                 rise = 0.8f;
                 cost = selectedTrap.GetComponent<TarPit>().cost;
             }
-            if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
+            if (XCI.GetButtonDown(XboxButton.RightBumper))
             {
-                selectedTrap = prefabList.TarPit;
-                cost = selectedTrap.GetComponent<TarPit>().cost;
-                rise = 0.8f;
-                Destroy(preview);
-                previewExist = false;
-            }
-            if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
-            {
-                selectedTrap = prefabList.Pit;
-                cost = selectedTrap.GetComponent<Pit>().cost;
-                rise = 0;
-                Destroy(preview);
-                previewExist = false;
-            }
-            if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
-            {
-                selectedTrap = prefabList.PlaceableWall;
-                cost = selectedTrap.GetComponent<PlaceableWall>().cost;
-                rise = 1.0f;
-                Destroy(preview);
-                previewExist = false;
-            }
-            if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
-            {                
-                selectedTrap = prefabList.HumanThrower;
-                cost = selectedTrap.GetComponent<HumanThrower>().cost;
-                rise = 1.0f;
-                Destroy(preview);
-                previewExist = false;
+                if (extraTraps == true)
+                {
+                    extraTraps = false;
+                    
+                }
+                else
+                {
+                    extraTraps = true;
+                }
             }
 
+            if (extraTraps == false)
+            {
+                if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
+                {
+                    selectedTrap = prefabList.TarPit;
+                    cost = selectedTrap.GetComponent<TarPit>().cost;
+                    rise = 0.8f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+                if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
+                {
+                    selectedTrap = prefabList.Pit;
+                    cost = selectedTrap.GetComponent<Pit>().cost;
+                    rise = -0.2f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+                if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
+                {
+                    selectedTrap = prefabList.PlaceableWall;
+                    cost = selectedTrap.GetComponent<PlaceableWall>().cost;
+                    rise = 0.5f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+                if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
+                {
+                    selectedTrap = prefabList.HumanThrower;
+                    cost = selectedTrap.GetComponent<HumanThrower>().cost;
+                    rise = 0.6f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+            }
+
+            if (extraTraps == true)
+            {
+                if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
+                {
+                    selectedTrap = prefabList.LastPrayer;
+                    cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
+                    rise = 1.2f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+                if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
+                {
+                    selectedTrap = prefabList.Anti_StickMatter;
+                    cost = selectedTrap.GetComponent<Invention_006_AntiStickMatter>().cost;
+                    rise = 0.8f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+                if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
+                {
+                    selectedTrap = prefabList.PillarOfSaws;
+                    cost = selectedTrap.GetComponent<Invention_005_PillarOfSaws>().cost;
+                    rise = 0.8f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+                if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
+                {
+                    selectedTrap = prefabList.MatterMover;
+                    cost = selectedTrap.GetComponent<Invention_008_MatterMover>().cost;
+                    rise = 1.0f;
+                    Destroy(preview);
+                    previewExist = false;
+                }
+            }
             //sets the rotation to player's previous rotation
             Vector3 forward = GetComponent<PlayerController>().previousRotation;
             Vector3 upwards = new Vector3(0, 1, 0);
@@ -315,7 +368,7 @@ public class BuildTrap : MonoBehaviour {
         if (selectedTrap == prefabList.HumanThrower)
         {
             //passes current rotation in to human thrower object to determine direction
-            createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().SetTargetDirection(rotation);
+            createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().direction = GetComponent<PlayerController>().direction;
         }
 
         GetComponent<ResourceController>().currentResource -= cost;
@@ -375,7 +428,7 @@ public class BuildTrap : MonoBehaviour {
 
         if (preview.GetComponent<Collider>() != null)
         {
-            Physics.IgnoreCollision(preview.GetComponent<Collider>(), GetComponent<CharacterController>());
+            preview.GetComponent<Collider>().enabled = false;
         }
     }
 }

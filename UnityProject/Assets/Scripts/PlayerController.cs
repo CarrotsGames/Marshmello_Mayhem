@@ -13,8 +13,6 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float maxSpeed = 5;
 
-    //private float attackDelay;
-    //public float attackDamage;
     public bool playerMovement;
 
 	public Transform chemFlagHoldPoint;
@@ -29,6 +27,8 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public Chem_Flag holdingChemFlag;
     [HideInInspector] public bool isBeingLaunched;
     [HideInInspector] public Vector3 previousRotation = Vector3.forward;
+
+    public GameController.Direction direction;
 
 	//(blue = 1, red = 2);
 
@@ -45,6 +45,10 @@ public class PlayerController : MonoBehaviour
         else
         {
             Debug.Log("Missing PlayerHealth script on player");
+        }
+        if (enemyChemFlag == null)
+        {
+            Debug.Log("Nothing assigned to Player's 'Enemy Chem Flag'");
         }
     }
 
@@ -90,13 +94,29 @@ public class PlayerController : MonoBehaviour
 
             Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
 
-            //transform.Translate(movement);
             MovePlayer();
         }
     }		
 
     private void RotatePlayer()
     {
+        if (previousRotation == new Vector3(0, 0, 1))
+        {
+            direction = GameController.Direction.UP;
+        }
+        if (previousRotation == new Vector3(0, 0, -1))
+        {
+            direction = GameController.Direction.DOWN;
+        }
+        if (previousRotation == new Vector3(1, 0, 0))
+        {
+            direction = GameController.Direction.RIGHT;
+        }
+        if (previousRotation == new Vector3(-1, 0, 0))
+        {
+            direction = GameController.Direction.LEFT;
+        }
+
         float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
         float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
         Vector3 directionVector = new Vector3(rotateAxisX, 0, rotateAxisZ);
@@ -109,6 +129,7 @@ public class PlayerController : MonoBehaviour
         directionVector = directionVector.normalized;
         previousRotation = directionVector;
         transform.rotation = Quaternion.LookRotation(directionVector);
+        
     }
 
     private void MovePlayer()
@@ -122,18 +143,35 @@ public class PlayerController : MonoBehaviour
     }
 
     //move the player in an arc to the target position (used for humanthrower)
-    public void Launch(Vector3 a_target)
-    {
-        while (isBeingLaunched == true)
-        {
-            //use slerp or lerp to move position
+    //public void Launch(Vector3 a_target)
+    //{
+    //    isBeingLaunched = true;
+    //    float startTime = Time.time;
 
-            //check if player position == a_target position (excluding y)
+    //    if (isBeingLaunched == true)
+    //    {            
+    //        //use slerp or lerp to move position
+    //        Vector3 centre = (transform.position + a_target) * 0.5f;
 
-            isBeingLaunched = false;
-        }
+    //        centre -= new Vector3(0, 2, 0);
 
-    }
+    //        Vector3 rise = transform.position - centre;
+    //        Vector3 set = a_target - centre;
+
+    //        float fracComplete = (Time.time - startTime) / speed;
+
+    //        transform.position = Vector3.Slerp(rise, set, fracComplete);
+
+    //        transform.position += centre;
+
+    //        //check if player position == a_target position (excluding y)
+    //        if (transform.position == new Vector3(a_target.x, transform.position.y, a_target.z))
+    //        {
+    //            isBeingLaunched = false;
+    //        }
+    //    }
+
+    //}
 
     public void DropChemFlag()
     {

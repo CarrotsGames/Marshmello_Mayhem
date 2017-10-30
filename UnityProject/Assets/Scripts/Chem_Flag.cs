@@ -44,6 +44,15 @@ public class Chem_Flag : MonoBehaviour {
         {
             Debug.Log("TeamScore script not attached to anything");
         }
+
+        if (team1Base == null)
+        {
+            Debug.Log("Chem Canister is missing team 1 base");
+        }
+        if (team2Base == null)
+        {
+            Debug.Log("Chem Canister is missing team 2 base");
+        }        
     }
     void Update()
     {

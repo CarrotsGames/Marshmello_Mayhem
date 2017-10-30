@@ -16,6 +16,11 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         isAlive = true;
+
+        if (respawnPoint == null)
+        {
+            Debug.Log("Player does not have respawn point");
+        }
     }
 
     // Update is called once per frame

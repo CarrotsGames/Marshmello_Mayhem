@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaceableWall : DefenseTrap {
+public class PlaceableWall : TrapBehaviour
+{
 
     public int maxHealth = 1;
     private int health;

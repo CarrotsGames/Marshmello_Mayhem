@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefenseTrap : MonoBehaviour {
-
-    public int cost;
+public class Invention_006_AntiStickMatter : TrapBehaviour
+{
 
 	// Use this for initialization
 	void Start () {

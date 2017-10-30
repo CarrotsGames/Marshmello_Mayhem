@@ -16,10 +16,23 @@ public class GameController : MonoBehaviour {
     private float speedCap = 120.0f;
     public List<GameObject> placedTraps;
 
+    public enum Direction
+    {
+        UP,
+        DOWN,
+        RIGHT,
+        LEFT,
+    }
+
 	// Use this for initialization
 	void Start ()
     {
         teamScore = FindObjectOfType<TeamScore_UI>();
+
+        if (FindObjectOfType<Countdown_Timer>() == null)
+        {
+            Debug.Log("Missing Countdown_Timer script");
+        }
 	}
 	
 	// Update is called once per frame
@@ -30,7 +43,10 @@ public class GameController : MonoBehaviour {
             projectileSpeed = speedCap;
         }
 
-        gameOverState = FindObjectOfType<Countdown_Timer>().gameOver;
+        if (FindObjectOfType<Countdown_Timer>() != null)
+        {
+            gameOverState = FindObjectOfType<Countdown_Timer>().gameOver;
+        }
 
         //if a team reaches winScore
 		if (teamScore.team1Score == winScore)

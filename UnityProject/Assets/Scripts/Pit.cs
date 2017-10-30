@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pit : DefenseTrap {
+public class Pit : TrapBehaviour
+{
 
     GameObject[] floorGrid;
     public int timeBeforeActivation = 5;

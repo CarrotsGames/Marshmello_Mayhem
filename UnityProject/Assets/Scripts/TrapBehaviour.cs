@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OffensiveTrap : MonoBehaviour {
+public class TrapBehaviour : MonoBehaviour {
 
     public int cost;
 	// Use this for initialization

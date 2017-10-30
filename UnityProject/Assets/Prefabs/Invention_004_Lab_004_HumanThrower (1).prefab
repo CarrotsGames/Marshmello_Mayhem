@@ -51,13 +51,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1611939059781540}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4817745043085056}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4817745043085056
 Transform:
   m_ObjectHideFlags: 1
@@ -119,11 +119,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1441657394340240}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0835037, y: 0.18307093, z: 1.043192}
-  m_Center: {x: -0.010158539, y: 0.0074745864, z: 0}
+  m_Size: {x: 1.3154602, y: 1.6613419, z: 1.1464262}
+  m_Center: {x: 0.0048675537, y: 0.74661005, z: -0.051617146}
 --- !u!114 &114943764358378216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446f23a8b2677ec48bbd63777236ae09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 20
+  cost: 15
   startTile: {fileID: 0}
   endTile: {fileID: 0}
-  speed: 0
+  speed: 10
   direction: 0
   arcCurve:
     serializedVersion: 2
@@ -150,8 +150,14 @@ MonoBehaviour:
       outSlope: 2
       tangentMode: 0
     - serializedVersion: 2
+      time: 0.5
+      value: 2
+      inSlope: 0.058710575
+      outSlope: 0.058710575
+      tangentMode: 0
+    - serializedVersion: 2
       time: 1
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

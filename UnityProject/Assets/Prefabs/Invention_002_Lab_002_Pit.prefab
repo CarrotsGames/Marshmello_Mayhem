@@ -245,8 +245,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.801966, y: 1, z: 1.9132912}
-  m_Center: {x: 0.0013637543, y: 0, z: -0.08632389}
+  m_Size: {x: 2.801966, y: 1.9883652, z: 1.9132912}
+  m_Center: {x: 0.0013637543, y: 0.4941826, z: -0.08632386}
 --- !u!114 &114726891219550300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,8 +259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 15
-  timeBeforeActivation: 5
-  timeBeforeDeath: 2
+  timeBeforeActivation: 1
+  timeBeforeDeath: 0.1
 --- !u!198 &198352439678783234
 ParticleSystem:
   m_ObjectHideFlags: 1

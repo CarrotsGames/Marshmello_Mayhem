@@ -87,9 +87,10 @@ GameObject:
   - component: {fileID: 4683018609984782}
   - component: {fileID: 114883917475273954}
   - component: {fileID: 143006388852838278}
-  - component: {fileID: 114243669130088616}
   - component: {fileID: 114396449601580346}
   - component: {fileID: 65005953300523014}
+  - component: {fileID: 114650510864562818}
+  - component: {fileID: 114243848370118772}
   m_Layer: 0
   m_Name: PlayerChar_001_Scientist_001_Moustache 1
   m_TagString: Player
@@ -426,8 +427,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.8086977, z: 1}
-  m_Center: {x: 0, y: 0.018729687, z: 0}
+  m_Size: {x: 1.9278622, y: 4.1749353, z: 1}
+  m_Center: {x: 0.048588753, y: 1.2018485, z: 0}
 --- !u!65 &65429295366285502
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -440,7 +441,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0487108, y: 0.35, z: 0.3}
   m_Center: {x: 0.5756445, y: 0.049999997, z: -0.59}
---- !u!114 &114243669130088616
+--- !u!114 &114243848370118772
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -451,10 +452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab07abc91cf46ec4488cab650e1d1bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxResource: 0
+  maxResource: 100
   currentResource: 0
-  resourceIncrease: 0
-  timeBetween: 0
+  resourceIncrease: 1
+  timeBetween: 2
 --- !u!114 &114323119818473704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,11 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2986834fcd29ce40b8c14fb9fa5ae40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFiring: 0
+  isEnabled: 0
   projectile: {fileID: 1197865316393722, guid: 31939a270da5431478f7de7d82038f54, type: 2}
-  projectileSpeed: 50
-  timeBetweenShots: 2
-  projectileTimer: 0
   firePoint: {fileID: 4463105120036366}
 --- !u!114 &114396449601580346
 MonoBehaviour:
@@ -484,8 +482,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  isEnabled: 1
+  isEnabled: 0
+  extraTraps: 0
   playerToTileDistance: 1.5
+--- !u!114 &114650510864562818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630196708191162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2672ede5f910a4c87fe8b09979b8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlive: 1
+  maxHealth: 10
+  currentHealth: 10
+  respawnPoint: {fileID: 0}
+  respawnTimer: 3
 --- !u!114 &114883917475273954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -500,16 +515,16 @@ MonoBehaviour:
   charController: {fileID: 143006388852838278}
   controller: 3
   rayGun: {fileID: 114323119818473704}
-  meleeHitbox: {fileID: 0}
   speed: 5
   maxSpeed: 5
-  previousRotation: {x: 0, y: 0, z: 1}
-  attackDamage: 0
   playerMovement: 1
   chemFlagHoldPoint: {fileID: 4654925327528430}
   teamNumber: 1
   distanceFromChemFlagToPickUp: 2
-  ememyChemFlag: {fileID: 0}
+  enemyChemFlag: {fileID: 0}
+  holdingChemFlag: {fileID: 0}
+  previousRotation: {x: 0, y: 0, z: 1}
+  direction: 0
 --- !u!143 &143006388852838278
 CharacterController:
   m_ObjectHideFlags: 1

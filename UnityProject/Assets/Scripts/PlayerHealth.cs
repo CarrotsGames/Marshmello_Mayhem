@@ -16,6 +16,10 @@ public class PlayerHealth : MonoBehaviour
     private int healValue;
     private float timer;
 
+    private float combatTimer;
+    private float timeOutOfCombat;
+    bool isInCombat = false;
+
     // Use this for initialization
     void Start()
     {
@@ -28,14 +32,17 @@ public class PlayerHealth : MonoBehaviour
         }
 
         gameController = FindObjectOfType<GameController>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        //set values to common variables in gameController
         timeBetweenHeals = gameController.timeBetweenPlayerHeals;
         healValue = gameController.healthGain;
-        
+        timeOutOfCombat = gameController.timeOutOfCombat;
+
         if (isAlive == false)
         {
             currentHealth = 0;
@@ -45,18 +52,36 @@ public class PlayerHealth : MonoBehaviour
             Death();
         }
 
-        timer += Time.deltaTime;
-
-        if (timer >= timeBetweenHeals)
+        //check if player has taken damage
+        if (isInCombat == false)
         {
-            Heal(healValue);
+            timer += Time.deltaTime;
 
-            timer = 0;
+            if (timer >= timeBetweenHeals)
+            {
+                Heal(healValue);
+
+                timer = 0;
+            }
         }
-
+        //prevent currentHealth from exceeding maxHealth
         if (currentHealth >= maxHealth)
         {
             currentHealth = maxHealth;
+        }
+
+        //checks if player has taken damage
+        if (isInCombat == true)
+        {
+            combatTimer += Time.deltaTime;
+
+            if (combatTimer >= timeOutOfCombat)
+            {
+                isInCombat = false;
+
+                combatTimer = 0;
+                timer = 0;
+            }
         }
     }
 
@@ -66,6 +91,9 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damageAmount;
         }
+
+        //when player takes damage, set isInCombat to true
+        isInCombat = true;
     }
 
     public void Death()

@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
     private float speedCap = 120.0f;
     public List<GameObject> placedTraps;
 
+    public float timeOutOfCombat;
     public float timeBetweenPlayerHeals;
     public int healthGain;
 

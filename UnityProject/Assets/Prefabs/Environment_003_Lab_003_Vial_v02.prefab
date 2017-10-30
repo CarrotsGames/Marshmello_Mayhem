@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33605643587530644}
   - component: {fileID: 23733472090165428}
   - component: {fileID: 95773099013721732}
+  - component: {fileID: 65691148564701290}
   m_Layer: 0
   m_Name: Environment_003_Lab_003_Vial_v02
   m_TagString: Untagged
@@ -81,6 +82,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1965871959973900}
   m_Mesh: {fileID: 4300000, guid: e5b43652b019d744ab6426243d1b628b, type: 3}
+--- !u!65 &65691148564701290
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965871959973900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6136167, y: 0.9825517, z: 0.6288197}
+  m_Center: {x: 0.017969996, y: 0.05471164, z: 0.0023454726}
 --- !u!95 &95773099013721732
 Animator:
   serializedVersion: 3

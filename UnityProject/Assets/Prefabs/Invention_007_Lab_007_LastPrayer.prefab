@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4696541561807294}
   - component: {fileID: 95729916659499168}
   - component: {fileID: 114236088638554724}
+  - component: {fileID: 65745388538594064}
   m_Layer: 0
   m_Name: Invention_007_Lab_007_LastPrayer
   m_TagString: Untagged
@@ -111,6 +112,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579675273149978}
   m_Mesh: {fileID: 4300000, guid: 0807cfc8ad92acd42ae375ecd03aa412, type: 3}
+--- !u!65 &65745388538594064
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776957262736304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.060997, y: 1.2119818, z: 1}
+  m_Center: {x: -0.030498505, y: -0.10599089, z: 0}
 --- !u!95 &95729916659499168
 Animator:
   serializedVersion: 3
@@ -139,4 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62eaec39467e7c9489d5a2b78fb2de61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 45

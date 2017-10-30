@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4883605855321194}
   - component: {fileID: 95687226231868236}
   - component: {fileID: 114169832994737026}
+  - component: {fileID: 65665379532445116}
   m_Layer: 0
   m_Name: Invention_005_Lab_005_PillarOfSaws
   m_TagString: Untagged
@@ -111,6 +112,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1245156303626394}
   m_Mesh: {fileID: 4300002, guid: 65c40d6dc64dd8b4c853082956c865d2, type: 3}
+--- !u!65 &65665379532445116
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563550709953352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.18, y: 3.09, z: 1.72}
+  m_Center: {x: 0, y: 0, z: -0.12}
 --- !u!95 &95687226231868236
 Animator:
   serializedVersion: 3
@@ -139,5 +152,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41fee6066e3576a4c822a47402414e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
-  maxHealth: 1
+  cost: 25
+  maxHealth: 70

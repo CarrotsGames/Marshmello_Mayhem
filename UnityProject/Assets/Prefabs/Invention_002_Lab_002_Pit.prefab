@@ -258,7 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a06c50d77b56bb4eb7f0262e2844688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 15
+  timeBeforeActivation: 5
+  timeBeforeDeath: 2
 --- !u!198 &198352439678783234
 ParticleSystem:
   m_ObjectHideFlags: 1

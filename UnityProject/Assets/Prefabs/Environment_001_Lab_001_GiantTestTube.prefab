@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33374306737187416}
   - component: {fileID: 23187877187530294}
   - component: {fileID: 95303776101237244}
+  - component: {fileID: 65177818838649032}
   m_Layer: 0
   m_Name: Environment_001_Lab_001_GiantTestTube
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242424784459518}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.319561, y: -9.851637, z: 42.035732}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.99999577, z: -0, w: 0.0029277108}
+  m_LocalPosition: {x: -23.9, y: -9.94, z: 43.9}
+  m_LocalScale: {x: 1.000001, y: 1, z: 1.000001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.66501, z: 0}
 --- !u!23 &23187877187530294
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -82,6 +83,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242424784459518}
   m_Mesh: {fileID: 4300000, guid: c7c7d071e0a118849be51cd0867b4153, type: 3}
+--- !u!65 &65177818838649032
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242424784459518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9599183, y: 4.445729, z: 1.9856695}
+  m_Center: {x: -0.0000019073486, y: 0, z: -0.000002861023}
 --- !u!95 &95303776101237244
 Animator:
   serializedVersion: 3

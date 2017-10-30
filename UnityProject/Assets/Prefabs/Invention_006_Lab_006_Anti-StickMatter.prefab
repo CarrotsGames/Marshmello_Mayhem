@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4706237676185240}
   - component: {fileID: 95334026555732042}
   - component: {fileID: 114761386091839434}
+  - component: {fileID: 65526629804358326}
   m_Layer: 0
   m_Name: Invention_006_Lab_006_Anti-StickMatter
   m_TagString: Untagged
@@ -111,6 +112,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1217002166441598}
   m_Mesh: {fileID: 4300000, guid: 4a050322783fa8349987d849a3821a78, type: 3}
+--- !u!65 &65526629804358326
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795780544266432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6608238, y: 0.7989912, z: 0.585907}
+  m_Center: {x: -0.024656296, y: 0.1005044, z: 0.011106491}
 --- !u!95 &95334026555732042
 Animator:
   serializedVersion: 3
@@ -139,4 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6551d130ec55f843811438feeeefa0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 15

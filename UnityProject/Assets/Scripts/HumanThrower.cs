@@ -14,6 +14,16 @@ public class HumanThrower : TrapBehaviour {
     //test variables
     GameObject player;
 
+    //slerping
+    ///////////
+    private bool isLerping = false;
+    private Vector3 startPosition;
+    private Vector3 targetPosition;
+    private float lerpTimer = 0.0f;
+    private float lerpDuration = 1.5f;
+
+    [SerializeField] private AnimationCurve arcCurve;
+
     // Use this for initialization
     void Start () {
         grid = GameObject.FindGameObjectsWithTag("Floor");
@@ -29,6 +39,7 @@ public class HumanThrower : TrapBehaviour {
             }
         }        
 
+        //variable to determine where to land
         Vector3 pos = startTile.transform.position;
 
         if (direction == GameController.Direction.UP)
@@ -48,6 +59,7 @@ public class HumanThrower : TrapBehaviour {
             pos.x -= 4;
         }
 
+        //gets end position of arc
         for (int i = 0; i < grid.Length; i++)
         {
             Vector3 vecBetween = pos - grid[i].transform.position;
@@ -63,30 +75,43 @@ public class HumanThrower : TrapBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+        //if(isLerping)
+        //{
+        //    lerpTimer += Time.deltaTime;
+
+        //    //calculate value from 0 - 1 which is percentage of movement completed.
+        //    float lerpValue = lerpTimer / lerpDuration;
+
+        //    //lerp complete
+        //    if (lerpValue >= 1.0f)
+        //    {
+        //        lerpValue = 1.0f;
+        //        isLerping = false;
+        //    }
+
+        //    player.transform.position = Vector3.Lerp(startPosition, targetPosition, lerpValue) + Vector3.up * arcCurve.Evaluate(lerpValue);
+
+        //}
     }
 
     private void OnTriggerEnter(Collider a_col)
     {
-        if (a_col.GetComponent<PlayerController>() != null)
-        {
-            player = a_col.gameObject;
+        player = a_col.gameObject;
 
-            Debug.Log("Player Launched");
-        }
+        isLerping = true;
+        startPosition = player.transform.position;
+        targetPosition = endTile.transform.position + Vector3.up * 1.0f;
+        lerpTimer = 0.0f;
 
-        Vector3 centre = (startTile.transform.position + endTile.transform.position) * 0.5f;
+        //call lerp function in player
+        player.GetComponent<PlayerController>().StartLerp(targetPosition, lerpDuration, arcCurve);
 
-        centre -= new Vector3(0, 2, 0);
+    }
 
-        Vector3 rise = startTile.transform.position - centre;
-        Vector3 set = endTile.transform.position - centre;
+    private void OnDrawGizmos()
+    {
 
-        set = new Vector3(set.x, player.transform.position.y / 2, set.z);
-
-        float fracComplete = (Time.time - startTime) / speed;
-
-        a_col.GetComponent<PlayerController>().transform.position = Vector3.Slerp(rise, set, fracComplete);
-
-        a_col.GetComponent<PlayerController>().transform.position += centre;
+      //  Gizmos.DrawSphere(targetPosition, 1.0f);
     }
 }

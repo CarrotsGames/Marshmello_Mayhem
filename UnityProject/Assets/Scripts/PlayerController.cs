@@ -25,10 +25,17 @@ public class PlayerController : MonoBehaviour
     PlayerHealth playerHealth;
 
     [HideInInspector] public Chem_Flag holdingChemFlag;
-    [HideInInspector] public bool isBeingLaunched;
     [HideInInspector] public Vector3 previousRotation = Vector3.forward;
 
     public GameController.Direction direction;
+
+    //variables for lerp
+    private bool isLerping = false;
+    private float lerpTimer;
+    private float lerpDuration;
+    private Vector3 lerpStartPosition;
+    private Vector3 lerpTargetPosition;
+    private AnimationCurve arcCurve;
 
 	//(blue = 1, red = 2);
 
@@ -55,6 +62,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isLerping == true)
+        {
+            lerpTimer += Time.deltaTime;
+
+            //calculate value from 0 - 1 which is percentage of movement completed
+            float lerpValue = lerpTimer / lerpDuration;
+
+            if (lerpValue >= 1.0f)
+            {
+                lerpValue = 1.0f;
+                isLerping = false;
+            }
+
+            playerHealth.transform.position = Vector3.Lerp(lerpStartPosition, lerpTargetPosition, lerpValue) + Vector3.up * arcCurve.Evaluate(lerpValue);
+        }
+
         if (playerHealth != null)
         {
             if (playerHealth.isAlive == false)
@@ -71,10 +94,8 @@ public class PlayerController : MonoBehaviour
 
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
-        {
-            
-             rayGun.Shoot();
-            
+        {            
+             rayGun.Shoot();            
         }
 
         //if (XCI.GetButtonDown(XboxButton.RightBumper, controller))
@@ -142,37 +163,6 @@ public class PlayerController : MonoBehaviour
         charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
     }
 
-    //move the player in an arc to the target position (used for humanthrower)
-    //public void Launch(Vector3 a_target)
-    //{
-    //    isBeingLaunched = true;
-    //    float startTime = Time.time;
-
-    //    if (isBeingLaunched == true)
-    //    {            
-    //        //use slerp or lerp to move position
-    //        Vector3 centre = (transform.position + a_target) * 0.5f;
-
-    //        centre -= new Vector3(0, 2, 0);
-
-    //        Vector3 rise = transform.position - centre;
-    //        Vector3 set = a_target - centre;
-
-    //        float fracComplete = (Time.time - startTime) / speed;
-
-    //        transform.position = Vector3.Slerp(rise, set, fracComplete);
-
-    //        transform.position += centre;
-
-    //        //check if player position == a_target position (excluding y)
-    //        if (transform.position == new Vector3(a_target.x, transform.position.y, a_target.z))
-    //        {
-    //            isBeingLaunched = false;
-    //        }
-    //    }
-
-    //}
-
     public void DropChemFlag()
     {
         if (holdingChemFlag == null)
@@ -191,5 +181,15 @@ public class PlayerController : MonoBehaviour
             holdingChemFlag = null;
             enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
         }
+    }
+
+    public void StartLerp(Vector3 a_targetPosition, float a_lerpDuration, AnimationCurve a_arcCurve)
+    {
+        isLerping = true;
+        lerpStartPosition = transform.position;
+        lerpTargetPosition = a_targetPosition + Vector3.up * 1.0f;
+        lerpTimer = 0.0f;
+        lerpDuration = a_lerpDuration;
+        arcCurve = a_arcCurve;
     }
 }

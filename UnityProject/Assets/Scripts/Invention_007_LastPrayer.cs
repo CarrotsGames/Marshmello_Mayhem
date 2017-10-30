@@ -30,7 +30,7 @@ public class Invention_007_LastPrayer : TrapBehaviour {
 
         for (int i = 0; i < traps.Count; i++)
         {
-            if (traps[i].GetComponent<PlaceableWall>() != null || traps[i].GetComponent<Invention_005_PillarOfSaws>() != null)
+            if (traps[i].GetComponent<PlaceableWall>() != null && traps[i].GetComponent<Invention_005_PillarOfSaws>() != null)
             {
                 Vector3 vecBetween = transform.position - traps[i].transform.position;
                 vecBetween.y = 0;

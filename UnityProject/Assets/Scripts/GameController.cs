@@ -16,6 +16,12 @@ public class GameController : MonoBehaviour {
     private float speedCap = 120.0f;
     public List<GameObject> placedTraps;
 
+    public float timeBetweenPlayerHeals;
+    public int healthGain;
+
+    public Sprite FirstInventionSet;
+    public Sprite SecondInventionSet;
+
     public enum Direction
     {
         UP,

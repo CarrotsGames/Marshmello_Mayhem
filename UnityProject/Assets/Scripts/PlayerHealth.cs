@@ -8,8 +8,13 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 10;
     public int currentHealth;
     public GameObject respawnPoint;
+    private GameController gameController;
 
     public float respawnTimer;
+
+    private float timeBetweenHeals;
+    private int healValue;
+    private float timer;
 
     // Use this for initialization
     void Start()
@@ -21,11 +26,16 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Player does not have respawn point");
         }
+
+        gameController = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        timeBetweenHeals = gameController.timeBetweenPlayerHeals;
+        healValue = gameController.healthGain;
+        
         if (isAlive == false)
         {
             currentHealth = 0;
@@ -33,6 +43,15 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0 && isAlive == true)
         {
             Death();
+        }
+
+        timer += Time.deltaTime;
+
+        if (timer >= timeBetweenHeals)
+        {
+            Heal(healValue);
+
+            timer = 0;
         }
     }
 
@@ -58,5 +77,10 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<PlayerController>().transform.position = respawnPoint.transform.position;
         currentHealth = maxHealth;
         GetComponent<PlayerController>().playerMovement = true;
+    }
+
+    public void Heal(int a_healValue)
+    {
+        currentHealth += a_healValue;
     }
 }

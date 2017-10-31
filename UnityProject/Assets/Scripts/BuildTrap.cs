@@ -415,15 +415,23 @@ public class BuildTrap : MonoBehaviour {
         isBuilding = false;
         Debug.Log("Building finished");
 
-        //create trap at position closest to selected area and add it to list of traps
-        createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-
-        if (selectedTrap == prefabList.HumanThrower)
+        if (selectedTrap != prefabList.Anti_StickMatter)
         {
-            //passes current rotation in to human thrower object to determine direction
-            createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().direction = GetComponent<PlayerController>().direction;
-        }
+            //create trap at position closest to selected area and add it to list of traps
+            createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
 
+            if (selectedTrap == prefabList.HumanThrower)
+            {
+                //passes current rotation in to human thrower object to determine direction
+                createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().direction = GetComponent<PlayerController>().direction;
+            }
+        }
+        else
+        {
+            GameObject newPot = Instantiate(selectedTrap, potentialTiles[0], rotation);
+
+            newPot.GetComponent<Invention_006_AntiStickMatter>().SetPlayer(gameObject);
+        }
         GetComponent<ResourceController>().currentResource -= cost;
         potentialTiles.Clear();
 
@@ -447,22 +455,31 @@ public class BuildTrap : MonoBehaviour {
             previewExist = true;
         }
 
-        //display where trap will be placed
-        for (int i = 0; i < floorGrid.Length; i++)
+        if (preview.GetComponent<Invention_006_AntiStickMatter>() == null)
         {
-            if (potentialTiles.Count > 0)
+            //display where trap will be placed
+            for (int i = 0; i < floorGrid.Length; i++)
             {
-                Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
-                vecbetween.y = 0;
-
-                if (vecbetween.magnitude < playerToTileDistance)
+                if (potentialTiles.Count > 0)
                 {
-                    //set preview position to closest potential tile
-                    preview.transform.position = potentialTiles[0];
+                    Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+                    vecbetween.y = 0;
+
+                    if (vecbetween.magnitude < playerToTileDistance)
+                    {
+                        //set preview position to closest potential tile
+                        preview.transform.position = potentialTiles[0];
+                    }
                 }
             }
         }
 
+        else
+        {
+            Vector3 pos = transform.position;
+            pos.y += 3.2f;
+            preview.transform.position = pos;
+        }
         preview.transform.rotation = rotation;
 
         //disables preview object's scripts

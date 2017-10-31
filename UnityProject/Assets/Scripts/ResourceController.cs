@@ -10,7 +10,7 @@ public class ResourceController : MonoBehaviour
 
     public int maxResource;
     public int currentResource;
-    public int resourceIncrease;
+    public float resourceIncrease;
     public float timeBetween;
 
     // Use this for initialization

@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour {
     public Sprite FirstInventionSetImage;
     public Sprite SecondInventionSetImage;
 
+    public Material trapPreviewMaterial;
+
     public enum Direction
     {
         UP,

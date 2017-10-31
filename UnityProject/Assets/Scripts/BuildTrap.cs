@@ -420,8 +420,10 @@ public class BuildTrap : MonoBehaviour {
         {
             //create ghost object                   
             preview = Instantiate(selectedTrap, potentialTiles[0], rotation);
-            //change colour of material
-            //preview.GetComponent<Material>().color = Color.red;
+
+            //change material of preview object
+            preview.GetComponentInChildren<MeshRenderer>().material = FindObjectOfType<GameController>().trapPreviewMaterial;
+
             previewExist = true;
         }
 

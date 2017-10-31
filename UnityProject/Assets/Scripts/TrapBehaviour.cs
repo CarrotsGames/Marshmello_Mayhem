@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrapBehaviour : MonoBehaviour {
 
     public int cost;
+    public int teamNumber;
 	// Use this for initialization
 	void Start () {
 		

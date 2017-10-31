@@ -28,6 +28,11 @@ public class BuildTrap : MonoBehaviour {
 
     public bool extraTraps;
 
+    bool willPairTeam1;
+    bool willPairTeam2;
+    List<GameObject> team1MatterMovers;
+    List<GameObject> team2MatterMovers;
+
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.8f;
 
@@ -413,8 +418,34 @@ public class BuildTrap : MonoBehaviour {
         //re-enables ability to build a trap
         isBuilding = false;
         Debug.Log("Building finished");
+        
+        if (selectedTrap == prefabList.Anti_StickMatter)
+        {
+            GameObject newPot = Instantiate(selectedTrap, potentialTiles[0], rotation);
 
-        if (selectedTrap != prefabList.Anti_StickMatter)
+            newPot.GetComponent<Invention_006_AntiStickMatter>().SetPlayer(gameObject);
+        }
+        //put matter movers into seperate lists to determine when there is two of each team's matter mover
+        //if (selectedTrap == prefabList.MatterMover)
+        //{
+        //    //if team 1
+        //    if (gameObject.GetComponent<PlayerController>().teamNumber == 1 && willPairTeam1 == false)
+        //    {
+        //        team1MatterMovers.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
+        //        willPairTeam1 = true;
+        //    }
+        //    //if team 2
+        //    if (gameObject.GetComponent<PlayerController>().teamNumber == 2 && willPairTeam2 == false)
+        //    {
+        //        team2MatterMovers.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
+        //        willPairTeam2 = true;
+        //    }
+        //
+        //}
+        
+
+        //non-specific trap building
+        else
         {
             //create trap at position closest to selected area and add it to list of traps
             createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
@@ -424,12 +455,6 @@ public class BuildTrap : MonoBehaviour {
                 //passes current rotation in to human thrower object to determine direction
                 createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().direction = GetComponent<PlayerController>().direction;
             }
-        }
-        else
-        {
-            GameObject newPot = Instantiate(selectedTrap, potentialTiles[0], rotation);
-
-            newPot.GetComponent<Invention_006_AntiStickMatter>().SetPlayer(gameObject);
         }
         GetComponent<ResourceController>().currentResource -= cost;
         potentialTiles.Clear();
@@ -476,7 +501,7 @@ public class BuildTrap : MonoBehaviour {
         else
         {
             Vector3 pos = transform.position;
-            pos.y += prefabList.Anti_StickMatter.GetComponent<Invention_006_AntiStickMatter>().yIncrease;// 3.2f;
+            pos.y += prefabList.Anti_StickMatter.GetComponent<Invention_006_AntiStickMatter>().yIncrease;
             preview.transform.position = pos;
         }
         preview.transform.rotation = rotation;

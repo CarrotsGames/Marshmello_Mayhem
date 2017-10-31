@@ -51,6 +51,10 @@ public class Projectile : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             GetComponent<Collider>().enabled = false;
+
+            //pushback
+            other.gameObject.transform.position += transform.forward * gameController.projectilePushback;
+
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             Destroy(gameObject);
         }

@@ -36,8 +36,7 @@ public class GunController : MonoBehaviour {
     public void Shoot()
     {
         if (isEnabled == true)
-        {
-            
+        {      
 
             //create new projectile with force in direction
             GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;

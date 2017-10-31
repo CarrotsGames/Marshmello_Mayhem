@@ -1942,6 +1942,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1766466619891944, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_Name
+      value: Objective_001_Lab_001_ChemCanister_Red
+      objectReference: {fileID: 0}
     - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
         type: 2}
       propertyPath: team1Base
@@ -1952,15 +1956,6 @@ Prefab:
       propertyPath: team2Base
       value: 
       objectReference: {fileID: 1400648624}
-    - target: {fileID: 1766466619891944, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_Name
-      value: Objective_001_Lab_001_ChemCanister_Red
-      objectReference: {fileID: 0}
-    - target: {fileID: 114589141793071064, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: speed
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
   m_IsPrefabParent: 0
@@ -10502,6 +10497,11 @@ Prefab:
       propertyPath: resourceIncrease
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114094513256229906, guid: c7e31cea6d9136d469e489f46d7be762,
+        type: 2}
+      propertyPath: controller
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
   m_IsPrefabParent: 0
@@ -14915,6 +14915,7 @@ MonoBehaviour:
   projectilePushback: 1
   projectileSpeed: 50
   placedTraps: []
+  timeOutOfCombat: 0
   timeBetweenPlayerHeals: 0
   healthGain: 0
   FirstInventionSetImage: {fileID: 21300000, guid: ec43ada145f8b8c428f877518618c41f,

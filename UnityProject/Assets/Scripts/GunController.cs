@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunController : MonoBehaviour {
 
     public bool isEnabled;
-
+    public bool display;
     public GameObject projectile;
     private float projectileSpeed;
     private float timeBetweenShots;
@@ -31,23 +31,32 @@ public class GunController : MonoBehaviour {
             timeBetweenShots = FindObjectOfType<GameController>().projectileCooldown;
             projectileSpeed = FindObjectOfType<GameController>().projectileSpeed;
         }
+
+        if (display == true)
+        {
+            //display gun mesh
+            gameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
+        }
+
+        if (display == false)
+        {
+            //hide gun mesh
+            gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+        }
     }
 
     public void Shoot()
     {
-        if (isEnabled == true)
-        {      
-
+        if (isEnabled == true && display == true)
+        {
             //create new projectile with force in direction
             GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
             newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
             isEnabled = false;
 
             //call delay after timeBetweenShots
-            Invoke("Delay", timeBetweenShots);
-
-            
-        }        
+            Invoke("Delay", timeBetweenShots);            
+        } 
     }
 
     void Delay()

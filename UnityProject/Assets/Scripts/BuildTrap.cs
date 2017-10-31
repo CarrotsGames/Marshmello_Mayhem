@@ -6,7 +6,7 @@ using XboxCtrlrInput;
 public class BuildTrap : MonoBehaviour {
 
     private Vector3 targetPosition;
-    private bool isActive = false;
+    private bool isBuilding = false;
     public int delay;
     GameObject selectedTrap;
     List<Vector3> potentialTiles;
@@ -160,8 +160,15 @@ public class BuildTrap : MonoBehaviour {
         {
             isEnabled = false;
         }
+
+        //disable gun controller
+        if (isEnabled == true)
+        {
+            gameObject.GetComponentInChildren<GunController>().display = false;
+        }
+
         //checks if a trap is currently being built
-        if (isActive == false && isEnabled == true)
+        if (isBuilding == false && isEnabled == true)
         {
             if (selectedTrap == null)
             {
@@ -252,6 +259,7 @@ public class BuildTrap : MonoBehaviour {
                     previewExist = false;
                 }
             }
+
             //sets the rotation to player's previous rotation
             Vector3 forward = GetComponent<PlayerController>().previousRotation;
             Vector3 upwards = new Vector3(0, 1, 0);
@@ -263,7 +271,6 @@ public class BuildTrap : MonoBehaviour {
             
             rotation = Quaternion.LookRotation(forward, upwards);
 
-            //loop over all tiles
             for (int i = 0; i < floorGrid.Length; i++)
             {
                 Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
@@ -277,7 +284,7 @@ public class BuildTrap : MonoBehaviour {
                 }
             }
 
-            //loop over all tiles and sort so lowest magnitude is at index zero
+            //sort for lowest magnitude
             for (int e = 0; e < potentialTiles.Count; e++)
             {
                 for (int i = 1; i < potentialTiles.Count; i++)
@@ -337,7 +344,7 @@ public class BuildTrap : MonoBehaviour {
                             if (GetComponent<ResourceController>().currentResource - cost >= 0)
                             {
                                 //set isActive to true, disables this until false
-                                isActive = true;
+                                isBuilding = true;
                                 Debug.Log("Building started");
 
                                 GetComponent<PlayerController>().playerMovement = false;
@@ -362,7 +369,7 @@ public class BuildTrap : MonoBehaviour {
                         if (GetComponent<ResourceController>().currentResource - cost >= 0)
                         {
                             //set isActive to true, disables this until false
-                            isActive = true;
+                            isBuilding = true;
                             Debug.Log("Building started");
 
                             GetComponent<PlayerController>().playerMovement = false;
@@ -395,13 +402,17 @@ public class BuildTrap : MonoBehaviour {
             {
                 isEnabled = true;
             }
+
+            //enable gun controller
+            gameObject.GetComponentInChildren<GunController>().display = true;
+            
         }
 	}
 
     void Build ()
     {
         //re-enables ability to build a trap
-        isActive = false;
+        isBuilding = false;
         Debug.Log("Building finished");
 
         //create trap at position closest to selected area and add it to list of traps

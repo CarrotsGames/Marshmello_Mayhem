@@ -98,11 +98,6 @@ public class PlayerController : MonoBehaviour
              rayGun.Shoot();            
         }
 
-        //if (XCI.GetButtonDown(XboxButton.RightBumper, controller))
-        //{
-        //    meleeHitbox.isSwinging = true;
-        //}
-
 		if (XCI.GetButtonDown(XboxButton.Y,controller))
 		{
             DropChemFlag();

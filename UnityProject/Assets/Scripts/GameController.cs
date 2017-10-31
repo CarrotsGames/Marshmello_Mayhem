@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class GameController : MonoBehaviour {
-
+    
     private TeamScore_UI teamScore;
     public int winScore = 3;
     public float projectileTimer;
@@ -14,10 +15,6 @@ public class GameController : MonoBehaviour {
     public float projectilePushback;
     public float projectileSpeed = 50.0f;
     private float speedCap = 120.0f;
-
-    public float lastPrayerExplosionRadius;
-    public float lastPrayerTimeBeforeExplosion;
-    public int lastPrayerExplosionDamage;
 
     public List<GameObject> placedTraps;
 

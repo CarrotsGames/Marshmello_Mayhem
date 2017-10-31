@@ -29,7 +29,7 @@ public class BuildTrap : MonoBehaviour {
     public bool extraTraps;
 
     //used for leniency for detecting what tile the player is on
-    public float playerToTileDistance = 1.5f;
+    public float playerToTileDistance = 1.8f;
 
     // Use this for initialization
     void Start ()
@@ -237,8 +237,7 @@ public class BuildTrap : MonoBehaviour {
                 if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha2))
                 {
                     selectedTrap = prefabList.Anti_StickMatter;
-                    cost = selectedTrap.GetComponent<Invention_006_AntiStickMatter>().cost;
-                    rise = 0.8f;
+                    cost = selectedTrap.GetComponent<Invention_006_AntiStickMatter>().cost;                    
                     Destroy(preview);
                     previewExist = false;
                 }
@@ -477,7 +476,7 @@ public class BuildTrap : MonoBehaviour {
         else
         {
             Vector3 pos = transform.position;
-            pos.y += 3.2f;
+            pos.y += prefabList.Anti_StickMatter.GetComponent<Invention_006_AntiStickMatter>().yIncrease;// 3.2f;
             preview.transform.position = pos;
         }
         preview.transform.rotation = rotation;

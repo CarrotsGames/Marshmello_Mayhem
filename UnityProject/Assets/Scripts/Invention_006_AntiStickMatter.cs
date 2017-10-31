@@ -12,6 +12,7 @@ public class Invention_006_AntiStickMatter : TrapBehaviour
     bool isActive = false;
 
     float originalSpeed;
+    public float yIncrease = 3.0f;
     
 	// Use this for initialization
 	void Start ()
@@ -25,7 +26,7 @@ public class Invention_006_AntiStickMatter : TrapBehaviour
         
         if (isActive == true)
         {  
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z);
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + yIncrease, player.transform.position.z);
 
             player.GetComponent<PlayerController>().speed = originalSpeed + speedBoost;
 

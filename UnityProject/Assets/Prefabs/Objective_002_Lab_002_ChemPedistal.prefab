@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 198374101686297040}
   - component: {fileID: 199225594515841110}
   m_Layer: 0
-  m_Name: Chem Canister Stars Blue
+  m_Name: Chem Canister Stars Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425743920630526}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.13307953, y: 0.36818695, z: 0.17}
+  m_LocalPosition: {x: -0.04, y: 0.36818695, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4014229607524914}
@@ -86,7 +86,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0bafe09adba7ea842b40f51fb373fd2f, type: 2}
+  - {fileID: 2100000, guid: 0a50d197d74c1874eb86b4168cf755eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3400,8 +3400,8 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 148b369b298a8dc4ca19d8ea04ef30a3, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 2486882e3f6d7d848b130f3edc93ab55, type: 2}
+  - {fileID: 2100000, guid: 2486882e3f6d7d848b130f3edc93ab55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

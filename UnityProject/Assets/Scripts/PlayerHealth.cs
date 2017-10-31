@@ -101,6 +101,7 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<PlayerController>().DropChemFlag();
         currentHealth = 0;
         isAlive = false;
+        transform.position = new Vector3(0, 0, 0);
         Invoke("Respawn", respawnTimer);
     }
 

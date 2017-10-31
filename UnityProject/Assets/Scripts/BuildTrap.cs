@@ -13,6 +13,7 @@ public class BuildTrap : MonoBehaviour {
     Quaternion rotation;
     List<GameObject> createdObjects;
     public bool isEnabled = false;
+    XboxController controller;
 
     GameObject[] floorGrid;
 
@@ -32,7 +33,9 @@ public class BuildTrap : MonoBehaviour {
 
     // Use this for initialization
     void Start ()
-    { 
+    {
+        controller = GetComponent<PlayerController>().controller;
+
         if (FindObjectOfType<PrefabList>() == null)
         {
             Debug.Log("PrefabList game object doesn't exist");
@@ -164,7 +167,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 Default();
             }
-            if (XCI.GetButtonDown(XboxButton.RightBumper))
+            if (XCI.GetButtonDown(XboxButton.RightBumper, controller))
             {
                 if (extraTraps == true)
                 {
@@ -180,7 +183,7 @@ public class BuildTrap : MonoBehaviour {
 
             if (extraTraps == false)
             {
-                if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
+                if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
                 {
                     selectedTrap = prefabList.TarPit;
                     cost = selectedTrap.GetComponent<TarPit>().cost;
@@ -188,7 +191,7 @@ public class BuildTrap : MonoBehaviour {
                     Destroy(preview);
                     previewExist = false;
                 }
-                if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
+                if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha2))
                 {
                     selectedTrap = prefabList.Pit;
                     cost = selectedTrap.GetComponent<Pit>().cost;
@@ -196,7 +199,7 @@ public class BuildTrap : MonoBehaviour {
                     Destroy(preview);
                     previewExist = false;
                 }
-                if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
+                if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha3))
                 {
                     selectedTrap = prefabList.PlaceableWall;
                     cost = selectedTrap.GetComponent<PlaceableWall>().cost;
@@ -204,7 +207,7 @@ public class BuildTrap : MonoBehaviour {
                     Destroy(preview);
                     previewExist = false;
                 }
-                if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
+                if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha4))
                 {
                     selectedTrap = prefabList.HumanThrower;
                     cost = selectedTrap.GetComponent<HumanThrower>().cost;
@@ -216,7 +219,7 @@ public class BuildTrap : MonoBehaviour {
 
             if (extraTraps == true)
             {
-                if (XCI.GetDPadDown(XboxDPad.Up, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha1))
+                if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
                 {
                     selectedTrap = prefabList.LastPrayer;
                     cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
@@ -224,7 +227,7 @@ public class BuildTrap : MonoBehaviour {
                     Destroy(preview);
                     previewExist = false;
                 }
-                if (XCI.GetDPadDown(XboxDPad.Down, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha2))
+                if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha2))
                 {
                     selectedTrap = prefabList.Anti_StickMatter;
                     cost = selectedTrap.GetComponent<Invention_006_AntiStickMatter>().cost;
@@ -232,7 +235,7 @@ public class BuildTrap : MonoBehaviour {
                     Destroy(preview);
                     previewExist = false;
                 }
-                if (XCI.GetDPadDown(XboxDPad.Right, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha3))
+                if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha3))
                 {
                     selectedTrap = prefabList.PillarOfSaws;
                     cost = selectedTrap.GetComponent<Invention_005_PillarOfSaws>().cost;
@@ -240,7 +243,7 @@ public class BuildTrap : MonoBehaviour {
                     Destroy(preview);
                     previewExist = false;
                 }
-                if (XCI.GetDPadDown(XboxDPad.Left, GetComponent<PlayerController>().controller) || Input.GetKey(KeyCode.Alpha4))
+                if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha4))
                 {
                     selectedTrap = prefabList.MatterMover;
                     cost = selectedTrap.GetComponent<Invention_008_MatterMover>().cost;
@@ -296,7 +299,7 @@ public class BuildTrap : MonoBehaviour {
             }
 
             //checks if player has pressed Xbox:A or the space bar
-            if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller))
+            if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A, controller))
             {                
                 //checks if player is within range of any tiles
                 if (potentialTiles.Count > 0)
@@ -370,7 +373,7 @@ public class BuildTrap : MonoBehaviour {
                 potentialTiles.Clear();
             }
 
-            if (XCI.GetButtonDown(XboxButton.B, GetComponent<PlayerController>().controller))
+            if (XCI.GetButtonDown(XboxButton.B, controller))
             {
                 Destroy(preview);
                 previewExist = false;
@@ -379,7 +382,7 @@ public class BuildTrap : MonoBehaviour {
         }
         else if (isEnabled == false)
         {
-            if (XCI.GetButtonDown(XboxButton.A, GetComponent<PlayerController>().controller) || Input.GetKeyDown(KeyCode.Tab))
+            if (XCI.GetButtonDown(XboxButton.A, controller) || Input.GetKeyDown(KeyCode.Tab))
             {
                 isEnabled = true;
             }
@@ -416,7 +419,9 @@ public class BuildTrap : MonoBehaviour {
         if (previewExist == false)
         {
             //create ghost object                   
-            preview  = Instantiate(selectedTrap, potentialTiles[0], rotation);
+            preview = Instantiate(selectedTrap, potentialTiles[0], rotation);
+            //change colour of material
+            //preview.GetComponent<Material>().color = Color.red;
             previewExist = true;
         }
 

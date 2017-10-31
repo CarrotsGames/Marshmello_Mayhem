@@ -8,8 +8,8 @@ using UnityEngine;
 public class ResourceController : MonoBehaviour
 {
 
-    public int maxResource;
-    public int currentResource;
+    public float maxResource;
+    public float currentResource;
     public float resourceIncrease;
     public float timeBetween;
 

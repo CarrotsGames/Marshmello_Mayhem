@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4897905145563796}
   - component: {fileID: 33374306737187416}
   - component: {fileID: 23187877187530294}
-  - component: {fileID: 95303776101237244}
   - component: {fileID: 65177818838649032}
   m_Layer: 0
   m_Name: Environment_001_Lab_001_GiantTestTube
@@ -57,7 +56,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: c82cf046420babd46ad3de5fadbb59c7, type: 2}
-  - {fileID: 2100000, guid: c82cf046420babd46ad3de5fadbb59c7, type: 2}
+  - {fileID: 2100000, guid: 7fd37af7bf3d3554bb69b65d2aa436b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,20 +94,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9599183, y: 4.445729, z: 1.9856695}
   m_Center: {x: -0.0000019073486, y: 0, z: -0.000002861023}
---- !u!95 &95303776101237244
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242424784459518}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c7c7d071e0a118849be51cd0867b4153, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1

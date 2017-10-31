@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4014229607524914}
   - component: {fileID: 33307027058012758}
   - component: {fileID: 23694028681099822}
-  - component: {fileID: 95861000180979830}
   - component: {fileID: 65109677279416052}
   m_Layer: 0
   m_Name: Objective_002_Lab_002_ChemPedistal
@@ -68,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425743920630526}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.13307953, y: 0.36818695, z: 0.10404968}
+  m_LocalPosition: {x: 0.13307953, y: 0.36818695, z: 0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4014229607524914}
@@ -125,23 +124,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.0643375, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95861000180979830
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1238649205940032}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2f0755be7c168a74c8d08b001f2834cb, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!198 &198374101686297040
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -201,7 +183,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -913173449
+  randomSeed: 231142846
   InitialModule:
     serializedVersion: 3
     enabled: 1

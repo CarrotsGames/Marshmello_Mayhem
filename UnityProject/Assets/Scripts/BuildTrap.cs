@@ -290,10 +290,19 @@ public class BuildTrap : MonoBehaviour {
                         potentialTiles[i] = temp;
                     }
                 }
-            }
+            }            
 
             if (potentialTiles.Count > 0)
             {
+                //check if potentialTiles is an already existing trap
+                for (int i = 0; i < createdObjects.Count; i++)
+                {
+                    if (potentialTiles[0] == createdObjects[i].transform.position)
+                    {
+                        potentialTiles.Remove(potentialTiles[0]);
+                    }
+                }
+
                 //call preview
                 Preview();
             }
@@ -417,7 +426,7 @@ public class BuildTrap : MonoBehaviour {
     void Preview()
     {
         if (previewExist == false)
-        {
+        {            
             //create ghost object                   
             preview = Instantiate(selectedTrap, potentialTiles[0], rotation);
 

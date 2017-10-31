@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Invention_007_LastPrayer : TrapBehaviour {
 
-    float countdown = 5.0f;
-    float explosionRadius = 10.0f;
+    float countdown;
+    float explosionRadius;
     List<GameObject> traps;
-    int explosionDamage = 100;
+    int explosionDamage;
+    float bombTimer;
     GameObject[] players;
 
 	// Use this for initialization
@@ -18,10 +19,12 @@ public class Invention_007_LastPrayer : TrapBehaviour {
 	// Update is called once per frame
 	void Update () {
         traps = FindObjectOfType<GameController>().placedTraps;
+        explosionRadius = FindObjectOfType<GameController>().lastPrayerExplosionRadius;
+        bombTimer = FindObjectOfType<GameController>().lastPrayerTimeBeforeExplosion;
+        explosionDamage = FindObjectOfType<GameController>().lastPrayerExplosionDamage;
+        countdown += Time.deltaTime;
 
-        countdown -= Time.deltaTime;
-
-        if (countdown <= 0)
+        if (countdown >= bombTimer)
         {
             Explosion();
 

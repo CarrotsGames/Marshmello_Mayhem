@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     PlayerHealth playerHealth;
 
-    [HideInInspector] public Chem_Flag holdingChemFlag;
+    public Chem_Flag holdingChemFlag;
     [HideInInspector] public Vector3 previousRotation = Vector3.forward;
 
     public GameController.Direction direction;
@@ -36,8 +36,11 @@ public class PlayerController : MonoBehaviour
     private Vector3 lerpStartPosition;
     private Vector3 lerpTargetPosition;
     private AnimationCurve arcCurve;
+    private float launchHeight;
+    float height;
+    float launchSpeed;
 
-	//(blue = 1, red = 2);
+    //(blue = 1, red = 2);
 
     // Use this for initialization
     void Start()
@@ -62,20 +65,46 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (isLerping == true)
         {
+            
+            if (lerpTimer == 0)
+            {
+                height = transform.position.y + launchHeight;
+            }
             lerpTimer += Time.deltaTime;
 
             //calculate value from 0 - 1 which is percentage of movement completed
-            float lerpValue = lerpTimer / lerpDuration;
-
-            if (lerpValue >= 1.0f)
+            //float lerpValue = lerpTimer / lerpDuration;
+            //
+            //if (lerpValue >= 1.0f)
+            //{
+            //    lerpValue = 1.0f;
+            //    isLerping = false;
+            //}
+            //
+            //playerHealth.transform.position = Vector3.Lerp(lerpStartPosition, lerpTargetPosition + Vector3.up * arcCurve.Evaluate(lerpValue);
+            float lerpValue = launchSpeed / launchHeight;
+            float y = (transform.position.y - launchHeight) / launchSpeed;
+            
+            if (transform.position.y >= height * 0.75)
             {
-                lerpValue = 1.0f;
+                isLerping = false;
+                lerpTimer = 0;
+            }
+            else if (transform.position.y < height && isLerping)
+            {
+                transform.position += new Vector3(0, lerpValue - y, 0);
+
+            }
+            else
+            {
+                lerpTimer = 0;
                 isLerping = false;
             }
-
-            playerHealth.transform.position = Vector3.Lerp(lerpStartPosition, lerpTargetPosition, lerpValue) + Vector3.up * arcCurve.Evaluate(lerpValue);
+            
         }
 
         if (playerHealth != null)
@@ -98,7 +127,19 @@ public class PlayerController : MonoBehaviour
              rayGun.Shoot();            
         }
 
-		if (XCI.GetButtonDown(XboxButton.Y,controller))
+        //PickUpChemFlag();
+        if (holdingChemFlag == null)
+        {
+            if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
+            {
+                enemyChemFlag.SetParent(chemFlagHoldPoint);
+                enemyChemFlag.position = chemFlagHoldPoint.position;
+                enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
+                holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
+            }
+        }
+
+        if (XCI.GetButtonDown(XboxButton.Y,controller))
 		{
             DropChemFlag();
 		}
@@ -146,6 +187,8 @@ public class PlayerController : MonoBehaviour
         previousRotation = directionVector;
         transform.rotation = Quaternion.LookRotation(directionVector);
         
+
+
     }
 
     private void MovePlayer()
@@ -153,12 +196,56 @@ public class PlayerController : MonoBehaviour
         float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
         float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
+
+        //REMOVE
+        if (controller == XboxController.First)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                axisZ = 1.0f;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                axisZ = -1.0f;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                axisX = 1.0f;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                axisX = -1.0f;
+            }
+        }
+        //THIS
+
+
         Vector3 movement = new Vector3(axisX, 0, axisZ);
 
         charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
     }
 
     public void DropChemFlag()
+    {
+        
+        if (holdingChemFlag != null)
+        {
+            //holdingChemFlag.DropChemFlag();
+            holdingChemFlag = null;
+            enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
+        }
+    }
+
+    public void StartLerp(float a_speed, float a_launchHeight)
+    {
+        isLerping = true;
+        lerpStartPosition = transform.position;
+        lerpTimer = 0.0f;
+        launchHeight = a_launchHeight;
+        launchSpeed = a_speed;
+    }
+
+    public void PickUpChemFlag()
     {
         if (holdingChemFlag == null)
         {
@@ -170,21 +257,5 @@ public class PlayerController : MonoBehaviour
                 holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
             }
         }
-        else
-        {
-            holdingChemFlag.DropChemFlag();
-            holdingChemFlag = null;
-            enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
-        }
-    }
-
-    public void StartLerp(Vector3 a_targetPosition, float a_lerpDuration, AnimationCurve a_arcCurve)
-    {
-        isLerping = true;
-        lerpStartPosition = transform.position;
-        lerpTargetPosition = a_targetPosition + Vector3.up * 1.0f;
-        lerpTimer = 0.0f;
-        lerpDuration = a_lerpDuration;
-        arcCurve = a_arcCurve;
     }
 }

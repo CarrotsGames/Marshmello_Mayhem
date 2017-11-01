@@ -8,8 +8,12 @@ public class Chem_Flag : MonoBehaviour {
     public GameObject team2Base;
 
     public float respawnTimer;
+    private float respawnAfterDrop;
 
     TeamScore_UI teamScore;
+
+    //automatic pick up (detect if player is close to chem_flag)
+    //play sounds
 
     bool isRespawning;
 	public bool isBeingCarried = false;
@@ -52,7 +56,9 @@ public class Chem_Flag : MonoBehaviour {
         if (team2Base == null)
         {
             Debug.Log("Chem Canister is missing team 2 base");
-        }        
+        }     
+        
+        
     }
     void Update()
     {
@@ -93,7 +99,20 @@ public class Chem_Flag : MonoBehaviour {
                     isRespawning = true;
                 }
             }
-        }      
+        }   
+        
+        if (isBeingCarried == false)
+        {
+            respawnAfterDrop += Time.deltaTime;
+
+            if (respawnAfterDrop >= respawnTimer)
+            {
+                Respawn();
+                respawnAfterDrop = 0;
+            }
+
+            
+        }
     }
 
     public void PickUpChemFlag()
@@ -105,6 +124,10 @@ public class Chem_Flag : MonoBehaviour {
 
 	public void DropChemFlag()
     {
+        if (GetComponentInParent<PlayerController>() != null)
+        {
+            GetComponentInParent<PlayerController>().DropChemFlag();
+        }
 		isBeingCarried = false;
 		GetComponent<BoxCollider>().enabled = true;
 		transform.SetParent(null);

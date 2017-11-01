@@ -425,14 +425,18 @@ public class BuildTrap : MonoBehaviour {
 
             newPot.GetComponent<Invention_006_AntiStickMatter>().SetPlayer(gameObject);
         }
+
         //put matter movers into seperate lists to determine when there is two of each team's matter mover
         //if (selectedTrap == prefabList.MatterMover)
         //{
         //    //if team 1
-        //    if (gameObject.GetComponent<PlayerController>().teamNumber == 1 && willPairTeam1 == false)
+        //    if (gameObject.GetComponent<PlayerController>().teamNumber == 1)
         //    {
-        //        team1MatterMovers.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-        //        willPairTeam1 = true;
+        //        if (willPairTeam1 == false)
+        //        {
+        //            team1MatterMovers.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
+        //            willPairTeam1 = true;
+        //        }
         //    }
         //    //if team 2
         //    if (gameObject.GetComponent<PlayerController>().teamNumber == 2 && willPairTeam2 == false)
@@ -449,12 +453,7 @@ public class BuildTrap : MonoBehaviour {
         {
             //create trap at position closest to selected area and add it to list of traps
             createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-
-            if (selectedTrap == prefabList.HumanThrower)
-            {
-                //passes current rotation in to human thrower object to determine direction
-                createdObjects[createdObjects.Count - 1].GetComponent<HumanThrower>().direction = GetComponent<PlayerController>().direction;
-            }
+            
         }
         GetComponent<ResourceController>().currentResource -= cost;
         potentialTiles.Clear();

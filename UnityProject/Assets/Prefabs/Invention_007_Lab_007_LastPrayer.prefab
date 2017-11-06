@@ -226,7 +226,7 @@ Animator:
   m_GameObject: {fileID: 1776957262736304}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0807cfc8ad92acd42ae375ecd03aa412, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac45fe09b8d927140a2b19497175fcc8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -248,8 +248,8 @@ MonoBehaviour:
   cost: 45
   teamNumber: 0
   countdown: 3
-  explosionRadius: 0
-  explosionDamage: 0
+  explosionRadius: 2
+  explosionDamage: 200
 --- !u!198 &198214904523055800
 ParticleSystem:
   m_ObjectHideFlags: 1

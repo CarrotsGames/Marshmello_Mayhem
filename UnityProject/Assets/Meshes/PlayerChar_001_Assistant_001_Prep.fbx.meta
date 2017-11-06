@@ -6,11 +6,82 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: ankle_L
+    100004: ankle_R
+    100006: finger_tips_L
+    100008: finger_tips_R
+    100010: fingers_L
+    100012: fingers_R
+    100014: fore_arm_L
+    100016: fore_arm_R
+    100018: hair
+    100020: hair_tip
+    100022: HAIRTOPO2
+    100024: hand_L
+    100026: hand_R
+    100028: head
+    100030: pelvis
+    100032: root
+    100034: shin_L
+    100036: shin_R
+    100038: shoulder_L
+    100040: shoulder_R
+    100042: spine1
+    100044: spine2
+    100046: spine3
+    100048: thigh_L
+    100050: thigh_R
+    100052: thumb_L
+    100054: thumb_R
+    100056: thumb_ti_Lp
+    100058: thumb_ti_Rp
+    100060: toe_tips_L
+    100062: toe_tips_R
+    100064: toes_L
+    100066: toes_R
+    100068: PlayerChar_001_Assistant_001_Prep
     400000: //RootNode
+    400002: ankle_L
+    400004: ankle_R
+    400006: finger_tips_L
+    400008: finger_tips_R
+    400010: fingers_L
+    400012: fingers_R
+    400014: fore_arm_L
+    400016: fore_arm_R
+    400018: hair
+    400020: hair_tip
+    400022: HAIRTOPO2
+    400024: hand_L
+    400026: hand_R
+    400028: head
+    400030: pelvis
+    400032: root
+    400034: shin_L
+    400036: shin_R
+    400038: shoulder_L
+    400040: shoulder_R
+    400042: spine1
+    400044: spine2
+    400046: spine3
+    400048: thigh_L
+    400050: thigh_R
+    400052: thumb_L
+    400054: thumb_R
+    400056: thumb_ti_Lp
+    400058: thumb_ti_Rp
+    400060: toe_tips_L
+    400062: toe_tips_R
+    400064: toes_L
+    400066: toes_R
+    400068: PlayerChar_001_Assistant_001_Prep
     2300000: //RootNode
     3300000: //RootNode
     4300000: PlayerChar_001_Assistant_001_Prep
+    4300002: HAIRTOPO2
     9500000: //RootNode
+    13700000: HAIRTOPO2
+    13700002: PlayerChar_001_Assistant_001_Prep
   materials:
     importMaterials: 1
     materialName: 0

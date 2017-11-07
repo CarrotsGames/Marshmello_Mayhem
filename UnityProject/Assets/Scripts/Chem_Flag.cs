@@ -18,6 +18,7 @@ public class Chem_Flag : MonoBehaviour {
     bool isRespawning;
 	public bool isBeingCarried = false;
 	public int teamNumber = 1;
+    public bool wasDropped = false;
 
     //(blue = 1, red = 2);
 
@@ -101,7 +102,7 @@ public class Chem_Flag : MonoBehaviour {
             }
         }   
         
-        if (isBeingCarried == false)
+        if (wasDropped == true)
         {
             respawnAfterDrop += Time.deltaTime;
 
@@ -109,9 +110,7 @@ public class Chem_Flag : MonoBehaviour {
             {
                 Respawn();
                 respawnAfterDrop = 0;
-            }
-
-            
+            }            
         }
     }
 
@@ -120,7 +119,9 @@ public class Chem_Flag : MonoBehaviour {
 		//playerController.PickUpChemFlag (this);
 		GetComponent<BoxCollider>().enabled = false;
 		isBeingCarried = true;
-	}
+        wasDropped = false;
+        respawnAfterDrop = 0;
+    }
 
 	public void DropChemFlag()
     {
@@ -150,5 +151,6 @@ public class Chem_Flag : MonoBehaviour {
             transform.SetPositionAndRotation(new Vector3(team2Base.transform.position.x, transform.position.y, team2Base.transform.position.z), Quaternion.identity);
         }
         isRespawning = false;
+        wasDropped = false;
     }
 }

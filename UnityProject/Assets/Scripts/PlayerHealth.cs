@@ -83,6 +83,11 @@ public class PlayerHealth : MonoBehaviour
                 timer = 0;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            TakeDamage(maxHealth);
+        }
     }
 
     public void TakeDamage(int damageAmount)

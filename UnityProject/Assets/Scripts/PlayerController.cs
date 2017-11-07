@@ -134,6 +134,7 @@ public class PlayerController : MonoBehaviour
             {
                 enemyChemFlag.SetParent(chemFlagHoldPoint);
                 enemyChemFlag.position = chemFlagHoldPoint.position;
+                enemyChemFlag.GetComponent<Chem_Flag>().wasDropped = false;
                 enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
                 holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
             }
@@ -226,12 +227,12 @@ public class PlayerController : MonoBehaviour
     }
 
     public void DropChemFlag()
-    {
-        
+    {        
         if (holdingChemFlag != null)
         {
             //holdingChemFlag.DropChemFlag();
             holdingChemFlag = null;
+            enemyChemFlag.GetComponent<Chem_Flag>().wasDropped = true;
             enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
         }
     }

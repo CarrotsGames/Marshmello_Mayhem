@@ -322,7 +322,7 @@ public class BuildTrap : MonoBehaviour {
 
             //checks if player has pressed Xbox:A or the space bar
             if (Input.GetKeyDown(KeyCode.Space) || XCI.GetButtonDown(XboxButton.A, controller))
-            {                
+            {
                 //checks if player is within range of any tiles
                 if (potentialTiles.Count > 0)
                 {   

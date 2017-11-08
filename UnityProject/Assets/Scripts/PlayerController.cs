@@ -130,13 +130,10 @@ public class PlayerController : MonoBehaviour
         //PickUpChemFlag();
         if (holdingChemFlag == null)
         {
+            //check if flag is close enough to player
             if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
             {
-                enemyChemFlag.SetParent(chemFlagHoldPoint);
-                enemyChemFlag.position = chemFlagHoldPoint.position;
-                enemyChemFlag.GetComponent<Chem_Flag>().wasDropped = false;
-                enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
-                holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
+                PickUpChemFlag();
             }
         }
 
@@ -227,13 +224,31 @@ public class PlayerController : MonoBehaviour
     }
 
     public void DropChemFlag()
-    {        
+    {
         if (holdingChemFlag != null)
         {
-            //holdingChemFlag.DropChemFlag();
             holdingChemFlag = null;
-            enemyChemFlag.GetComponent<Chem_Flag>().wasDropped = true;
+            enemyChemFlag.SetParent(null);
             enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
+        }
+    }
+
+    public void PickUpChemFlag()
+    {
+        if (enemyChemFlag.GetComponent<Chem_Flag>().canBePickedUp == true)
+        {
+            if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
+            {
+                //set flag's parent and position
+                enemyChemFlag.SetParent(chemFlagHoldPoint);
+                enemyChemFlag.position = chemFlagHoldPoint.position;
+                //set wasDropped to false to ensure no respawn until dropped
+                enemyChemFlag.GetComponent<Chem_Flag>().wasDropped = false;
+                //call pick up function 
+                enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
+                holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
+
+            }
         }
     }
 
@@ -244,19 +259,5 @@ public class PlayerController : MonoBehaviour
         lerpTimer = 0.0f;
         launchHeight = a_launchHeight;
         launchSpeed = a_speed;
-    }
-
-    public void PickUpChemFlag()
-    {
-        if (holdingChemFlag == null)
-        {
-            if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
-            {
-                enemyChemFlag.SetParent(chemFlagHoldPoint);
-                enemyChemFlag.position = chemFlagHoldPoint.position;
-                enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
-                holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
-            }
-        }
     }
 }

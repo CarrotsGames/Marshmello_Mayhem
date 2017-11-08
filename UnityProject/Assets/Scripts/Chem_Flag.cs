@@ -20,24 +20,12 @@ public class Chem_Flag : MonoBehaviour {
 	public int teamNumber = 1;
     public bool wasDropped = false;
 
-    //(blue = 1, red = 2);
+    public bool canBePickedUp = true;
+    public float timeBetweenDropAndPickUp;
+    float timer = 0.0f;
 
-    //	void OnTriggerStay(Collider Other){
-    //
-    //		if (isBeingCarried) {
-    //			return;
-    //		}
-    //
-    //		if (Other.tag != "Player") {
-    //			return;
-    //		}
-    //			
-    //		PlayerController playerController = Other.GetComponent<PlayerController> ();
-    //
-    //		if (playerController.teamNumber != teamNumber) {
-    //			playerController.CanPickUpChemFlag ();
-    //		}
-    //	}
+
+    //(blue = 1, red = 2);
 
     void Start()
     {
@@ -100,7 +88,8 @@ public class Chem_Flag : MonoBehaviour {
                     isRespawning = true;
                 }
             }
-        }   
+        }
+
         
         if (wasDropped == true)
         {
@@ -110,15 +99,33 @@ public class Chem_Flag : MonoBehaviour {
             {
                 Respawn();
                 respawnAfterDrop = 0;
-            }            
+            }
+        }
+        
+
+        if (canBePickedUp == false)
+        {            
+            timer += Time.deltaTime;
+
+            if (timer >= timeBetweenDropAndPickUp)
+            {
+                canBePickedUp = true;
+
+                timer = 0;
+            }
         }
     }
 
     public void PickUpChemFlag()
     {
-		//playerController.PickUpChemFlag (this);
-		GetComponent<BoxCollider>().enabled = false;
-		isBeingCarried = true;
+        if (canBePickedUp == true)
+        {
+            //playerController.PickUpChemFlag (this);
+            GetComponent<BoxCollider>().enabled = false;
+            isBeingCarried = true;
+        }
+
+        
         wasDropped = false;
         respawnAfterDrop = 0;
     }
@@ -130,9 +137,12 @@ public class Chem_Flag : MonoBehaviour {
             GetComponentInParent<PlayerController>().DropChemFlag();
         }
 		isBeingCarried = false;
+
 		GetComponent<BoxCollider>().enabled = true;
 		transform.SetParent(null);
-	}
+
+        canBePickedUp = false;
+    }
 
     public void Respawn()
     {

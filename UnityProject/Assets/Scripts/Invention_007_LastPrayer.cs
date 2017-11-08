@@ -9,10 +9,13 @@ public class Invention_007_LastPrayer : TrapBehaviour {
     List<GameObject> traps;
     public int explosionDamage;
     GameObject[] players;
+    bool hasFinishedPlaying = false;
+    AudioSource explosionSound;
 
 	// Use this for initialization
 	void Start () {
         players = GameObject.FindGameObjectsWithTag("Player");
+        explosionSound = FindObjectOfType<PrefabList>().ExplosionAudio;        
 	}
 	
 	// Update is called once per frame
@@ -21,17 +24,37 @@ public class Invention_007_LastPrayer : TrapBehaviour {
 
         countdown -= Time.deltaTime;
 
-        if (countdown <= 0)
+        if (!hasFinishedPlaying)
         {
-            Explosion();
+            if (countdown <= 0)
+            {
+                Explosion();
 
-            traps.Remove(gameObject);
+                traps.Remove(gameObject);
+
+                gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+
+                
+
+                hasFinishedPlaying = true;
+            }
+        }
+        if (explosionSound.isPlaying == false && hasFinishedPlaying == true)
+        {
+            Debug.Log("Destroy");
             Destroy(gameObject);
         }
-	}
+    }
 
     void Explosion()
-    {    
+    {
+        //play game over sound
+        if (explosionSound != null)
+        {
+            Debug.Log("Play audio");
+            explosionSound.Play();
+        }
+
         for (int i = 0; i < traps.Count; i++)
         {
             Vector3 vecBetween = transform.position - traps[i].transform.position;
@@ -65,4 +88,5 @@ public class Invention_007_LastPrayer : TrapBehaviour {
             }
         }
     }
+
 }

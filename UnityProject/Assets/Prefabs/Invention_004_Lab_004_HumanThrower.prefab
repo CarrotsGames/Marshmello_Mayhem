@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4817745043085056}
   - component: {fileID: 114943764358378216}
   - component: {fileID: 65421599943618894}
+  - component: {fileID: 95426411480566792}
   m_Layer: 0
   m_Name: Invention_004_Lab_004_HumanThrower
   m_TagString: Untagged
@@ -111,7 +112,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1611939059781540}
-  m_Mesh: {fileID: 4300004, guid: 0e5b3ddea5a654f47a3bec5cd1c36f58, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 0e5b3ddea5a654f47a3bec5cd1c36f58, type: 3}
 --- !u!65 &65421599943618894
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -124,6 +125,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3154602, y: 1.6613419, z: 1.1464262}
   m_Center: {x: 0.0048675537, y: 0.74661005, z: -0.051617146}
+--- !u!95 &95426411480566792
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441657394340240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0e5b3ddea5a654f47a3bec5cd1c36f58, type: 3}
+  m_Controller: {fileID: 9100000, guid: e46c236f9cd4a384ab860de22adde548, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114943764358378216
 MonoBehaviour:
   m_ObjectHideFlags: 1

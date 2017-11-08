@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198692572909046390}
   - component: {fileID: 199306560030694162}
   m_Layer: 0
-  m_Name: Blue Chem Canister Partical
+  m_Name: Red Chem Canister Partical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,8 +69,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1766466619891944}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.93, y: -8.626, z: 11.187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.939, y: -9.35, z: 11.742}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4962667159593274}
@@ -117,7 +117,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7564997483f7bb4469a395628a41045b, type: 2}
+  - {fileID: 2100000, guid: e3a3a973fe3ccc64bb879005a072032d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e639173e642b034ebbc6a4a3ceab1fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -20
+  speed: 20
 --- !u!114 &114758533301599184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,9 +180,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   team1Base: {fileID: 0}
   team2Base: {fileID: 0}
-  respawnTimer: 0
+  respawnTimer: 10
   isBeingCarried: 0
-  teamNumber: 1
+  teamNumber: 2
+  wasDropped: 0
 --- !u!198 &198692572909046390
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -332,7 +333,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.006896496, b: 1, a: 1}
+      maxColor: {r: 1, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

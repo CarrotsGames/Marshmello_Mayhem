@@ -9,19 +9,24 @@ ModelImporter:
     100002: Invention_004_Lab_004_HumanThrower
     100004: pCylinder4
     100006: polySurface2
+    100008: Invention_004_Lab_004_HumanThrower_V2
     400000: //RootNode
     400002: Invention_004_Lab_004_HumanThrower
     400004: pCylinder4
     400006: polySurface2
+    400008: Invention_004_Lab_004_HumanThrower_V2
     2300000: //RootNode
     2300002: Invention_004_Lab_004_HumanThrower
     2300004: polySurface2
+    2300006: Invention_004_Lab_004_HumanThrower_V2
     3300000: //RootNode
     3300002: Invention_004_Lab_004_HumanThrower
     3300004: polySurface2
+    3300006: Invention_004_Lab_004_HumanThrower_V2
     4300000: Invention_004_Lab_004_HumanThrower
     4300002: polySurface2
     4300004: Invention_004_Lab_004_HumanThrower4
+    4300006: Invention_004_Lab_004_HumanThrower_V2
     7400000: HumanThrower
     9500000: //RootNode
   materials:

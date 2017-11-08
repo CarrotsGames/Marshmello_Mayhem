@@ -7,7 +7,7 @@ public class BuildTrap : MonoBehaviour {
 
     private Vector3 targetPosition;
     private bool isBuilding = false;
-    public int delay;
+    public int buildTime;
     GameObject selectedTrap;
     List<Vector3> potentialTiles;
     Quaternion rotation;
@@ -16,8 +16,9 @@ public class BuildTrap : MonoBehaviour {
     XboxController controller;
 
     GameObject[] floorGrid;
-
+    
     private PrefabList prefabList;
+    private AudioSource audio;
     float rise;
     int cost;
 
@@ -28,10 +29,10 @@ public class BuildTrap : MonoBehaviour {
 
     public bool extraTraps;
 
-    bool willPairTeam1;
-    bool willPairTeam2;
-    List<GameObject> team1MatterMovers;
-    List<GameObject> team2MatterMovers;
+    //bool willPairTeam1;
+    //bool willPairTeam2;
+    //List<GameObject> team1MatterMovers;
+    //List<GameObject> team2MatterMovers;
 
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.8f;
@@ -48,6 +49,7 @@ public class BuildTrap : MonoBehaviour {
         else
         {
             prefabList = FindObjectOfType<PrefabList>();
+            audio = prefabList.BuildingAudio;
         }
 
         if (GameObject.FindGameObjectsWithTag("Floor") == null)
@@ -353,8 +355,11 @@ public class BuildTrap : MonoBehaviour {
 
                                 GetComponent<PlayerController>().playerMovement = false;
 
+                                //play audio
+                                audio.Play();
+
                                 //calls Build function after delay (seconds)
-                                Invoke("Build", delay);
+                                Invoke("Build", buildTime);
                             }
                             else
                             {
@@ -378,8 +383,11 @@ public class BuildTrap : MonoBehaviour {
 
                             GetComponent<PlayerController>().playerMovement = false;
 
+                            //play audio
+                            audio.Play();
+
                             //calls Build function after delay (seconds)
-                            Invoke("Build", delay);
+                            Invoke("Build", buildTime);
                         }       
                         else
                         {
@@ -418,7 +426,10 @@ public class BuildTrap : MonoBehaviour {
         //re-enables ability to build a trap
         isBuilding = false;
         Debug.Log("Building finished");
-        
+
+        //stops audio clip
+        audio.Stop();
+
         if (selectedTrap == prefabList.Anti_StickMatter)
         {
             GameObject newPot = Instantiate(selectedTrap, potentialTiles[0], rotation);
@@ -475,6 +486,11 @@ public class BuildTrap : MonoBehaviour {
             //change material of preview object
             preview.GetComponentInChildren<MeshRenderer>().material = FindObjectOfType<GameController>().trapPreviewMaterial;
 
+            if (selectedTrap.GetComponent<HumanThrower>() != null)
+            {                
+                 preview.GetComponentInChildren<MeshRenderer>().materials[1] = FindObjectOfType<GameController>().trapPreviewMaterial;                               
+            }
+
             previewExist = true;
         }
 
@@ -506,40 +522,43 @@ public class BuildTrap : MonoBehaviour {
         preview.transform.rotation = rotation;
 
         //disables preview object's scripts
-        if (preview.GetComponent<TarPit>() != null)
+        if (FindObjectOfType<PrefabList>() != null)
         {
-            preview.GetComponent<TarPit>().enabled = false;
+            if (preview.GetComponent<TarPit>() != null)
+            {
+                preview.GetComponent<TarPit>().enabled = false;
+            }
+            if (preview.GetComponent<Pit>() != null)
+            {
+                preview.GetComponent<Pit>().enabled = false;
+                preview.GetComponent<BoxCollider>().isTrigger = false;
+            }
+            if (preview.GetComponent<PlaceableWall>() != null)
+            {
+                preview.GetComponent<PlaceableWall>().enabled = false;
+            }
+            if (preview.GetComponent<HumanThrower>() != null)
+            {
+                preview.GetComponent<HumanThrower>().enabled = false;
+            }
+            if (preview.GetComponent<Invention_007_LastPrayer>() != null)
+            {
+                preview.GetComponent<Invention_007_LastPrayer>().enabled = false;
+            }
+            if (preview.GetComponent<Invention_005_PillarOfSaws>() != null)
+            {
+                preview.GetComponent<Invention_005_PillarOfSaws>().enabled = false;
+            }
+            if (preview.GetComponent<Invention_006_AntiStickMatter>() != null)
+            {
+                preview.GetComponent<Invention_006_AntiStickMatter>().enabled = false;
+            }
+            if (preview.GetComponent<Invention_008_MatterMover>() != null)
+            {
+                preview.GetComponent<Invention_008_MatterMover>().enabled = false;
+            }
         }
-        if (preview.GetComponent<Pit>() != null)
-        {
-            preview.GetComponent<Pit>().enabled = false;
-            preview.GetComponent<BoxCollider>().isTrigger = false;
-        }
-        if (preview.GetComponent<PlaceableWall>() != null)
-        {
-            preview.GetComponent<PlaceableWall>().enabled = false;
-        }
-        if (preview.GetComponent<HumanThrower>() != null)
-        {
-            preview.GetComponent<HumanThrower>().enabled = false;
-        }
-        if (preview.GetComponent<Invention_007_LastPrayer>() != null)
-        {
-            preview.GetComponent<Invention_007_LastPrayer>().enabled = false;
-        }
-        if (preview.GetComponent<Invention_005_PillarOfSaws>() != null)
-        {
-            preview.GetComponent<Invention_005_PillarOfSaws>().enabled = false;
-        }
-        if (preview.GetComponent<Invention_006_AntiStickMatter>() != null)
-        {
-            preview.GetComponent<Invention_006_AntiStickMatter>().enabled = false;
-        }
-        if (preview.GetComponent<Invention_008_MatterMover>() != null)
-        {
-            preview.GetComponent<Invention_008_MatterMover>().enabled = false;
-        }
-
+        //disables colliders
         if (preview.GetComponent<Collider>() != null)
         {
             preview.GetComponent<Collider>().enabled = false;

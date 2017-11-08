@@ -45,6 +45,12 @@ public class Countdown_Timer : MonoBehaviour {
         }
         else
         {
+            //play game over sound
+            if (FindObjectOfType<PrefabList>().GameOverAudio != null)
+            {
+                FindObjectOfType<PrefabList>().GameOverAudio.Play();
+            }
+
             time.text = "Game Over";
             gameOver = true;
         }

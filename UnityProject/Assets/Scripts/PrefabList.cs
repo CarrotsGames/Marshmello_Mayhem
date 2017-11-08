@@ -14,6 +14,12 @@ public class PrefabList : MonoBehaviour {
     public GameObject LastPrayer;
     public GameObject MatterMover;
 
+    public AudioSource BuildingAudio;
+    public AudioSource ExplosionAudio;
+    public AudioSource ShootingAudio;
+    public AudioSource PlayerDeathAudio;
+    public AudioSource GameOverAudio;
+
     // Use this for initialization
     void Start () {
 		

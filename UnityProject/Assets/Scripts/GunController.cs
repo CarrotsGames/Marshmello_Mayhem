@@ -54,6 +54,12 @@ public class GunController : MonoBehaviour {
             newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);
             isEnabled = false;
 
+            //plays audio
+            if (FindObjectOfType<PrefabList>().ShootingAudio != null)
+            {
+                FindObjectOfType<PrefabList>().ShootingAudio.Play();
+            }
+
             //call delay after timeBetweenShots
             Invoke("Delay", timeBetweenShots);            
         } 
@@ -61,6 +67,12 @@ public class GunController : MonoBehaviour {
 
     void Delay()
     {
+        //stops audio
+        if (FindObjectOfType<PrefabList>().ShootingAudio != null)
+        {
+            FindObjectOfType<PrefabList>().ShootingAudio.Stop();
+        }
+
         isEnabled = true;
     }
 }

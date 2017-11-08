@@ -103,6 +103,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void Death()
     {
+        //plays sound
+        if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
+        {
+            FindObjectOfType<PrefabList>().PlayerDeathAudio.Play();
+        }
+
         GetComponent<PlayerController>().DropChemFlag();
         currentHealth = 0;
         isAlive = false;
@@ -112,6 +118,12 @@ public class PlayerHealth : MonoBehaviour
 
     private void Respawn()
     {
+        //stops sound
+        if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
+        {
+            FindObjectOfType<PrefabList>().PlayerDeathAudio.Stop();
+        }
+
         isAlive = true;
         GetComponent<PlayerController>().transform.position = respawnPoint.transform.position;
         currentHealth = maxHealth;

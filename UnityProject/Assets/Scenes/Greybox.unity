@@ -12863,6 +12863,40 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 199153811071769610, guid: a0936961461aa6341939f86900377541,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 63d498f4c7728be4897eb7842dcc0711, type: 2}
+    - target: {fileID: 199069943902158706, guid: a0936961461aa6341939f86900377541,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 45b44ce626d601c43bf60c67b442789e, type: 2}
+    - target: {fileID: 198455688225813554, guid: a0936961461aa6341939f86900377541,
+        type: 2}
+      propertyPath: randomSeed
+      value: -182138146
+      objectReference: {fileID: 0}
+    - target: {fileID: 198214904523055800, guid: a0936961461aa6341939f86900377541,
+        type: 2}
+      propertyPath: randomSeed
+      value: 499482750
+      objectReference: {fileID: 0}
+    - target: {fileID: 199153811071769610, guid: a0936961461aa6341939f86900377541,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 199069943902158706, guid: a0936961461aa6341939f86900377541,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578294446685480, guid: a0936961461aa6341939f86900377541, type: 2}
+      propertyPath: m_Name
+      value: Black Bloom
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0936961461aa6341939f86900377541, type: 2}
   m_IsPrefabParent: 0

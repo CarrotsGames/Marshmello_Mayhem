@@ -103,10 +103,11 @@ public class Pit : TrapBehaviour
                 isTriggered = true;
 
             }
-            else
+            else if (a_col.GetComponent<PlayerHealth>() == null && a_col.GetComponent<Projectile>() == null)
             {
                 Debug.Log("Missing PlayerHealth script on player");
             }
+            
         }
         else
         {

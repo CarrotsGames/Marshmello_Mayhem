@@ -31,14 +31,11 @@ public class PlayerController : MonoBehaviour
 
     //variables for lerp
     private bool isLerping = false;
-    private float lerpTimer;
-    private float lerpDuration;
-    private Vector3 lerpStartPosition;
-    private Vector3 lerpTargetPosition;
-    private AnimationCurve arcCurve;
     private float launchHeight;
     float height;
     float launchSpeed;
+    private float timeInAir;
+    float timeLeft;
 
     //(blue = 1, red = 2);
 
@@ -66,45 +63,31 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
-
+        //check if player is being launched
         if (isLerping == true)
         {
-            
-            if (lerpTimer == 0)
+            //count down time
+            if (timeLeft > 0)
             {
-                height = transform.position.y + launchHeight;
+                timeLeft -= Time.deltaTime;
             }
-            lerpTimer += Time.deltaTime;
 
-            //calculate value from 0 - 1 which is percentage of movement completed
-            //float lerpValue = lerpTimer / lerpDuration;
-            //
-            //if (lerpValue >= 1.0f)
-            //{
-            //    lerpValue = 1.0f;
-            //    isLerping = false;
-            //}
-            //
-            //playerHealth.transform.position = Vector3.Lerp(lerpStartPosition, lerpTargetPosition + Vector3.up * arcCurve.Evaluate(lerpValue);
-            float lerpValue = launchSpeed / launchHeight;
-            float y = (transform.position.y - launchHeight) / launchSpeed;
-            
-            if (transform.position.y >= height * 0.75)
+            //if time <= 0, set launching to false
+            else if (timeLeft <= 0)
             {
-                isLerping = false;
-                lerpTimer = 0;
+                isLerping = false;                
             }
-            else if (transform.position.y < height && isLerping)
-            {
-                transform.position += new Vector3(0, lerpValue - y, 0);
 
-            }
-            else
+            float changeInTime = timeInAir - timeLeft;
+
+            //speed = targetHeight - currentHeight / time since start of launch
+            launchSpeed = launchHeight / changeInTime;
+
+            //if time > 0, increase player's y by speed
+            if (timeLeft > 0)
             {
-                lerpTimer = 0;
-                isLerping = false;
+                transform.Translate(0.0f, launchSpeed / 9.8f, 0.0f);
             }
-            
         }
 
         if (playerHealth != null)
@@ -252,12 +235,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void StartLerp(float a_speed, float a_launchHeight)
+    public void StartLerp(float a_speed, float a_launchHeight, float a_timeInAir)
     {
+        timeInAir = a_timeInAir;
         isLerping = true;
-        lerpStartPosition = transform.position;
-        lerpTimer = 0.0f;
         launchHeight = a_launchHeight;
-        launchSpeed = a_speed;
+        //launchSpeed = a_speed;
+
+
+        
+        timeLeft = timeInAir;
     }
 }

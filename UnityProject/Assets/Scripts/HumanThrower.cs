@@ -14,8 +14,10 @@ public class HumanThrower : TrapBehaviour {
     private float timer = 0.0f;
     public float timeBeforeActivation = 5.0f;
 
-    public float launchHeight = 3.0f;
-    public float launchSpeed = 5.0f;
+    public float launchHeight = 0.4f;
+    float launchSpeed = 5.0f;
+
+    public float timeInAir = 3.0f;
 
     // Use this for initialization
     void Start () {
@@ -38,7 +40,7 @@ public class HumanThrower : TrapBehaviour {
         player = a_col.gameObject;
 
         //call lerp function in player
-        player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight);
+        player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight, timeInAir);
 
     }
 }

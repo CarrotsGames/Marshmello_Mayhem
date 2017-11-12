@@ -40,7 +40,9 @@ public class HumanThrower : TrapBehaviour {
         player = a_col.gameObject;
 
         //call lerp function in player
-        player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight, timeInAir);
-
+        if (player.GetComponent<PlayerController>() != null)
+        {
+            player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight, timeInAir);
+        }
     }
 }

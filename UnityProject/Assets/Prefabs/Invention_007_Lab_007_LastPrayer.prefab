@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 198214904523055800}
   - component: {fileID: 199069943902158706}
   m_Layer: 0
-  m_Name: Blue Bloom
+  m_Name: Black Bloom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
   cost: 45
   teamNumber: 0
   countdown: 3
-  explosionRadius: 2
+  explosionRadius: 5
   explosionDamage: 200
 --- !u!198 &198214904523055800
 ParticleSystem:
@@ -309,7 +309,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1760291381
+  randomSeed: 499482750
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3576,7 +3576,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -43613465
+  randomSeed: -182138146
   InitialModule:
     serializedVersion: 3
     enabled: 1

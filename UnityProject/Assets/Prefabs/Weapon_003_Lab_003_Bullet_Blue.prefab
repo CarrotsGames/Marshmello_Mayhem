@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917840169921062}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.244614, y: 16.15, z: -27.966045}
+  m_LocalPosition: {x: 40.426186, y: 11.931221, z: -8.699188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4324364621624190}
@@ -169,8 +169,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.52713776, y: 0.7010937, z: 1.4526606}
-  m_Center: {x: 0.014854431, y: -0.0021123886, z: -0.004529476}
+  m_Size: {x: 0.6978798, y: 0.7010937, z: 1.3706808}
+  m_Center: {x: 0.0006008148, y: -0.0021123886, z: -0.0012660027}
 --- !u!96 &96067285385199352
 TrailRenderer:
   serializedVersion: 2

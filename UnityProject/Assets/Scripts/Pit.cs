@@ -11,11 +11,12 @@ public class Pit : TrapBehaviour
     private float timeRemaining;
     bool isTriggered;
     GameObject player;
-
+    AudioSource pitSound;
 
     // Use this for initialization
     void Start () {
         trapName = "Pit";
+        pitSound = FindObjectOfType<PrefabList>().PitAudio;
 
         timeRemaining = timeBeforeDeath;
 
@@ -88,6 +89,8 @@ public class Pit : TrapBehaviour
         {
             if (a_col.GetComponent<PlayerHealth>() != null)
             {
+                pitSound.Play();
+
                 Debug.Log("Pit triggered");
                 player = a_col.gameObject;
 

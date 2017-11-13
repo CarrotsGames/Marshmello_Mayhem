@@ -29,14 +29,13 @@ public class PlayerController : MonoBehaviour
 
     public GameController.Direction direction;
 
-    bool isBeingPushed = false;
-
     //variables for lerp
     private bool isLerping = false;
     private float launchHeight;
     float launchSpeed;
     private float timeInAir;
     float timeLeft;
+
 
     //(blue = 1, red = 2);
 
@@ -62,11 +61,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isBeingPushed == true)
-        {
-
-        }
-
         //check if player is being launched
         if (isLerping == true)
         {
@@ -217,8 +211,4 @@ public class PlayerController : MonoBehaviour
         timeLeft = timeInAir;
     }
 
-    public void PushBack(float a_pushback)
-    {
-        isBeingPushed = true;
-    }
 }

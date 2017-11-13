@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour {
             timer = gameController.projectileTimer;
             cooldown = gameController.projectileCooldown;
 
-            pushback = gameController.projectilePushback;
+
         }
         else
         {
@@ -52,9 +52,19 @@ public class Projectile : MonoBehaviour {
         {
             GetComponent<Collider>().enabled = false;
 
-            //pushback
-            other.gameObject.transform.position += transform.forward * gameController.projectilePushback;
+            Ray ray = new Ray(other.gameObject.transform.position, transform.forward);
+            RaycastHit hit;
 
+            if (Physics.Raycast(ray, gameController.projectilePushback))
+            {
+                Physics.Raycast(ray, out hit);
+
+                other.gameObject.transform.position = hit.transform.position - transform.forward;
+            }
+            else
+            {
+                other.gameObject.transform.position += transform.forward * gameController.projectilePushback;
+            }
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             Destroy(gameObject);
         }

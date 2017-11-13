@@ -118,12 +118,15 @@ public class Chem_Flag : MonoBehaviour {
 
     public void PickUpChemFlag()
     {
-        if (canBePickedUp == true)
-        {
-            //playerController.PickUpChemFlag (this);
-            GetComponent<BoxCollider>().enabled = false;
-            isBeingCarried = true;
-        }
+        
+         if (canBePickedUp == true)
+         {
+             //playerController.PickUpChemFlag (this);
+             GetComponent<BoxCollider>().enabled = false;
+             isBeingCarried = true;
+            canBePickedUp = false;
+         }
+            
 
         
         wasDropped = false;

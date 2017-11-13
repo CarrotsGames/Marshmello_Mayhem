@@ -91,7 +91,6 @@ public class PlayerController : MonoBehaviour
 
         RotatePlayer();
 
-
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
             rayGun.Shoot();
@@ -103,7 +102,9 @@ public class PlayerController : MonoBehaviour
             //check if flag is close enough to player
             if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
             {
+                
                 PickUpChemFlag();
+                    
             }
         }
 
@@ -219,8 +220,8 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, a_knockbackStrength))
         {
             Physics.Raycast(ray, out hit);
-
-            transform.position = hit.transform.position - a_projectileDirection;
+            
+            Debug.Log("Player hits a wall");
         }
         else
         {

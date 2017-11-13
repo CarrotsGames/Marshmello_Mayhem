@@ -134,7 +134,7 @@ ModelImporter:
     13700000: HAIRTOPO2
     13700002: PlayerChar_001_Assistant_001_Prep
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

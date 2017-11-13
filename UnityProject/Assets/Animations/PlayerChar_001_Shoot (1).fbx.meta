@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 9c67dde7d30d42a4ba2866e3e410bd88
+timeCreated: 1510612583
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ankle_L
+    100002: ankle_R
+    100004: Char_001_global
+    100006: Char_001_head
+    100008: Char_001_pelvis
+    100010: Char_001_root
+    100012: Char_001_spine1
+    100014: Char_001_spine2
+    100016: finger_tips_L
+    100018: finger_tips_R
+    100020: fingers_L
+    100022: fingers_R
+    100024: fore_arm_L
+    100026: fore_arm_R
+    100028: hair
+    100030: hair_tip
+    100032: hand_L
+    100034: hand_R
+    100036: head
+    100038: IK_handels
+    100040: IK_Leg_Left
+    100042: IK_Leg_Right
+    100044: L_Char_001_elbow
+    100046: L_Char_001_foot
+    100048: L_Char_001_knee
+    100050: L_Char_001_shoulder
+    100052: L_Char_001_wrist
+    100054: pelvis
+    100056: PlayerChar_001_Assistant_001_Prep
+    100058: //RootNode
+    100060: R_Char_001_elbow1
+    100062: R_Char_001_foot1
+    100064: R_Char_001_knee1
+    100066: R_Char_001_shoulder1
+    100068: R_Char_001_wrist1
+    100070: root
+    100072: shin_L
+    100074: shin_R
+    100076: shoulder_L
+    100078: shoulder_R
+    100080: skeleton
+    100082: spine1
+    100084: spine2
+    100086: spine3
+    100088: thigh_L
+    100090: thigh_R
+    100092: thumb_L
+    100094: thumb_R
+    100096: thumb_ti_Lp
+    100098: thumb_ti_Rp
+    100100: toe_tips_L
+    100102: toe_tips_R
+    100104: toes_L
+    100106: toes_R
+    100108: weapon_001_Lab_001_RayGun
+    400000: ankle_L
+    400002: ankle_R
+    400004: Char_001_global
+    400006: Char_001_head
+    400008: Char_001_pelvis
+    400010: Char_001_root
+    400012: Char_001_spine1
+    400014: Char_001_spine2
+    400016: finger_tips_L
+    400018: finger_tips_R
+    400020: fingers_L
+    400022: fingers_R
+    400024: fore_arm_L
+    400026: fore_arm_R
+    400028: hair
+    400030: hair_tip
+    400032: hand_L
+    400034: hand_R
+    400036: head
+    400038: IK_handels
+    400040: IK_Leg_Left
+    400042: IK_Leg_Right
+    400044: L_Char_001_elbow
+    400046: L_Char_001_foot
+    400048: L_Char_001_knee
+    400050: L_Char_001_shoulder
+    400052: L_Char_001_wrist
+    400054: pelvis
+    400056: PlayerChar_001_Assistant_001_Prep
+    400058: //RootNode
+    400060: R_Char_001_elbow1
+    400062: R_Char_001_foot1
+    400064: R_Char_001_knee1
+    400066: R_Char_001_shoulder1
+    400068: R_Char_001_wrist1
+    400070: root
+    400072: shin_L
+    400074: shin_R
+    400076: shoulder_L
+    400078: shoulder_R
+    400080: skeleton
+    400082: spine1
+    400084: spine2
+    400086: spine3
+    400088: thigh_L
+    400090: thigh_R
+    400092: thumb_L
+    400094: thumb_R
+    400096: thumb_ti_Lp
+    400098: thumb_ti_Rp
+    400100: toe_tips_L
+    400102: toe_tips_R
+    400104: toes_L
+    400106: toes_R
+    400108: weapon_001_Lab_001_RayGun
+    2300000: weapon_001_Lab_001_RayGun
+    3300000: weapon_001_Lab_001_RayGun
+    4300000: PlayerChar_001_Assistant_001_Prep
+    4300002: weapon_001_Lab_001_RayGun
+    7400000: Shoot
+    9500000: //RootNode
+    13700000: PlayerChar_001_Assistant_001_Prep
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

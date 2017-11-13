@@ -4592,8 +4592,8 @@ Transform:
   m_LocalPosition: {x: 53.51049, y: 23.476112, z: -15.579912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 885606070}
   - {fileID: 2124606803}
+  - {fileID: 885606070}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7608,7 +7608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169a91e73b13e2245a6e95ac8bad20c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1399586433}
 --- !u!1001 &584282183
 Prefab:
   m_ObjectHideFlags: 0
@@ -8554,7 +8554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169a91e73b13e2245a6e95ac8bad20c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 885606062}
 --- !u!1001 &620687822
 Prefab:
   m_ObjectHideFlags: 0
@@ -14601,7 +14601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169a91e73b13e2245a6e95ac8bad20c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 976866924}
 --- !u!1 &1064152766
 GameObject:
   m_ObjectHideFlags: 0
@@ -21970,22 +21970,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4921001191769626, guid: 8f9273a7446ba764b805609e8ed040d0,
     type: 2}
   m_PrefabInternal: {fileID: 1936863574}
---- !u!111 &1399586442
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1399586433}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9eac6ff5cd544fa408cb3a6616ee133e, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 9eac6ff5cd544fa408cb3a6616ee133e, type: 3}
-  - {fileID: 7400000, guid: 2a034c0509ac7be4ab5417bb6df25613, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1400598580
 GameObject:
   m_ObjectHideFlags: 0
@@ -28385,7 +28369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169a91e73b13e2245a6e95ac8bad20c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 292219489}
 --- !u!1001 &1989258867
 Prefab:
   m_ObjectHideFlags: 0

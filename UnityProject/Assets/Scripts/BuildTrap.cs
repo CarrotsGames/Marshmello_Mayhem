@@ -29,6 +29,8 @@ public class BuildTrap : MonoBehaviour {
 
     public bool extraTraps;
 
+    GameObject tempObject;
+
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.8f;
 
@@ -302,6 +304,11 @@ public class BuildTrap : MonoBehaviour {
                                 //play audio
                                 audio.Play();
 
+                                tempObject = Instantiate(selectedTrap, potentialTiles[0], rotation);
+                                tempObject.SetActive(false);
+                                //create trap at position closest to selected area and add it to list of traps
+                                createdObjects.Add(tempObject);
+
                                 //calls Build function after delay (seconds)
                                 Invoke("Build", buildTime);
                             }
@@ -329,6 +336,14 @@ public class BuildTrap : MonoBehaviour {
 
                             //play audio
                             audio.Play();
+
+                            //create trap at position closest to selected area and add it to list of traps
+                            //createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
+
+                            tempObject = Instantiate(selectedTrap, potentialTiles[0], rotation);
+                            tempObject.SetActive(false);
+                            //create trap at position closest to selected area and add it to list of traps
+                            createdObjects.Add(tempObject);
 
                             //calls Build function after delay (seconds)
                             Invoke("Build", buildTime);
@@ -372,11 +387,10 @@ public class BuildTrap : MonoBehaviour {
         Debug.Log("Building finished");
 
         //stops audio clip
-        audio.Stop();   
+        audio.Stop();
 
+        tempObject.SetActive(true);
 
-        //create trap at position closest to selected area and add it to list of traps
-        createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
 
         GetComponent<ResourceController>().currentResource -= cost;
         potentialTiles.Clear();

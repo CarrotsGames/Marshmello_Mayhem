@@ -52,19 +52,9 @@ public class Projectile : MonoBehaviour {
         {
             GetComponent<Collider>().enabled = false;
 
-            Ray ray = new Ray(other.gameObject.transform.position, transform.forward);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, gameController.projectilePushback))
-            {
-                Physics.Raycast(ray, out hit);
-
-                other.gameObject.transform.position = hit.transform.position - transform.forward;
-            }
-            else
-            {
-                other.gameObject.transform.position += transform.forward * gameController.projectilePushback;
-            }
+            //call Knockback on player (Vector3 projectileDirection, float pushbackStrength)
+            other.gameObject.GetComponent<PlayerController>().Knockback(transform.forward, gameController.projectilePushback);
+            
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
             Destroy(gameObject);
         }

@@ -211,4 +211,20 @@ public class PlayerController : MonoBehaviour
         timeLeft = timeInAir;
     }
 
+    public void Knockback(Vector3 a_projectileDirection, float a_knockbackStrength)
+    {
+        Ray ray = new Ray(transform.position, a_projectileDirection);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, a_knockbackStrength))
+        {
+            Physics.Raycast(ray, out hit);
+
+            transform.position = hit.transform.position - a_projectileDirection;
+        }
+        else
+        {
+            transform.position += a_projectileDirection * a_knockbackStrength;
+        }
+    }
 }

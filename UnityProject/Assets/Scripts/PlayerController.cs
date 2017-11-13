@@ -13,14 +13,14 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float maxSpeed = 5;
 
-    public bool playerMovement;
+    public bool playerMovement = true;
 
-	public Transform chemFlagHoldPoint;
+    public Transform chemFlagHoldPoint;
 
-	public int teamNumber = 1;
-	public float distanceFromChemFlagToPickUp = 2;
+    public int teamNumber = 1;
+    public float distanceFromChemFlagToPickUp = 2;
 
-	public Transform enemyChemFlag;
+    public Transform enemyChemFlag;
 
     PlayerHealth playerHealth;
 
@@ -29,10 +29,11 @@ public class PlayerController : MonoBehaviour
 
     public GameController.Direction direction;
 
+    bool isBeingPushed = false;
+
     //variables for lerp
     private bool isLerping = false;
     private float launchHeight;
-    float height;
     float launchSpeed;
     private float timeInAir;
     float timeLeft;
@@ -43,7 +44,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         charController = GetComponent<CharacterController>();
-        playerMovement = true;
 
         if (GetComponent<PlayerHealth>() != null)
         {
@@ -62,7 +62,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isBeingPushed == true)
+        {
+
+        }
+
         //check if player is being launched
         if (isLerping == true)
         {
@@ -75,7 +79,8 @@ public class PlayerController : MonoBehaviour
             //if time <= 0, set launching to false
             else if (timeLeft <= 0)
             {
-                isLerping = false;                
+                isLerping = false;
+
             }
 
             float changeInTime = timeInAir - timeLeft;
@@ -86,19 +91,7 @@ public class PlayerController : MonoBehaviour
             //if time > 0, increase player's y by speed
             if (timeLeft > 0)
             {
-                transform.Translate(0.0f, launchSpeed / 9.8f, 0.0f);
-            }
-        }
-
-        if (playerHealth != null)
-        {
-            if (playerHealth.isAlive == false)
-            {
-                playerMovement = false;
-            }
-            if (playerHealth.isAlive == true)
-            {
-                playerMovement = true;
+                transform.Translate(0.0f, launchSpeed / 15, 0.0f);
             }
         }
 
@@ -106,8 +99,8 @@ public class PlayerController : MonoBehaviour
 
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
-        {            
-             rayGun.Shoot();            
+        {
+            rayGun.Shoot();
         }
 
         //PickUpChemFlag();
@@ -120,10 +113,10 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (XCI.GetButtonDown(XboxButton.Y,controller))
-		{
+        if (XCI.GetButtonDown(XboxButton.Y, controller))
+        {
             DropChemFlag();
-		}
+        }
 
         if (playerMovement == true)
         {
@@ -134,7 +127,7 @@ public class PlayerController : MonoBehaviour
 
             MovePlayer();
         }
-    }		
+    }
 
     private void RotatePlayer()
     {
@@ -167,43 +160,22 @@ public class PlayerController : MonoBehaviour
         directionVector = directionVector.normalized;
         previousRotation = directionVector;
         transform.rotation = Quaternion.LookRotation(directionVector);
-        
+
 
 
     }
 
     private void MovePlayer()
-    {       
-        float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
-        float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
-
-
-        //REMOVE
-        if (controller == XboxController.First)
+    {
+        if (playerMovement == true)
         {
-            if (Input.GetKey(KeyCode.W))
-            {
-                axisZ = 1.0f;
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                axisZ = -1.0f;
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                axisX = 1.0f;
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                axisX = -1.0f;
-            }
+            float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
+            float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
+            
+            Vector3 movement = new Vector3(axisX, 0, axisZ);
+
+            charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
         }
-        //THIS
-
-
-        Vector3 movement = new Vector3(axisX, 0, axisZ);
-
-        charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
     }
 
     public void DropChemFlag()
@@ -242,8 +214,11 @@ public class PlayerController : MonoBehaviour
         launchHeight = a_launchHeight;
         //launchSpeed = a_speed;
 
-
-        
         timeLeft = timeInAir;
+    }
+
+    public void PushBack(float a_pushback)
+    {
+        isBeingPushed = true;
     }
 }

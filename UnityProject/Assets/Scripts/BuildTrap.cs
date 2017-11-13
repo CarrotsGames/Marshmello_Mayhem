@@ -209,42 +209,6 @@ public class BuildTrap : MonoBehaviour {
                 Destroy(preview);
                 previewExist = false;
             }
-            
-
-            //if (extraTraps == true)
-            //{
-            //    if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
-            //    {
-            //        selectedTrap = prefabList.TarPit;
-            //        cost = selectedTrap.GetComponent<TarPit>().cost;
-            //        rise = 0.8f;
-            //        Destroy(preview);
-            //        previewExist = false;
-            //    }                
-            //    if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha2))
-            //    {
-            //        selectedTrap = prefabList.Anti_StickMatter;
-            //        cost = selectedTrap.GetComponent<Invention_006_AntiStickMatter>().cost;                    
-            //        Destroy(preview);
-            //        previewExist = false;
-            //    }
-            //    if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha3))
-            //    {
-            //        selectedTrap = prefabList.PillarOfSaws;
-            //        cost = selectedTrap.GetComponent<Invention_005_PillarOfSaws>().cost;
-            //        rise = 2.0f;
-            //        Destroy(preview);
-            //        previewExist = false;
-            //    }
-            //    if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha4))
-            //    {
-            //        selectedTrap = prefabList.MatterMover;
-            //        cost = selectedTrap.GetComponent<Invention_008_MatterMover>().cost;
-            //        rise = 2.4f;
-            //        Destroy(preview);
-            //        previewExist = false;
-            //    }
-            //}
 
             //sets the rotation to player's previous rotation
             Vector3 forward = GetComponent<PlayerController>().previousRotation;
@@ -422,6 +386,8 @@ public class BuildTrap : MonoBehaviour {
         Destroy(preview);
         previewExist = false;
         isEnabled = false;
+
+        
     }
 
     void Preview()

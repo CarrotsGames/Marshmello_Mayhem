@@ -83,15 +83,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917840169921062}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.426186, y: 11.931221, z: -8.699188}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 52.455, y: 11.931221, z: -10.380934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4324364621624190}
   - {fileID: 4600209213640454}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4600209213640454
 Transform:
   m_ObjectHideFlags: 1
@@ -169,8 +169,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6978798, y: 0.7010937, z: 1.3706808}
-  m_Center: {x: 0.0006008148, y: -0.0021123886, z: -0.0012660027}
+  m_Size: {x: 0.40110287, y: 0.46315396, z: 1.8844299}
+  m_Center: {x: -0.06685032, y: -0.0000006407501, z: -0.0000014007092}
 --- !u!96 &96067285385199352
 TrailRenderer:
   serializedVersion: 2

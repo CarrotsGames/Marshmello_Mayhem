@@ -53,6 +53,37 @@ ModelImporter:
     100090: Spine_1
     100092: spine_2
     100094: Spine_3
+    100096: ankle_L
+    100098: ankle_R
+    100100: finger_tips_L
+    100102: finger_tips_R
+    100104: fingers_L
+    100106: fingers_R
+    100108: fore_arm_L
+    100110: fore_arm_R
+    100112: hair_tip
+    100114: hand_L
+    100116: hand_R
+    100118: head
+    100120: nurbsCircle1
+    100122: root
+    100124: shin_L
+    100126: shin_R
+    100128: shoulder_L
+    100130: shoulder_R
+    100132: spine1
+    100134: spine2
+    100136: spine3
+    100138: thigh_L
+    100140: thigh_R
+    100142: thumb_L
+    100144: thumb_R
+    100146: thumb_ti_Lp
+    100148: thumb_ti_Rp
+    100150: toe_tips_L
+    100152: toe_tips_R
+    100154: toes_L
+    100156: toes_R
     400000: //RootNode
     400002: body_retop
     400004: goggles_retop
@@ -101,12 +132,44 @@ ModelImporter:
     400090: Spine_1
     400092: spine_2
     400094: Spine_3
+    400096: ankle_L
+    400098: ankle_R
+    400100: finger_tips_L
+    400102: finger_tips_R
+    400104: fingers_L
+    400106: fingers_R
+    400108: fore_arm_L
+    400110: fore_arm_R
+    400112: hair_tip
+    400114: hand_L
+    400116: hand_R
+    400118: head
+    400120: nurbsCircle1
+    400122: root
+    400124: shin_L
+    400126: shin_R
+    400128: shoulder_L
+    400130: shoulder_R
+    400132: spine1
+    400134: spine2
+    400136: spine3
+    400138: thigh_L
+    400140: thigh_R
+    400142: thumb_L
+    400144: thumb_R
+    400146: thumb_ti_Lp
+    400148: thumb_ti_Rp
+    400150: toe_tips_L
+    400152: toe_tips_R
+    400154: toes_L
+    400156: toes_R
     2300000: //RootNode
     2300002: PlayerChar_001_Scientist_001_Moustache
     3300000: //RootNode
     3300002: PlayerChar_001_Scientist_001_Moustache
     4300000: PlayerChar_001_Scientist_001_Moustache
     4300002: polySurface5
+    7400000: Run
     9500000: //RootNode
     13700000: PlayerChar_001_Scientist_001_Moustache
   materials:

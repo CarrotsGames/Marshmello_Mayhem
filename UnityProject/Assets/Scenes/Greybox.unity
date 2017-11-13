@@ -3834,7 +3834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 2, y: -2}
+  m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!114 &318204550
 MonoBehaviour:
@@ -7546,8 +7546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 341.36, y: 45.7}
-  m_SizeDelta: {x: 430.09, y: 34}
+  m_AnchoredPosition: {x: 370, y: 31}
+  m_SizeDelta: {x: 500.6, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563495872
 MonoBehaviour:
@@ -8492,8 +8492,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 338, y: -6}
-  m_SizeDelta: {x: 429.64, y: 34}
+  m_AnchoredPosition: {x: 370, y: -27}
+  m_SizeDelta: {x: 500.6, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612996599
 MonoBehaviour:
@@ -10982,6 +10982,10 @@ Prefab:
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache_P2
       objectReference: {fileID: 0}
+    - target: {fileID: 4125833563927294, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.72
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
   m_IsPrefabParent: 0
@@ -12608,6 +12612,10 @@ Prefab:
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache_P1
       objectReference: {fileID: 0}
+    - target: {fileID: 4463105120036366, guid: b693b27f6ce7f134da73676be8ce5fcc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.101
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b693b27f6ce7f134da73676be8ce5fcc, type: 2}
   m_IsPrefabParent: 0
@@ -12812,6 +12820,23 @@ GameObject:
   m_PrefabParentObject: {fileID: 1630196708191162, guid: b693b27f6ce7f134da73676be8ce5fcc,
     type: 2}
   m_PrefabInternal: {fileID: 922765146}
+--- !u!95 &952709123
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952709116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 171f2b5731dd2094c93dd70865013bbb, type: 3}
+  m_Controller: {fileID: 9100000, guid: a64c0440b906f6e408bfef6d6e469d6b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &953641763
 Prefab:
   m_ObjectHideFlags: 0
@@ -14584,8 +14609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -351.00342, y: -5.997345}
-  m_SizeDelta: {x: 433.04, y: 34}
+  m_AnchoredPosition: {x: -379, y: -27}
+  m_SizeDelta: {x: 500.6, y: 53}
   m_Pivot: {x: 0.50000024, y: 0.5000004}
 --- !u!114 &1060829877
 MonoBehaviour:
@@ -21150,8 +21175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -432.5, y: -26}
-  m_SizeDelta: {x: 697.46, y: 118.1}
+  m_AnchoredPosition: {x: -225.5, y: -26}
+  m_SizeDelta: {x: 283.4, y: 118.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600411891
 MonoBehaviour:
@@ -21331,6 +21356,10 @@ Prefab:
     - target: {fileID: 1730761065670996, guid: 1c2b569689dee64489dff9e0c99347a0, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Assistant_001_Prep_P4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251280555997766, guid: 1c2b569689dee64489dff9e0c99347a0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c2b569689dee64489dff9e0c99347a0, type: 2}
@@ -24495,8 +24524,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.9, y: -26}
-  m_SizeDelta: {x: 697.46, y: 118.1}
+  m_AnchoredPosition: {x: 217.95, y: -26}
+  m_SizeDelta: {x: 261.56, y: 118.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932573779
 MonoBehaviour:
@@ -24987,8 +25016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -341.9, y: 45.7}
-  m_SizeDelta: {x: 433.45, y: 34}
+  m_AnchoredPosition: {x: -379, y: 31}
+  m_SizeDelta: {x: 500.6, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970562938
 MonoBehaviour:

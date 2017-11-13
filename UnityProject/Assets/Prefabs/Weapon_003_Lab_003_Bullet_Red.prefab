@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 23922227226075130}
   - component: {fileID: 54820847969448524}
   - component: {fileID: 114513361689048006}
-  - component: {fileID: 65609821906598162}
+  - component: {fileID: 65074936542435972}
   m_Layer: 0
   m_Name: Weapon_003_Lab_003_Bullet_Red
   m_TagString: Untagged
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1647005454770900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16736603, y: 0, z: -2.755}
+  m_LocalPosition: {x: 0.16736603, y: -0, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4675272994549908}
@@ -83,15 +83,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380774885022260}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.35382, y: 11.931221, z: -8.732942}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 52.563683, y: 11.931221, z: -12.39221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4006523504840788}
   - {fileID: 4888970563483276}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4888970563483276
 Transform:
   m_ObjectHideFlags: 1
@@ -159,18 +159,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65609821906598162
+--- !u!65 &65074936542435972
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380774885022260}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6628914, y: 0.7301483, z: 1.383606}
-  m_Center: {x: 0.009046555, y: 0.003364563, z: -0.0017433167}
+  m_Size: {x: 0.40110287, y: 0.46315396, z: 1.8844299}
+  m_Center: {x: -0.06685032, y: -0.0000006407501, z: -0.0000014007092}
 --- !u!96 &96262664423762566
 TrailRenderer:
   serializedVersion: 2

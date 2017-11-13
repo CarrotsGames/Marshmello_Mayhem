@@ -224,16 +224,25 @@ public class BuildTrap : MonoBehaviour {
             rotation = Quaternion.LookRotation(forward, upwards);
 
             for (int i = 0; i < floorGrid.Length; i++)
-            {
-                Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
-                vecBetween.y = 0;
+            {                
+                 Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
+                 vecBetween.y = 0;
 
                 if (vecBetween.magnitude < playerToTileDistance)
                 {
-                    targetPosition = floorGrid[i].transform.position;
-                    targetPosition.y += rise;
-                    potentialTiles.Add(targetPosition);
-                }
+                    if (floorGrid[i].GetComponent<Tile>().isOccupied == false)
+                    {
+                        targetPosition = floorGrid[i].transform.position;
+                        targetPosition.y += rise;
+                        potentialTiles.Add(targetPosition);
+                    }
+                    //check if the tile is occupied, if true destroy preview and disable build mode
+                    if (floorGrid[i].GetComponent<Tile>().isOccupied == true)
+                    {
+                        previewExist = false;
+                        Destroy(preview);
+                    }
+                }  
             }
 
             //sort for lowest magnitude

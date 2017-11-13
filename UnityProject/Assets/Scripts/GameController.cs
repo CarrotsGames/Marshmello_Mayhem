@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using XboxCtrlrInput;
 
 
 public class GameController : MonoBehaviour {
-    
+
+    XboxController controller;
+
     private TeamScore_UI teamScore;
     public int winScore = 3;
     public float projectileTimer;
@@ -26,6 +29,13 @@ public class GameController : MonoBehaviour {
     public Sprite SecondInventionSetImage;
 
     public Material trapPreviewMaterial;
+
+    public GameObject blueTeamWinDisplay;
+    public GameObject redTeamWinDisplay;
+
+    public float timeBeforeReturnToMainMenu;
+
+    bool returningToMenu = false;
 
     public enum Direction
     {
@@ -89,22 +99,42 @@ public class GameController : MonoBehaviour {
             if (teamScore.team1Score == teamScore.team2Score)
             {
                 Tie();
+            }   
+        }
+
+        if (returningToMenu == true)
+        {            
+            timeBeforeReturnToMainMenu -= Time.deltaTime;
+            
+            if (timeBeforeReturnToMainMenu <= 0)
+            {
+                Application.LoadLevel("Title Screen");
             }
         }
 	}
 
+    //show UI for which team won
+    //return to main menu on button press
+
     void Team1Victory()
     {
-
+        blueTeamWinDisplay.SetActive(true);
+        ReturnToMenu();
     }
 
     void Team2Victory()
     {
-
+        redTeamWinDisplay.SetActive(true);
+        ReturnToMenu();
     }
 
     void Tie()
     {
 
+    }
+
+    void ReturnToMenu()
+    {
+        returningToMenu = true;
     }
 }

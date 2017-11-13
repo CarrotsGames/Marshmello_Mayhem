@@ -21,7 +21,7 @@ public class HumanThrower : TrapBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        trapName = "HumanThrower";
         gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 	

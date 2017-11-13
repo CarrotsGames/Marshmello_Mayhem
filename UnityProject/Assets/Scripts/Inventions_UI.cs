@@ -22,15 +22,15 @@ public class Inventions_UI : MonoBehaviour {
 	void Update () {
 
         first = gameController.FirstInventionSetImage;
-        second = gameController.SecondInventionSetImage;
+        //second = gameController.SecondInventionSetImage;
 
         if (player.GetComponent<BuildTrap>().extraTraps == false)
         {
             image.sprite = first;
         }
-        else
-        {
-            image.sprite = second;
-        }
+        //else
+        //{
+        //    image.sprite = second;
+        //}
 	}
 }

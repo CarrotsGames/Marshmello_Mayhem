@@ -8,7 +8,7 @@ public class BuildTrap : MonoBehaviour {
     private Vector3 targetPosition;
     private bool isBuilding = false;
     public int buildTime;
-    GameObject selectedTrap;
+    [HideInInspector] public GameObject selectedTrap;
     List<Vector3> potentialTiles;
     Quaternion rotation;
     List<GameObject> createdObjects;
@@ -496,16 +496,15 @@ public class BuildTrap : MonoBehaviour {
 
     void Default()
     {
-        if (extraTraps == false)
+        
+        selectedTrap = prefabList.LastPrayer;
+        cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
+        rise = 1.2f;
+        if (preview != null)
         {
-            selectedTrap = prefabList.LastPrayer;
-            cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
-            rise = 1.2f;
-            if (preview != null)
-            {
-                Destroy(preview);
-                previewExist = false;
-            }
+            Destroy(preview);
+            previewExist = false;
         }
+        
     }
 }

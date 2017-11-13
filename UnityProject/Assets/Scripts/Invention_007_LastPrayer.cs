@@ -10,12 +10,13 @@ public class Invention_007_LastPrayer : TrapBehaviour {
     public int explosionDamage;
     GameObject[] players;
     bool hasFinishedPlaying = false;
-    AudioSource explosionSound;
+    AudioSource explosionSound;    
 
 	// Use this for initialization
 	void Start () {
         players = GameObject.FindGameObjectsWithTag("Player");
-        explosionSound = FindObjectOfType<PrefabList>().ExplosionAudio;        
+        explosionSound = FindObjectOfType<PrefabList>().ExplosionAudio;
+        trapName = "LastPrayer";
 	}
 	
 	// Update is called once per frame

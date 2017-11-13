@@ -11,6 +11,7 @@ public class PlaceableWall : TrapBehaviour
 	// Use this for initialization
 	void Start () {
         health = maxHealth;
+        trapName = "PlaceableWall";
 	}
 	
 	// Update is called once per frame

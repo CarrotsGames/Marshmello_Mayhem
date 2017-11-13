@@ -15,6 +15,8 @@ public class Pit : TrapBehaviour
 
     // Use this for initialization
     void Start () {
+        trapName = "Pit";
+
         timeRemaining = timeBeforeDeath;
 
         if (GetComponent<BoxCollider>() != null)

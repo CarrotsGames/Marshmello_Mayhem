@@ -20,9 +20,13 @@ public class PlayerHealth : MonoBehaviour
     private float timeOutOfCombat;
     bool isInCombat = false;
 
+    public bool isChangingColour;
+    float colourTime = 0.0f;
+
     // Use this for initialization
     void Start()
     {
+        
         currentHealth = maxHealth;
         isAlive = true;
 
@@ -31,13 +35,42 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player does not have respawn point");
         }
 
-        gameController = FindObjectOfType<GameController>();
-        
+        gameController = FindObjectOfType<GameController>();     
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isChangingColour == true)
+        {
+            //Renderer renderer = new Renderer();
+            //Material mat = renderer.material;
+            //
+            //float emission = Mathf.PingPong(Time.time, 1.0f);
+            //Color baseColor = Color.red;
+            //
+            //Color finalColor = baseColor * Mathf.LinearToGammaSpace(emission);
+            //
+            //mat.SetColor(11208, finalColor);
+            //
+            colourTime += Time.deltaTime;
+                        
+            if (colourTime >= 0.5f)
+            {
+                //GetComponentInChildren<Material>().SetColor(11208, Color.black);
+                //GetComponentInChildren<Renderer>().material.color = Color.red;
+                //GetComponentInChildren<Renderer>().material.SetColor("_EmissionColor", Color.red * 1.0f);
+                isChangingColour = false;
+
+                colourTime = 0;
+            }
+        }
+        if (isChangingColour == false)
+        {
+            //GetComponentInChildren<Renderer>().material.color = Color.red;
+            //GetComponentInChildren<Renderer>().material.SetColor("_EmissionColor", Color.red * 0);
+        }
+
         //set values to common variables in gameController
         timeBetweenHeals = gameController.timeBetweenPlayerHeals;
         healValue = gameController.healthGain;
@@ -96,6 +129,8 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damageAmount;
         }
+
+        isChangingColour = true;
 
         //when player takes damage, set isInCombat to true
         isInCombat = true;

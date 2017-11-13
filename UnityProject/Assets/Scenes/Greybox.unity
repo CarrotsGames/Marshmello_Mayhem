@@ -5127,7 +5127,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 398125515}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.596409, y: 1, z: 21.227081}
@@ -10982,14 +10982,6 @@ Prefab:
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache_P2
       objectReference: {fileID: 0}
-    - target: {fileID: 1914881974502240, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500331043193586, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e31cea6d9136d469e489f46d7be762, type: 2}
   m_IsPrefabParent: 0
@@ -16778,6 +16770,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f466cdf706a0c0045a1afc5494e453de, type: 2}
+    - target: {fileID: 65305929424637744, guid: bc7cf425b8bbb274f83584c762fee872,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 1.54
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
   m_IsPrefabParent: 0
@@ -21653,7 +21650,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1631916767}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.596409, y: 1, z: 21.227081}

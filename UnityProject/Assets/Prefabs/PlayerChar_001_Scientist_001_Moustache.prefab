@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4731223324637278}
   - component: {fileID: 33043030657213000}
   - component: {fileID: 23566864670674428}
-  - component: {fileID: 64283559955131616}
   m_Layer: 0
   m_Name: Player_Mesh_Red
   m_TagString: Untagged
@@ -194,7 +193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1943346784956164
 GameObject:
   m_ObjectHideFlags: 1
@@ -205,7 +204,6 @@ GameObject:
   - component: {fileID: 4438282273532558}
   - component: {fileID: 33161490571969280}
   - component: {fileID: 23061838095009128}
-  - component: {fileID: 64235624744238564}
   m_Layer: 0
   m_Name: HandSaw_Mesh
   m_TagString: Untagged
@@ -572,34 +570,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1557892004196372}
   m_Mesh: {fileID: 4300000, guid: c4e207b1e00087a45bd5c0fa62220d7e, type: 3}
---- !u!64 &64235624744238564
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1943346784956164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 290c9c9f6db1c434d9bf7478671e9525, type: 3}
---- !u!64 &64283559955131616
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1211774457207732}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9eac6ff5cd544fa408cb3a6616ee133e, type: 3}
 --- !u!65 &65376808715436536
 BoxCollider:
   m_ObjectHideFlags: 1

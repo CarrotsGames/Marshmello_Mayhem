@@ -68,6 +68,7 @@ namespace XboxCtrlrInput
 
 	public static class XCI
 	{
+		private static GamePadDeadZone[] deadZoneType = { GamePadDeadZone.Circular, GamePadDeadZone.Circular, GamePadDeadZone.Circular, GamePadDeadZone.Circular };
 		// ------------ Public Methods --------------- //
 		
 		// >>> For Buttons <<< //
@@ -983,7 +984,14 @@ namespace XboxCtrlrInput
 			return false;
 		}
 		
+		public static void SetDeadzoneType(XboxController controller, GamePadDeadZone type)
+		{
+			int controllerNumber = (int)controller;
+			if (!IsControllerNumberValid(controllerNumber))
+				deadZoneType[0] = type;
 
+			deadZoneType[controllerNumber - 1] = type;
+		}
 
 
 		////
@@ -1545,7 +1553,7 @@ namespace XboxCtrlrInput
 			{
 				PlayerIndex plyNum = (PlayerIndex) i;
 				xInputCtrlrsPrev[i] = xInputCtrlrs[i];
-				xInputCtrlrs[i] = GamePad.GetState(plyNum, GamePadDeadZone.IndependentAxes);
+				xInputCtrlrs[i] = GamePad.GetState(plyNum, deadZoneType[i]);
 			}
 			
 			xiUpdateAlreadyCalled = true;

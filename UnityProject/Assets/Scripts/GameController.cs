@@ -82,12 +82,6 @@ public class GameController : MonoBehaviour {
         //if timer hits zero
         if (gameOverState == true)
         {
-            //play game over sound
-            if (FindObjectOfType<PrefabList>().GameOverAudio != null)
-            {
-                FindObjectOfType<PrefabList>().GameOverAudio.Play();
-            }
-
             if (teamScore.team1Score > teamScore.team2Score)
             {
                 Team1Victory();
@@ -103,7 +97,13 @@ public class GameController : MonoBehaviour {
         }
 
         if (returningToMenu == true)
-        {            
+        {
+            //play game over sound
+            if (FindObjectOfType<PrefabList>().GameOverAudio != null)
+            {
+                FindObjectOfType<PrefabList>().GameOverAudio.Play();
+            }
+
             timeBeforeReturnToMainMenu -= Time.deltaTime;
             
             if (timeBeforeReturnToMainMenu <= 0)
@@ -130,7 +130,7 @@ public class GameController : MonoBehaviour {
 
     void Tie()
     {
-
+        ReturnToMenu();
     }
 
     void ReturnToMenu()

@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 65835754630000456}
   - component: {fileID: 114954876857118022}
   - component: {fileID: 114482631287084538}
-  - component: {fileID: 95791628020126980}
+  - component: {fileID: 95906381123959612}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep_P3
   m_TagString: Player
@@ -594,23 +594,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6493301, y: 3.1975908, z: 1}
   m_Center: {x: 0.03394699, y: 0.8525605, z: 0}
---- !u!95 &95791628020126980
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1758750290993472}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 171f2b5731dd2094c93dd70865013bbb, type: 3}
-  m_Controller: {fileID: 9100000, guid: a338b9bc1250f9e4795df88ebfebeb67, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95836717495029714
 Animator:
   serializedVersion: 3
@@ -621,6 +604,23 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c4e207b1e00087a45bd5c0fa62220d7e, type: 3}
   m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95906381123959612
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758750290993472}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a5aee5cd4b542bc46ad5b172756fbe4a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 149f290435fb9f04d886474cc075e2e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

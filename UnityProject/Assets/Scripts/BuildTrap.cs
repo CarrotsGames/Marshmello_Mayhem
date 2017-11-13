@@ -29,11 +29,6 @@ public class BuildTrap : MonoBehaviour {
 
     public bool extraTraps;
 
-    //bool willPairTeam1;
-    //bool willPairTeam2;
-    //List<GameObject> team1MatterMovers;
-    //List<GameObject> team2MatterMovers;
-
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.8f;
 
@@ -181,55 +176,40 @@ public class BuildTrap : MonoBehaviour {
             {
                 Default();
             }
-            if (XCI.GetButtonDown(XboxButton.RightBumper, controller))
+            
+            if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
             {
-                if (extraTraps == true)
-                {
-                    extraTraps = false;
-                    Default();
-                }
-                else
-                {
-                    extraTraps = true;
-                    Default();
-                }
+                selectedTrap = prefabList.Pit;
+                cost = selectedTrap.GetComponent<Pit>().cost;
+                rise = -0.2f;
+                Destroy(preview);
+                previewExist = false;
             }
-
-            if (extraTraps == false)
-            {                
-                if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
-                {
-                    selectedTrap = prefabList.Pit;
-                    cost = selectedTrap.GetComponent<Pit>().cost;
-                    rise = -0.2f;
-                    Destroy(preview);
-                    previewExist = false;
-                }
-                if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
-                {
-                    selectedTrap = prefabList.PlaceableWall;
-                    cost = selectedTrap.GetComponent<PlaceableWall>().cost;
-                    rise = 0.5f;
-                    Destroy(preview);
-                    previewExist = false;
-                }
-                if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha3))
-                {
-                    selectedTrap = prefabList.HumanThrower;
-                    cost = selectedTrap.GetComponent<HumanThrower>().cost;
-                    rise = 0.6f;
-                    Destroy(preview);
-                    previewExist = false;
-                }
-                if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha4))
-                {
-                    selectedTrap = prefabList.LastPrayer;
-                    cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
-                    rise = 1.2f;
-                    Destroy(preview);
-                    previewExist = false;
-                }
+            if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
+            {
+                selectedTrap = prefabList.PlaceableWall;
+                cost = selectedTrap.GetComponent<PlaceableWall>().cost;
+                rise = 0.5f;
+                Destroy(preview);
+                previewExist = false;
             }
+            if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha3))
+            {
+                selectedTrap = prefabList.HumanThrower;
+                cost = selectedTrap.GetComponent<HumanThrower>().cost;
+                rise = 0.6f;
+                Destroy(preview);
+                previewExist = false;
+            }
+            if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha4))
+            {
+                selectedTrap = prefabList.LastPrayer;
+                cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
+                rise = 1.2f;
+                Destroy(preview);
+                previewExist = false;
+            }
+            
 
             //if (extraTraps == true)
             //{
@@ -428,44 +408,12 @@ public class BuildTrap : MonoBehaviour {
         Debug.Log("Building finished");
 
         //stops audio clip
-        audio.Stop();
+        audio.Stop();   
 
-        if (selectedTrap == prefabList.Anti_StickMatter)
-        {
-            GameObject newPot = Instantiate(selectedTrap, potentialTiles[0], rotation);
 
-            newPot.GetComponent<Invention_006_AntiStickMatter>().SetPlayer(gameObject);
-        }
+        //create trap at position closest to selected area and add it to list of traps
+        createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
 
-        //put matter movers into seperate lists to determine when there is two of each team's matter mover
-        //if (selectedTrap == prefabList.MatterMover)
-        //{
-        //    //if team 1
-        //    if (gameObject.GetComponent<PlayerController>().teamNumber == 1)
-        //    {
-        //        if (willPairTeam1 == false)
-        //        {
-        //            team1MatterMovers.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-        //            willPairTeam1 = true;
-        //        }
-        //    }
-        //    //if team 2
-        //    if (gameObject.GetComponent<PlayerController>().teamNumber == 2 && willPairTeam2 == false)
-        //    {
-        //        team2MatterMovers.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-        //        willPairTeam2 = true;
-        //    }
-        //
-        //}
-        
-
-        //non-specific trap building
-        else
-        {
-            //create trap at position closest to selected area and add it to list of traps
-            createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-            
-        }
         GetComponent<ResourceController>().currentResource -= cost;
         potentialTiles.Clear();
 
@@ -494,31 +442,23 @@ public class BuildTrap : MonoBehaviour {
             previewExist = true;
         }
 
-        if (preview.GetComponent<Invention_006_AntiStickMatter>() == null)
-        {
-            //display where trap will be placed
-            for (int i = 0; i < floorGrid.Length; i++)
-            {
-                if (potentialTiles.Count > 0)
-                {
-                    Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
-                    vecbetween.y = 0;
 
-                    if (vecbetween.magnitude < playerToTileDistance)
-                    {
-                        //set preview position to closest potential tile
-                        preview.transform.position = potentialTiles[0];
-                    }
+        //display where trap will be placed
+        for (int i = 0; i < floorGrid.Length; i++)
+        {
+            if (potentialTiles.Count > 0)
+            {
+                Vector3 vecbetween = potentialTiles[0] - floorGrid[i].transform.position;
+                vecbetween.y = 0;
+
+                if (vecbetween.magnitude < playerToTileDistance)
+                {
+                    //set preview position to closest potential tile
+                    preview.transform.position = potentialTiles[0];
                 }
             }
         }
-
-        else
-        {
-            Vector3 pos = transform.position;
-            pos.y += prefabList.Anti_StickMatter.GetComponent<Invention_006_AntiStickMatter>().yIncrease;
-            preview.transform.position = pos;
-        }
+       
         preview.transform.rotation = rotation;
 
         //disables preview object's scripts
@@ -572,17 +512,6 @@ public class BuildTrap : MonoBehaviour {
             selectedTrap = prefabList.LastPrayer;
             cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
             rise = 1.2f;
-            if (preview != null)
-            {
-                Destroy(preview);
-                previewExist = false;
-            }
-        }
-        else
-        {
-            selectedTrap = prefabList.TarPit;
-            rise = 0.8f;
-            cost = selectedTrap.GetComponent<TarPit>().cost;
             if (preview != null)
             {
                 Destroy(preview);

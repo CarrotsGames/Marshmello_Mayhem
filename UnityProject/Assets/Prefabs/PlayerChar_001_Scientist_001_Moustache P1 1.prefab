@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 114178438293510732}
   m_Layer: 0
   m_Name: PlayerChar_001_Scientist_001_Moustache P1 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

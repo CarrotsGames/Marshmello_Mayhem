@@ -9,8 +9,12 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public GameObject respawnPoint;
     private GameController gameController;
+    private PlayerController playerController;
+    private PrefabList prefabList;
 
     public float respawnTimer;
+    private GameObject respawnParticles;
+    private GameObject deathParticles;
 
     private float timeBetweenHeals;
     private int healValue;
@@ -34,8 +38,20 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Player does not have respawn point");
         }
+        playerController = GetComponent<PlayerController>();
+        prefabList = FindObjectOfType<PrefabList>();
+        gameController = FindObjectOfType<GameController>();
 
-        gameController = FindObjectOfType<GameController>();     
+        if (playerController.teamNumber == 1)
+        {
+            respawnParticles = Instantiate<GameObject>(prefabList.blueTeamRespawnParticles, respawnPoint.transform);
+        }
+        if (playerController.teamNumber == 2)
+        {
+            respawnParticles = Instantiate<GameObject>(prefabList.redTeamRespawnParticles, respawnPoint.transform);
+        }
+
+        respawnParticles.transform.position = respawnPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -138,24 +154,31 @@ public class PlayerHealth : MonoBehaviour
 
     public void Death()
     {
-        GetComponent<PlayerController>().deathParticles.Play();
+        Transform ghost = transform;
+
+        //deathParticles = Instantiate<GameObject>(prefabList.deathParticles, ghost);
+
+        //deathParticles.GetComponent<ParticleSystem>().Play();
+
+        //Invoke("DisableDeathParticles", 1.0f);
+
         //plays sound
         if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
         {
             FindObjectOfType<PrefabList>().PlayerDeathAudio.Play();
         }
 
-        GetComponent<PlayerController>().DropChemFlag();
+        playerController.DropChemFlag();
         currentHealth = 0;
         isAlive = false;
         transform.position = new Vector3(0, 0, 0);
+        Invoke("ActivateParticles", respawnTimer - 0.5f);
         Invoke("Respawn", respawnTimer);
     }
 
     private void Respawn()
-    {
-        GetComponent<PlayerController>().deathParticles.Stop();
-
+    {              
+        Invoke("DisableParticles", 0.5f);
 
         //stops sound
         if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
@@ -164,13 +187,28 @@ public class PlayerHealth : MonoBehaviour
         }
 
         isAlive = true;
-        GetComponent<PlayerController>().transform.position = respawnPoint.transform.position;
+        playerController.transform.position = respawnPoint.transform.position;
         currentHealth = maxHealth;
-        GetComponent<PlayerController>().playerMovement = true;
+        playerController.playerMovement = true;
     }
 
     public void Heal(int a_healValue)
     {
         currentHealth += a_healValue;
+    }
+
+    private void ActivateParticles()
+    {
+        respawnParticles.GetComponent<ParticleSystem>().Play();
+    }
+
+    private void DisableParticles()
+    {
+        respawnParticles.GetComponent<ParticleSystem>().Stop();
+    }
+
+    private void DisableDeathParticles()
+    {
+        //deathParticles.GetComponent<ParticleSystem>().Stop();
     }
 }

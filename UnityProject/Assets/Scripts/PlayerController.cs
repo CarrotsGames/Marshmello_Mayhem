@@ -6,6 +6,10 @@ using XboxCtrlrInput;
 public class PlayerController : MonoBehaviour
 {
 
+    public bool IsRunning;
+    public bool IsIdle;
+    public bool IsShooting;
+
     public CharacterController charController;
     public XboxController controller;
     public GunController rayGun;
@@ -38,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem buildingParticles;
     public ParticleSystem chemHoldParticles;
-    public ParticleSystem deathParticles;
+
 
     //(blue = 1, red = 2);
 
@@ -60,9 +64,9 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Nothing assigned to Player's 'Enemy Chem Flag'");
         }
 
+        //prevents particles from starting
         buildingParticles.Stop();
         chemHoldParticles.Stop();
-        deathParticles.Stop();
     }
 
     // Update is called once per frame
@@ -100,7 +104,11 @@ public class PlayerController : MonoBehaviour
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
+            
+            IsShooting = true;
+
             rayGun.Shoot();
+
         }
 
         //PickUpChemFlag();
@@ -122,10 +130,31 @@ public class PlayerController : MonoBehaviour
 
         if (playerMovement == true)
         {
-            float moveHorizontal = Input.GetAxis("Horizontal");
-            float moveVertical = Input.GetAxis("Vertical");
+            //float moveHorizontal = Input.GetAxis("Horizontal");
+            //float moveVertical = Input.GetAxis("Vertical");
 
-            Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
+            float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
+            float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
+
+            if (axisX > 0 || axisZ > 0)
+            {
+                IsRunning = true;
+                IsIdle = false;
+                IsShooting = false;
+            }
+            if (axisX == 0 && axisZ == 0 && IsShooting == false)
+            {
+                IsRunning = false;
+                IsIdle = true;
+                IsShooting = false;
+            }
+            if (IsShooting == true)
+            {
+                IsIdle = false;
+                IsRunning = false;
+            }
+
+            //Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
 
             MovePlayer();
         }
@@ -162,9 +191,7 @@ public class PlayerController : MonoBehaviour
         directionVector = directionVector.normalized;
         previousRotation = directionVector;
         transform.rotation = Quaternion.LookRotation(directionVector);
-
-
-
+        
     }
 
     private void MovePlayer()
@@ -175,6 +202,19 @@ public class PlayerController : MonoBehaviour
             float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
             
             Vector3 movement = new Vector3(axisX, 0, axisZ);
+
+            //if (axisX > 0 || axisZ > 0)
+            //{
+            //    IsRunning = true;
+            //    IsIdle = false;
+            //    IsShooting = false;
+            //}
+            //else if (axisX == 0 && axisZ == 0)
+            //{
+            //    IsRunning = false;
+            //    IsIdle = true;
+            //    IsShooting = false;
+            //}
 
             charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
         }

@@ -318,6 +318,8 @@ public class BuildTrap : MonoBehaviour {
                                 //create trap at position closest to selected area and add it to list of traps
                                 createdObjects.Add(tempObject);
 
+                                GetComponent<PlayerController>().buildingParticles.Play();
+
                                 //calls Build function after delay (seconds)
                                 Invoke("Build", buildTime);
                             }
@@ -353,6 +355,8 @@ public class BuildTrap : MonoBehaviour {
                             tempObject.SetActive(false);
                             //create trap at position closest to selected area and add it to list of traps
                             createdObjects.Add(tempObject);
+
+                            GetComponent<PlayerController>().buildingParticles.Play();
 
                             //calls Build function after delay (seconds)
                             Invoke("Build", buildTime);
@@ -410,7 +414,7 @@ public class BuildTrap : MonoBehaviour {
         previewExist = false;
         isEnabled = false;
 
-        
+        GetComponent<PlayerController>().buildingParticles.Stop();
     }
 
     void Preview()

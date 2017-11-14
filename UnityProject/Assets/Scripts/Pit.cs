@@ -114,10 +114,7 @@ public class Pit : TrapBehaviour
             }
             
         }
-        else
-        {
-            Debug.Log("Missing PlayerController script on player");
-        }
+
         
     }
 

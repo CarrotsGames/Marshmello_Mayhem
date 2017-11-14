@@ -42,19 +42,22 @@ public class HumanThrower : TrapBehaviour {
 
     private void OnTriggerEnter(Collider a_col)
     {
-        //play animation
-        if (humanThrowerAnimation != null)
+        if (a_col.GetComponent<Projectile>() == null)
         {
-            humanThrowerAnimation.enabled = true;
+            //play animation
+            if (humanThrowerAnimation != null)
+            {
+                humanThrowerAnimation.enabled = true;
 
-            humanThrowerAnimation.Play(0);
-        }
-        player = a_col.gameObject;
+                humanThrowerAnimation.Play(0);
+            }
+            player = a_col.gameObject;
 
-        //call lerp function in player
-        if (player.GetComponent<PlayerController>() != null)
-        {
-            player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight, timeInAir);
+            //call lerp function in player
+            if (player.GetComponent<PlayerController>() != null)
+            {
+                player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight, timeInAir);
+            }
         }
     }
 }

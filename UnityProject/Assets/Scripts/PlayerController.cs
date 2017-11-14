@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
     private float timeInAir;
     float timeLeft;
 
+    public ParticleSystem buildingParticles;
+    public ParticleSystem chemHoldParticles;
+    public ParticleSystem deathParticles;
 
     //(blue = 1, red = 2);
 
@@ -56,6 +59,10 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Nothing assigned to Player's 'Enemy Chem Flag'");
         }
+
+        buildingParticles.Stop();
+        chemHoldParticles.Stop();
+        deathParticles.Stop();
     }
 
     // Update is called once per frame
@@ -180,6 +187,9 @@ public class PlayerController : MonoBehaviour
             holdingChemFlag = null;
             enemyChemFlag.SetParent(null);
             enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
+
+            //disable partical system
+            chemHoldParticles.Stop();
         }
     }
 
@@ -198,6 +208,8 @@ public class PlayerController : MonoBehaviour
                 enemyChemFlag.GetComponent<Chem_Flag>().PickUpChemFlag();
                 holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
 
+                //enable partical system
+                chemHoldParticles.Play();
             }
         }
     }

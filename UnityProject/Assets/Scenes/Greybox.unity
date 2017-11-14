@@ -1603,7 +1603,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: eb3c95333681b1c4aa24c56f29ec4646, type: 2}
+      objectReference: {fileID: 2100000, guid: df522c8945bb4814eae07e23b10b08e2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
   m_IsPrefabParent: 0
@@ -3120,10 +3120,6 @@ Prefab:
     - target: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_RootOrder
       value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
-      propertyPath: m_Name
-      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -5015,7 +5011,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c62f26394c2e0d8429681e046bd610a3, type: 2}
+      objectReference: {fileID: 2100000, guid: 4e39ce21a525740438f8d2e9c385127e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
   m_IsPrefabParent: 0
@@ -5560,41 +5556,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 1437087318}
     - target: {fileID: 114586625826555300, guid: 8f9273a7446ba764b805609e8ed040d0,
         type: 2}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1828610400}
+    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
+        type: 2}
+      propertyPath: enemyChemFlag
+      value: 
+      objectReference: {fileID: 1437087318}
     - target: {fileID: 1777086311879960, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache P2
-      objectReference: {fileID: 0}
-    - target: {fileID: 137867027488553288, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 95aa8a8e67216cd4bb22d6642784763c, type: 2}
-    - target: {fileID: 23922112566290466, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d91817bbfdf3a15458c9e904fd25401b, type: 2}
-    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.346
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
@@ -9058,14 +9032,6 @@ Prefab:
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 1437087318}
-    - target: {fileID: 4410758665238490, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.227
-      objectReference: {fileID: 0}
-    - target: {fileID: 4410758665238490, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.702
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
   m_IsPrefabParent: 0
@@ -9863,67 +9829,54 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1000997110}
     m_Modifications:
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalPosition.x
       value: -22.68049
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalPosition.y
       value: -11.1061125
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalPosition.z
       value: 13.149912
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+    - target: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114586625826555300, guid: 8f9273a7446ba764b805609e8ed040d0,
+    - target: {fileID: 114872542698942106, guid: 3b61616b5956acb4082c51ad1653b1e2,
         type: 2}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1743661274}
-    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
+    - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
         type: 2}
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 156102381}
-    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: controller
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.526
+    - target: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
+      propertyPath: m_Name
+      value: PlayerChar_001_Scientist_001_Moustache P1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &718212895
 GameObject:
@@ -15997,6 +15950,11 @@ Prefab:
       propertyPath: m_Name
       value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 23264877946730804, guid: 430bbd1a5da74e34ca55debed6f81944,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e39ce21a525740438f8d2e9c385127e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
   m_IsPrefabParent: 0
@@ -18554,7 +18512,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: eb3c95333681b1c4aa24c56f29ec4646, type: 2}
+      objectReference: {fileID: 2100000, guid: d68c16baa1f321049bc0ac78c227020c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
   m_IsPrefabParent: 0
@@ -21935,10 +21893,6 @@ Prefab:
     - target: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280130178897862, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
-      propertyPath: m_Name
-      value: Level_002_Lab_002_Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
@@ -25608,12 +25562,12 @@ Transform:
   m_PrefabInternal: {fileID: 1098390713}
 --- !u!1 &2017303908 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1777086311879960, guid: 8f9273a7446ba764b805609e8ed040d0,
+  m_PrefabParentObject: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2,
     type: 2}
   m_PrefabInternal: {fileID: 714785864}
 --- !u!4 &2017303910 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4189467488247664, guid: 8f9273a7446ba764b805609e8ed040d0,
+  m_PrefabParentObject: {fileID: 4498350932703226, guid: 3b61616b5956acb4082c51ad1653b1e2,
     type: 2}
   m_PrefabInternal: {fileID: 714785864}
 --- !u!1 &2017866653

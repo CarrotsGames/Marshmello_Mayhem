@@ -769,6 +769,7 @@ Transform:
   - {fileID: 4582684368243906}
   - {fileID: 4320413645011368}
   - {fileID: 4467772552750402}
+  - {fileID: 4128118765284320}
   m_Father: {fileID: 4108362577921708}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -825,14 +826,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1100181689789744}
-  m_LocalRotation: {x: 0.53955084, y: -0.7382847, z: 0.396889, w: 0.07937146}
-  m_LocalPosition: {x: -0.016350023, y: 0.21558994, z: 0.21351571}
-  m_LocalScale: {x: 0.5000001, y: 0.5000002, z: 0.5000001}
+  m_LocalRotation: {x: 0.000000014901158, y: 0.00000006332992, z: 0.00000017229463,
+    w: 1}
+  m_LocalPosition: {x: -0, y: 0.52, z: 0}
+  m_LocalScale: {x: 0.5000003, y: 0.5000004, z: 0.50000024}
   m_Children:
   - {fileID: 4160935657645512}
   - {fileID: 4684915772028778}
-  m_Father: {fileID: 4700484297658156}
-  m_RootOrder: 2
+  m_Father: {fileID: 4051347692353724}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4139578240860372
 Transform:
@@ -1271,7 +1273,6 @@ Transform:
   m_Children:
   - {fileID: 4027713000618186}
   - {fileID: 4578065369240528}
-  - {fileID: 4128118765284320}
   m_Father: {fileID: 4632198308539150}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1599,7 +1600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 0}
-  controller: 1
+  controller: 2
   rayGun: {fileID: 114686290941506256}
   speed: 6
   maxSpeed: 6
@@ -1627,6 +1628,7 @@ MonoBehaviour:
   currentHealth: 10
   respawnPoint: {fileID: 0}
   respawnTimer: 3
+  isChangingColour: 0
 --- !u!114 &114686290941506256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1654,6 +1656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildTime: 3
+  selectedTrap: {fileID: 0}
   isEnabled: 0
   extraTraps: 0
   playerToTileDistance: 1.8

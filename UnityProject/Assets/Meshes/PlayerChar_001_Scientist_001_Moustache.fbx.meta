@@ -1,180 +1,128 @@
 fileFormatVersion: 2
-guid: 9eac6ff5cd544fa408cb3a6616ee133e
-timeCreated: 1505861551
+guid: a8c38c9a4cf441448a27e86c3eb2da6b
+timeCreated: 1510628840
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: body_retop
-    100004: goggles_retop
-    100006: moustash_retopo
-    100008: PlayerChar_001_Scientist_001_Moustache
-    100010: polySurface1
-    100012: transform1
-    100014: transform2
-    100016: transform3
-    100018: transform4
-    100020: polySurface5
-    100022: polySurface6
-    100024: polySurface7
-    100026: polySurface8
-    100028: polySurface9
-    100030: transform5
-    100032: hair
-    100034: Hair_tip
-    100036: Head
-    100038: L_ankle
-    100040: L_Calf
-    100042: L_fingers
-    100044: L_fore_arm
-    100046: L_hand
-    100048: L_shoulder
-    100050: L_thigh
-    100052: L_thumb
-    100054: L_tip_fingers
-    100056: L_tip_thumb
-    100058: L_Tip_toes
-    100060: L_toes
-    100062: pelvis
-    100064: R_ankle
-    100066: R_Calf
-    100068: R_fingers
-    100070: R_fore_arm
-    100072: R_hand
-    100074: R_shoulder
-    100076: R_thigh
-    100078: R_thumb
-    100080: R_tip_fingers
-    100082: R_tip_thumb
-    100084: R_Tip_toes
-    100086: R_toes
-    100088: Root
-    100090: Spine_1
-    100092: spine_2
-    100094: Spine_3
-    100096: ankle_L
-    100098: ankle_R
-    100100: finger_tips_L
-    100102: finger_tips_R
-    100104: fingers_L
-    100106: fingers_R
-    100108: fore_arm_L
-    100110: fore_arm_R
-    100112: hair_tip
-    100114: hand_L
-    100116: hand_R
-    100118: head
-    100120: nurbsCircle1
-    100122: root
-    100124: shin_L
-    100126: shin_R
-    100128: shoulder_L
-    100130: shoulder_R
-    100132: spine1
-    100134: spine2
-    100136: spine3
-    100138: thigh_L
-    100140: thigh_R
-    100142: thumb_L
-    100144: thumb_R
-    100146: thumb_ti_Lp
-    100148: thumb_ti_Rp
-    100150: toe_tips_L
-    100152: toe_tips_R
-    100154: toes_L
-    100156: toes_R
-    400000: //RootNode
-    400002: body_retop
-    400004: goggles_retop
-    400006: moustash_retopo
-    400008: PlayerChar_001_Scientist_001_Moustache
-    400010: polySurface1
-    400012: transform1
-    400014: transform2
-    400016: transform3
-    400018: transform4
-    400020: polySurface5
-    400022: polySurface6
-    400024: polySurface7
-    400026: polySurface8
-    400028: polySurface9
-    400030: transform5
-    400032: hair
-    400034: Hair_tip
-    400036: Head
-    400038: L_ankle
-    400040: L_Calf
-    400042: L_fingers
-    400044: L_fore_arm
-    400046: L_hand
-    400048: L_shoulder
-    400050: L_thigh
-    400052: L_thumb
-    400054: L_tip_fingers
-    400056: L_tip_thumb
-    400058: L_Tip_toes
-    400060: L_toes
-    400062: pelvis
-    400064: R_ankle
-    400066: R_Calf
-    400068: R_fingers
-    400070: R_fore_arm
-    400072: R_hand
-    400074: R_shoulder
-    400076: R_thigh
-    400078: R_thumb
-    400080: R_tip_fingers
-    400082: R_tip_thumb
-    400084: R_Tip_toes
-    400086: R_toes
-    400088: Root
-    400090: Spine_1
-    400092: spine_2
-    400094: Spine_3
-    400096: ankle_L
-    400098: ankle_R
-    400100: finger_tips_L
-    400102: finger_tips_R
-    400104: fingers_L
-    400106: fingers_R
-    400108: fore_arm_L
-    400110: fore_arm_R
-    400112: hair_tip
-    400114: hand_L
-    400116: hand_R
-    400118: head
-    400120: nurbsCircle1
-    400122: root
-    400124: shin_L
-    400126: shin_R
-    400128: shoulder_L
-    400130: shoulder_R
-    400132: spine1
-    400134: spine2
-    400136: spine3
-    400138: thigh_L
-    400140: thigh_R
-    400142: thumb_L
-    400144: thumb_R
-    400146: thumb_ti_Lp
-    400148: thumb_ti_Rp
-    400150: toe_tips_L
-    400152: toe_tips_R
-    400154: toes_L
-    400156: toes_R
-    2300000: //RootNode
-    2300002: PlayerChar_001_Scientist_001_Moustache
-    3300000: //RootNode
-    3300002: PlayerChar_001_Scientist_001_Moustache
+    100000: ankle_L
+    100002: ankle_R
+    100004: Char_001_global
+    100006: Char_001_head
+    100008: Char_001_pelvis
+    100010: Char_001_root
+    100012: Char_001_spine1
+    100014: Char_001_spine2
+    100016: finger_tips_L
+    100018: finger_tips_R
+    100020: fingers_L
+    100022: fingers_R
+    100024: fore_arm_L
+    100026: fore_arm_R
+    100028: hair
+    100030: hair_tip
+    100032: hand_L
+    100034: hand_R
+    100036: head
+    100038: IK_handels
+    100040: IK_Leg_Left
+    100042: IK_Leg_Right
+    100044: L_Char_001_elbow
+    100046: L_Char_001_foot
+    100048: L_Char_001_knee
+    100050: L_Char_001_shoulder
+    100052: L_Char_001_wrist
+    100054: pelvis
+    100056: //RootNode
+    100058: PlayerChar_001_Scientist_001_Moustache
+    100060: R_Char_001_elbow1
+    100062: R_Char_001_foot1
+    100064: R_Char_001_knee1
+    100066: R_Char_001_shoulder1
+    100068: R_Char_001_wrist1
+    100070: root
+    100072: shin_L
+    100074: shin_R
+    100076: shoulder_L
+    100078: shoulder_R
+    100080: skeleton
+    100082: spine1
+    100084: spine2
+    100086: spine3
+    100088: thigh_L
+    100090: thigh_R
+    100092: thumb_L
+    100094: thumb_R
+    100096: thumb_ti_Lp
+    100098: thumb_ti_Rp
+    100100: toe_tips_L
+    100102: toe_tips_R
+    100104: toes_L
+    100106: toes_R
+    100108: Weapon_001_Lab_001_RayGun
+    400000: ankle_L
+    400002: ankle_R
+    400004: Char_001_global
+    400006: Char_001_head
+    400008: Char_001_pelvis
+    400010: Char_001_root
+    400012: Char_001_spine1
+    400014: Char_001_spine2
+    400016: finger_tips_L
+    400018: finger_tips_R
+    400020: fingers_L
+    400022: fingers_R
+    400024: fore_arm_L
+    400026: fore_arm_R
+    400028: hair
+    400030: hair_tip
+    400032: hand_L
+    400034: hand_R
+    400036: head
+    400038: IK_handels
+    400040: IK_Leg_Left
+    400042: IK_Leg_Right
+    400044: L_Char_001_elbow
+    400046: L_Char_001_foot
+    400048: L_Char_001_knee
+    400050: L_Char_001_shoulder
+    400052: L_Char_001_wrist
+    400054: pelvis
+    400056: //RootNode
+    400058: PlayerChar_001_Scientist_001_Moustache
+    400060: R_Char_001_elbow1
+    400062: R_Char_001_foot1
+    400064: R_Char_001_knee1
+    400066: R_Char_001_shoulder1
+    400068: R_Char_001_wrist1
+    400070: root
+    400072: shin_L
+    400074: shin_R
+    400076: shoulder_L
+    400078: shoulder_R
+    400080: skeleton
+    400082: spine1
+    400084: spine2
+    400086: spine3
+    400088: thigh_L
+    400090: thigh_R
+    400092: thumb_L
+    400094: thumb_R
+    400096: thumb_ti_Lp
+    400098: thumb_ti_Rp
+    400100: toe_tips_L
+    400102: toe_tips_R
+    400104: toes_L
+    400106: toes_R
+    400108: Weapon_001_Lab_001_RayGun
+    2300000: Weapon_001_Lab_001_RayGun
+    3300000: Weapon_001_Lab_001_RayGun
     4300000: PlayerChar_001_Scientist_001_Moustache
-    4300002: polySurface5
-    7400000: Run
+    4300002: Weapon_001_Lab_001_RayGun
     9500000: //RootNode
-    11100000: //RootNode
     13700000: PlayerChar_001_Scientist_001_Moustache
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -189,42 +137,14 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Run
-      takeName: Run
-      firstFrame: 1
-      lastFrame: 25
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -267,7 +187,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

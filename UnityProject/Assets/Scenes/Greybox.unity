@@ -5564,7 +5564,7 @@ Prefab:
         type: 2}
       propertyPath: enemyChemFlag
       value: 
-      objectReference: {fileID: 156102381}
+      objectReference: {fileID: 1437087318}
     - target: {fileID: 114586625826555300, guid: 8f9273a7446ba764b805609e8ed040d0,
         type: 2}
       propertyPath: respawnPoint
@@ -9807,7 +9807,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.38
+  orthographic size: 14.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9829,13 +9829,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714645958}
-  m_LocalRotation: {x: 0.33167648, y: -0.0042452514, z: 0.0014925674, w: 0.9433825}
+  m_LocalRotation: {x: 0.33168033, y: -0.0042479658, z: 0.0014935285, w: 0.94338113}
   m_LocalPosition: {x: 44.5, y: 89.58, z: -99.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 38.742, y: -0.51600003, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.742, y: -0.516, z: 0}
 --- !u!1001 &714785864
 Prefab:
   m_ObjectHideFlags: 0
@@ -9885,6 +9885,11 @@ Prefab:
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 156102381}
+    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
+        type: 2}
+      propertyPath: controller
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
   m_IsPrefabParent: 0
@@ -16881,21 +16886,6 @@ Prefab:
     - target: {fileID: 4259473676879060, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23877270175323648, guid: bc7cf425b8bbb274f83584c762fee872,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f466cdf706a0c0045a1afc5494e453de, type: 2}
-    - target: {fileID: 65305929424637744, guid: bc7cf425b8bbb274f83584c762fee872,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 1.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 114445232422681506, guid: bc7cf425b8bbb274f83584c762fee872,
-        type: 2}
-      propertyPath: teamNumber
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc7cf425b8bbb274f83584c762fee872, type: 2}

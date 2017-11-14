@@ -481,8 +481,15 @@ public class BuildTrap : MonoBehaviour {
                 preview.GetComponent<HumanThrower>().enabled = false;
             }
             if (preview.GetComponent<Invention_007_LastPrayer>() != null)
-            {
-                preview.GetComponent<Invention_007_LastPrayer>().enabled = false;
+            {     
+                Invention_007_LastPrayer temp = preview.GetComponent<Invention_007_LastPrayer>();
+
+                for (int i = 0; i < temp.explosionParticles.Length; i++)
+                {
+                    temp.explosionParticles[i].Stop();
+                }
+
+                temp.enabled = false;
             }
             if (preview.GetComponent<Invention_005_PillarOfSaws>() != null)
             {

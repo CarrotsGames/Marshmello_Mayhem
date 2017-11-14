@@ -10,14 +10,19 @@ public class Invention_007_LastPrayer : TrapBehaviour {
     public int explosionDamage;
     GameObject[] players;
     bool hasFinishedPlaying = false;
-    AudioSource explosionSound;    
+    AudioSource explosionSound;
+    public ParticleSystem[] explosionParticles;
 
 	// Use this for initialization
 	void Start () {
         players = GameObject.FindGameObjectsWithTag("Player");
         explosionSound = FindObjectOfType<PrefabList>().ExplosionAudio;
         trapName = "LastPrayer";
-	}
+        for (int i = 0; i < explosionParticles.Length; i++)
+        {
+            explosionParticles[i].Stop();
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -42,6 +47,12 @@ public class Invention_007_LastPrayer : TrapBehaviour {
         }
         if (explosionSound.isPlaying == false && hasFinishedPlaying == true)
         {
+            //stop particle effect
+            for (int i = 0; i < explosionParticles.Length; i++)
+            {
+                explosionParticles[i].Stop();
+            }
+
             Debug.Log("Destroy");
             Destroy(gameObject);
         }
@@ -49,6 +60,12 @@ public class Invention_007_LastPrayer : TrapBehaviour {
 
     void Explosion()
     {
+        //play particle effect
+        for (int i = 0; i < explosionParticles.Length; i++)
+        {
+            explosionParticles[i].Play();
+        }
+
         //play game over sound
         if (explosionSound != null)
         {
@@ -88,9 +105,5 @@ public class Invention_007_LastPrayer : TrapBehaviour {
                 }
             }
         }
-
-        //play particle effect
-
     }
-
 }

@@ -138,6 +138,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Death()
     {
+        GetComponent<PlayerController>().deathParticles.Play();
         //plays sound
         if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
         {
@@ -153,6 +154,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Respawn()
     {
+        GetComponent<PlayerController>().deathParticles.Stop();
+
+
         //stops sound
         if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
         {

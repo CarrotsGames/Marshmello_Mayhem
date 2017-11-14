@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public Vector3 previousRotation = Vector3.forward;
 
     public GameController.Direction direction;
+    private Animator animator;
 
     //variables for lerp
     private bool isLerping = false;
@@ -43,12 +44,14 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem buildingParticles;
     public ParticleSystem chemHoldParticles;
 
+    
 
     //(blue = 1, red = 2);
 
     // Use this for initialization
     void Start()
     {
+        animator = GetComponent<Animator>();
         charController = GetComponent<CharacterController>();
 
         if (GetComponent<PlayerHealth>() != null)
@@ -141,17 +144,30 @@ public class PlayerController : MonoBehaviour
                 IsRunning = true;
                 IsIdle = false;
                 IsShooting = false;
+
+                animator.SetBool("IsRunning", true);
+                animator.SetBool("IsIdle", false);
+                animator.SetBool("IsShooting", false);
+
             }
             if (axisX == 0 && axisZ == 0 && IsShooting == false)
             {
                 IsRunning = false;
                 IsIdle = true;
                 IsShooting = false;
+
+                animator.SetBool("IsRunning", false);
+                animator.SetBool("IsIdle", true);
+                animator.SetBool("IsShooting", false);
             }
             if (IsShooting == true)
             {
                 IsIdle = false;
                 IsRunning = false;
+
+                animator.SetBool("IsRunning", false);
+                animator.SetBool("IsIdle", false);
+                animator.SetBool("IsShooting", true);
             }
 
             //Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));

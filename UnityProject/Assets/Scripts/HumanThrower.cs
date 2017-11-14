@@ -6,7 +6,7 @@ public class HumanThrower : TrapBehaviour {
 
     //test variables
     GameObject player;
-    public Animator humanThrowerAnimation;
+    Animator humanThrowerAnimation;
     //slerping
     //private Vector3 startPosition;
     //private Vector3 targetPosition;

@@ -3910,7 +3910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd8a4bf5eae75248bc3c1f428b18587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 0.1
+  minutes: 10
   gameOver: 0
 --- !u!1001 &318999784
 Prefab:
@@ -5584,6 +5584,18 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d91817bbfdf3a15458c9e904fd25401b, type: 2}
+    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.346
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
   m_IsPrefabParent: 0
@@ -9046,6 +9058,14 @@ Prefab:
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 1437087318}
+    - target: {fileID: 4410758665238490, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.227
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410758665238490, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.702
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
   m_IsPrefabParent: 0
@@ -9889,6 +9909,18 @@ Prefab:
         type: 2}
       propertyPath: controller
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716928726938010, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.526
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}

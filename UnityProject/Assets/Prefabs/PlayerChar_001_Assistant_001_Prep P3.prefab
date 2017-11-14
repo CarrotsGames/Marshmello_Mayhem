@@ -2053,6 +2053,9 @@ MonoBehaviour:
   holdingChemFlag: {fileID: 0}
   previousRotation: {x: 0, y: 0, z: 1}
   direction: 0
+  buildingParticles: {fileID: 198011725907460688}
+  chemHoldParticles: {fileID: 198919316277240434}
+  deathParticles: {fileID: 198535089060744052}
 --- !u!114 &114842186639740368
 MonoBehaviour:
   m_ObjectHideFlags: 1

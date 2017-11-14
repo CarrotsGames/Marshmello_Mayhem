@@ -1607,7 +1607,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1659695966412600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.78104, y: -0.30999947, z: 1.0039997}
+  m_LocalPosition: {x: 0, y: 0, z: -0.346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4189467488247664}
@@ -1935,7 +1935,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8aa3d17a8c0c9a545964d64896719096, type: 2}
+  - {fileID: 2100000, guid: d91817bbfdf3a15458c9e904fd25401b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2026,7 +2026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 0}
-  controller: 2
+  controller: 1
   rayGun: {fileID: 114826684921633638}
   speed: 6
   maxSpeed: 6
@@ -2038,6 +2038,9 @@ MonoBehaviour:
   holdingChemFlag: {fileID: 0}
   previousRotation: {x: 0, y: 0, z: 1}
   direction: 0
+  buildingParticles: {fileID: 198930777816857276}
+  chemHoldParticles: {fileID: 198996726679703462}
+  deathParticles: {fileID: 198975518827599276}
 --- !u!114 &114586625826555300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2114,7 +2117,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7c99095f63d355d4e95217b9ba4cb86c, type: 2}
+  - {fileID: 2100000, guid: 95aa8a8e67216cd4bb22d6642784763c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

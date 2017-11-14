@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 114765941365832250}
   m_Layer: 0
   m_Name: PlayerChar_001_Assistant_001_Prep P3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2100,7 +2100,7 @@ Animator:
   m_GameObject: {fileID: 1458477896857996}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a5aee5cd4b542bc46ad5b172756fbe4a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8e982767b2f5e88458b0fe834a30a5fb, type: 2}
+  m_Controller: {fileID: 9100000, guid: aa5251f5fb27bc14988dd21e0c83b774, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2191,6 +2191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildTime: 3
+  selectedTrap: {fileID: 0}
   isEnabled: 0
   extraTraps: 0
   playerToTileDistance: 1.8
@@ -2210,6 +2211,7 @@ MonoBehaviour:
   currentHealth: 10
   respawnPoint: {fileID: 0}
   respawnTimer: 3
+  isChangingColour: 0
 --- !u!137 &137780298438627252
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

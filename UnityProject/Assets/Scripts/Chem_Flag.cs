@@ -55,6 +55,7 @@ public class Chem_Flag : MonoBehaviour {
         if (teamNumber == 2 && team1Base != null)
         {
             Vector3 vecBetween = transform.position - team1Base.transform.position;
+            vecBetween.y = 0;
 
             if (vecBetween.magnitude <= 2)
             {

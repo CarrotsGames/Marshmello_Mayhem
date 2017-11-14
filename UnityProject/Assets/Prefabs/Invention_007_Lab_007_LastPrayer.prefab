@@ -156,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776957262736304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23471832, y: -11.49, z: -12.740002}
+  m_LocalPosition: {x: 39.974422, y: 17.51681, z: -30.387396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4143072512833050}
@@ -247,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 45
   teamNumber: 0
+  trapName: Last Prayer
   countdown: 3
   explosionRadius: 5
   explosionDamage: 200

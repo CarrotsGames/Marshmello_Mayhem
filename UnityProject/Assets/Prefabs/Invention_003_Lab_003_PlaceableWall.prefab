@@ -135,5 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 10
-  teamNumber: 0
+  teamNumber: 1
+  trapName: 
   maxHealth: 100

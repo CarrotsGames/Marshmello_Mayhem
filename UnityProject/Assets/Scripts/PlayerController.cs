@@ -136,7 +136,7 @@ public class PlayerController : MonoBehaviour
             float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
             float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
-            if (axisX > 0 || axisZ > 0)
+            if (axisX != 0 || axisZ != 0)
             {
                 IsRunning = true;
                 IsIdle = false;

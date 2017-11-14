@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour {
     int damage;
     float timer;
     float cooldown;
-    float pushback;
+
 
     GameController gameController;
 

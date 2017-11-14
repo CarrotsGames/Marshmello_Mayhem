@@ -224,7 +224,7 @@ public class BuildTrap : MonoBehaviour {
             rotation = Quaternion.LookRotation(forward, upwards);
 
             for (int i = 0; i < floorGrid.Length; i++)
-            {                
+            {
                  Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
                  vecBetween.y = 0;
 
@@ -426,6 +426,12 @@ public class BuildTrap : MonoBehaviour {
             if (selectedTrap.GetComponent<HumanThrower>() != null)
             {                
                  preview.GetComponentInChildren<MeshRenderer>().materials[1] = FindObjectOfType<GameController>().trapPreviewMaterial;                               
+            }
+
+            //disables animations for preview object
+            if (preview.GetComponent<Animator>() != null)
+            {
+                preview.GetComponent<Animator>().enabled = false;
             }
 
             previewExist = true;

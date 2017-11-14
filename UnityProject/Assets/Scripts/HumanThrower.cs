@@ -6,10 +6,10 @@ public class HumanThrower : TrapBehaviour {
 
     //test variables
     GameObject player;
-
+    public Animator humanThrowerAnimation;
     //slerping
-    private Vector3 startPosition;
-    private Vector3 targetPosition;
+    //private Vector3 startPosition;
+    //private Vector3 targetPosition;
 
     private float timer = 0.0f;
     public float timeBeforeActivation = 5.0f;
@@ -23,6 +23,9 @@ public class HumanThrower : TrapBehaviour {
     void Start () {
         trapName = "HumanThrower";
         gameObject.GetComponent<BoxCollider>().enabled = false;
+        humanThrowerAnimation = GetComponent<Animator>();
+
+        humanThrowerAnimation.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -32,11 +35,20 @@ public class HumanThrower : TrapBehaviour {
         if (timer >= timeBeforeActivation)
         {
             gameObject.GetComponent<BoxCollider>().enabled = true;
+
+            
         }
     }
 
     private void OnTriggerEnter(Collider a_col)
     {
+        //play animation
+        if (humanThrowerAnimation != null)
+        {
+            humanThrowerAnimation.enabled = true;
+
+            humanThrowerAnimation.Play(0);
+        }
         player = a_col.gameObject;
 
         //call lerp function in player

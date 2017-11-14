@@ -88,6 +88,9 @@ public class Invention_007_LastPrayer : TrapBehaviour {
                 }
             }
         }
+
+        //play particle effect
+
     }
 
 }

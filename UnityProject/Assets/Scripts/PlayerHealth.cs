@@ -26,6 +26,9 @@ public class PlayerHealth : MonoBehaviour
 
     public bool isChangingColour;
     float colourTime = 0.0f;
+    public float timeSpentAsDifferentColour;
+    public Material emissiveMaterial;
+    //Renderer renderer;
 
     // Use this for initialization
     void Start()
@@ -52,40 +55,14 @@ public class PlayerHealth : MonoBehaviour
         }
 
         respawnParticles.transform.position = respawnPoint.transform.position;
+
+        //renderer = GetComponentInChildren<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (isChangingColour == true)
-        //{
-        //    Renderer renderer = new Renderer();
-        //    Material mat = renderer.material;
-        //    
-        //    float emission = Mathf.PingPong(Time.time, 1.0f);
-        //    Color baseColor = Color.red;
-        //    
-        //    Color finalColor = baseColor * Mathf.LinearToGammaSpace(emission);
-        //    
-        //    mat.SetColor(11208, finalColor);
-        //    
-        //    colourTime += Time.deltaTime;
-        //                
-        //    if (colourTime >= 0.5f)
-        //    {
-        //        //GetComponentInChildren<Material>().SetColor(11208, Color.black);
-        //        GetComponentInChildren<Renderer>().material.color = Color.red;
-        //        GetComponentInChildren<Renderer>().material.SetColor("_EmissionColor", Color.red * 1.0f);
-        //        isChangingColour = false;
-        //    
-        //        colourTime = 0;
-        //    }
-        //}
-        //if (isChangingColour == false)
-        //{
-        //    GetComponentInChildren<Renderer>().material.color = Color.red;
-        //    GetComponentInChildren<Renderer>().material.SetColor("_EmissionColor", Color.red * 0);
-        //}
+        
 
         //set values to common variables in gameController
         timeBetweenHeals = gameController.timeBetweenPlayerHeals;
@@ -146,7 +123,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= damageAmount;
         }
 
-        //isChangingColour = true;
+        GetComponentInChildren<ColourChange>().isChanging = true;
 
         //when player takes damage, set isInCombat to true
         isInCombat = true;

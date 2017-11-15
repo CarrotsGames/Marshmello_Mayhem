@@ -11592,16 +11592,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 156102381}
     - target: {fileID: 114872542698942106, guid: 3b61616b5956acb4082c51ad1653b1e2,
         type: 2}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1743661274}
+    - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
+        type: 2}
+      propertyPath: enemyChemFlag
+      value: 
+      objectReference: {fileID: 156102381}
     - target: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache P1
@@ -26489,16 +26489,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114786399070031956, guid: 362e53626a42d414eb6a3f137d61527c,
-        type: 2}
-      propertyPath: respawnPoint
-      value: 
-      objectReference: {fileID: 1918036485}
     - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
         type: 2}
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 1437087318}
+    - target: {fileID: 114786399070031956, guid: 362e53626a42d414eb6a3f137d61527c,
+        type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1918036485}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
   m_IsPrefabParent: 0
@@ -37685,16 +37685,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114586625826555300, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: respawnPoint
-      value: 
-      objectReference: {fileID: 1828610400}
     - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
         type: 2}
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 1437087318}
+    - target: {fileID: 114586625826555300, guid: 8f9273a7446ba764b805609e8ed040d0,
+        type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1828610400}
     - target: {fileID: 1777086311879960, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache P2
@@ -39287,16 +39287,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114943731960504186, guid: bc55c2e1b1988b940a41231c269c1358,
-        type: 2}
-      propertyPath: respawnPoint
-      value: 
-      objectReference: {fileID: 1240871176}
     - target: {fileID: 114682326958625416, guid: bc55c2e1b1988b940a41231c269c1358,
         type: 2}
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 156102381}
+    - target: {fileID: 114943731960504186, guid: bc55c2e1b1988b940a41231c269c1358,
+        type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1240871176}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
   m_IsPrefabParent: 0

@@ -139,6 +139,8 @@ public class PlayerController : MonoBehaviour
             float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
             float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
+            //animation changes
+            //is moving
             if (axisX != 0 || axisZ != 0)
             {
                 IsRunning = true;
@@ -150,7 +152,18 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("IsShooting", false);
 
             }
-            if (axisX == 0 && axisZ == 0 && IsShooting == false)
+            //is shooting
+            if (IsShooting == true)
+            {     
+                IsIdle = false;
+                IsRunning = false;
+                                
+                animator.SetBool("IsRunning", false);
+                animator.SetBool("IsIdle", false);
+                animator.SetBool("IsShooting", true);
+            }
+
+            else if (axisX == 0 && axisZ == 0)
             {
                 IsRunning = false;
                 IsIdle = true;
@@ -160,15 +173,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("IsIdle", true);
                 animator.SetBool("IsShooting", false);
             }
-            if (IsShooting == true)
-            {
-                IsIdle = false;
-                IsRunning = false;
-
-                animator.SetBool("IsRunning", false);
-                animator.SetBool("IsIdle", false);
-                animator.SetBool("IsShooting", true);
-            }
+            
 
             //Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
 
@@ -178,36 +183,38 @@ public class PlayerController : MonoBehaviour
 
     private void RotatePlayer()
     {
-        if (previousRotation == new Vector3(0, 0, 1))
+        if (playerMovement == true)
         {
-            direction = GameController.Direction.UP;
-        }
-        if (previousRotation == new Vector3(0, 0, -1))
-        {
-            direction = GameController.Direction.DOWN;
-        }
-        if (previousRotation == new Vector3(1, 0, 0))
-        {
-            direction = GameController.Direction.RIGHT;
-        }
-        if (previousRotation == new Vector3(-1, 0, 0))
-        {
-            direction = GameController.Direction.LEFT;
-        }
+            if (previousRotation == new Vector3(0, 0, 1))
+            {
+                direction = GameController.Direction.UP;
+            }
+            if (previousRotation == new Vector3(0, 0, -1))
+            {
+                direction = GameController.Direction.DOWN;
+            }
+            if (previousRotation == new Vector3(1, 0, 0))
+            {
+                direction = GameController.Direction.RIGHT;
+            }
+            if (previousRotation == new Vector3(-1, 0, 0))
+            {
+                direction = GameController.Direction.LEFT;
+            }
 
-        float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
-        float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
-        Vector3 directionVector = new Vector3(rotateAxisX, 0, rotateAxisZ);
+            float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
+            float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
+            Vector3 directionVector = new Vector3(rotateAxisX, 0, rotateAxisZ);
 
-        if (directionVector.magnitude < 0.1f)
-        {
-            directionVector = previousRotation;
+            if (directionVector.magnitude < 0.1f)
+            {
+                directionVector = previousRotation;
+            }
+
+            directionVector = directionVector.normalized;
+            previousRotation = directionVector;
+            transform.rotation = Quaternion.LookRotation(directionVector);
         }
-
-        directionVector = directionVector.normalized;
-        previousRotation = directionVector;
-        transform.rotation = Quaternion.LookRotation(directionVector);
-        
     }
 
     private void MovePlayer()

@@ -13,7 +13,7 @@ ModelImporter:
     4300002: Environment__003_Lab_003_Vial_v01
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

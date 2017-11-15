@@ -862,6 +862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4003262671902926}
   - component: {fileID: 137918916949498456}
+  - component: {fileID: 114639459387284612}
   m_Layer: 0
   m_Name: Assistant_Mesh
   m_TagString: Untagged
@@ -1151,7 +1152,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1817949061288628}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.298, y: 0.176, z: -0.549}
+  m_LocalPosition: {x: -0.298, y: 0.176, z: -0.712}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4840558395926016}
@@ -1463,13 +1464,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1218380419893106}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.096859, y: 0.717, z: 0.6000881}
+  m_LocalRotation: {x: -0.71124023, y: -0, z: -0, w: 0.70294905}
+  m_LocalPosition: {x: 0.01, y: -0.78, z: 0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4840558395926016}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.672, y: 0, z: 0}
 --- !u!4 &4651614304614742
 Transform:
   m_ObjectHideFlags: 1
@@ -1998,6 +1999,18 @@ MonoBehaviour:
   currentResource: 0
   resourceIncrease: 0.1
   timeBetween: 0.01
+--- !u!114 &114639459387284612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834479707425226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4edfbda65f3b44a96ca89c15eed35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isChanging: 0
 --- !u!114 &114682326958625416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2060,6 +2073,8 @@ MonoBehaviour:
   respawnPoint: {fileID: 0}
   respawnTimer: 3
   isChangingColour: 0
+  timeSpentAsDifferentColour: 0.35
+  emissiveMaterial: {fileID: 2100000, guid: 042262fe041a7ba44a68f2734c709ee2, type: 2}
 --- !u!114 &114959049986597134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5494,7 +5509,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -141114697
+  randomSeed: -1376152421
   InitialModule:
     serializedVersion: 3
     enabled: 1

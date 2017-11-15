@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124049979513400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.607176, y: 24.146248, z: -20.3156}
+  m_LocalPosition: {x: 49.92935, y: 13.865957, z: -22.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4709612007070128}
@@ -123,8 +123,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.67, z: 1}
-  m_Center: {x: 0, y: 0.64, z: 0}
+  m_Size: {x: 1.4632721, y: 1.1865749, z: 1.3735142}
+  m_Center: {x: -0.00032043457, y: 0.527936, z: 0.023571968}
 --- !u!95 &95067339991659108
 Animator:
   serializedVersion: 3
@@ -156,7 +156,6 @@ MonoBehaviour:
   cost: 15
   teamNumber: 0
   trapName: Human Thrower
-  humanThrowerAnimation: {fileID: 95067339991659108}
   timeBeforeActivation: 1
-  launchHeight: 0.48
-  timeInAir: 1
+  launchHeight: 0.7
+  timeInAir: 3

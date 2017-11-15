@@ -292,6 +292,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4863062214326500}
+  - component: {fileID: 114375064973891608}
+  - component: {fileID: 137983984294213558}
   m_Layer: 0
   m_Name: Scientist Mesh
   m_TagString: Untagged
@@ -621,7 +623,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4933070375577284}
-  - component: {fileID: 137195148544546920}
   m_Layer: 0
   m_Name: PlayerChar_001_Scientist_001_Moustache
   m_TagString: Untagged
@@ -1380,13 +1381,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1571354010451352}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.69850063, y: -0, z: -0, w: 0.7156095}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498350932703226}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -88.614006, y: 0, z: 0}
 --- !u!4 &4498350932703226
 Transform:
   m_ObjectHideFlags: 1
@@ -1444,7 +1445,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408996602797734}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.346}
+  m_LocalPosition: {x: 0, y: -0.463, z: -0.806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498350932703226}
@@ -1998,6 +1999,18 @@ MonoBehaviour:
   currentResource: 0
   resourceIncrease: 0.1
   timeBetween: 0.01
+--- !u!114 &114375064973891608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1379772183040952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4edfbda65f3b44a96ca89c15eed35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isChanging: 0
 --- !u!114 &114400405192245388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2046,6 +2059,8 @@ MonoBehaviour:
   respawnPoint: {fileID: 0}
   respawnTimer: 3
   isChangingColour: 0
+  timeSpentAsDifferentColour: 0.35
+  emissiveMaterial: {fileID: 2100000, guid: 022506eb21fa7394faa4f8d558a09556, type: 2}
 --- !u!114 &114892919229216754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2075,12 +2090,12 @@ MonoBehaviour:
   direction: 0
   buildingParticles: {fileID: 198731930903849996}
   chemHoldParticles: {fileID: 198660173730895806}
---- !u!137 &137195148544546920
+--- !u!137 &137983984294213558
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1582690497226706}
+  m_GameObject: {fileID: 1379772183040952}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -5489,7 +5504,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 504993431
+  randomSeed: -1657269681
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -18,10 +18,6 @@ public class ColourChange : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (colourTime <= 0)
-        {
-            colourTime = GetComponentInParent<PlayerHealth>().timeSpentAsDifferentColour;
-        }
 
         //change colour
         if (isChanging == true)
@@ -32,14 +28,13 @@ public class ColourChange : MonoBehaviour {
             //set isChanging to false (change colour back to original)
             if (colourTime <= 0)
             {
-                isChanging = false;
-                
-                colourTime = GetComponentInParent<PlayerHealth>().timeSpentAsDifferentColour;
+                isChanging = false;       
             }
         }
         //set colour to original
         if (isChanging == false)
         {
+            colourTime = GetComponentInParent<PlayerHealth>().timeSpentAsDifferentColour;
             GetComponent<Renderer>().material = originalMaterial;
         }
     }

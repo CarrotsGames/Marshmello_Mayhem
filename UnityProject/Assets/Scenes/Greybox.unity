@@ -6640,7 +6640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &477910788
 Transform:
   m_ObjectHideFlags: 0
@@ -6717,7 +6717,7 @@ ParticleSystem:
   simulationSpeed: 0.8
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -11592,16 +11592,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114872542698942106, guid: 3b61616b5956acb4082c51ad1653b1e2,
-        type: 2}
-      propertyPath: respawnPoint
-      value: 
-      objectReference: {fileID: 1743661274}
     - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
         type: 2}
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 156102381}
+    - target: {fileID: 114872542698942106, guid: 3b61616b5956acb4082c51ad1653b1e2,
+        type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1743661274}
     - target: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache P1
@@ -14680,7 +14680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &828845893
 Transform:
   m_ObjectHideFlags: 0
@@ -14757,7 +14757,7 @@ ParticleSystem:
   simulationSpeed: 0.8
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -14805,7 +14805,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -822562772
+  randomSeed: 1275546270
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -28574,7 +28574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1661363536
 Transform:
   m_ObjectHideFlags: 0
@@ -28651,7 +28651,7 @@ ParticleSystem:
   simulationSpeed: 0.8
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -28699,7 +28699,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -213775092
+  randomSeed: 16304767
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -33275,7 +33275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1795143649
 Transform:
   m_ObjectHideFlags: 0
@@ -33352,7 +33352,7 @@ ParticleSystem:
   simulationSpeed: 0.8
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -33400,7 +33400,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -206275673
+  randomSeed: 362083272
   InitialModule:
     serializedVersion: 3
     enabled: 1

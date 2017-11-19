@@ -60,101 +60,6 @@ public class BuildTrap : MonoBehaviour {
 
         potentialTiles = new List<Vector3>();
         createdObjects = FindObjectOfType<GameController>().placedTraps;
-
-        //checks for missing components
-        if (floorGrid.Length > 0)
-        {
-            if (prefabList.TarPit == null)
-            {
-                Debug.Log("Tar Pit not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.TarPit.GetComponent<TarPit>() == null)
-            {
-                Debug.Log("TarPit script not assigned to Tar Pit object");
-                error = true;
-            }
-            if (prefabList.Pit == null)
-            {
-                Debug.Log("Pit not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.Pit.GetComponent<Pit>() == null)
-            {
-                Debug.Log("Pit script not assigned to Pit object");
-                error = true;
-            }
-            if (prefabList.PlaceableWall == null)
-            {
-                Debug.Log("Placeable Wall not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.PlaceableWall.GetComponent<PlaceableWall>() == null)
-            {
-                Debug.Log("PlaceableWall script not assigned to Placeable Wall object");
-                error = true;
-            }
-            if (prefabList.HumanThrower == null)
-            {
-                Debug.Log("Human Thrower not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.HumanThrower.GetComponent<HumanThrower>() == null)
-            {
-                Debug.Log("HumanThrower script not assigned to Human Thrower object");
-                error = true;
-            }
-            if (prefabList.PillarOfSaws == null)
-            {
-                Debug.Log("PillarOfSaws not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.PillarOfSaws.GetComponent<Invention_005_PillarOfSaws>() == null)
-            {
-                Debug.Log("PillarOfSaws script not assigned to Pillar Of Saws object");
-                error = true;
-            }
-            if (prefabList.Anti_StickMatter == null)
-            {
-                Debug.Log("Anti stick matter not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.Anti_StickMatter.GetComponent<Invention_006_AntiStickMatter>() == null)
-            {
-                Debug.Log("Anti_stickMatter script not assigned to Anti stick matter object");
-                error = true;
-            }
-            if (prefabList.LastPrayer == null)
-            {
-                Debug.Log("Last Prayer not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.LastPrayer.GetComponent<Invention_007_LastPrayer>() == null)
-            {
-                Debug.Log("LastPrayer script not assigned to Last Prayer object");
-                error = true;
-            }
-            if (prefabList.MatterMover == null)
-            {
-                Debug.Log("Matter Mover not assigned to PrefabList game object");
-                error = true;
-            }
-            if (prefabList.MatterMover.GetComponent<Invention_008_MatterMover>() == null)
-            {
-                Debug.Log("MatterMover script not assigned to Matter Mover object");
-                error = true;
-            }
-            if (GetComponent<PlayerController>() == null)
-            {
-                Debug.Log("PlayerController not attached to player");
-                error = true;
-            }
-            if (GetComponent<ResourceController>() == null)
-            {
-                Debug.Log("ResourceController not attached to player");
-                error = true;
-            }
-        }
     }
 
     // Update is called once per frame
@@ -463,10 +368,6 @@ public class BuildTrap : MonoBehaviour {
         //disables preview object's scripts
         if (FindObjectOfType<PrefabList>() != null)
         {
-            if (preview.GetComponent<TarPit>() != null)
-            {
-                preview.GetComponent<TarPit>().enabled = false;
-            }
             if (preview.GetComponent<Pit>() != null)
             {
                 preview.GetComponent<Pit>().enabled = false;
@@ -490,18 +391,6 @@ public class BuildTrap : MonoBehaviour {
                 }
 
                 temp.enabled = false;
-            }
-            if (preview.GetComponent<Invention_005_PillarOfSaws>() != null)
-            {
-                preview.GetComponent<Invention_005_PillarOfSaws>().enabled = false;
-            }
-            if (preview.GetComponent<Invention_006_AntiStickMatter>() != null)
-            {
-                preview.GetComponent<Invention_006_AntiStickMatter>().enabled = false;
-            }
-            if (preview.GetComponent<Invention_008_MatterMover>() != null)
-            {
-                preview.GetComponent<Invention_008_MatterMover>().enabled = false;
             }
         }
         //disables colliders

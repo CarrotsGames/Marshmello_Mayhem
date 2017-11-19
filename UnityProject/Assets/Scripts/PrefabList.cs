@@ -4,15 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PrefabList : MonoBehaviour {
 
-    public GameObject TarPit;
     public GameObject Pit;
     public GameObject PlaceableWall;
     public GameObject HumanThrower;
-
-    public GameObject PillarOfSaws;
-    public GameObject Anti_StickMatter;
     public GameObject LastPrayer;
-    public GameObject MatterMover;
 
     public AudioSource BuildingAudio;
     public AudioSource ExplosionAudio;

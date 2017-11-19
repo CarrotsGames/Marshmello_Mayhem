@@ -83,11 +83,6 @@ public class Invention_007_LastPrayer : TrapBehaviour {
                 if (traps[i].GetComponent<PlaceableWall>() != null)
                 {                    
                     traps[i].GetComponent<PlaceableWall>().TakeDamage(explosionDamage);
-                }                
-
-                if (traps[i].GetComponent<Invention_005_PillarOfSaws>() != null)
-                {
-                    traps[i].GetComponent<Invention_005_PillarOfSaws>().TakeDamage(explosionDamage);
                 }
             }
         }

@@ -70,11 +70,14 @@ public class BuildTrap : MonoBehaviour {
             isEnabled = false;
         }
 
+        //enable gun controller
+        //gameObject.GetComponentInChildren<GunController>().display = false;
+
         //disable gun controller
-        if (isEnabled == true)
-        {
-            gameObject.GetComponentInChildren<GunController>().display = false;
-        }
+        //if (isEnabled == true)
+        //{
+        //    gameObject.GetComponentInChildren<GunController>().display = false;
+        //}
 
         //checks if a trap is currently being built
         if (isBuilding == false && isEnabled == true)
@@ -84,10 +87,12 @@ public class BuildTrap : MonoBehaviour {
                 Default();
             }
             
+            //change trap dependant on xbox controller's d-pad
             if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
             {
                 selectedTrap = prefabList.Pit;
                 cost = selectedTrap.GetComponent<Pit>().cost;
+                //sets height to be placed at
                 rise = -0.2f;
                 Destroy(preview);
                 previewExist = false;
@@ -96,6 +101,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 selectedTrap = prefabList.PlaceableWall;
                 cost = selectedTrap.GetComponent<PlaceableWall>().cost;
+                //sets height to be placed at
                 rise = 0.5f;
                 Destroy(preview);
                 previewExist = false;
@@ -104,6 +110,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 selectedTrap = prefabList.HumanThrower;
                 cost = selectedTrap.GetComponent<HumanThrower>().cost;
+                //sets height to be placed at
                 rise = 0.6f;
                 Destroy(preview);
                 previewExist = false;
@@ -112,6 +119,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 selectedTrap = prefabList.LastPrayer;
                 cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
+                //sets height to be placed at
                 rise = 1.2f;
                 Destroy(preview);
                 previewExist = false;
@@ -290,10 +298,7 @@ public class BuildTrap : MonoBehaviour {
             if (XCI.GetButtonDown(XboxButton.A, controller) || Input.GetKeyDown(KeyCode.Tab))
             {
                 isEnabled = true;
-            }
-
-            //enable gun controller
-            gameObject.GetComponentInChildren<GunController>().display = true;
+            }          
             
         }
 	}

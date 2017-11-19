@@ -21,6 +21,7 @@ public class GunController : MonoBehaviour {
         }
 
         isEnabled = true;
+        display = false;
 	}
 	
 	// Update is called once per frame
@@ -72,7 +73,12 @@ public class GunController : MonoBehaviour {
         {
             FindObjectOfType<PrefabList>().ShootingAudio.Stop();
         }
-
+        Invoke("GunDisplayDelay", timeBetweenShots);
         isEnabled = true;
+    }
+
+    void GunDisplayDelay()
+    {
+        display = false;
     }
 }

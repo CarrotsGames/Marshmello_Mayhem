@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
         {
             
             IsShooting = true;
-
+            gameObject.GetComponentInChildren<GunController>().display = true;
             rayGun.Shoot();
 
         }
@@ -161,6 +161,8 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", false);
                 animator.SetBool("IsShooting", true);
+
+                IsShooting = false;
             }
 
             else if (axisX == 0 && axisZ == 0)

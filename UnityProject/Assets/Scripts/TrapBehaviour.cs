@@ -5,7 +5,6 @@ using UnityEngine;
 public class TrapBehaviour : MonoBehaviour {
 
     public int cost;
-    public int teamNumber;
 
     public string trapName;
 

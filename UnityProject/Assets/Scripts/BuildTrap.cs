@@ -177,9 +177,12 @@ public class BuildTrap : MonoBehaviour {
                 //check if potentialTiles is an already existing trap
                 for (int i = 0; i < createdObjects.Count; i++)
                 {
-                    if (potentialTiles[0] == createdObjects[i].transform.position)
+                    if (potentialTiles.Count > 0)
                     {
-                        potentialTiles.Remove(potentialTiles[0]);
+                        if (potentialTiles[0] == createdObjects[i].transform.position)
+                        {
+                            potentialTiles.Remove(potentialTiles[0]);
+                        }
                     }
                 }
 

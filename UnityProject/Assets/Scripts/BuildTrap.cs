@@ -155,18 +155,22 @@ public class BuildTrap : MonoBehaviour {
             //sort for lowest magnitude
             for (int e = 0; e < potentialTiles.Count; e++)
             {
-                for (int i = 0; i < potentialTiles.Count; i++)
+                for (int i = 0; i < potentialTiles.Count - 1; i++)
                 {
-                    if (potentialTiles[e].magnitude > potentialTiles[i].magnitude)
-                    {
-                        Vector3 temp = potentialTiles[e];
-                        potentialTiles[e] = potentialTiles[i];
+                    Vector3 vecBetweenCurrent = transform.position - potentialTiles[i];
+                    vecBetweenCurrent.y = 0;
+                    Vector3 vecBetweenNext = transform.position - potentialTiles[i + 1];
+                    vecBetweenNext.y = 0;
 
+                    if (vecBetweenCurrent.magnitude > vecBetweenNext.magnitude)
+                    {
+                        Vector3 temp = potentialTiles[i + 1];
+                        potentialTiles[i + 1] = potentialTiles[i];
+            
                         potentialTiles[i] = temp;
                     }
                 }
-            }  
-            
+            }              
 
             if (potentialTiles.Count > 0)
             {
@@ -271,13 +275,14 @@ public class BuildTrap : MonoBehaviour {
 
             if (XCI.GetButtonDown(XboxButton.B, controller))
             {
-                Destroy(preview);
-                previewExist = false;
                 isEnabled = false;
             }
         }
         else if (isEnabled == false)
         {
+
+            Destroy(preview);
+            previewExist = false;
             if (XCI.GetButtonDown(XboxButton.A, controller) || Input.GetKeyDown(KeyCode.Tab))
             {
                 isEnabled = true;

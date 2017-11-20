@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem buildingParticles;
     public ParticleSystem chemHoldParticles;
 
-    
+    float originalY;
 
     //(blue = 1, red = 2);
 
@@ -66,10 +66,18 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {         
         //check if player is being launched
         if (isBeingLaunched == true)
         {
+            
+            if (timeLeft == timeInAir)
+            {
+                originalY = transform.position.y;
+            }
+
+            GetComponent<BuildTrap>().isEnabled = false;
+            
             //count down time
             if (timeLeft > 0)
             {
@@ -80,7 +88,11 @@ public class PlayerController : MonoBehaviour
             else if (timeLeft <= 0)
             {
                 isBeingLaunched = false;
+            }
 
+            if (transform.position.y <= originalY && timeLeft <= timeInAir * 0.5)
+            {
+                GetComponent<BuildTrap>().isEnabled = true;
             }
 
             float changeInTime = timeInAir - timeLeft;
@@ -264,8 +276,6 @@ public class PlayerController : MonoBehaviour
         timeInAir = a_timeInAir;
         isBeingLaunched = true;
         launchHeight = a_launchHeight;
-        //launchSpeed = a_speed;
-
         timeLeft = timeInAir;
     }
 

@@ -15905,7 +15905,7 @@ MonoBehaviour:
   trapPreviewMaterial: {fileID: 2100000, guid: 8eea4107d83b9494493b2e4ce1d5376a, type: 2}
   blueTeamWinDisplay: {fileID: 1352941597}
   redTeamWinDisplay: {fileID: 1573758470}
-  timeBeforeReturnToMainMenu: 0
+  timeBeforeReturnToMainMenu: 2
 --- !u!1 &1123586795
 GameObject:
   m_ObjectHideFlags: 0

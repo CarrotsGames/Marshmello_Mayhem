@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class HumanThrower : TrapBehaviour {
 
-    //test variables
     GameObject player;
     Animator humanThrowerAnimation;
-    //slerping
-    //private Vector3 startPosition;
-    //private Vector3 targetPosition;
 
     private float timer = 0.0f;
     public float timeBeforeActivation = 5.0f;

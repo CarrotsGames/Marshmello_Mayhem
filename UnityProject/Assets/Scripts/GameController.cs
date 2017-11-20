@@ -49,6 +49,13 @@ public class GameController : MonoBehaviour {
 	void Start ()
     {
         teamScore = FindObjectOfType<TeamScore_UI>();
+
+        //add pre-existing walls to placedTraps list
+        PlaceableWall[] walls = FindObjectsOfType<PlaceableWall>();
+        for (int i = 0; i < walls.Length; i++)
+        {
+            placedTraps.Add(walls[i].gameObject);
+        }
 	}
 	
 	// Update is called once per frame

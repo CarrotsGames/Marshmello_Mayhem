@@ -16,7 +16,7 @@ public class ResourceController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        currentResource = 0;
+        currentResource = maxResource;
         TimeBetween();
     }
 

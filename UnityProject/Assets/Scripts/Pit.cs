@@ -24,10 +24,6 @@ public class Pit : TrapBehaviour
         {
             GetComponent<BoxCollider>().isTrigger = false;
         }
-        else
-        {
-            Debug.Log("Missing BoxCollider on Pit");
-        }
 
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");
 
@@ -43,20 +39,6 @@ public class Pit : TrapBehaviour
                 {
                     floorGrid[i].GetComponent<Tile>().isPit = true;
                 }
-                else
-                {
-                    Debug.Log("Missing Tile script on floor prefab");
-                }
-            }
-        }
-
-        if (GetComponent<BoxCollider>() == null)
-        {
-            Debug.Log("Missing BoxCollider on pit object");
-
-            if (GetComponent<BoxCollider>().isTrigger == false)
-            {
-                Debug.Log("Pit BoxCollider is not a trigger");
             }
         }
 
@@ -77,7 +59,6 @@ public class Pit : TrapBehaviour
             {
                 timeRemaining = timeBeforeDeath;
                 player.GetComponent<PlayerHealth>().Death();
-                Debug.Log("Death");
                 isTriggered = false;
             }
         }
@@ -91,7 +72,6 @@ public class Pit : TrapBehaviour
             {
                 pitSound.Play();
 
-                Debug.Log("Pit triggered");
                 player = a_col.gameObject;
 
                 if (a_col.GetComponent<PlayerController>().holdingChemFlag != null)
@@ -107,12 +87,7 @@ public class Pit : TrapBehaviour
                 
                 isTriggered = true;
 
-            }
-            else if (a_col.GetComponent<PlayerHealth>() == null && a_col.GetComponent<Projectile>() == null)
-            {
-                Debug.Log("Missing PlayerHealth script on player");
-            }
-            
+            }            
         }
 
         

@@ -20,14 +20,6 @@ public class ResourceCounter_UI : MonoBehaviour {
             {
                 GetComponent<Slider>().value = player.GetComponent<ResourceController>().currentResource;
             }
-            else
-            {
-                Debug.Log("Player attached to resources slider does not have a ResourceController");
-            }
-        }
-        else
-        {
-            Debug.Log("No player attached to resources slider");
         }
 	}
 }

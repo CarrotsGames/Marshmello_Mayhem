@@ -9,10 +9,6 @@ public class Health_UI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (player.GetComponent<PlayerHealth>() == null)
-        {
-            Debug.Log("Missing PlayerHealth script on player");
-        }
 
 	}
 	

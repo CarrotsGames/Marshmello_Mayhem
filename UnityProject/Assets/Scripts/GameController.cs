@@ -49,11 +49,6 @@ public class GameController : MonoBehaviour {
 	void Start ()
     {
         teamScore = FindObjectOfType<TeamScore_UI>();
-
-        if (FindObjectOfType<Countdown_Timer>() == null)
-        {
-            Debug.Log("Missing Countdown_Timer script");
-        }
 	}
 	
 	// Update is called once per frame

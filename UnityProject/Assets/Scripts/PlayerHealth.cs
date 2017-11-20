@@ -37,10 +37,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         isAlive = true;
 
-        if (respawnPoint == null)
-        {
-            Debug.Log("Player does not have respawn point");
-        }
         playerController = GetComponent<PlayerController>();
         prefabList = FindObjectOfType<PrefabList>();
         gameController = FindObjectOfType<GameController>();
@@ -56,7 +52,6 @@ public class PlayerHealth : MonoBehaviour
 
         respawnParticles.transform.position = respawnPoint.transform.position;
 
-        //renderer = GetComponentInChildren<Renderer>();
     }
 
     // Update is called once per frame

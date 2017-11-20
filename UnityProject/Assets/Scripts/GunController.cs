@@ -15,11 +15,6 @@ public class GunController : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-		if (FindObjectOfType<GameController>() == null)
-        {
-            Debug.Log("No object with GameController script");
-        }
-
         isEnabled = true;
         display = false;
 	}

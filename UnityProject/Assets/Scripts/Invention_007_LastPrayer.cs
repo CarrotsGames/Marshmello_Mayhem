@@ -53,7 +53,6 @@ public class Invention_007_LastPrayer : TrapBehaviour {
                 explosionParticles[i].Stop();
             }
 
-            Debug.Log("Destroy");
             Destroy(gameObject);
         }
     }
@@ -69,7 +68,6 @@ public class Invention_007_LastPrayer : TrapBehaviour {
         //play game over sound
         if (explosionSound != null)
         {
-            Debug.Log("Play audio");
             explosionSound.Play();
         }
 

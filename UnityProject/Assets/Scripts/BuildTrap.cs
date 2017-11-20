@@ -25,8 +25,6 @@ public class BuildTrap : MonoBehaviour {
     bool previewExist;
     GameObject preview;
 
-    bool error;
-
     public bool extraTraps;
 
     GameObject tempObject;
@@ -38,25 +36,9 @@ public class BuildTrap : MonoBehaviour {
     void Start ()
     {
         controller = GetComponent<PlayerController>().controller;
-
-        if (FindObjectOfType<PrefabList>() == null)
-        {
-            Debug.Log("PrefabList game object doesn't exist");
-        }
-        else
-        {
-            prefabList = FindObjectOfType<PrefabList>();
-            audio = prefabList.BuildingAudio;
-        }
-
-        if (GameObject.FindGameObjectsWithTag("Floor") == null)
-        {
-            Debug.Log("No floor tiles with 'Floor' tag");
-        }
-        else
-        {
-            floorGrid = GameObject.FindGameObjectsWithTag("Floor");
-        }
+        prefabList = FindObjectOfType<PrefabList>();
+        audio = prefabList.BuildingAudio;
+        floorGrid = GameObject.FindGameObjectsWithTag("Floor");        
 
         potentialTiles = new List<Vector3>();
         createdObjects = FindObjectOfType<GameController>().placedTraps;
@@ -65,21 +47,11 @@ public class BuildTrap : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if (error == true)
+        if (previewExist == false)
         {
-            isEnabled = false;
+            Destroy(preview);
         }
-
-        //enable gun controller
-        //gameObject.GetComponentInChildren<GunController>().display = false;
-
-        //disable gun controller
-        //if (isEnabled == true)
-        //{
-        //    gameObject.GetComponentInChildren<GunController>().display = false;
-        //}
-
-        //checks if a trap is currently being built
+        //checks if a build mode is active
         if (isBuilding == false && isEnabled == true)
         {
             if (selectedTrap == null)
@@ -90,38 +62,54 @@ public class BuildTrap : MonoBehaviour {
             //change trap dependant on xbox controller's d-pad
             if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
             {
+                //set the selected trap to object in prefabList
                 selectedTrap = prefabList.Pit;
+                //get resource cost of the trap type
                 cost = selectedTrap.GetComponent<Pit>().cost;
                 //sets height to be placed at
                 rise = -0.2f;
+                //destroy old preview object
                 Destroy(preview);
+                //allow new preview object to be created
                 previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
             {
+                //set the selected trap to object in prefabList
                 selectedTrap = prefabList.PlaceableWall;
+                //get resource cost of the trap type
                 cost = selectedTrap.GetComponent<PlaceableWall>().cost;
                 //sets height to be placed at
                 rise = 0.5f;
+                //destroy old preview object
                 Destroy(preview);
+                //allow new preview object to be created
                 previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha3))
             {
+                //set the selected trap to object in prefabList
                 selectedTrap = prefabList.HumanThrower;
+                //get resource cost of the trap type
                 cost = selectedTrap.GetComponent<HumanThrower>().cost;
                 //sets height to be placed at
                 rise = 0.6f;
+                //destroy old preview object
                 Destroy(preview);
+                //allow new preview object to be created
                 previewExist = false;
             }
             if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha4))
             {
+                //set the selected trap to object in prefabList
                 selectedTrap = prefabList.LastPrayer;
+                //get resource cost of the trap type
                 cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
                 //sets height to be placed at
                 rise = 1.2f;
+                //destroy old preview object
                 Destroy(preview);
+                //allow new preview object to be created
                 previewExist = false;
             }
 
@@ -129,6 +117,7 @@ public class BuildTrap : MonoBehaviour {
             Vector3 forward = GetComponent<PlayerController>().previousRotation;
             Vector3 upwards = new Vector3(0, 1, 0);
 
+            //lock pit rotation
             if (selectedTrap.GetComponent<Pit>() != null)
             {
                 forward = new Vector3(1, 0, 0);
@@ -136,17 +125,22 @@ public class BuildTrap : MonoBehaviour {
             
             rotation = Quaternion.LookRotation(forward, upwards);
 
+            //search through all tiles for tiles within range of the player
             for (int i = 0; i < floorGrid.Length; i++)
             {
+                //get distance between player and tile
                  Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
                  vecBetween.y = 0;
 
+                //find nearest tile to player
                 if (vecBetween.magnitude < playerToTileDistance)
                 {
                     if (floorGrid[i].GetComponent<Tile>().isOccupied == false)
                     {
+                        //if closest tile is not occupied, set that tile as the target
                         targetPosition = floorGrid[i].transform.position;
                         targetPosition.y += rise;
+                        //if more than one tile is within range, use this to sort
                         potentialTiles.Add(targetPosition);
                     }
                     //check if the tile is occupied, if true destroy preview and disable build mode
@@ -161,17 +155,18 @@ public class BuildTrap : MonoBehaviour {
             //sort for lowest magnitude
             for (int e = 0; e < potentialTiles.Count; e++)
             {
-                for (int i = 1; i < potentialTiles.Count; i++)
+                for (int i = 0; i < potentialTiles.Count; i++)
                 {
-                    if (potentialTiles[i - 1].magnitude > potentialTiles[i].magnitude)
+                    if (potentialTiles[e].magnitude > potentialTiles[i].magnitude)
                     {
-                        Vector3 temp = potentialTiles[i - 1];
-                        potentialTiles[i - 1] = potentialTiles[i];
+                        Vector3 temp = potentialTiles[e];
+                        potentialTiles[e] = potentialTiles[i];
 
                         potentialTiles[i] = temp;
                     }
                 }
-            }            
+            }  
+            
 
             if (potentialTiles.Count > 0)
             {
@@ -218,8 +213,7 @@ public class BuildTrap : MonoBehaviour {
                             if (GetComponent<ResourceController>().currentResource - cost >= 0)
                             {
                                 //set isActive to true, disables this until false
-                                isBuilding = true;
-                                Debug.Log("Building started");
+                                isBuilding = true;                                
 
                                 GetComponent<PlayerController>().playerMovement = false;
 
@@ -236,15 +230,9 @@ public class BuildTrap : MonoBehaviour {
                                 //calls Build function after delay (seconds)
                                 Invoke("Build", buildTime);
                             }
-                            else
-                            {
-                                Debug.Log("Not enough resources");
-                            }
                         }
                         else
                         {
-                            Debug.Log("An invention already exists there!");
-
                             potentialTiles.Clear();
                         }
                     }
@@ -254,7 +242,6 @@ public class BuildTrap : MonoBehaviour {
                         {
                             //set isActive to true, disables this until false
                             isBuilding = true;
-                            Debug.Log("Building started");
 
                             GetComponent<PlayerController>().playerMovement = false;
 
@@ -274,10 +261,6 @@ public class BuildTrap : MonoBehaviour {
                             //calls Build function after delay (seconds)
                             Invoke("Build", buildTime);
                         }       
-                        else
-                        {
-                            Debug.Log("Not enough resources");
-                        }
                     }
                 }
             }
@@ -307,7 +290,6 @@ public class BuildTrap : MonoBehaviour {
     {
         //re-enables ability to build a trap
         isBuilding = false;
-        Debug.Log("Building finished");
 
         //stops audio clip
         audio.Stop();

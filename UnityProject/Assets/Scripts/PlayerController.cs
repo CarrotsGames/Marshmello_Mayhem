@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
 
     //variables for lerp
-    private bool isLerping = false;
+    private bool isBeingLaunched = false;
     private float launchHeight;
     float launchSpeed;
     private float timeInAir;
@@ -58,14 +58,6 @@ public class PlayerController : MonoBehaviour
         {
             playerHealth = GetComponent<PlayerHealth>();
         }
-        else
-        {
-            Debug.Log("Missing PlayerHealth script on player");
-        }
-        if (enemyChemFlag == null)
-        {
-            Debug.Log("Nothing assigned to Player's 'Enemy Chem Flag'");
-        }
 
         //prevents particles from starting
         buildingParticles.Stop();
@@ -76,7 +68,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //check if player is being launched
-        if (isLerping == true)
+        if (isBeingLaunched == true)
         {
             //count down time
             if (timeLeft > 0)
@@ -87,7 +79,7 @@ public class PlayerController : MonoBehaviour
             //if time <= 0, set launching to false
             else if (timeLeft <= 0)
             {
-                isLerping = false;
+                isBeingLaunched = false;
 
             }
 
@@ -107,11 +99,12 @@ public class PlayerController : MonoBehaviour
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
-            
-            IsShooting = true;
-            gameObject.GetComponentInChildren<GunController>().display = true;
-            rayGun.Shoot();
-
+            if (GetComponent<BuildTrap>().isEnabled == false)
+            {
+                IsShooting = true;
+                gameObject.GetComponentInChildren<GunController>().display = true;
+                rayGun.Shoot();
+            }
         }
 
         //PickUpChemFlag();
@@ -122,7 +115,7 @@ public class PlayerController : MonoBehaviour
             {
                 
                 PickUpChemFlag();
-                    
+                
             }
         }
 
@@ -228,19 +221,6 @@ public class PlayerController : MonoBehaviour
             
             Vector3 movement = new Vector3(axisX, 0, axisZ);
 
-            //if (axisX > 0 || axisZ > 0)
-            //{
-            //    IsRunning = true;
-            //    IsIdle = false;
-            //    IsShooting = false;
-            //}
-            //else if (axisX == 0 && axisZ == 0)
-            //{
-            //    IsRunning = false;
-            //    IsIdle = true;
-            //    IsShooting = false;
-            //}
-
             charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
         }
     }
@@ -282,7 +262,7 @@ public class PlayerController : MonoBehaviour
     public void StartLerp(float a_speed, float a_launchHeight, float a_timeInAir)
     {
         timeInAir = a_timeInAir;
-        isLerping = true;
+        isBeingLaunched = true;
         launchHeight = a_launchHeight;
         //launchSpeed = a_speed;
 
@@ -297,8 +277,6 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, a_knockbackStrength))
         {
             Physics.Raycast(ray, out hit);
-            
-            Debug.Log("Player hits a wall");
         }
         else
         {

@@ -21,12 +21,6 @@ public class Projectile : MonoBehaviour {
             damage = gameController.gunDamage;
             timer = gameController.projectileTimer;
             cooldown = gameController.projectileCooldown;
-
-
-        }
-        else
-        {
-            Debug.Log("No object with GameController script");
         }
 	}
 	

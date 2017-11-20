@@ -1658,7 +1658,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166381462169376}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.096859, y: 0.717, z: 0.6000881}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4778161429363338}
@@ -2027,7 +2027,7 @@ MonoBehaviour:
   maxResource: 100
   currentResource: 0
   resourceIncrease: 0.1
-  timeBetween: 0.01
+  timeBetween: 0.02
 --- !u!114 &114311643743704550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2073,7 +2073,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 0}
   respawnTimer: 3
   isChangingColour: 0
-  timeSpentAsDifferentColour: 0.35
+  timeSpentAsDifferentColour: 0.15
   emissiveMaterial: {fileID: 2100000, guid: c5e76be8163721f44a235b8595e4ee0c, type: 2}
 --- !u!114 &114823041248354486
 MonoBehaviour:
@@ -2176,13 +2176,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0
+  m_Height: 3.8
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.83, z: 0}
 --- !u!198 &198003464091194842
 ParticleSystem:
   m_ObjectHideFlags: 1

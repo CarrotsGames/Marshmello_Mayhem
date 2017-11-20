@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour {
 
             timeBeforeReturnToMainMenu -= Time.deltaTime;
             
-            if (timeBeforeReturnToMainMenu <= 0)
+            if (timeBeforeReturnToMainMenu <= 0 || XCI.GetButtonDown(XboxButton.A, XboxController.All))
             {
                 Application.LoadLevel("Title Screen");
             }

@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446f23a8b2677ec48bbd63777236ae09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 15
+  cost: 34
   trapName: Human Thrower
   timeBeforeActivation: 1
-  launchHeight: 0.7
+  launchHeight: 0.55
   timeInAir: 1

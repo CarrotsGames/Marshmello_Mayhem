@@ -800,6 +800,18 @@ Prefab:
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 156102381}
+    - target: {fileID: 4046483442968946, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046483442968946, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046483442968946, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
   m_IsPrefabParent: 0
@@ -1530,6 +1542,11 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 23264877946730804, guid: 430bbd1a5da74e34ca55debed6f81944,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 024d5240b925cc144859b6222c897f4a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
   m_IsPrefabParent: 0
@@ -1856,8 +1873,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 48.651253, y: 4.6314144, z: 1.1990623}
-  m_Center: {x: 8.759262, y: 1.5060911, z: 0.09953117}
+  m_Size: {x: 48.651253, y: 11.7822485, z: 1.1990623}
+  m_Center: {x: 8.759262, y: 5.081508, z: 0.09953117}
 --- !u!4 &107686641
 Transform:
   m_ObjectHideFlags: 0
@@ -7697,8 +7714,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1455649, y: 5.09807, z: 32.069416}
-  m_Center: {x: -5.682184, y: 8.310969, z: 1.6406575}
+  m_Size: {x: 1.145565, y: 11.891558, z: 32.069416}
+  m_Center: {x: -5.682184, y: 11.707713, z: 1.6406574}
 --- !u!1001 &552623031
 Prefab:
   m_ObjectHideFlags: 0
@@ -8580,6 +8597,18 @@ Prefab:
     - target: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache P1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849902819651428, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849902819651428, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849902819651428, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
@@ -15678,6 +15707,11 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 23264877946730804, guid: 430bbd1a5da74e34ca55debed6f81944,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 977d6cbed72bf614fb0f3669261e2662, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 430bbd1a5da74e34ca55debed6f81944, type: 2}
   m_IsPrefabParent: 0
@@ -17144,7 +17178,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240871176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.73, y: 0.05000019, z: -1.88}
+  m_LocalPosition: {x: -7.85, y: 0.05000019, z: -1.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 736366587}
@@ -17914,8 +17948,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 48.139847, y: 5.2850704, z: 1.3762779}
-  m_Center: {x: 12.79, y: 8.58, z: 15.1}
+  m_Size: {x: 48.139847, y: 14.443485, z: 1.3762779}
+  m_Center: {x: 12.790001, y: 13.159208, z: 15.1}
 --- !u!1001 &1339236611
 Prefab:
   m_ObjectHideFlags: 0
@@ -20208,6 +20242,30 @@ Prefab:
       propertyPath: enemyChemFlag
       value: 
       objectReference: {fileID: 1437087318}
+    - target: {fileID: 4698306254639688, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698306254639688, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698306254639688, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682828547703252, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682828547703252, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682828547703252, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
   m_IsPrefabParent: 0
@@ -20566,8 +20624,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1135788, y: 4.340577, z: 32.017704}
-  m_Center: {x: 16.434353, y: -5.5403104, z: 14.728872}
+  m_Size: {x: 1.1135788, y: 12.855607, z: 32.017704}
+  m_Center: {x: 16.434353, y: -1.2827954, z: 14.728872}
 --- !u!1001 &1539594286
 Prefab:
   m_ObjectHideFlags: 0
@@ -24600,7 +24658,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1918036485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.54, y: 0.05000019, z: -0.77}
+  m_LocalPosition: {x: 27.38, y: 0.05000019, z: -0.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 736366587}
@@ -24709,6 +24767,22 @@ Prefab:
     - target: {fileID: 1777086311879960, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
       propertyPath: m_Name
       value: PlayerChar_001_Scientist_001_Moustache P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924308856590306, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924308856590306, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023133970664928, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023133970664928, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}

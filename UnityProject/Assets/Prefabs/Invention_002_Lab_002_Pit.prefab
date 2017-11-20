@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a06c50d77b56bb4eb7f0262e2844688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 15
+  cost: 34
   trapName: 
   timeBeforeActivation: 1
   timeBeforeDeath: 0.1

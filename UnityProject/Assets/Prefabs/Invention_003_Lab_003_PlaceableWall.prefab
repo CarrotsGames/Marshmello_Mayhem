@@ -134,6 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 10
+  cost: 34
   trapName: 
   maxHealth: 100

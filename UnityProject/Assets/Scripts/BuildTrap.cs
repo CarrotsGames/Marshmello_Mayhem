@@ -58,7 +58,7 @@ public class BuildTrap : MonoBehaviour {
             {
                 Default();
             }
-            
+
             //change trap dependant on xbox controller's d-pad
             if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
             {
@@ -122,15 +122,15 @@ public class BuildTrap : MonoBehaviour {
             {
                 forward = new Vector3(1, 0, 0);
             }
-            
+
             rotation = Quaternion.LookRotation(forward, upwards);
 
             //search through all tiles for tiles within range of the player
             for (int i = 0; i < floorGrid.Length; i++)
             {
                 //get distance between player and tile
-                 Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
-                 vecBetween.y = 0;
+                Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
+                vecBetween.y = 0;
 
                 //find nearest tile to player
                 if (vecBetween.magnitude < playerToTileDistance)
@@ -149,7 +149,7 @@ public class BuildTrap : MonoBehaviour {
                         previewExist = false;
                         Destroy(preview);
                     }
-                }  
+                }
             }
 
             //sort for lowest magnitude
@@ -166,28 +166,47 @@ public class BuildTrap : MonoBehaviour {
                     {
                         Vector3 temp = potentialTiles[i + 1];
                         potentialTiles[i + 1] = potentialTiles[i];
-            
+
                         potentialTiles[i] = temp;
                     }
                 }
-            }              
+            }
 
+            //remove any potential tiles if trap is already there
             if (potentialTiles.Count > 0)
             {
-                //check if potentialTiles is an already existing trap
                 for (int i = 0; i < createdObjects.Count; i++)
                 {
                     if (potentialTiles.Count > 0)
                     {
-                        if (potentialTiles[0] == createdObjects[i].transform.position)
+                        Vector3 vecBetween = potentialTiles[0] - createdObjects[i].transform.position;
+                        vecBetween.y = 0;
+                        if (vecBetween.magnitude < 0.5)
                         {
                             potentialTiles.Remove(potentialTiles[0]);
+                        }
+
+                        if (potentialTiles.Count > 0)
+                        {
+                            //create preview object at first sorted potential tile
+                            Preview();
+                        }
+                        else
+                        {
+                            //destroy preview object if there is no longer a potential tile
+                            Destroy(preview);
+                            previewExist = false;
                         }
                     }
                 }
 
-                //call preview
-                Preview();
+
+            }
+            //destroy preview object when there are no potential tiles
+            else if (potentialTiles.Count == 0)
+            {
+                Destroy(preview);
+                previewExist = false;
             }
 
             //checks if player has pressed Xbox:A or the space bar
@@ -195,87 +214,41 @@ public class BuildTrap : MonoBehaviour {
             {
                 //checks if player is within range of any tiles
                 if (potentialTiles.Count > 0)
-                {   
-                    bool trapInRange = false;
-
-                    //checks if at least one trap exists
-                    if (createdObjects.Count > 0)
+                {
+                    if (GetComponent<ResourceController>().currentResource - cost >= 0)
                     {
-                        //check if trap exists on selected tile
-                        for (int i = 0; i < createdObjects.Count; i++)
-                        {
-                            //gets distance between the selected area and an existing trap
-                            Vector3 vecBetween = potentialTiles[0] - createdObjects[i].transform.position;
+                        //set isActive to true, disables this until false
+                        isBuilding = true;
+                        GetComponent<PlayerController>().playerMovement = false;
 
-                            //if selected area is occupied
-                            if (vecBetween.magnitude < playerToTileDistance)
-                            {
-                                trapInRange = true;                                                                
-                            }
-                        }
+                        //play audio
+                        audio.Play();
 
-                        //if selected area is not occupied
-                        if (trapInRange == false)
-                        {
-                            if (GetComponent<ResourceController>().currentResource - cost >= 0)
-                            {
-                                //set isActive to true, disables this until false
-                                isBuilding = true;                                
+                        //create new temporary object to store new trap's information
+                        tempObject = Instantiate(selectedTrap, potentialTiles[0], rotation);
+                        tempObject.SetActive(false);
 
-                                GetComponent<PlayerController>().playerMovement = false;
+                        //create trap at position closest to selected area and add it to list of traps
+                        createdObjects.Add(tempObject);
 
-                                //play audio
-                                audio.Play();
+                        //play particle system
+                        GetComponent<PlayerController>().buildingParticles.Play();
 
-                                tempObject = Instantiate(selectedTrap, potentialTiles[0], rotation);
-                                tempObject.SetActive(false);
-                                //create trap at position closest to selected area and add it to list of traps
-                                createdObjects.Add(tempObject);
-
-                                GetComponent<PlayerController>().buildingParticles.Play();
-
-                                //calls Build function after delay (seconds)
-                                Invoke("Build", buildTime);
-                            }
-                        }
-                        else
-                        {
-                            potentialTiles.Clear();
-                        }
+                        //calls Build function after delay (seconds)
+                        Invoke("Build", buildTime);
                     }
-                    else
-                    {
-                        if (GetComponent<ResourceController>().currentResource - cost >= 0)
-                        {
-                            //set isActive to true, disables this until false
-                            isBuilding = true;
 
-                            GetComponent<PlayerController>().playerMovement = false;
-
-                            //play audio
-                            audio.Play();
-
-                            //create trap at position closest to selected area and add it to list of traps
-                            //createdObjects.Add(Instantiate(selectedTrap, potentialTiles[0], rotation));
-
-                            tempObject = Instantiate(selectedTrap, potentialTiles[0], rotation);
-                            tempObject.SetActive(false);
-                            //create trap at position closest to selected area and add it to list of traps
-                            createdObjects.Add(tempObject);
-
-                            GetComponent<PlayerController>().buildingParticles.Play();
-
-                            //calls Build function after delay (seconds)
-                            Invoke("Build", buildTime);
-                        }       
-                    }
+                    //clean potential tiles
+                    potentialTiles.Clear();
                 }
             }
             else
             {
+                //clean potential tiles
                 potentialTiles.Clear();
             }
 
+            //deactivate build mode
             if (XCI.GetButtonDown(XboxButton.B, controller))
             {
                 isEnabled = false;
@@ -283,14 +256,14 @@ public class BuildTrap : MonoBehaviour {
         }
         else if (isEnabled == false)
         {
-
+            //ensure preview object is destroyed while build mode is not active
             Destroy(preview);
             previewExist = false;
+            //activate build mode
             if (XCI.GetButtonDown(XboxButton.A, controller) || Input.GetKeyDown(KeyCode.Tab))
             {
                 isEnabled = true;
-            }          
-            
+            }
         }
 	}
 
@@ -304,14 +277,17 @@ public class BuildTrap : MonoBehaviour {
 
         tempObject.SetActive(true);
 
-
+        //cost reduction from player's resources
         GetComponent<ResourceController>().currentResource -= cost;
+
         potentialTiles.Clear();
 
+        //re-enable player's movement
         GetComponent<PlayerController>().playerMovement = true;
 
-        Destroy(preview);
         previewExist = false;
+
+        //deactivate build mode when new trap is built
         isEnabled = false;
 
         GetComponent<PlayerController>().buildingParticles.Stop();
@@ -395,17 +371,11 @@ public class BuildTrap : MonoBehaviour {
         }
     }
 
+    //will be called when build mode is activated to ensure no null
     void Default()
-    {
-        
+    {        
         selectedTrap = prefabList.LastPrayer;
         cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
-        rise = 1.2f;
-        if (preview != null)
-        {
-            Destroy(preview);
-            previewExist = false;
-        }
-        
+        rise = 1.2f; 
     }
 }

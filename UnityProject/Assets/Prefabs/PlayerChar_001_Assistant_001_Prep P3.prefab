@@ -1998,7 +1998,7 @@ MonoBehaviour:
   maxResource: 100
   currentResource: 0
   resourceIncrease: 0.1
-  timeBetween: 0.01
+  timeBetween: 0.02
 --- !u!114 &114639459387284612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2073,7 +2073,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 0}
   respawnTimer: 3
   isChangingColour: 0
-  timeSpentAsDifferentColour: 0.35
+  timeSpentAsDifferentColour: 0.15
   emissiveMaterial: {fileID: 2100000, guid: 042262fe041a7ba44a68f2734c709ee2, type: 2}
 --- !u!114 &114959049986597134
 MonoBehaviour:

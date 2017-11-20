@@ -371,7 +371,7 @@ public class BuildTrap : MonoBehaviour {
         }
     }
 
-    //will be called when build mode is activated to ensure no null
+    //will be called when build mode is activated to ensure selected trap is not null
     void Default()
     {        
         selectedTrap = prefabList.LastPrayer;

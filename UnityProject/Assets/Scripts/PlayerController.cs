@@ -5,63 +5,54 @@ using XboxCtrlrInput;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public bool IsRunning;
-    public bool IsIdle;
-    public bool IsShooting;
-
     public CharacterController charController;
     public XboxController controller;
     public GunController rayGun;
-    //public MeleeAttack meleeHitbox;
+
+    //animations
+    private Animator animator;
+    public bool IsShooting;
+
+    //movement
     public float speed;
-    public float maxSpeed = 5;
-
     public bool playerMovement = true;
+    [HideInInspector] public Vector3 previousRotation = Vector3.forward;
+    public GameController.Direction direction;
 
+    //used for capturing enemy's chem canister
     public Transform chemFlagHoldPoint;
-
     public int teamNumber = 1;
     public float distanceFromChemFlagToPickUp = 2;
-
     public Transform enemyChemFlag;
+    [HideInInspector] public Chem_Flag holdingChemFlag;
 
+    //player's health
     PlayerHealth playerHealth;
 
-    public Chem_Flag holdingChemFlag;
-    [HideInInspector] public Vector3 previousRotation = Vector3.forward;
-
-    public GameController.Direction direction;
-    private Animator animator;
-
-    //variables for lerp
+    //variables for human thrower launch
     private bool isBeingLaunched = false;
     private float launchHeight;
     float launchSpeed;
     private float timeInAir;
     float timeLeft;
-
-    public ParticleSystem buildingParticles;
-    public ParticleSystem chemHoldParticles;
-
     float originalY;
 
-    //(blue = 1, red = 2);
+    //particles
+    public ParticleSystem buildingParticles;
+    public ParticleSystem chemHoldParticles;
 
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
         charController = GetComponent<CharacterController>();
-
-        if (GetComponent<PlayerHealth>() != null)
-        {
-            playerHealth = GetComponent<PlayerHealth>();
-        }
-
+        playerHealth = GetComponent<PlayerHealth>();
+        
         //prevents particles from starting
         buildingParticles.Stop();
         chemHoldParticles.Stop();
+
+        originalY = transform.position.y;
     }
 
     // Update is called once per frame
@@ -70,12 +61,6 @@ public class PlayerController : MonoBehaviour
         //check if player is being launched
         if (isBeingLaunched == true)
         {
-            
-            if (timeLeft == timeInAir)
-            {
-                originalY = transform.position.y;
-            }
-
             GetComponent<BuildTrap>().isEnabled = false;
             
             //count down time
@@ -90,11 +75,6 @@ public class PlayerController : MonoBehaviour
                 isBeingLaunched = false;
             }
 
-            if (transform.position.y <= originalY && timeLeft <= timeInAir * 0.5)
-            {
-                GetComponent<BuildTrap>().isEnabled = true;
-            }
-
             float changeInTime = timeInAir - timeLeft;
 
             //speed = targetHeight - currentHeight / time since start of launch
@@ -107,7 +87,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        RotatePlayer();
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
@@ -124,10 +103,8 @@ public class PlayerController : MonoBehaviour
         {
             //check if flag is close enough to player
             if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
-            {
-                
+            {               
                 PickUpChemFlag();
-                
             }
         }
 
@@ -138,9 +115,6 @@ public class PlayerController : MonoBehaviour
 
         if (playerMovement == true)
         {
-            //float moveHorizontal = Input.GetAxis("Horizontal");
-            //float moveVertical = Input.GetAxis("Vertical");
-
             float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
             float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
 
@@ -148,8 +122,6 @@ public class PlayerController : MonoBehaviour
             //is moving
             if (axisX != 0 || axisZ != 0)
             {
-                IsRunning = true;
-                IsIdle = false;
                 IsShooting = false;
 
                 animator.SetBool("IsRunning", true);
@@ -159,10 +131,7 @@ public class PlayerController : MonoBehaviour
             }
             //is shooting
             if (IsShooting == true)
-            {     
-                IsIdle = false;
-                IsRunning = false;
-                                
+            {
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", false);
                 animator.SetBool("IsShooting", true);
@@ -172,75 +141,82 @@ public class PlayerController : MonoBehaviour
 
             else if (axisX == 0 && axisZ == 0)
             {
-                IsRunning = false;
-                IsIdle = true;
                 IsShooting = false;
 
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", true);
                 animator.SetBool("IsShooting", false);
             }
-            
 
-            //Vector3 movement = new Vector3(moveHorizontal * (speed * Time.deltaTime), 0, moveVertical * (speed * Time.deltaTime));
 
+            //apply rotation
+            RotatePlayer();
+
+            //apply movement
             MovePlayer();
         }
+
+        //simulate gravity for the player
+        charController.Move(Vector3.up * -9.8f * Time.deltaTime);
     }
 
     private void RotatePlayer()
     {
-        if (playerMovement == true)
+        //change direction enum
+        if (previousRotation == new Vector3(0, 0, 1))
         {
-            if (previousRotation == new Vector3(0, 0, 1))
-            {
-                direction = GameController.Direction.UP;
-            }
-            if (previousRotation == new Vector3(0, 0, -1))
-            {
-                direction = GameController.Direction.DOWN;
-            }
-            if (previousRotation == new Vector3(1, 0, 0))
-            {
-                direction = GameController.Direction.RIGHT;
-            }
-            if (previousRotation == new Vector3(-1, 0, 0))
-            {
-                direction = GameController.Direction.LEFT;
-            }
-
-            float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
-            float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
-            Vector3 directionVector = new Vector3(rotateAxisX, 0, rotateAxisZ);
-
-            if (directionVector.magnitude < 0.1f)
-            {
-                directionVector = previousRotation;
-            }
-
-            directionVector = directionVector.normalized;
-            previousRotation = directionVector;
-            transform.rotation = Quaternion.LookRotation(directionVector);
+            direction = GameController.Direction.UP;
         }
+        if (previousRotation == new Vector3(0, 0, -1))
+        {
+            direction = GameController.Direction.DOWN;
+        }
+        if (previousRotation == new Vector3(1, 0, 0))
+        {
+            direction = GameController.Direction.RIGHT;
+        }
+        if (previousRotation == new Vector3(-1, 0, 0))
+        {
+            direction = GameController.Direction.LEFT;
+        }
+
+        //get controller's right stick input
+        float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
+        float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
+        //set controller input to new vector
+        Vector3 directionVector = new Vector3(rotateAxisX, 0, rotateAxisZ);
+        //prevents debug log from appearing when vector is 0
+        if (directionVector.magnitude < 0.1f)
+        {
+            directionVector = previousRotation;
+        }
+        
+        directionVector = directionVector.normalized;
+        previousRotation = directionVector;
+
+        transform.rotation = Quaternion.LookRotation(directionVector);        
     }
 
     private void MovePlayer()
     {
-        if (playerMovement == true)
-        {
-            float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
-            float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
-            
-            Vector3 movement = new Vector3(axisX, 0, axisZ);
+        Vector3 movement = new Vector3();
 
-            charController.Move(movement * (speed * Time.deltaTime) + Vector3.up * -9.8f * Time.deltaTime);
-        }
+        //get controller's left stick input
+        float axisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
+        float axisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
+        //set movement to new vector
+        movement = new Vector3(axisX, 0, axisZ);
+        
+        //apply movement changes to player's character controller
+        charController.Move(movement * (speed * Time.deltaTime));        
     }
 
     public void DropChemFlag()
     {
+        //check if the player is holding a chem flag
         if (holdingChemFlag != null)
         {
+            //remove the chem flag from the player
             holdingChemFlag = null;
             enemyChemFlag.SetParent(null);
             enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
@@ -252,7 +228,7 @@ public class PlayerController : MonoBehaviour
 
     public void PickUpChemFlag()
     {
-        if (enemyChemFlag.GetComponent<Chem_Flag>().canBePickedUp == true)
+        if (enemyChemFlag.GetComponent<Chem_Flag>().canBePickedUp == true && enemyChemFlag.GetComponent<Chem_Flag>().isBeingCarried == false)
         {
             if (Vector3.Distance(enemyChemFlag.position, transform.position) < distanceFromChemFlagToPickUp)
             {
@@ -281,9 +257,11 @@ public class PlayerController : MonoBehaviour
 
     public void Knockback(Vector3 a_projectileDirection, float a_knockbackStrength)
     {
+        //raycast to detect walls in direction and knockback distance
         Ray ray = new Ray(transform.position, a_projectileDirection);
         RaycastHit hit;
 
+        //if wall is detected, place player on this side of wall
         if (Physics.Raycast(ray, a_knockbackStrength))
         {
             Physics.Raycast(ray, out hit);

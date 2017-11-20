@@ -2071,6 +2071,16 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: teamNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e3a3a973fe3ccc64bb879005a072032d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
   m_IsPrefabParent: 0
@@ -3882,7 +3892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 15.94}
+  m_AnchoredPosition: {x: 0.000030518, y: -7.045}
   m_SizeDelta: {x: 332.1, y: 141.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318204549
@@ -3933,7 +3943,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Time
 
-    10:00'
+    6:00'
 --- !u!222 &318204551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3951,7 +3961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd8a4bf5eae75248bc3c1f428b18587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 10
+  minutes: 6
   gameOver: 0
 --- !u!1001 &318999784
 Prefab:
@@ -4300,8 +4310,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 439.9}
-  m_SizeDelta: {x: 332.1, y: 110.76}
+  m_AnchoredPosition: {x: -0.0000076294, y: 462.26007}
+  m_SizeDelta: {x: 332.1, y: 155.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &354285571
 CanvasRenderer:
@@ -6839,7 +6849,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1491906320
+  randomSeed: 2099065268
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12747,6 +12757,62 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 659090138}
+--- !u!1001 &672019253
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 163461881}
+    m_Modifications:
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -14.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -9.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.18332395
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.98305255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: team1Base
+      value: 
+      objectReference: {fileID: 1508826179}
+    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
+        type: 2}
+      propertyPath: team2Base
+      value: 
+      objectReference: {fileID: 1400648624}
+    - target: {fileID: 1766466619891944, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+      propertyPath: m_Name
+      value: Objective_001_Lab_001_ChemCanister_Blue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &681161263
 Prefab:
   m_ObjectHideFlags: 0
@@ -25802,116 +25868,11 @@ RectTransform:
   m_AnchoredPosition: {x: -43.033, y: 0}
   m_SizeDelta: {x: -106.07, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1437087317
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 163461881}
-    m_Modifications:
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -14.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -9.361
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 11.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.18332395
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.98305255
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: team1Base
-      value: 
-      objectReference: {fileID: 1508826179}
-    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: team2Base
-      value: 
-      objectReference: {fileID: 1400648624}
-    - target: {fileID: 1766466619891944, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_Name
-      value: Objective_001_Lab_001_ChemCanister_Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7564997483f7bb4469a395628a41045b, type: 2}
-    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: teamNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114758533301599184, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: respawnTimer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198692572909046390, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.61764705
-      objectReference: {fileID: 0}
-    - target: {fileID: 198692572909046390, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.66774845
-      objectReference: {fileID: 0}
-    - target: {fileID: 198692572909046390, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198692572909046390, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: randomSeed
-      value: 369184667
-      objectReference: {fileID: 0}
-    - target: {fileID: 1145352041529082, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-      propertyPath: m_Name
-      value: Blue Chem Canister Partical
-      objectReference: {fileID: 0}
-    - target: {fileID: 23273918896242832, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65259173392539964, guid: b61d5c840d6dcb745955268312d2dbf0,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b61d5c840d6dcb745955268312d2dbf0, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1437087318 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4143880748198212, guid: b61d5c840d6dcb745955268312d2dbf0,
     type: 2}
-  m_PrefabInternal: {fileID: 1437087317}
+  m_PrefabInternal: {fileID: 672019253}
 --- !u!1001 &1439918251
 Prefab:
   m_ObjectHideFlags: 0
@@ -26700,25 +26661,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 1437087318}
     - target: {fileID: 114786399070031956, guid: 362e53626a42d414eb6a3f137d61527c,
         type: 2}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1918036485}
-    - target: {fileID: 114786399070031956, guid: 362e53626a42d414eb6a3f137d61527c,
+    - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
         type: 2}
-      propertyPath: timeSpentAsDifferentColour
-      value: 0.15
+      propertyPath: enemyChemFlag
+      value: 
+      objectReference: {fileID: 1437087318}
+    - target: {fileID: 199129559665880734, guid: 362e53626a42d414eb6a3f137d61527c,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114245858364081050, guid: 362e53626a42d414eb6a3f137d61527c,
+    - target: {fileID: 199129559665880734, guid: 362e53626a42d414eb6a3f137d61527c,
         type: 2}
-      propertyPath: timeBetween
-      value: 0.02
+      propertyPath: m_RenderAlignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
@@ -28933,7 +28894,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1878055090
+  randomSeed: -834044606
   InitialModule:
     serializedVersion: 3
     enabled: 1

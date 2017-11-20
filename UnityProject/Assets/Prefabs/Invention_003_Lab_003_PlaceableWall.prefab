@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4259473676879060}
   - component: {fileID: 65305929424637744}
   - component: {fileID: 114445232422681506}
+  - component: {fileID: 65928227260297528}
   m_Layer: 0
   m_Name: Invention_003_Lab_003_PlaceableWall
   m_TagString: Untagged
@@ -51,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487519719050722}
-  m_LocalRotation: {x: -0, y: -0.9496138, z: -0, w: 0.31342247}
-  m_LocalPosition: {x: 1.16, y: -6.397, z: 0.42}
+  m_LocalRotation: {x: -0, y: 0.3073091, z: -0, w: 0.9516098}
+  m_LocalPosition: {x: -23.66, y: -6.4, z: 15.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4898820625047758}
@@ -123,6 +124,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.103995, y: 3, z: 0.67415386}
   m_Center: {x: -0.05, y: 1.54, z: -0.06}
+--- !u!65 &65928227260297528
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1487519719050722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.108438, y: 0.6839695, z: 1}
+  m_Center: {x: -0.005715371, y: 3.2175322, z: -0.069999985}
 --- !u!114 &114445232422681506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,6 +148,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 10
-  teamNumber: 2
   trapName: 
   maxHealth: 100

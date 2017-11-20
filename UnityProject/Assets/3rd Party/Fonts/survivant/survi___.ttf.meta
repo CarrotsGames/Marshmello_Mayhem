@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 913b8e2b540914043b4a9c1bcfc841f0
+timeCreated: 1511141057
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Survivant
+  fontNames:
+  - Survivant
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

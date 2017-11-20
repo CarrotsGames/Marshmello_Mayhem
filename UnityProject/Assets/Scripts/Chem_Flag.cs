@@ -7,6 +7,7 @@ public class Chem_Flag : MonoBehaviour {
     public GameObject team1Base;
     public GameObject team2Base;
 
+    public float dropRespawnTimer;
     public float respawnTimer;
     private float respawnAfterDrop;
     bool isRespawning;
@@ -86,7 +87,7 @@ public class Chem_Flag : MonoBehaviour {
         {
             respawnAfterDrop += Time.deltaTime;
 
-            if (respawnAfterDrop >= respawnTimer)
+            if (respawnAfterDrop >= dropRespawnTimer)
             {
                 Respawn();
                 respawnAfterDrop = 0;

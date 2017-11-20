@@ -18359,6 +18359,11 @@ Prefab:
       propertyPath: m_Name
       value: Environment_002_Lab_002_WorkDesk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23488238645668300, guid: 7217a94c4c684d9448c68993d5022dd1,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a8689e4ff795e04987788efb09fca6c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7217a94c4c684d9448c68993d5022dd1, type: 2}
   m_IsPrefabParent: 0
@@ -22326,7 +22331,7 @@ MonoBehaviour:
   PitAudio: {fileID: 650211035}
   PlayerDeathAudio: {fileID: 1123586796}
   GameOverAudio: {fileID: 1479065121}
-  blueTeamRespawnParticles: {fileID: 1795143648}
+  blueTeamRespawnParticles: {fileID: 477910787}
   redTeamRespawnParticles: {fileID: 1661363535}
 --- !u!4 &1118103980
 Transform:
@@ -28894,7 +28899,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -834044606
+  randomSeed: 1636985879
   InitialModule:
     serializedVersion: 3
     enabled: 1

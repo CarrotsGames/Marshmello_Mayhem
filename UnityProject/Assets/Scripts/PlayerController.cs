@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
-            if (GetComponent<BuildTrap>().isEnabled == false)
+            if (GetComponent<BuildTrap>().isEnabled == false && GetComponent<ResourceController>().currentResource >= FindObjectOfType<GameController>().shootingCost)
             {
                 IsShooting = true;
                 gameObject.GetComponentInChildren<GunController>().display = true;

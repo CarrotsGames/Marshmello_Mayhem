@@ -9,6 +9,7 @@ public class GunController : MonoBehaviour {
     public GameObject projectile;
     private float projectileSpeed;
     private float timeBetweenShots;
+    private float bulletCost;
 
     public Transform firePoint;
 
@@ -17,6 +18,8 @@ public class GunController : MonoBehaviour {
     {
         isEnabled = true;
         display = false;
+
+        bulletCost = FindObjectOfType<GameController>().shootingCost;
 	}
 	
 	// Update is called once per frame
@@ -45,6 +48,8 @@ public class GunController : MonoBehaviour {
     {
         if (isEnabled == true && display == true)
         {
+            GetComponentInParent<ResourceController>().currentResource -= bulletCost;
+
             //create new projectile with force in direction
             GameObject newProjectile = Instantiate(projectile, firePoint.position, firePoint.rotation) as GameObject;
             newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.Impulse);

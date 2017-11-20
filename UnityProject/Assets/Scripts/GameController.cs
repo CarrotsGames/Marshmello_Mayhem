@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
 
     XboxController controller;
 
+    public float shootingCost;
     private TeamScore_UI teamScore;
     public int winScore = 3;
     public float projectileTimer;

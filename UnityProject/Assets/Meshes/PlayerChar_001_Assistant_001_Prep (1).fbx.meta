@@ -145,7 +145,145 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Char_001_global
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/Char_001_head
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/L_Char_001_shoulder
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/L_Char_001_shoulder/L_Char_001_elbow
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/L_Char_001_shoulder/L_Char_001_elbow/L_Char_001_wrist
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/R_Char_001_shoulder1
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/R_Char_001_shoulder1/R_Char_001_elbow1
+        weight: 1
+      - path: Char_001_global/Char_001_pelvis/Char_001_spine1/Char_001_spine2/R_Char_001_shoulder1/R_Char_001_elbow1/R_Char_001_wrist1
+        weight: 1
+      - path: Char_001_global/Char_001_root
+        weight: 1
+      - path: Char_001_global/IK_handels
+        weight: 1
+      - path: Char_001_global/IK_handels/IK_Leg_Left
+        weight: 1
+      - path: Char_001_global/IK_handels/IK_Leg_Right
+        weight: 1
+      - path: Char_001_global/L_Char_001_foot
+        weight: 1
+      - path: Char_001_global/L_Char_001_knee
+        weight: 1
+      - path: Char_001_global/R_Char_001_foot1
+        weight: 1
+      - path: Char_001_global/R_Char_001_knee1
+        weight: 1
+      - path: Char_001_global/skeleton
+        weight: 1
+      - path: Char_001_global/skeleton/root
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_L/shin_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_L/shin_L/ankle_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_L/shin_L/ankle_L/toes_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_L/shin_L/ankle_L/toes_L/toe_tips_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_R/shin_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_R/shin_R/ankle_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_R/shin_R/ankle_R/toes_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/pelvis/thigh_R/shin_R/ankle_R/toes_R/toe_tips_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/head
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/head/hair
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/head/hair/hair_tip
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L/fore_arm_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L/fore_arm_L/hand_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L/fore_arm_L/hand_L/fingers_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L/fore_arm_L/hand_L/fingers_L/finger_tips_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L/fore_arm_L/hand_L/thumb_L
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_L/fore_arm_L/hand_L/thumb_L/thumb_ti_Lp
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R/fore_arm_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R/fore_arm_R/hand_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R/fore_arm_R/hand_R/fingers_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R/fore_arm_R/hand_R/fingers_R/finger_tips_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R/fore_arm_R/hand_R/thumb_R
+        weight: 1
+      - path: Char_001_global/skeleton/root/spine1/spine2/spine3/shoulder_R/fore_arm_R/hand_R/thumb_R/thumb_ti_Rp
+        weight: 1
+      - path: PlayerChar_001_Assistant_001_Prep
+        weight: 1
+      - path: Weapon_001_Lab_001_RayGun
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -333,7 +333,7 @@ public class BuildTrap : MonoBehaviour {
 
             if (selectedTrap.GetComponent<HumanThrower>() != null)
             {                
-                 preview.GetComponentInChildren<MeshRenderer>().materials[1] = FindObjectOfType<GameController>().trapPreviewMaterial;                               
+                 preview.GetComponentInChildren<MeshRenderer>().materials[0] = FindObjectOfType<GameController>().trapPreviewMaterial;                               
             }
 
             //disables animations for preview object
@@ -344,7 +344,6 @@ public class BuildTrap : MonoBehaviour {
 
             previewExist = true;
         }
-
 
         //display where trap will be placed
         for (int i = 0; i < floorGrid.Length; i++)

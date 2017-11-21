@@ -79,8 +79,16 @@ public class Invention_007_LastPrayer : TrapBehaviour {
             if (vecBetween.magnitude <= explosionRadius)
             {
                 if (traps[i].GetComponent<PlaceableWall>() != null)
-                {                    
+                {
                     traps[i].GetComponent<PlaceableWall>().TakeDamage(explosionDamage);
+                }
+                if (traps[i].GetComponent<HumanThrower>() != null)
+                {
+                    traps[i].GetComponent<HumanThrower>().TakeDamage(explosionDamage);
+                }
+                if (traps[i].GetComponent<Pit>() != null)
+                {
+                    traps[i].GetComponent<Pit>().TakeDamage(explosionDamage);
                 }
             }
         }

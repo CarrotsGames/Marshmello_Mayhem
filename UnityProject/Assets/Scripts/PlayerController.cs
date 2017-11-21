@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem buildingParticles;
     public ParticleSystem chemHoldParticles;
 
+    bool alternativeControls = false;
+
     // Use this for initialization
     void Start()
     {
@@ -87,6 +89,17 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (XCI.GetButtonDown(XboxButton.Back, controller))
+        {
+            if (alternativeControls == false)
+            {
+                alternativeControls = true;
+            }
+            else
+            {
+                alternativeControls = false;
+            }
+        }
 
         if (XCI.GetAxis(XboxAxis.RightTrigger, controller) >= 0.1f || Input.GetKey(KeyCode.Alpha0))
         {
@@ -180,9 +193,22 @@ public class PlayerController : MonoBehaviour
             direction = GameController.Direction.LEFT;
         }
 
-        //get controller's right stick input
-        float rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
-        float rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
+        float rotateAxisX = 0;
+        float rotateAxisZ = 0;
+
+        if (alternativeControls == true)
+        {
+            //get controller's left stick input
+            rotateAxisX = XCI.GetAxis(XboxAxis.LeftStickX, controller);
+            rotateAxisZ = XCI.GetAxis(XboxAxis.LeftStickY, controller);
+        }
+        else if (alternativeControls == false)
+        {
+            //get controller's right stick input
+            rotateAxisX = XCI.GetAxis(XboxAxis.RightStickX, controller);
+            rotateAxisZ = XCI.GetAxis(XboxAxis.RightStickY, controller);
+        }
+
         //set controller input to new vector
         Vector3 directionVector = new Vector3(rotateAxisX, 0, rotateAxisZ);
         //prevents debug log from appearing when vector is 0

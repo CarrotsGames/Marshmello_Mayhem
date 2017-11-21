@@ -7,7 +7,7 @@ public class BuildTrap : MonoBehaviour {
 
     private Vector3 targetPosition;
     private bool isBuilding = false;
-    public int buildTime;
+    public float buildTime;
     [HideInInspector] public GameObject selectedTrap;
     List<Vector3> potentialTiles;
     Quaternion rotation;
@@ -28,6 +28,8 @@ public class BuildTrap : MonoBehaviour {
     public bool extraTraps;
 
     GameObject tempObject;
+    public bool canBuild;
+    float timer;
 
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.8f;
@@ -42,14 +44,36 @@ public class BuildTrap : MonoBehaviour {
 
         potentialTiles = new List<Vector3>();
         createdObjects = FindObjectOfType<GameController>().placedTraps;
+        canBuild = true;
+        timer = buildTime;
     }
 
     // Update is called once per frame
     void Update ()
     {
+        if (controller != GetComponent<PlayerController>().controller)
+        {
+            controller = GetComponent<PlayerController>().controller;
+        }
         if (previewExist == false)
         {
             Destroy(preview);
+        }
+
+        if (isBuilding == true)
+        {
+            timer -= Time.deltaTime;
+
+            if (timer <= 0 && canBuild == true)
+            {              
+                Build();
+                
+                timer = buildTime;
+            }
+            else if (canBuild == false)
+            {
+                CancelBuildInProgress();
+            }
         }
         //checks if a build mode is active
         if (isBuilding == false && isEnabled == true)
@@ -175,9 +199,9 @@ public class BuildTrap : MonoBehaviour {
             //remove any potential tiles if trap is already there
             if (potentialTiles.Count > 0)
             {
-                for (int i = 0; i < createdObjects.Count; i++)
+                if (createdObjects.Count > 0)
                 {
-                    if (potentialTiles.Count > 0)
+                    for (int i = 0; i < createdObjects.Count; i++)
                     {
                         Vector3 vecBetween = potentialTiles[0] - createdObjects[i].transform.position;
                         vecBetween.y = 0;
@@ -197,9 +221,14 @@ public class BuildTrap : MonoBehaviour {
                             Destroy(preview);
                             previewExist = false;
                         }
+
                     }
                 }
-
+                else
+                {
+                    //create preview object at first sorted potential tile
+                    Preview();
+                }
 
             }
             //destroy preview object when there are no potential tiles
@@ -234,8 +263,7 @@ public class BuildTrap : MonoBehaviour {
                         //play particle system
                         GetComponent<PlayerController>().buildingParticles.Play();
 
-                        //calls Build function after delay (seconds)
-                        Invoke("Build", buildTime);
+                        
                     }
 
                     //clean potential tiles
@@ -271,12 +299,12 @@ public class BuildTrap : MonoBehaviour {
     {
         //re-enables ability to build a trap
         isBuilding = false;
-
+        
         //stops audio clip
         audio.Stop();
-
+        
         tempObject.SetActive(true);
-
+        
         //cost reduction from player's resources
         GetComponent<ResourceController>().currentResource -= cost;
 
@@ -377,5 +405,20 @@ public class BuildTrap : MonoBehaviour {
         selectedTrap = prefabList.LastPrayer;
         cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
         rise = 1.2f; 
+    }
+
+    public void CancelBuildInProgress()
+    {
+        createdObjects.Remove(tempObject);
+        Destroy(tempObject);
+        canBuild = true;
+        isBuilding = false;
+
+        audio.Stop();
+        //re-enable player's movement
+        GetComponent<PlayerController>().playerMovement = true;
+        GetComponent<PlayerController>().buildingParticles.Stop();
+
+        timer = buildTime;
     }
 }

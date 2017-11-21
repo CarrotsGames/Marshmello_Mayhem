@@ -18,13 +18,13 @@ public class GunController : MonoBehaviour {
     {
         isEnabled = true;
         display = false;
-
-        bulletCost = FindObjectOfType<GameController>().shootingCost;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        bulletCost = FindObjectOfType<GameController>().shootingCost;
+
         if (FindObjectOfType<GameController>() != null)
         {
             timeBetweenShots = FindObjectOfType<GameController>().projectileCooldown;

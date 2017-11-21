@@ -34,6 +34,8 @@ public class HumanThrower : TrapBehaviour {
 
             
         }
+
+        base.Update();
     }
 
     private void OnTriggerEnter(Collider a_col)

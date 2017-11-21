@@ -7,6 +7,7 @@ public class Tile : MonoBehaviour
 
     public bool isOccupied;
     public bool isPit;
+    public int teamNumber = 0;
 
     // Use this for initialization
     void Start()

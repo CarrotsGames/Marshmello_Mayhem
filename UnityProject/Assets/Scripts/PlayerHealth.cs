@@ -28,12 +28,15 @@ public class PlayerHealth : MonoBehaviour
     float colourTime = 0.0f;
     public float timeSpentAsDifferentColour;
     public Material emissiveMaterial;
+
+    BuildTrap playerBuildMode;
     //Renderer renderer;
 
     // Use this for initialization
     void Start()
     {
-        
+        playerBuildMode = GetComponent<BuildTrap>();
+
         currentHealth = maxHealth;
         isAlive = true;
 
@@ -56,9 +59,7 @@ public class PlayerHealth : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
-
+    {     
         //set values to common variables in gameController
         timeBetweenHeals = gameController.timeBetweenPlayerHeals;
         healValue = gameController.healthGain;
@@ -73,18 +74,6 @@ public class PlayerHealth : MonoBehaviour
             Death();
         }
 
-        //check if player has taken damage
-        if (isInCombat == false)
-        {
-            timer += Time.deltaTime;
-
-            if (timer >= timeBetweenHeals)
-            {
-                Heal(healValue);
-
-                timer = 0;
-            }
-        }
         //prevent currentHealth from exceeding maxHealth
         if (currentHealth >= maxHealth)
         {
@@ -119,9 +108,10 @@ public class PlayerHealth : MonoBehaviour
         }
 
         GetComponentInChildren<ColourChange>().isChanging = true;
-
+        
         //when player takes damage, set isInCombat to true
         isInCombat = true;
+
     }
 
     public void Death()
@@ -134,6 +124,8 @@ public class PlayerHealth : MonoBehaviour
 
         //Invoke("DisableDeathParticles", 1.0f);
 
+        playerBuildMode.canBuild = false;
+        playerBuildMode.isEnabled = false;
         //plays sound
         if (FindObjectOfType<PrefabList>().PlayerDeathAudio != null)
         {
@@ -162,6 +154,7 @@ public class PlayerHealth : MonoBehaviour
         playerController.transform.position = respawnPoint.transform.position;
         currentHealth = maxHealth;
         playerController.playerMovement = true;
+        playerBuildMode.canBuild = true;
     }
 
     public void Heal(int a_healValue)

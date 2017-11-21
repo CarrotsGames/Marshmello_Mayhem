@@ -12,6 +12,7 @@ public class Pit : TrapBehaviour
     bool isTriggered;
     GameObject player;
     AudioSource pitSound;
+    GameObject tile;
 
     // Use this for initialization
     void Start () {
@@ -37,6 +38,7 @@ public class Pit : TrapBehaviour
             {
                 if (floorGrid[i].GetComponent<Tile>() != null)
                 {
+                    tile = floorGrid[i];
                     floorGrid[i].GetComponent<Tile>().isPit = true;
                 }
             }
@@ -48,6 +50,13 @@ public class Pit : TrapBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if (health <= 0)
+        {
+            tile.SetActive(true);
+            tile.GetComponent<Tile>().isPit = false;
+            CheckForDestruction();
+        }
+
         if (isTriggered == true)
         {
             //kill player after delay

@@ -23,7 +23,7 @@ public class Pit : TrapBehaviour
 
         if (GetComponent<BoxCollider>() != null)
         {
-            GetComponent<BoxCollider>().isTrigger = false;
+            GetComponent<BoxCollider>().enabled = false;
         }
 
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");
@@ -104,6 +104,6 @@ public class Pit : TrapBehaviour
 
     void Activate()
     {
-        GetComponent<BoxCollider>().isTrigger = true;
+        GetComponent<BoxCollider>().enabled = true;
     }
 }

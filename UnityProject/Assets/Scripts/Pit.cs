@@ -91,9 +91,8 @@ public class Pit : TrapBehaviour
                     }
                 }
                 //sets player's position to middle of pit
-                player.GetComponent<PlayerController>().transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y - 5, transform.position.z), Quaternion.identity);
+                player.GetComponent<PlayerController>().transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y - 1.5f, transform.position.z), Quaternion.identity);
 
-                
                 isTriggered = true;
 
             }            

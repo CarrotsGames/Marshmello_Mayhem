@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
 
     //animations
     private Animator animator;
-    public bool IsShooting;
+    public bool isShooting;
+    public bool isIdle;
 
     //movement
     public float speed;
@@ -105,7 +106,7 @@ public class PlayerController : MonoBehaviour
         {
             if (GetComponent<BuildTrap>().isEnabled == false && GetComponent<ResourceController>().currentResource >= FindObjectOfType<GameController>().shootingCost)
             {
-                IsShooting = true;
+                isShooting = true;
                 gameObject.GetComponentInChildren<GunController>().display = true;
                 rayGun.Shoot();
             }
@@ -135,32 +136,30 @@ public class PlayerController : MonoBehaviour
             //is moving
             if (axisX != 0 || axisZ != 0)
             {
-                IsShooting = false;
-
+                isShooting = false;
                 animator.SetBool("IsRunning", true);
                 animator.SetBool("IsIdle", false);
                 animator.SetBool("IsShooting", false);
-
+                isIdle = false;
             }
             //is shooting
-            if (IsShooting == true)
+            if (isShooting == true && isIdle == true)
             {
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", false);
                 animator.SetBool("IsShooting", true);
 
-                IsShooting = false;
+                isShooting = false;
             }
 
             else if (axisX == 0 && axisZ == 0)
             {
-                IsShooting = false;
-
+                isIdle = true;
+                isShooting = false;
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", true);
                 animator.SetBool("IsShooting", false);
             }
-
 
             //apply rotation
             RotatePlayer();

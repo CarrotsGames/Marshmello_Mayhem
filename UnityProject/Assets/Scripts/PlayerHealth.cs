@@ -30,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     public Material emissiveMaterial;
 
     BuildTrap playerBuildMode;
+    Transform deathPosition;
     //Renderer renderer;
 
     // Use this for initialization
@@ -71,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (currentHealth <= 0 && isAlive == true)
         {
+            deathPosition = transform;
             Death();
         }
 
@@ -111,18 +113,15 @@ public class PlayerHealth : MonoBehaviour
         
         //when player takes damage, set isInCombat to true
         isInCombat = true;
-
     }
 
     public void Death()
     {
-        //Transform ghost = transform;
+        deathParticles = Instantiate<GameObject>(prefabList.deathParticles, deathPosition);
+        deathParticles.transform.SetParent(null);
+        deathParticles.GetComponent<ParticleSystem>().Play();
 
-        //deathParticles = Instantiate<GameObject>(prefabList.deathParticles, ghost);
-
-        //deathParticles.GetComponent<ParticleSystem>().Play();
-
-        //Invoke("DisableDeathParticles", 1.0f);
+        Invoke("DisableDeathParticles", 1.0f);
 
         playerBuildMode.canBuild = false;
         playerBuildMode.isEnabled = false;
@@ -174,6 +173,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void DisableDeathParticles()
     {
-        //deathParticles.GetComponent<ParticleSystem>().Stop();
+        deathParticles.GetComponent<ParticleSystem>().Stop();
     }
 }

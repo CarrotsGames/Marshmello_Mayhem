@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4706237676185240}
   - component: {fileID: 95334026555732042}
-  - component: {fileID: 114761386091839434}
   - component: {fileID: 65526629804358326}
   m_Layer: 0
   m_Name: Invention_006_Lab_006_Anti-StickMatter
@@ -141,19 +140,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114761386091839434
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1795780544266432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6551d130ec55f843811438feeeefa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 15
-  teamNumber: 0
-  speedBoost: 0
-  duration: 0
-  yIncrease: 3

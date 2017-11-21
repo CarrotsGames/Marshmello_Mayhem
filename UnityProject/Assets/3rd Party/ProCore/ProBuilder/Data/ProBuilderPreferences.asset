@@ -13,6 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Bool_keys:
   - pbCheckForProBuilderUpdates
+  - pb_TorusUsesInnerOuterMethod
   m_Int_keys:
   - pbDefaultEditLevel
   - pbDefaultSelectionMode
@@ -25,7 +26,7 @@ MonoBehaviour:
   - pbLastWebVersionChecked
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 01
+  m_Bool_values: 0101
   m_Int_values: 00000000020000000000000000000000
   m_Float_values:
   - 0

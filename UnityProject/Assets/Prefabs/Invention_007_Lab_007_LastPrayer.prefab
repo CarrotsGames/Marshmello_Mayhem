@@ -275,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 34
+  health: 10
   trapName: Last Prayer
   countdown: 3
   explosionRadius: 5

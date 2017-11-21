@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4232051501349944}
   - component: {fileID: 95953423822603916}
-  - component: {fileID: 114377704389666122}
   - component: {fileID: 65343665106109412}
   m_Layer: 0
   m_Name: Invention_008_Lab_008_MatterMover
@@ -141,15 +140,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114377704389666122
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199600434729708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2144f0f5988d4e468952dd1916e0243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 15

@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4883605855321194}
   - component: {fileID: 95687226231868236}
-  - component: {fileID: 114169832994737026}
   - component: {fileID: 65665379532445116}
   m_Layer: 0
   m_Name: Invention_005_Lab_005_PillarOfSaws
@@ -141,16 +140,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114169832994737026
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1563550709953352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41fee6066e3576a4c822a47402414e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 25
-  maxHealth: 70

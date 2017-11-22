@@ -52,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1766466619891944}
-  m_LocalRotation: {x: -0, y: 0.18332395, z: -0, w: 0.98305255}
-  m_LocalPosition: {x: -14.375, y: -9.361, z: 11.55}
+  m_LocalRotation: {x: -0, y: 0.40669796, z: -0, w: 0.9135627}
+  m_LocalPosition: {x: 25.849, y: -9.35, z: 11.394}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4962667159593274}
@@ -86,7 +86,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7564997483f7bb4469a395628a41045b, type: 2}
+  - {fileID: 2100000, guid: e3a3a973fe3ccc64bb879005a072032d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,9 +149,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   team1Base: {fileID: 0}
   team2Base: {fileID: 0}
-  respawnTimer: 0
+  dropRespawnTimer: 5
+  respawnTimer: 3
+  teamNumber: 2
   isBeingCarried: 0
-  teamNumber: 1
   wasDropped: 0
   canBePickedUp: 1
   timeBetweenDropAndPickUp: 1
+  captureDistanceLeniency: 2

@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62eaec39467e7c9489d5a2b78fb2de61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 34
+  cost: 60
   health: 10
   trapName: Last Prayer
   countdown: 3

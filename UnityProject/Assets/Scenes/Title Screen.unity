@@ -7064,8 +7064,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000026703, y: -1937}
-  m_SizeDelta: {x: 1920, y: 2795.4}
+  m_AnchoredPosition: {x: 0.000026703, y: -2308.2}
+  m_SizeDelta: {x: 1920, y: 3537.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1804119409
 Animator:
@@ -7126,7 +7126,8 @@ MonoBehaviour:
     Asset Store - ProCore \r\n\r\nScene OBJ Exporter\r- Aaro4130- Unity \r\n\r\r\nXInput-
     \r\nThe MIT License\r\nCopyright (c) 2009 Remi Gillig <remigillig@gmail.com>\r\n\r\nFont
     - xirod\r\nTypodermic Fonts Inc.\r\n\nFont - Survivant\nTepid Monkey Fonts\n\r\nXbox
-    One Controller Image\r\nhttp://console.maban.co.uk/device/xboxone/\r"
+    One Controller Image\r\nhttp://console.maban.co.uk/device/xboxone/\r\n\nAIE\n\nMaya\n\nPhotoshop\n\nUnity\n\nZBrush\n\nMicrosoft
+    Visual Studios"
 --- !u!222 &1804119411
 CanvasRenderer:
   m_ObjectHideFlags: 0

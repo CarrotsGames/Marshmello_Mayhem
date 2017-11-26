@@ -2029,8 +2029,9 @@ MonoBehaviour:
   charController: {fileID: 0}
   controller: 4
   rayGun: {fileID: 114823041248354486}
-  IsShooting: 0
-  speed: 7
+  isShooting: 0
+  isIdle: 0
+  speed: 10
   playerMovement: 1
   previousRotation: {x: 0, y: 0, z: 1}
   direction: 0
@@ -2039,7 +2040,7 @@ MonoBehaviour:
   distanceFromChemFlagToPickUp: 2
   enemyChemFlag: {fileID: 0}
   holdingChemFlag: {fileID: 0}
-  buildingParticles: {fileID: 0}
+  buildingParticles: {fileID: 198077975497962058}
   chemHoldParticles: {fileID: 198003464091194842}
 --- !u!114 &114245858364081050
 MonoBehaviour:
@@ -5533,7 +5534,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1020932137
+  randomSeed: -926998824
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12062,7 +12063,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -435013579
+  randomSeed: -264575593
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18604,7 +18605,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: cbf81f3d313e50148a8981fe982a19ca, type: 2}
+  - {fileID: 2100000, guid: ee9241bcf0d86cd48b8c01da7b06fb40, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

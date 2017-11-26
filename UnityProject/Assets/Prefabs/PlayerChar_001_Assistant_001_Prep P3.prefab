@@ -2035,22 +2035,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef367ed0b85b514096a0dff26139229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsRunning: 0
-  IsIdle: 0
-  IsShooting: 0
   charController: {fileID: 0}
   controller: 3
   rayGun: {fileID: 114959049986597134}
-  speed: 6
-  maxSpeed: 6
+  isShooting: 0
+  isIdle: 0
+  speed: 10
   playerMovement: 1
+  previousRotation: {x: 0, y: 0, z: 1}
+  direction: 0
   chemFlagHoldPoint: {fileID: 4212056356827414}
   teamNumber: 1
   distanceFromChemFlagToPickUp: 2
   enemyChemFlag: {fileID: 0}
   holdingChemFlag: {fileID: 0}
-  previousRotation: {x: 0, y: 0, z: 1}
-  direction: 0
   buildingParticles: {fileID: 198011725907460688}
   chemHoldParticles: {fileID: 198919316277240434}
 --- !u!114 &114842186639740368
@@ -2068,6 +2066,7 @@ MonoBehaviour:
   selectedTrap: {fileID: 0}
   isEnabled: 0
   extraTraps: 0
+  canBuild: 0
   playerToTileDistance: 1.8
 --- !u!114 &114943731960504186
 MonoBehaviour:
@@ -2255,7 +2254,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1652902602
+  randomSeed: 1833268852
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12057,7 +12056,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1460140669
+  randomSeed: 1383276042
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18640,7 +18639,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: cbf81f3d313e50148a8981fe982a19ca, type: 2}
+  - {fileID: 2100000, guid: ee9241bcf0d86cd48b8c01da7b06fb40, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -18744,7 +18743,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 63d498f4c7728be4897eb7842dcc0711, type: 2}
+  - {fileID: 2100000, guid: 27c59f88d5ddc1d4dba29acf6b6ba82c, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

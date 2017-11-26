@@ -798,11 +798,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114682326958625416, guid: bc55c2e1b1988b940a41231c269c1358,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 156102381}
     - target: {fileID: 114943731960504186, guid: bc55c2e1b1988b940a41231c269c1358,
         type: 2}
       propertyPath: respawnPoint
@@ -810,25 +805,9 @@ Prefab:
       objectReference: {fileID: 1240871176}
     - target: {fileID: 114682326958625416, guid: bc55c2e1b1988b940a41231c269c1358,
         type: 2}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 199993290209164050, guid: bc55c2e1b1988b940a41231c269c1358,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: enemyChemFlag
       value: 
-      objectReference: {fileID: 2100000, guid: 27c59f88d5ddc1d4dba29acf6b6ba82c, type: 2}
-    - target: {fileID: 114959049986597134, guid: bc55c2e1b1988b940a41231c269c1358,
-        type: 2}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1917840169921062, guid: 2c6ac2bf3db11f24f9e11c969a2d45f1,
-        type: 2}
-    - target: {fileID: 114682326958625416, guid: bc55c2e1b1988b940a41231c269c1358,
-        type: 2}
-      propertyPath: controller
-      value: 3
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 156102381}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
   m_IsPrefabParent: 0
@@ -7122,7 +7101,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0, g: 0.13103437, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 24.9
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -7169,7 +7148,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496596903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.02, y: 6.2, z: -0.42}
+  m_LocalPosition: {x: -2.02, y: 11.35, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 550612458}
@@ -8642,11 +8621,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50.132023, y: 0.95891476, z: 32.507446}
   m_Center: {x: 24.996168, y: 3.692264, z: 7.6019325}
---- !u!198 &591897154 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198256157156675392, guid: 3b61616b5956acb4082c51ad1653b1e2,
-    type: 2}
-  m_PrefabInternal: {fileID: 607167799}
 --- !u!1001 &592319014
 Prefab:
   m_ObjectHideFlags: 0
@@ -8860,36 +8834,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 156102381}
-    - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
-        type: 2}
-      propertyPath: buildingParticles
-      value: 
-      objectReference: {fileID: 591897154}
+    - target: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
+      propertyPath: m_Name
+      value: PlayerChar_001_Scientist_001_Moustache P1
+      objectReference: {fileID: 0}
     - target: {fileID: 114872542698942106, guid: 3b61616b5956acb4082c51ad1653b1e2,
         type: 2}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1743661274}
-    - target: {fileID: 1484518435380222, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
-      propertyPath: m_Name
-      value: PlayerChar_001_Scientist_001_Moustache P1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114400405192245388, guid: 3b61616b5956acb4082c51ad1653b1e2,
-        type: 2}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1917840169921062, guid: 2c6ac2bf3db11f24f9e11c969a2d45f1,
-        type: 2}
     - target: {fileID: 114892919229216754, guid: 3b61616b5956acb4082c51ad1653b1e2,
         type: 2}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: enemyChemFlag
+      value: 
+      objectReference: {fileID: 156102381}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b61616b5956acb4082c51ad1653b1e2, type: 2}
   m_IsPrefabParent: 0
@@ -13337,11 +13295,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 900100555}
---- !u!198 &902695272 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198077975497962058, guid: 362e53626a42d414eb6a3f137d61527c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1208046245}
 --- !u!1001 &911839732
 Prefab:
   m_ObjectHideFlags: 0
@@ -16850,7 +16803,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1183927741}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.436993, y: 14.841233, z: -10.465806}
+  m_LocalPosition: {x: 45.39, y: 14.841233, z: -10.465806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1501313582}
@@ -17132,16 +17085,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 1437087318}
-    - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
-        type: 2}
-      propertyPath: buildingParticles
-      value: 
-      objectReference: {fileID: 902695272}
     - target: {fileID: 114786399070031956, guid: 362e53626a42d414eb6a3f137d61527c,
         type: 2}
       propertyPath: respawnPoint
@@ -17149,14 +17092,9 @@ Prefab:
       objectReference: {fileID: 1918036485}
     - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
         type: 2}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114039761470185446, guid: 362e53626a42d414eb6a3f137d61527c,
-        type: 2}
-      propertyPath: controller
-      value: 4
-      objectReference: {fileID: 0}
+      propertyPath: enemyChemFlag
+      value: 
+      objectReference: {fileID: 1437087318}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
   m_IsPrefabParent: 0
@@ -19980,11 +19918,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1440536220}
---- !u!198 &1449485218 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198392836900186032, guid: 8f9273a7446ba764b805609e8ed040d0,
-    type: 2}
-  m_PrefabInternal: {fileID: 2095676922}
 --- !u!1001 &1449547416
 Prefab:
   m_ObjectHideFlags: 0
@@ -26077,7 +26010,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996214049}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.55, y: -7.71, z: 12.9}
+  m_LocalPosition: {x: 11.86, y: -2.79, z: 12.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1536973825}
@@ -27198,35 +27131,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: enemyChemFlag
-      value: 
-      objectReference: {fileID: 1437087318}
-    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: buildingParticles
-      value: 
-      objectReference: {fileID: 1449485218}
+    - target: {fileID: 1777086311879960, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
+      propertyPath: m_Name
+      value: PlayerChar_001_Scientist_001_Moustache P2
+      objectReference: {fileID: 0}
     - target: {fileID: 114586625826555300, guid: 8f9273a7446ba764b805609e8ed040d0,
         type: 2}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1828610400}
-    - target: {fileID: 1777086311879960, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
-      propertyPath: m_Name
-      value: PlayerChar_001_Scientist_001_Moustache P2
-      objectReference: {fileID: 0}
     - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
         type: 2}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114490750114313152, guid: 8f9273a7446ba764b805609e8ed040d0,
-        type: 2}
-      propertyPath: controller
-      value: 2
-      objectReference: {fileID: 0}
+      propertyPath: enemyChemFlag
+      value: 
+      objectReference: {fileID: 1437087318}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f9273a7446ba764b805609e8ed040d0, type: 2}
   m_IsPrefabParent: 0

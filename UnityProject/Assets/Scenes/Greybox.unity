@@ -16259,6 +16259,7 @@ MonoBehaviour:
   GameOverAudio: {fileID: 1479065121}
   blueTeamRespawnParticles: {fileID: 477910787}
   redTeamRespawnParticles: {fileID: 1661363535}
+  deathParticles: {fileID: 1862397796}
 --- !u!4 &1118103980
 Transform:
   m_ObjectHideFlags: 0
@@ -24570,6 +24571,11 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1862397796 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1218380419893106, guid: bc55c2e1b1988b940a41231c269c1358,
+    type: 2}
+  m_PrefabInternal: {fileID: 36935146}
 --- !u!1001 &1885181546
 Prefab:
   m_ObjectHideFlags: 0

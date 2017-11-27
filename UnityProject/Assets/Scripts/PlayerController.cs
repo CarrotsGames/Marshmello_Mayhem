@@ -136,30 +136,29 @@ public class PlayerController : MonoBehaviour
             //is moving
             if (axisX != 0 || axisZ != 0)
             {
-                isShooting = false;
                 animator.SetBool("IsRunning", true);
                 animator.SetBool("IsIdle", false);
-                animator.SetBool("IsShooting", false);
+               
                 isIdle = false;
+                
             }
             //is shooting
-            if (isShooting == true && isIdle == true)
+            else if (isShooting == true && isIdle == true)
             {
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", false);
                 animator.SetBool("IsShooting", true);
 
-                isShooting = false;
             }
-
+            //is idle
             else if (axisX == 0 && axisZ == 0)
             {
                 isIdle = true;
-                isShooting = false;
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", true);
                 animator.SetBool("IsShooting", false);
             }
+
 
             //apply rotation
             RotatePlayer();

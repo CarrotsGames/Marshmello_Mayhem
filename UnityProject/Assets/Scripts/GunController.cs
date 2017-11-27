@@ -80,5 +80,6 @@ public class GunController : MonoBehaviour {
     void GunDisplayDelay()
     {
         display = false;
+        GetComponentInParent<PlayerController>().isShooting = false;
     }
 }

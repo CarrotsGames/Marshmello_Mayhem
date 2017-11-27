@@ -176,26 +176,28 @@ public class BuildTrap : MonoBehaviour {
                 }
             }
 
-            //sort for lowest magnitude
-            for (int e = 0; e < potentialTiles.Count; e++)
+            if (potentialTiles.Count > 0)
             {
-                for (int i = 0; i < potentialTiles.Count - 1; i++)
+                //sort for lowest magnitude
+                for (int e = 0; e < potentialTiles.Count; e++)
                 {
-                    Vector3 vecBetweenCurrent = transform.position - potentialTiles[i];
-                    vecBetweenCurrent.y = 0;
-                    Vector3 vecBetweenNext = transform.position - potentialTiles[i + 1];
-                    vecBetweenNext.y = 0;
-
-                    if (vecBetweenCurrent.magnitude > vecBetweenNext.magnitude)
+                    for (int i = 0; i < potentialTiles.Count - 1; i++)
                     {
-                        Vector3 temp = potentialTiles[i + 1];
-                        potentialTiles[i + 1] = potentialTiles[i];
+                        Vector3 vecBetweenCurrent = transform.position - potentialTiles[i];
+                        vecBetweenCurrent.y = 0;
+                        Vector3 vecBetweenNext = transform.position - potentialTiles[i + 1];
+                        vecBetweenNext.y = 0;
 
-                        potentialTiles[i] = temp;
+                        if (vecBetweenCurrent.magnitude > vecBetweenNext.magnitude)
+                        {
+                            Vector3 temp = potentialTiles[i + 1];
+                            potentialTiles[i + 1] = potentialTiles[i];
+
+                            potentialTiles[i] = temp;
+                        }
                     }
                 }
             }
-
             //remove any potential tiles if trap is already there
             if (potentialTiles.Count > 0)
             {

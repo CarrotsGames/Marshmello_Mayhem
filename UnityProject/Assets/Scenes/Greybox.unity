@@ -19671,7 +19671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Flags Captured
+  m_Text: 'Chems Captured
 
     1 | 0'
 --- !u!222 &1356886314
@@ -22748,7 +22748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 21}
+  m_AnchoredPosition: {x: -223.8, y: 36.5}
   m_SizeDelta: {x: 283.4, y: 118.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600411891
@@ -22763,7 +22763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 2, y: -2}
+  m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!114 &1600411892
 MonoBehaviour:
@@ -22777,7 +22777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.47075233, g: 0.509, b: 0.99264705, a: 1}
+  m_Color: {r: 0, g: 0.9836314, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -26282,7 +26282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 212, y: 21}
+  m_AnchoredPosition: {x: 211.8, y: 36.5}
   m_SizeDelta: {x: 261.56, y: 118.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932573779

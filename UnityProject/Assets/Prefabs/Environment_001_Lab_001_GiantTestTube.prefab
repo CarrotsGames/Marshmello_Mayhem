@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 33374306737187416}
   - component: {fileID: 23187877187530294}
   - component: {fileID: 65177818838649032}
+  - component: {fileID: 95352150033137184}
   m_Layer: 0
   m_Name: Environment_001_Lab_001_GiantTestTube
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1131886179321552}
   m_LocalRotation: {x: -0, y: -0.99999577, z: -0, w: 0.0029277108}
-  m_LocalPosition: {x: 0.26, y: 0, z: 1.8}
+  m_LocalPosition: {x: 0.62, y: 0, z: 1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4897905145563796}
@@ -65,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242424784459518}
   m_LocalRotation: {x: -0, y: 0.99999577, z: -0, w: 0.0029277108}
-  m_LocalPosition: {x: 20.79, y: -9.94, z: 44.18}
+  m_LocalPosition: {x: 20.79, y: -9.94, z: 44.16}
   m_LocalScale: {x: 1.000001, y: 1, z: 1.000001}
   m_Children:
   - {fileID: 4661280143789638}
@@ -123,6 +124,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9599183, y: 5.875966, z: 1.9856695}
   m_Center: {x: -0.0000019073468, y: 0.7151189, z: -0.0000028610202}
+--- !u!95 &95352150033137184
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242424784459518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b13208d787bd0174dbf5533330173965, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108753800360336946
 Light:
   m_ObjectHideFlags: 1

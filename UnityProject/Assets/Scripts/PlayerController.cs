@@ -136,14 +136,16 @@ public class PlayerController : MonoBehaviour
             //is moving
             if (axisX != 0 || axisZ != 0)
             {
-                animator.SetBool("IsRunning", true);
-                animator.SetBool("IsIdle", false);
-               
-                isIdle = false;
-                
+                if (isShooting == false)
+                {
+                    animator.SetBool("IsRunning", true);
+                    animator.SetBool("IsIdle", false);
+                    animator.SetBool("IsShooting", false);
+                    isIdle = false;
+                }
             }
             //is shooting
-            else if (isShooting == true && isIdle == true)
+            if (isShooting == true)
             {
                 animator.SetBool("IsRunning", false);
                 animator.SetBool("IsIdle", false);

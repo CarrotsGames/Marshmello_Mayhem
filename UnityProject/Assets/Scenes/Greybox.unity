@@ -2454,85 +2454,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 163758110}
---- !u!1 &166046267
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 166046268}
-  - component: {fileID: 166046269}
-  m_Layer: 0
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &166046268
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 166046267}
-  m_LocalRotation: {x: -0, y: -0.99999577, z: -0, w: 0.0029277108}
-  m_LocalPosition: {x: 0.26, y: 0, z: 1.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1607878270}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &166046269
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 166046267}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
-  m_Intensity: 2
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &172827430
 Prefab:
   m_ObjectHideFlags: 0
@@ -3329,25 +3250,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 243037823}
---- !u!1 &245149979 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1233989543}
---- !u!114 &245149982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 245149979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1001 &249660774
 Prefab:
   m_ObjectHideFlags: 0
@@ -3796,7 +3698,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -4677,25 +4579,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 336403679}
---- !u!1 &343386022 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 442889609}
---- !u!114 &343386025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 343386022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1 &348323590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,25 +5031,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 366903253}
---- !u!1 &367153097 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 284046881}
---- !u!114 &367153100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367153097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1 &372853900
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,25 +7344,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641,
     type: 2}
   m_PrefabInternal: {fileID: 1071394735}
---- !u!1 &501875458 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 2008162956}
---- !u!114 &501875461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501875458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1001 &503997661
 Prefab:
   m_ObjectHideFlags: 0
@@ -7734,25 +7579,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 518201455}
---- !u!1 &520824758 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 808802746}
---- !u!114 &520824761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 520824758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1001 &529325038
 Prefab:
   m_ObjectHideFlags: 0
@@ -7812,7 +7638,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -8315,22 +8141,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
-      propertyPath: m_Name
-      value: Level_001_Lab_001_Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
   m_IsPrefabParent: 0
@@ -8437,25 +8247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2017303908}
---- !u!1 &569337027 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1507891428}
---- !u!114 &569337030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569337027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1001 &584282183
 Prefab:
   m_ObjectHideFlags: 0
@@ -9022,25 +8813,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 592319014}
---- !u!1 &595734240 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1071394735}
---- !u!114 &595734243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 595734240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1001 &604275342
 Prefab:
   m_ObjectHideFlags: 0
@@ -10617,7 +10389,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall_1
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -10627,7 +10399,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -12269,25 +12041,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641,
     type: 2}
   m_PrefabInternal: {fileID: 684032693}
---- !u!1 &808097208 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1898834651}
---- !u!114 &808097211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 808097208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1001 &808802746
 Prefab:
   m_ObjectHideFlags: 0
@@ -13841,44 +13594,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &921233766 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 88685448}
---- !u!114 &921233769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 921233766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
---- !u!1 &938071626 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1766116473}
---- !u!114 &938071629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 938071626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1001 &941947358
 Prefab:
   m_ObjectHideFlags: 0
@@ -14646,7 +14361,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -14765,25 +14480,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 992547722}
---- !u!1 &999554390 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1198889669}
---- !u!114 &999554393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999554390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1 &1000997109
 GameObject:
   m_ObjectHideFlags: 0
@@ -16150,7 +15846,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -17197,25 +16893,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1158499601}
---- !u!1 &1160424375 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1053318326}
---- !u!114 &1160424378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1160424375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1001 &1167298469
 Prefab:
   m_ObjectHideFlags: 0
@@ -17532,11 +17209,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 648580797}
     m_Modifications:
-    - target: {fileID: 23187877187530294, guid: dbaa8a50099fff94db9dd24869cfead0,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4897905145563796, guid: dbaa8a50099fff94db9dd24869cfead0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 20.79
@@ -17569,16 +17241,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23187877187530294, guid: dbaa8a50099fff94db9dd24869cfead0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7fd37af7bf3d3554bb69b65d2aa436b1, type: 2}
-    - target: {fileID: 23187877187530294, guid: dbaa8a50099fff94db9dd24869cfead0,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7fd37af7bf3d3554bb69b65d2aa436b1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbaa8a50099fff94db9dd24869cfead0, type: 2}
   m_IsPrefabParent: 0
@@ -17867,25 +17529,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1211571412}
---- !u!1 &1216170653 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 529325038}
---- !u!114 &1216170656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216170653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1001 &1217009638
 Prefab:
   m_ObjectHideFlags: 0
@@ -18165,7 +17808,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_Name
-      value: Level_001_Lab_001_Wall_q
+      value: Level_001_Lab_001_Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -18175,7 +17818,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -19016,7 +18659,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1333013675}
-  - component: {fileID: 1333013676}
   m_Layer: 0
   m_Name: Back Wall Group
   m_TagString: Untagged
@@ -19050,18 +18692,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1333013676
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1333013674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 48.139847, y: 14.443485, z: 1.3762779}
-  m_Center: {x: 12.790001, y: 13.159208, z: 15.1}
 --- !u!1001 &1339236611
 Prefab:
   m_ObjectHideFlags: 0
@@ -19693,6 +19323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   team1Score: 0
   team2Score: 0
+  captureObjectName: Chems
 --- !u!1001 &1357606454
 Prefab:
   m_ObjectHideFlags: 0
@@ -20037,6 +19668,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7fd37af7bf3d3554bb69b65d2aa436b1, type: 2}
+    - target: {fileID: 4661280143789638, guid: dbaa8a50099fff94db9dd24869cfead0, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbaa8a50099fff94db9dd24869cfead0, type: 2}
   m_IsPrefabParent: 0
@@ -21605,25 +21240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
---- !u!1 &1528476062 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 562675216}
---- !u!114 &1528476065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1528476062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1001 &1536154157
 Prefab:
   m_ObjectHideFlags: 0
@@ -22633,25 +22249,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1597390440}
---- !u!1 &1598165091 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1811416741}
---- !u!114 &1598165094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1598165091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1001 &1599543423
 Prefab:
   m_ObjectHideFlags: 0
@@ -24657,7 +24254,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -24958,25 +24555,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4803278820005578, guid: 430bbd1a5da74e34ca55debed6f81944,
     type: 2}
   m_PrefabInternal: {fileID: 1795508634}
---- !u!1 &1796178915 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 1384238739}
---- !u!114 &1796178918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1796178915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1 &1798530490
 GameObject:
   m_ObjectHideFlags: 0
@@ -25148,7 +24726,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
     - target: {fileID: 23601974951118574, guid: b40eb124ce223de4c97f20f348ee3641,
         type: 2}
       propertyPath: m_Enabled
@@ -26343,25 +25921,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641,
     type: 2}
   m_PrefabInternal: {fileID: 529325038}
---- !u!1 &1934706911 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 684032693}
---- !u!114 &1934706914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1934706911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 1
-  trapName: 
 --- !u!1 &1934993512
 GameObject:
   m_ObjectHideFlags: 0
@@ -27797,25 +27356,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641,
     type: 2}
   m_PrefabInternal: {fileID: 1599543423}
---- !u!1 &2078861862 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1484881738683644, guid: b40eb124ce223de4c97f20f348ee3641,
-    type: 2}
-  m_PrefabInternal: {fileID: 776996249}
---- !u!114 &2078861865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078861862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall
 --- !u!1 &2084213369
 GameObject:
   m_ObjectHideFlags: 0

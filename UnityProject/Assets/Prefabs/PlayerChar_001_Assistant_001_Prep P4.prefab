@@ -2056,7 +2056,7 @@ MonoBehaviour:
   maxResource: 100
   currentResource: 0
   resourceIncrease: 0.1
-  timeBetween: 0.04
+  timeBetween: 0.02
 --- !u!114 &114311643743704550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2206,13 +2206,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.84
+  m_Height: 2.88
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.36, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!198 &198003464091194842
 ParticleSystem:
   m_ObjectHideFlags: 1

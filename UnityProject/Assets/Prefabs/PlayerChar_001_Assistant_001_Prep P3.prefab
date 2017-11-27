@@ -2011,7 +2011,7 @@ MonoBehaviour:
   maxResource: 100
   currentResource: 0
   resourceIncrease: 0.1
-  timeBetween: 0.04
+  timeBetween: 0.02
 --- !u!114 &114471194809683204
 MonoBehaviour:
   m_ObjectHideFlags: 1

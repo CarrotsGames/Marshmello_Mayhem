@@ -21,11 +21,10 @@ GameObject:
   - component: {fileID: 4365482858214430}
   - component: {fileID: 33625510917084554}
   - component: {fileID: 23601974951118574}
-  - component: {fileID: 114753912829621308}
   - component: {fileID: 65127617115309090}
   m_Layer: 0
   m_Name: Level_001_Lab_001_Wall
-  m_TagString: Untagged
+  m_TagString: LevelWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,8 +35,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1484881738683644}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1400013, y: 8.139999, z: 15.199999}
+  m_LocalRotation: {x: -0, y: 0.0000004768371, z: -0, w: 1}
+  m_LocalPosition: {x: 34.14, y: 8.139999, z: 15.199999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9e14dd775a2d04041a66486a80eb8ec9, type: 2}
+  - {fileID: 2100000, guid: b536ad60b39b11a4696a8ac6d9ee08f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,17 +93,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0000005, y: 5, z: 1.0000017}
   m_Center: {x: -0.0000007748604, y: 0.004690647, z: -0.000001013279}
---- !u!114 &114753912829621308
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1484881738683644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d491f1f9dc5e84282585b3e23db042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  health: 2147483647
-  trapName: Level Wall

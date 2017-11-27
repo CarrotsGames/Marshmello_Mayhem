@@ -963,6 +963,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1932063402686646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4292535140191784}
+  m_Layer: 0
+  m_Name: Place Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1957723153059456
 GameObject:
   m_ObjectHideFlags: 1
@@ -1139,7 +1154,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531969689409674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.060142517, y: -0.93, z: 1.0710888}
+  m_LocalPosition: {x: 0.060142517, y: -1.076, z: 1.0710888}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4840558395926016}
@@ -1254,6 +1269,19 @@ Transform:
   - {fileID: 4594269945329544}
   m_Father: {fileID: 4631630631456326}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4292535140191784
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932063402686646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13, y: -0.62, z: 3.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4840558395926016}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4317387975576900
 Transform:
@@ -1738,6 +1766,7 @@ Transform:
   - {fileID: 4105081018187018}
   - {fileID: 4643726953919436}
   - {fileID: 4046483442968946}
+  - {fileID: 4292535140191784}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2067,7 +2096,7 @@ MonoBehaviour:
   isEnabled: 0
   extraTraps: 0
   canBuild: 0
-  playerToTileDistance: 1.8
+  playerToTileDistance: 2.5
 --- !u!114 &114943731960504186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2188,13 +2217,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.84
+  m_Height: 2.88
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.36, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!198 &198011725907460688
 ParticleSystem:
   m_ObjectHideFlags: 1

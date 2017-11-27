@@ -358,6 +358,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1360993886371874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4359516076994476}
+  m_Layer: 0
+  m_Name: Place Trap P2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1365350179404860
 GameObject:
   m_ObjectHideFlags: 1
@@ -1154,6 +1169,7 @@ Transform:
   - {fileID: 4292198475717314}
   - {fileID: 4924308856590306}
   - {fileID: 4766306763301806}
+  - {fileID: 4359516076994476}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1281,6 +1297,19 @@ Transform:
   m_Father: {fileID: 4189467488247664}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!4 &4359516076994476
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1360993886371874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.29, z: 3.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4189467488247664}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4417757738801778
 Transform:
   m_ObjectHideFlags: 1
@@ -2089,7 +2118,7 @@ MonoBehaviour:
   isEnabled: 0
   extraTraps: 0
   canBuild: 0
-  playerToTileDistance: 1.8
+  playerToTileDistance: 2.5
 --- !u!114 &114721571292443318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5593,7 +5622,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 7
+      scalar: 6
       minScalar: 5
       maxCurve:
         serializedVersion: 2

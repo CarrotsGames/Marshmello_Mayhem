@@ -13,6 +13,7 @@ public class Pit : TrapBehaviour
     GameObject player;
     AudioSource pitSound;
     GameObject tile;
+    bool hasMoved;
 
     // Use this for initialization
     void Start () {
@@ -48,7 +49,7 @@ public class Pit : TrapBehaviour
     }
 	
 	// Update is called once per frame
-	void Update ()
+	void Update()
     {
         if (health <= 0)
         {
@@ -59,16 +60,20 @@ public class Pit : TrapBehaviour
 
         if (isTriggered == true)
         {
+            if (hasMoved == false)
+            {
+                player.GetComponent<PlayerHealth>().TakeDamage(player.GetComponent<PlayerHealth>().currentHealth);
+                hasMoved = true;
+            }
+
             //kill player after delay
             timeRemaining -= Time.deltaTime;
-
-            player.GetComponent<PlayerHealth>().isAlive = false;
-
+            
             if (timeRemaining <= 0)
             {
                 timeRemaining = timeBeforeDeath;
-                player.GetComponent<PlayerHealth>().Death();
                 isTriggered = false;
+                hasMoved = false;
             }
         }
     }
@@ -89,16 +94,13 @@ public class Pit : TrapBehaviour
                     {
                         a_col.GetComponent<PlayerController>().DropChemFlag();
                     }
-                }
-                //sets player's position to middle of pit
-                player.GetComponent<PlayerController>().transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y - 1.5f, transform.position.z), Quaternion.identity);
+                }               
 
                 isTriggered = true;
 
+                hasMoved = false;
             }            
-        }
-
-        
+        }        
     }
 
     void Activate()

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Chem_Flag : MonoBehaviour {
 
-    public GameObject team1Base;
-    public GameObject team2Base;
+    public GameObject blueTeamBase;
+    public GameObject redTeamBase;
 
     public float dropRespawnTimer;
     public float respawnTimer;
@@ -36,9 +36,9 @@ public class Chem_Flag : MonoBehaviour {
     void Update()
     {
         //if team 1 is capturing the chem_flag
-        if (teamNumber == 2 && team1Base != null)
+        if (teamNumber == 2 && blueTeamBase != null)
         {
-            Vector3 vecBetween = transform.position - team1Base.transform.position;
+            Vector3 vecBetween = transform.position - blueTeamBase.transform.position;
             vecBetween.y = 0;
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
@@ -59,9 +59,9 @@ public class Chem_Flag : MonoBehaviour {
             }
         }
         //if team 2 is capturing the chem_flag
-        if (teamNumber == 1 && team2Base != null)
+        if (teamNumber == 1 && redTeamBase != null)
         {
-            Vector3 vecBetween = transform.position - team2Base.transform.position;
+            Vector3 vecBetween = transform.position - redTeamBase.transform.position;
             vecBetween.y = 0;
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
@@ -141,12 +141,12 @@ public class Chem_Flag : MonoBehaviour {
         if (teamNumber == 1)
         {
             //reset position
-            transform.SetPositionAndRotation(new Vector3(team1Base.transform.position.x, transform.position.y, team1Base.transform.position.z), Quaternion.identity);
+            transform.SetPositionAndRotation(new Vector3(blueTeamBase.transform.position.x, transform.position.y, blueTeamBase.transform.position.z), Quaternion.identity);
         }
         if (teamNumber == 2)
         {
             //reset position
-            transform.SetPositionAndRotation(new Vector3(team2Base.transform.position.x, transform.position.y, team2Base.transform.position.z), Quaternion.identity);
+            transform.SetPositionAndRotation(new Vector3(redTeamBase.transform.position.x, transform.position.y, redTeamBase.transform.position.z), Quaternion.identity);
         }
         isRespawning = false;
         wasDropped = false;

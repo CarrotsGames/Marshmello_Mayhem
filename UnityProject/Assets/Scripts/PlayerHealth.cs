@@ -36,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
         playerBuildMode = GetComponent<BuildTrap>();
 
         currentHealth = maxHealth;
@@ -55,7 +56,6 @@ public class PlayerHealth : MonoBehaviour
         }
 
         respawnParticles.transform.position = respawnPoint.transform.position;
-
     }
 
     // Update is called once per frame
@@ -154,6 +154,8 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         playerController.playerMovement = true;
         playerBuildMode.canBuild = true;
+
+        Destroy(deathParticles);
     }
 
     public void Heal(int a_healValue)

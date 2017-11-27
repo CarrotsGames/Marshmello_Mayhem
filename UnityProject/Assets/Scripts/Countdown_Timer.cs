@@ -45,7 +45,6 @@ public class Countdown_Timer : MonoBehaviour {
         }
         else
         {
-            time.text = "Game Over";
             gameOver = true;
         }
     }

@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject blueTeamWinDisplay;
     public GameObject redTeamWinDisplay;
+    public GameObject tieDisplay;
 
     public float timeBeforeReturnToMainMenu;
 
@@ -133,6 +134,7 @@ public class GameController : MonoBehaviour {
 
     void Tie()
     {
+        tieDisplay.SetActive(true);
         ReturnToMenu();
     }
 

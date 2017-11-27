@@ -7,6 +7,7 @@ public class TeamScore_UI : MonoBehaviour {
 
     public int team1Score;
     public int team2Score;
+    public string captureObjectName = "Chems";
     Text score;
 
 	// Use this for initialization
@@ -16,6 +17,6 @@ public class TeamScore_UI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        score.text = "Chems Captured \n" + team1Score + " | " + team2Score;
+        score.text = captureObjectName + " Captured \n" + team1Score + " | " + team2Score;
 	}
 }

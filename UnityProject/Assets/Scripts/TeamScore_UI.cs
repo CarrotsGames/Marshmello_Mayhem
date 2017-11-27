@@ -16,6 +16,6 @@ public class TeamScore_UI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        score.text = "Flags Captured \n" + team1Score + " | " + team2Score;
+        score.text = "Chems Captured \n" + team1Score + " | " + team2Score;
 	}
 }

@@ -16,6 +16,8 @@ public class BuildTrap : MonoBehaviour {
     XboxController controller;
 
     GameObject[] floorGrid;
+    GameObject[] baseFloorGrid;
+    GameObject[] originalFloor;
     
     private PrefabList prefabList;
     private AudioSource audio;
@@ -42,8 +44,9 @@ public class BuildTrap : MonoBehaviour {
         prefabList = FindObjectOfType<PrefabList>();
         audio = prefabList.BuildingAudio;
         notEnoughResourceAudio = prefabList.NotEnoughResourcesAudio;
-        floorGrid = GameObject.FindGameObjectsWithTag("Floor");        
-
+        floorGrid = GameObject.FindGameObjectsWithTag("Floor");
+        originalFloor = floorGrid;
+        baseFloorGrid = GameObject.FindGameObjectsWithTag("BaseFloor");
         potentialTiles = new List<Vector3>();
         createdObjects = FindObjectOfType<GameController>().placedTraps;
         canBuild = true;
@@ -91,6 +94,7 @@ public class BuildTrap : MonoBehaviour {
                 cost = selectedTrap.GetComponent<Pit>().cost;
                 //sets height to be placed at
                 rise = -0.2f;
+                RemoveBaseFloorGrid();
             }
             if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
             {
@@ -100,6 +104,7 @@ public class BuildTrap : MonoBehaviour {
                 cost = selectedTrap.GetComponent<PlaceableWall>().cost;
                 //sets height to be placed at
                 rise = 0.5f;
+                RemoveBaseFloorGrid();
             }
             if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha3))
             {
@@ -109,6 +114,7 @@ public class BuildTrap : MonoBehaviour {
                 cost = selectedTrap.GetComponent<HumanThrower>().cost;
                 //sets height to be placed at
                 rise = 0.6f;
+                RemoveBaseFloorGrid();
             }
             if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha4))
             {
@@ -118,6 +124,7 @@ public class BuildTrap : MonoBehaviour {
                 cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
                 //sets height to be placed at
                 rise = 1.2f;
+                AddBaseFloorGrid();
             }
         }
 
@@ -142,6 +149,7 @@ public class BuildTrap : MonoBehaviour {
                 Destroy(preview);
                 //allow new preview object to be created
                 previewExist = false;
+                RemoveBaseFloorGrid();
             }
             if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
             {
@@ -155,6 +163,7 @@ public class BuildTrap : MonoBehaviour {
                 Destroy(preview);
                 //allow new preview object to be created
                 previewExist = false;
+                RemoveBaseFloorGrid();
             }
             if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha3))
             {
@@ -168,6 +177,7 @@ public class BuildTrap : MonoBehaviour {
                 Destroy(preview);
                 //allow new preview object to be created
                 previewExist = false;
+                RemoveBaseFloorGrid();
             }
             if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha4))
             {
@@ -181,6 +191,7 @@ public class BuildTrap : MonoBehaviour {
                 Destroy(preview);
                 //allow new preview object to be created
                 previewExist = false;
+                AddBaseFloorGrid();
             }
 
             //sets the rotation to player's previous rotation
@@ -494,5 +505,43 @@ public class BuildTrap : MonoBehaviour {
         {
             return true;
         }
+    }
+
+    private void AddBaseFloorGrid()
+    {
+        int counter = 0;
+        //get new size of both arrays
+        int newSize = baseFloorGrid.Length + floorGrid.Length;
+        //create new array with new size
+        GameObject[] temp = new GameObject[newSize];
+
+        for (int i = 0; i < floorGrid.Length; i++)
+        {
+            if (floorGrid[i] != null)
+            {
+                temp[i] = floorGrid[i];
+                counter++;
+            }
+        }
+
+        for (int i = 0; i < baseFloorGrid.Length; i++)
+        {
+            if (baseFloorGrid[i] != null)
+            {
+                temp[i + counter] = baseFloorGrid[i];
+            }
+        }
+
+        floorGrid = new GameObject[newSize];
+
+        for (int i = 0; i < newSize; i++)
+        {
+            floorGrid[i] = temp[i];
+        }
+    }
+
+    private void RemoveBaseFloorGrid()
+    {
+        floorGrid = originalFloor;
     }
 }

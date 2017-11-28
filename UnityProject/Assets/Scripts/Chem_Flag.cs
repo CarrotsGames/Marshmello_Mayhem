@@ -53,8 +53,8 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
             {
-                //GameObject tempParticles = Instantiate<GameObject>(redParticleObject, redTeamBase.transform);
-                captureParticles = blueParticleObject.GetComponent<ParticleSystem>();//tempParticles.GetComponent<ParticleSystem>();
+
+                captureParticles = blueParticleObject.GetComponent<ParticleSystem>();
 
                 captureParticles.Play();
                 captureAudio.Play();
@@ -160,7 +160,7 @@ public class Chem_Flag : MonoBehaviour {
         if (captureParticles != null)
         {
             captureParticles.Stop();
-            Destroy(captureParticles.gameObject);
+            
         }
         
         gameObject.SetActive(true);

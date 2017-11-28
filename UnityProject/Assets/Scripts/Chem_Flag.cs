@@ -80,7 +80,7 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
             {
-                GameObject tempParticles = Instantiate<GameObject>(particleObject, blueTeamBase.transform);
+                GameObject tempParticles = Instantiate<GameObject>(particleObject, redTeamBase.transform);
                 captureParticles = tempParticles.GetComponent<ParticleSystem>();
 
                 captureParticles.Play();

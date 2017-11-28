@@ -8938,6 +8938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2017303908}
+  resourcesColour: {fileID: 961641132}
 --- !u!1001 &584282183
 Prefab:
   m_ObjectHideFlags: 0
@@ -9978,6 +9979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1979268346}
+  resourcesColour: {fileID: 688089649}
 --- !u!4 &621260864 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4365482858214430, guid: b40eb124ce223de4c97f20f348ee3641,
@@ -16499,6 +16501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1371103627}
+  resourcesColour: {fileID: 1385869934}
 --- !u!1 &1064152766
 GameObject:
   m_ObjectHideFlags: 0
@@ -17528,6 +17531,7 @@ MonoBehaviour:
   PitAudio: {fileID: 650211035}
   PlayerDeathAudio: {fileID: 1123586796}
   GameOverAudio: {fileID: 1479065121}
+  NotEnoughResourcesAudio: {fileID: 0}
   blueTeamRespawnParticles: {fileID: 477910787}
   redTeamRespawnParticles: {fileID: 1661363535}
   deathParticles: {fileID: 1862397796}
@@ -27970,6 +27974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 365951822}
+  resourcesColour: {fileID: 1611269744}
 --- !u!1 &1979268346 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1724039869181664, guid: bc55c2e1b1988b940a41231c269c1358,

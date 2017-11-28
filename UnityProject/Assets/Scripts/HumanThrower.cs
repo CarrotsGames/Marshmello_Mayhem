@@ -55,6 +55,7 @@ public class HumanThrower : TrapBehaviour {
             if (player.GetComponent<PlayerController>() != null)
             {
                 player.GetComponent<PlayerController>().StartLerp(launchSpeed, launchHeight, timeInAir);
+                player.GetComponent<BuildTrap>().CancelBuildInProgress();
             }
         }
     }

@@ -972,7 +972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4292535140191784}
   m_Layer: 0
-  m_Name: Place Trap
+  m_Name: Place Trap P3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2097,6 +2097,7 @@ MonoBehaviour:
   extraTraps: 0
   canBuild: 0
   playerToTileDistance: 2.5
+  targetBuildArea: {fileID: 1932063402686646}
 --- !u!114 &114943731960504186
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1452,7 +1452,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1673774876938860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.17, z: 2.47}
+  m_LocalPosition: {x: -0.13, y: -0.62, z: 3.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4498350932703226}
@@ -2103,6 +2103,7 @@ MonoBehaviour:
   extraTraps: 0
   canBuild: 0
   playerToTileDistance: 2.5
+  targetBuildArea: {fileID: 1673774876938860}
 --- !u!114 &114872542698942106
 MonoBehaviour:
   m_ObjectHideFlags: 1

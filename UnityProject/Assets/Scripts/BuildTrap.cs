@@ -35,8 +35,6 @@ public class BuildTrap : MonoBehaviour {
     //used for leniency for detecting what tile the player is on
     public float playerToTileDistance = 1.8f;
 
-    public GameObject targetBuildArea;
-
     // Use this for initialization
     void Start ()
     {

@@ -24,6 +24,10 @@ public class Chem_Flag : MonoBehaviour {
 
     public float captureDistanceLeniency = 2;
 
+    private GameObject particleObject;
+    private ParticleSystem captureParticles;
+    private AudioSource captureAudio;
+
     //(blue = 1, red = 2);
 
     void Start()
@@ -32,6 +36,10 @@ public class Chem_Flag : MonoBehaviour {
         {
             teamScore = FindObjectOfType<TeamScore_UI>();
         }
+
+        captureAudio = FindObjectOfType<PrefabList>().CaptureAudio;
+        particleObject = FindObjectOfType<PrefabList>().captureParticles;
+        
     }
     void Update()
     {
@@ -43,6 +51,12 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
             {
+                GameObject tempParticles = Instantiate<GameObject>(particleObject, blueTeamBase.transform);
+                captureParticles = tempParticles.GetComponent<ParticleSystem>();
+
+                captureParticles.Play();
+                captureAudio.Play();
+
                 if (isRespawning == false)
                 {
                     //increment team 1 score
@@ -66,6 +80,12 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
             {
+                GameObject tempParticles = Instantiate<GameObject>(particleObject, blueTeamBase.transform);
+                captureParticles = tempParticles.GetComponent<ParticleSystem>();
+
+                captureParticles.Play();
+                captureAudio.Play();
+
                 if (isRespawning == false)
                 {
                     //increment team 2 score
@@ -135,7 +155,8 @@ public class Chem_Flag : MonoBehaviour {
     public void Respawn()
     {
         DropChemFlag();
-
+        captureParticles.Stop();
+        Destroy(captureParticles.gameObject);
         gameObject.SetActive(true);
         
         if (teamNumber == 1)

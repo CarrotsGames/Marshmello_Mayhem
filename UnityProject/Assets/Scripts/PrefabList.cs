@@ -16,10 +16,12 @@ public class PrefabList : MonoBehaviour {
     public AudioSource PlayerDeathAudio;
     public AudioSource GameOverAudio;
     public AudioSource NotEnoughResourcesAudio;
+    public AudioSource CaptureAudio;
 
     public GameObject blueTeamRespawnParticles;
     public GameObject redTeamRespawnParticles;
     public GameObject deathParticles;
+    public GameObject captureParticles;
 
     // Use this for initialization
     void Start () {

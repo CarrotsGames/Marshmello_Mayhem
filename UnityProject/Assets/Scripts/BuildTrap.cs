@@ -77,6 +77,48 @@ public class BuildTrap : MonoBehaviour {
                 CancelBuildInProgress();
             }
         }
+
+        if (isEnabled == false)
+        {
+            //change trap dependant on xbox controller's d-pad
+            if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
+            {
+                //set the selected trap to object in prefabList
+                selectedTrap = prefabList.Pit;
+                //get resource cost of the trap type
+                cost = selectedTrap.GetComponent<Pit>().cost;
+                //sets height to be placed at
+                rise = -0.2f;
+            }
+            if (XCI.GetDPadDown(XboxDPad.Up, controller) || Input.GetKey(KeyCode.Alpha1))
+            {
+                //set the selected trap to object in prefabList
+                selectedTrap = prefabList.PlaceableWall;
+                //get resource cost of the trap type
+                cost = selectedTrap.GetComponent<PlaceableWall>().cost;
+                //sets height to be placed at
+                rise = 0.5f;
+            }
+            if (XCI.GetDPadDown(XboxDPad.Left, controller) || Input.GetKey(KeyCode.Alpha3))
+            {
+                //set the selected trap to object in prefabList
+                selectedTrap = prefabList.HumanThrower;
+                //get resource cost of the trap type
+                cost = selectedTrap.GetComponent<HumanThrower>().cost;
+                //sets height to be placed at
+                rise = 0.6f;
+            }
+            if (XCI.GetDPadDown(XboxDPad.Down, controller) || Input.GetKey(KeyCode.Alpha4))
+            {
+                //set the selected trap to object in prefabList
+                selectedTrap = prefabList.LastPrayer;
+                //get resource cost of the trap type
+                cost = selectedTrap.GetComponent<Invention_007_LastPrayer>().cost;
+                //sets height to be placed at
+                rise = 1.2f;
+            }
+        }
+
         //checks if a build mode is active
         if (isBuilding == false && isEnabled == true)
         {

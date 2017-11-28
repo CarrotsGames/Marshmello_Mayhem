@@ -22,8 +22,7 @@ public class Inventions_Overlay_UI : MonoBehaviour {
 	void Update () {
         playerTraps = player.GetComponent<BuildTrap>();
         
-        if (playerTraps.isEnabled == true)
-        {
+
             if (playerTraps.selectedTrap != null)
             {
                 if (playerTraps.selectedTrap.GetComponent<PlaceableWall>() != null)
@@ -52,7 +51,7 @@ public class Inventions_Overlay_UI : MonoBehaviour {
                     currentImage.SetActive(true);
                 }
             }
-        }
+        
         else
         {
             if (currentImage != null)

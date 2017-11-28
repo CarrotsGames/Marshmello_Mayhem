@@ -33,6 +33,8 @@ public class PlayerHealth : MonoBehaviour
     public int hitCounterMax = 3;
     int hitCounter;
     Transform deathPosition;
+
+    public GameObject deathSymbol;
     //Renderer renderer;
 
     // Use this for initialization
@@ -118,6 +120,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Death()
     {
+        deathSymbol.SetActive(true);
         deathParticles = Instantiate<GameObject>(prefabList.deathParticles, deathPosition);
         deathParticles.transform.SetParent(null);
         deathParticles.GetComponent<ParticleSystem>().Play();
@@ -155,7 +158,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         playerController.playerMovement = true;
         playerBuildMode.canBuild = true;
-
+        deathSymbol.SetActive(false);
         Destroy(deathParticles);
     }
 

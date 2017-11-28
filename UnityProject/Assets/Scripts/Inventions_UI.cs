@@ -8,12 +8,14 @@ public class Inventions_UI : MonoBehaviour {
     private Sprite first;
     private GameController gameController;
     private Image image;
-    public GameObject player;
+    private GameObject player;
+    public Image a;
+    public Image b;
 
 	// Use this for initialization
 	void Start () {
         gameController = FindObjectOfType<GameController>();
-
+        player = GetComponentInParent<Inventions_Overlay_UI>().player;
         image = GetComponent<Image>();
 	}
 	
@@ -25,6 +27,16 @@ public class Inventions_UI : MonoBehaviour {
         if (player.GetComponent<BuildTrap>().extraTraps == false)
         {
             image.sprite = first;
+        }
+        if (player.GetComponent<BuildTrap>().isEnabled == true)
+        {
+            a.enabled = false;
+            b.enabled = true;
+        }
+        else
+        {
+            a.enabled = true;
+            b.enabled = false;
         }
 	}
 }

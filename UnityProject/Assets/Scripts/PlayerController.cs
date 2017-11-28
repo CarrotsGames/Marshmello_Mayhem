@@ -60,10 +60,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {         
-        if (transform.position.y > originalY + 1.5f)
-        {
-            GetComponent<BuildTrap>().CancelBuildInProgress();
-        }
         //check if player is being launched
         if (isBeingLaunched == true)
         {

@@ -67,7 +67,8 @@ public class BuildTrap : MonoBehaviour {
             timer -= Time.deltaTime;
 
             if (timer <= 0 && canBuild == true)
-            {              
+            {       
+                
                 Build();
                 
                 timer = buildTime;
@@ -290,7 +291,7 @@ public class BuildTrap : MonoBehaviour {
                 //checks if player is within range of any tiles
                 if (potentialTiles.Count > 0)
                 {
-                    if (GetComponent<ResourceController>().currentResource - cost >= 0)
+                    if (NotEnoughResources() == false)
                     {
                         //set isActive to true, disables this until false
                         isBuilding = true;
@@ -456,8 +457,11 @@ public class BuildTrap : MonoBehaviour {
 
     public void CancelBuildInProgress()
     {
-        createdObjects.Remove(tempObject);
-        Destroy(tempObject);
+        if (isEnabled == true)
+        {
+            createdObjects.Remove(tempObject);
+            Destroy(tempObject);
+        }
         canBuild = true;
         isBuilding = false;
 
@@ -472,5 +476,17 @@ public class BuildTrap : MonoBehaviour {
     public bool GetIsBuilding()
     {
         return isBuilding;
+    }
+
+    public bool NotEnoughResources()
+    {
+        if (GetComponent<ResourceController>().currentResource - cost >= 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }

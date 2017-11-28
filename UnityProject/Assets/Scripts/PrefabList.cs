@@ -15,6 +15,7 @@ public class PrefabList : MonoBehaviour {
     public AudioSource PitAudio;
     public AudioSource PlayerDeathAudio;
     public AudioSource GameOverAudio;
+    public AudioSource NotEnoughResourcesAudio;
 
     public GameObject blueTeamRespawnParticles;
     public GameObject redTeamRespawnParticles;

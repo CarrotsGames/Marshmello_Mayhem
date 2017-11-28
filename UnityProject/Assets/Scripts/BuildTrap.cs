@@ -19,6 +19,7 @@ public class BuildTrap : MonoBehaviour {
     
     private PrefabList prefabList;
     private AudioSource audio;
+    private AudioSource notEnoughResourceAudio;
     float rise;
     int cost;
 
@@ -42,6 +43,7 @@ public class BuildTrap : MonoBehaviour {
         controller = GetComponent<PlayerController>().controller;
         prefabList = FindObjectOfType<PrefabList>();
         audio = prefabList.BuildingAudio;
+        notEnoughResourceAudio = prefabList.NotEnoughResourcesAudio;
         floorGrid = GameObject.FindGameObjectsWithTag("Floor");        
 
         potentialTiles = new List<Vector3>();
@@ -309,8 +311,11 @@ public class BuildTrap : MonoBehaviour {
 
                         //play particle system
                         GetComponent<PlayerController>().buildingParticles.Play();
-
-                        
+                                                
+                    }
+                    else
+                    {
+                        notEnoughResourceAudio.Play();
                     }
 
                     //clean potential tiles

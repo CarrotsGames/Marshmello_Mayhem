@@ -30,12 +30,10 @@ public class Inventions_UI : MonoBehaviour {
         }
         if (player.GetComponent<BuildTrap>().isEnabled == true)
         {
-            a.enabled = false;
             b.enabled = true;
         }
         else
         {
-            a.enabled = true;
             b.enabled = false;
         }
 	}

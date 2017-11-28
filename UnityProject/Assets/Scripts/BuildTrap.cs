@@ -200,7 +200,7 @@ public class BuildTrap : MonoBehaviour {
             for (int i = 0; i < floorGrid.Length; i++)
             {
                 //get distance between player and tile
-                Vector3 vecBetween = targetBuildArea.transform.position - floorGrid[i].transform.position;
+                Vector3 vecBetween = transform.position - floorGrid[i].transform.position;
                 vecBetween.y = 0;
 
                 //find nearest tile to player
@@ -230,9 +230,9 @@ public class BuildTrap : MonoBehaviour {
                 {
                     for (int i = 0; i < potentialTiles.Count - 1; i++)
                     {
-                        Vector3 vecBetweenCurrent = targetBuildArea.transform.position - potentialTiles[i];
+                        Vector3 vecBetweenCurrent = transform.position - potentialTiles[i];
                         vecBetweenCurrent.y = 0;
-                        Vector3 vecBetweenNext = targetBuildArea.transform.position - potentialTiles[i + 1];
+                        Vector3 vecBetweenNext = transform.position - potentialTiles[i + 1];
                         vecBetweenNext.y = 0;
 
                         if (vecBetweenCurrent.magnitude > vecBetweenNext.magnitude)

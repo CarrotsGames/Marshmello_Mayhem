@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - LevelWall
+  - BaseFloor
   layers:
   - Default
   - TransparentFX

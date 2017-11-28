@@ -322,6 +322,8 @@ public class BuildTrap : MonoBehaviour {
         //deactivate build mode when new trap is built
         isEnabled = false;
 
+        GetComponent<PlayerHealth>().ResetHitCounter();
+
         GetComponent<PlayerController>().buildingParticles.Stop();
     }
 
@@ -423,5 +425,10 @@ public class BuildTrap : MonoBehaviour {
         GetComponent<PlayerController>().buildingParticles.Stop();
 
         timer = buildTime;
+    }
+
+    public bool GetIsBuilding()
+    {
+        return isBuilding;
     }
 }

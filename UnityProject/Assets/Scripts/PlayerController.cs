@@ -283,18 +283,19 @@ public class PlayerController : MonoBehaviour
 
     public void Knockback(Vector3 a_projectileDirection, float a_knockbackStrength)
     {
-        //raycast to detect walls in direction and knockback distance
-        Ray ray = new Ray(transform.position, a_projectileDirection);
-        RaycastHit hit;
+            //raycast to detect walls in direction and knockback distance
+            Ray ray = new Ray(transform.position, a_projectileDirection);
+            RaycastHit hit;
 
-        //if wall is detected, place player on this side of wall
-        if (Physics.Raycast(ray, a_knockbackStrength))
-        {
-            Physics.Raycast(ray, out hit);
-        }
-        else
-        {
-            transform.position += a_projectileDirection * a_knockbackStrength;
-        }
+            //if wall is detected, place player on this side of wall
+            if (Physics.Raycast(ray, a_knockbackStrength))
+            {
+                Physics.Raycast(ray, out hit);
+            }
+            else
+            {
+                transform.position += a_projectileDirection * a_knockbackStrength;
+            }
+        
     }
 }

@@ -30,13 +30,14 @@ public class PlayerHealth : MonoBehaviour
     public Material emissiveMaterial;
 
     BuildTrap playerBuildMode;
+    public int hitCounterMax = 3;
+    int hitCounter;
     Transform deathPosition;
     //Renderer renderer;
 
     // Use this for initialization
     void Start()
-    {
-        
+    {        
         playerBuildMode = GetComponent<BuildTrap>();
 
         currentHealth = maxHealth;
@@ -110,7 +111,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         GetComponentInChildren<ColourChange>().isChanging = true;
-        
+
         //when player takes damage, set isInCombat to true
         isInCombat = true;
     }
@@ -176,5 +177,15 @@ public class PlayerHealth : MonoBehaviour
     private void DisableDeathParticles()
     {
         deathParticles.GetComponent<ParticleSystem>().Stop();
+    }
+
+    private void BuildModeDelay()
+    {
+        playerBuildMode.canBuild = true;
+    }
+
+    public void ResetHitCounter()
+    {
+        hitCounter = 0;
     }
 }

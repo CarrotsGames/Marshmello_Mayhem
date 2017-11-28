@@ -21,7 +21,8 @@ public class PrefabList : MonoBehaviour {
     public GameObject blueTeamRespawnParticles;
     public GameObject redTeamRespawnParticles;
     public GameObject deathParticles;
-    public GameObject captureParticles;
+    public GameObject blueCaptureParticles;
+    public GameObject redCaptureParticles;
 
     // Use this for initialization
     void Start () {

@@ -81,6 +81,7 @@ public class BuildTrap : MonoBehaviour {
 
         if (isEnabled == false)
         {
+            
             //change trap dependant on xbox controller's d-pad
             if (XCI.GetDPadDown(XboxDPad.Right, controller) || Input.GetKey(KeyCode.Alpha2))
             {

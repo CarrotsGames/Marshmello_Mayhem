@@ -24,7 +24,8 @@ public class Chem_Flag : MonoBehaviour {
 
     public float captureDistanceLeniency = 2;
 
-    private GameObject particleObject;
+    private GameObject redParticleObject;
+    private GameObject blueParticleObject;
     private ParticleSystem captureParticles;
     private AudioSource captureAudio;
 
@@ -38,7 +39,8 @@ public class Chem_Flag : MonoBehaviour {
         }
 
         captureAudio = FindObjectOfType<PrefabList>().CaptureAudio;
-        particleObject = FindObjectOfType<PrefabList>().captureParticles;
+        redParticleObject = FindObjectOfType<PrefabList>().redCaptureParticles;
+        blueParticleObject = FindObjectOfType<PrefabList>().blueCaptureParticles;
         
     }
     void Update()
@@ -51,7 +53,7 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
             {
-                GameObject tempParticles = Instantiate<GameObject>(particleObject, blueTeamBase.transform);
+                GameObject tempParticles = Instantiate<GameObject>(blueParticleObject, blueTeamBase.transform);
                 captureParticles = tempParticles.GetComponent<ParticleSystem>();
 
                 captureParticles.Play();
@@ -80,7 +82,7 @@ public class Chem_Flag : MonoBehaviour {
 
             if (vecBetween.magnitude <= captureDistanceLeniency)
             {
-                GameObject tempParticles = Instantiate<GameObject>(particleObject, redTeamBase.transform);
+                GameObject tempParticles = Instantiate<GameObject>(redParticleObject, redTeamBase.transform);
                 captureParticles = tempParticles.GetComponent<ParticleSystem>();
 
                 captureParticles.Play();

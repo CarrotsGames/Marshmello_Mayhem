@@ -9,7 +9,6 @@ public class Inventions_UI : MonoBehaviour {
     private GameController gameController;
     private Image image;
     private GameObject player;
-    public Image a;
     public Image b;
 
 	// Use this for initialization

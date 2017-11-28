@@ -30,9 +30,7 @@ public class HumanThrower : TrapBehaviour {
 
         if (timer >= timeBeforeActivation)
         {
-            gameObject.GetComponent<BoxCollider>().enabled = true;
-
-            
+            gameObject.GetComponent<BoxCollider>().enabled = true;            
         }
 
         base.Update();

@@ -372,6 +372,8 @@ public class BuildTrap : MonoBehaviour {
         GetComponent<PlayerHealth>().ResetHitCounter();
 
         GetComponent<PlayerController>().buildingParticles.Stop();
+
+        tempObject = null;
     }
 
     void Preview()

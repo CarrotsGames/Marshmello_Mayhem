@@ -888,6 +888,10 @@ Prefab:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1240871176}
+    - target: {fileID: 4212056356827414, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.007
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc55c2e1b1988b940a41231c269c1358, type: 2}
   m_IsPrefabParent: 0
@@ -18400,6 +18404,14 @@ Prefab:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1918036485}
+    - target: {fileID: 4410758665238490, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410758665238490, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.174
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 362e53626a42d414eb6a3f137d61527c, type: 2}
   m_IsPrefabParent: 0

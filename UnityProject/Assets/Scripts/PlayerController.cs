@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     //particles
     public ParticleSystem buildingParticles;
-    public ParticleSystem chemHoldParticles;
+    public GameObject chemHoldIndicator;
 
     bool alternativeControls = false;
 
@@ -53,7 +53,6 @@ public class PlayerController : MonoBehaviour
         
         //prevents particles from starting
         buildingParticles.Stop();
-        chemHoldParticles.Stop();
 
         originalY = transform.position.y;
     }
@@ -247,8 +246,8 @@ public class PlayerController : MonoBehaviour
             enemyChemFlag.SetParent(null);
             enemyChemFlag.GetComponent<Chem_Flag>().DropChemFlag();
 
-            //disable partical system
-            chemHoldParticles.Stop();
+            //disable 
+            chemHoldIndicator.SetActive(false);
         }
     }
 
@@ -268,7 +267,7 @@ public class PlayerController : MonoBehaviour
                 holdingChemFlag = enemyChemFlag.GetComponent<Chem_Flag>();
 
                 //enable partical system
-                chemHoldParticles.Play();
+                chemHoldIndicator.SetActive(true);
             }
         }
     }
